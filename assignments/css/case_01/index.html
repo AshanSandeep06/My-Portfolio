@@ -2,204 +2,209 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Case One</title>
-    <!--Apply CSS Reset-->
+    <title>Assignment-01</title>
     <link href="assets/normalize.css" rel="stylesheet">
 
     <style>
-        main {
-            height: 100vh;
-            width: 99.5vw;
-            position: relative;
-        }
-
-        ::-webkit-scrollbar{
-            width: 8px;
-            background: rgba(63, 56, 56, 0.56);
-        }
-
-        ::-webkit-scrollbar-thumb{
-            background: #0c39bf;
-        }
-
-        main > section {
+        body > main > section:first-child {
+            background-color: red;
             height: 50vh;
             width: 50vw;
+            display: inline-block;
             position: absolute;
+            top: 0;
+            left: 0;
         }
 
-        main>section>div{
+        body > main > section:nth-child(2) {
+            background-color: green;
+            height: 50vh;
+            width: 50vw;
+            display: inline-block;
             position: absolute;
-            width: 190px;
-            height: 190px;
+            top: 0;
+            right: 0;
+        }
+
+        body > main > section:nth-child(3) {
+            background-color: orange;
+            height: 50vh;
+            width: 50vw;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        body > main > section:nth-child(4) {
+            background-color: deeppink;
+            height: 50vh;
+            width: 50vw;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        body > main > section > div.whiteCircleDivs {
+            width: 200px;
+            height: 200px;
             background: white;
             border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
             right: 0;
             left: 0;
-            bottom: 0;
-            top: 0;
             margin: auto;
         }
-        main>section>div>div{
+
+        body > main > section > div > div.redSquareDivs {
             width: 50%;
             height: 50%;
-            background: red;
+            background-color: red;
             position: absolute;
+            top: 0;
+            bottom: 0;
             right: 0;
             left: 0;
-            bottom: 0;
-            top: 0;
             margin: auto;
         }
 
-        main > section:nth-child(1) {
-            background: red;
-            left: 0;
-            top: 0;
-        }
-
-        main > section:nth-child(2) {
-            background: green;
-            right: 0;
-            top: 0;
-        }
-
-        main > section:nth-child(3) {
-            background: orange;
-            bottom: 0;
-            left: 0;
-        }
-
-        main > section:nth-child(4) {
-            background: deeppink;
-            right: 0;
-            bottom: 0;
-        }
-
-        main > div:first-of-type {
+        body > main > div:first-of-type {
+            width: 200px;
+            height: 200px;
+            background: white;
             position: absolute;
-            width: 230px;
-            height: 230px;
+            top: 0;
+            bottom: 0;
             right: 0;
             left: 0;
-            bottom: 0;
-            top: 0;
             margin: auto;
             border: 1px solid white;
-            background: white;
         }
 
-        main > div:first-of-type > div {
+        body > main > div > div {
             width: 60%;
             height: 60%;
             background: red;
             border-radius: 100%;
             position: absolute;
+            top: 0;
+            bottom: 0;
             right: 0;
             left: 0;
-            bottom: 0;
-            top: 0;
             margin: auto;
         }
 
-        main > div:nth-child(6), main > div:nth-child(7), main > div:nth-child(8), main > div:nth-child(9) {
-            width: 150px;
-            height: 150px;
-            border: 2px solid white;
+        body > main > div:nth-child(6), body > main > div:nth-child(7), body > main > div:nth-child(8), body > main > div:nth-child(9) {
             position: absolute;
             background: white;
+            width: 150px;
+            height: 150px;
+            border: 1px solid white;
         }
 
-        main > div:nth-child(6) {
+        body > main > div:nth-child(6) {
             left: 0;
             top: 0;
             border-bottom-right-radius: 100%;
         }
 
-        main > div:nth-child(7) {
+        body > main > div:nth-child(7) {
             right: 0;
             top: 0;
             border-bottom-left-radius: 100%;
         }
 
-        main > div:nth-child(8) {
-            right: 0;
-            bottom: 0;
-            border-top-left-radius: 100%;
-        }
-
-        main > div:nth-child(9) {
+        body > main > div:nth-child(8) {
             left: 0;
             bottom: 0;
             border-top-right-radius: 100%;
         }
 
-        main > div:nth-child(10), main > div:nth-child(11) {
-            border: 2px solid white;
+        body > main > div:nth-child(9) {
+            right: 0;
+            bottom: 0;
+            border-top-left-radius: 100%;
+        }
+
+        body > main > div:nth-child(10), body > main > div:nth-child(11) {
+            position: absolute;
             width: 192px;
             height: 94px;
-            position: absolute;
             background: white;
-
+            border: 2px solid white;
         }
 
-        main > div:nth-child(10) {
+        body > main > div:nth-child(10) {
             right: 0;
-            left: 0;
             top: 0;
+            left: 0;
             margin: auto;
-            border-bottom-left-radius: 100px;
-            border-bottom-right-radius: 100px;
-
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
         }
 
-
-        main > div:nth-child(11) {
+        body > main > div:nth-child(11) {
             right: 0;
-            left: 0;
             bottom: 0;
+            left: 0;
             margin: auto;
             border-top-left-radius: 100px;
             border-top-right-radius: 100px;
         }
-
-        h1{
-            text-align: center;
-        }
-
     </style>
+
+
 </head>
+
 <body>
-
 <main>
+    <!--Red Area-->
     <section>
-        <div>
-            <div></div>
-        </div>
-    </section>
-    <section>
-        <div>
-            <div></div>
-        </div>
-    </section>
-    <section>
-        <div>
-            <div></div>
-        </div>
-    </section>
-    <section>
-        <div>
-            <div></div>
+        <div class="whiteCircleDivs">
+            <div class="redSquareDivs">
+
+            </div>
         </div>
     </section>
 
-    <!--Center box-->
+    <!--Green Area-->
+    <section>
+        <div class="whiteCircleDivs">
+            <div class="redSquareDivs">
+
+            </div>
+        </div>
+    </section>
+
+    <!--Orange Area-->
+    <section>
+        <div class="whiteCircleDivs">
+            <div class="redSquareDivs">
+
+            </div>
+        </div>
+    </section>
+
+    <!--Pink Area-->
+    <section>
+        <div class="whiteCircleDivs">
+            <div class="redSquareDivs">
+
+            </div>
+        </div>
+    </section>
+
+    <!--Center square box-->
     <div>
-        <!--Center circle-->
-        <div></div>
+        <div>
+
+        </div>
     </div>
 
-    <!--Half circles for edges-->
+    <!--Half circles for four edges-->
     <div></div>
     <div></div>
     <div></div>
@@ -208,47 +213,8 @@
     <!--Middle circles in main-->
     <div></div>
     <div></div>
-
-</main>
-<!--<h1>Hello CSS How Are You..?</h1>-->
-<main>
-    <section>
-        <div>
-            <div></div>
-        </div>
-    </section>
-    <section>
-        <div>
-            <div></div>
-        </div>
-    </section>
-    <section>
-        <div>
-            <div></div>
-        </div>
-    </section>
-    <section>
-        <div>
-            <div></div>
-        </div>
-    </section>
-
-    <!--Center box-->
-    <div>
-        <!--Center circle-->
-        <div></div>
-    </div>
-
-    <!--Half circles for edges-->
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <!--Middle circles in main-->
-    <div></div>
-    <div></div>
-
 </main>
 </body>
+
 </html>
+
