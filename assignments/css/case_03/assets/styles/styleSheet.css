@@ -1,37 +1,84 @@
-::-webkit-scrollbar{
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
     width: 0;
 }
 
-body>main{
-    width: 100vw;
+body > main {
     height: 300vh;
-    background: yellow;
     position: relative;
+    background: white;
 }
 
-body>main>div{
-    border: 15px solid gray;
-    /*background: purple;*/
+body > main div.centerFixedDivs {
     position: fixed;
+    border-radius: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+body > main > div:first-child {
+    border: 15px solid gray;
     width: 300px;
     height: 300px;
+}
+
+body > main > div:first-child > div {
+    border: 15px solid red;
+    width: 271px;
+    height: 271px;
+}
+
+body > main > div:nth-child(2), body > main > div:nth-child(3), body > main > div:nth-child(4) {
+    width: 275px;
+    height: 275px;
     border-radius: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    position: absolute;
     margin: auto;
 }
 
-body>main>div>div{
-    border: 15px solid red;
-    position: fixed;
-    width: 271px;
-    height: 271px;
-    border-radius: 100%;
+body > main > div:nth-child(2) {
+    background: purple;
+    top: 10.3%;
+    right: 0;
+    left: 0;
+}
+
+body > main > div:nth-child(3) {
+    background: steelblue;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    margin: auto;
+}
+
+body > main > div:nth-child(4) {
+    background: red;
+    opacity: 65%;
+    right: 0;
+    bottom: 10.3%;
+    left: 0;
+}
+
+p {
+    color: white;
+    font-size: 26px;
+    text-align: center;
+}
+
+body > main > div:nth-child(2) > p {
+    margin-top: 115px;
+}
+
+body > main > div:nth-child(3) > p {
+    margin-top: 115px;
+}
+
+body > main > div:nth-child(4) > p {
+    margin-top: 75px;
 }
