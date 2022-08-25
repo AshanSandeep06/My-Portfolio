@@ -1,0 +1,37 @@
+::-webkit-scrollbar{
+    width: 0;
+}
+
+body>main{
+    width: 100vw;
+    height: 300vh;
+    background: yellow;
+    position: relative;
+}
+
+body>main>div{
+    border: 15px solid gray;
+    /*background: purple;*/
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+body>main>div>div{
+    border: 15px solid red;
+    position: fixed;
+    width: 271px;
+    height: 271px;
+    border-radius: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
