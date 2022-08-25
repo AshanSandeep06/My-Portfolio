@@ -9,20 +9,81 @@
 body>section{
     width: 100vw;
     height: 100vh;
-    background: orange;
     position: relative;
 }
 
-body>section>div{
+body>section:first-child{
+    background: white;
+}
+
+body>section:nth-child(2){
+    background: deepskyblue;
+}
+
+body>section:nth-child(3){
+    background: gray;
+}
+
+body>section:last-child{
+    background: red;
+}
+
+body>section>h1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    font-size: 95px;
+}
+
+body>section:first-child>h1{
+    width: 237px;
     height: 100px;
-    background: green;
-    position: relative;
+}
+
+body>section:nth-child(2)>h1{
+    height: 103px;
+    width: 210px;
+}
+
+body>section:nth-child(3)>h1{
+    width: 164px;
+    height: 109px;
+}
+
+body>section:last-child>h1{
+    height: 106px;
+    width: 276px;
+}
+
+body>section>div{
+    height: 65px;
+    position: sticky;
+    top: 0;
+}
+
+body>section:first-child>div{
+    background: red;
+}
+
+body>section:nth-child(2)>div{
+    background: darkblue;
+}
+
+body>section:nth-child(3)>div{
+    background: #2f2b2b;
+}
+
+body>section:last-child>div{
+    background: #aa1331;
 }
 
 body>section>div>h2{
     position: relative;
     left: 13px;
-    top: 35px;
+    top: 18px;
     margin: 0;
     color: white;
 }
