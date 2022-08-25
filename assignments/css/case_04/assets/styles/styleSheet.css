@@ -1,0 +1,28 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body>section{
+    width: 100vw;
+    height: 100vh;
+    background: orange;
+    position: relative;
+}
+
+body>section>div{
+    height: 100px;
+    background: green;
+    position: relative;
+}
+
+body>section>div>h2{
+    position: relative;
+    left: 13px;
+    top: 35px;
+    margin: 0;
+    color: white;
+}
