@@ -1,0 +1,14 @@
+body>section{
+    width: 1200px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin: auto;
+    display: grid;
+    border: 2px solid red;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
