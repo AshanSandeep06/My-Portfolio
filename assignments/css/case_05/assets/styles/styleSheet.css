@@ -14,10 +14,9 @@ body>section{
 }
 
 body>section>div{
-    border: 2px solid red;
-    background: url("");
-   /* background-size: cover;
+    background: url("../img/icons8-intellij-idea-100.png");
+    background-size: cover;
     background-position: center;
-    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);*/
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
 }
 
