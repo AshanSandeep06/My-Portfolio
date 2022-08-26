@@ -1,4 +1,4 @@
-body>section{
+body > section {
     width: 1200px;
     height: 600px;
     position: absolute;
@@ -12,11 +12,11 @@ body>section{
     gap: 12px;
 }
 
-body>section>div{
+body > section > div {
     box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
 }
 
-body>section>div:first-child{
+body > section > div:first-child {
     background: url("../img/15.png");
     background-size: cover;
     background-position: center;
@@ -24,13 +24,13 @@ body>section>div:first-child{
     grid-column: 1/3;
 }
 
-body>section>div:nth-child(2){
+body > section > div:nth-child(2) {
     background: url("../img/16.png");
     background-size: cover;
     /*background-position: center;*/
 }
 
-body>section>div:nth-child(3){
+body > section > div:nth-child(3) {
     background: url("../img/Seth.jpg");
     background-size: cover;
     background-position: center;
@@ -38,31 +38,31 @@ body>section>div:nth-child(3){
     grid-column: 4/5;
 }
 
-body>section>div:nth-child(4){
+body > section > div:nth-child(4) {
     background: url("../img/Room.jpg");
     background-size: cover;
     background-position: center;
 }
 
-body>section>div:nth-child(5){
+body > section > div:nth-child(5) {
     background: url("../img/Roman.png");
     background-size: cover;
     background-position: center;
 }
 
-body>section>div:nth-child(6){
+body > section > div:nth-child(6) {
     background: url("../img/img1.jpg");
     background-size: cover;
     background-position: center;
 }
 
-body>section>div:nth-child(7){
+body > section > div:nth-child(7) {
     background: url("../img/img3.jpg");
     background-size: cover;
     background-position: center;
 }
 
-body>section>div:nth-child(8){
+body > section > div:nth-child(8) {
     background: url("../img/Restaurant.jpg");
     background-size: cover;
     background-position: center;
