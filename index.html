@@ -453,8 +453,25 @@ I'm currently taking a Graduate Diploma in Software Engineering at IJSE.</pre>
                 </div>
             </aside>
 
+            <!--Send Message Form-->
             <section>
-                <!-- FORM -->
+                <form action="details" method="post">
+                    <div>
+                        <input type="text" id="clientName" placeholder="Your Name">
+                    </div>
+                   <div>
+                       <input type="email" id="clientEmail" placeholder="Email" required>
+                   </div>
+                    <div>
+                        <input type="text" id="clientSubject" placeholder="Subject" required>
+                    </div>
+                    <div>
+                        <textarea name="message" placeholder="Message" required></textarea>
+                    </div>
+                    <div>
+                        <button type="button">Send Message</button>
+                    </div>
+                </form>
             </section>
         </section>
     </section>
