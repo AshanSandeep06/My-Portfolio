@@ -3,12 +3,24 @@
  * @since : 0.1.0
  **/
 
-/* Apply for all elements' font-family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Apply Poppins font family to all the html elements */
 * {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Customized Scroll bar */
+/*====================== CSS Variables ======================*/
+:root{
+    --font-regular: 400;
+    --font-semi-bold: 600;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/*====================== Customized Scroll bar ======================*/
 ::-webkit-scrollbar{
     width: 8px;
     background: #A8A8A8;;
@@ -17,3 +29,80 @@
 ::-webkit-scrollbar-thumb{
     background: #7461E2;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/*====================== Header Section ======================*/
+body>header{
+    position: fixed;
+    background: #FBFBFE;
+    width: 100%;
+    height: 73px;
+    top: 0;
+    z-index: 1;
+    /*box-shadow: 0 -1px 4px rgb(162 160 160);*/
+}
+
+body>header>div{
+    position: relative;
+    left: 90px;
+    top: auto;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    display: inline-block;
+}
+
+body>header>div>h2{
+    /*font-weight: var(--font-regular);*/
+    font-weight: 500;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body>header>div>h2:hover {
+    color: #7461E2;
+}
+
+/*body>header>nav>menu>li:first-child a{
+    !*font-weight: var(--font-semi-bold);*!
+    color: #7461E2;
+}*/
+
+body>header>nav{
+    position: absolute;
+    right: 68px;
+    top: 0;
+}
+
+body>header>nav>menu>li{
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+body>header>nav>menu>li a{
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+body>header>nav>menu>li a:hover{
+    color: #7461E2;
+}
+
+/* --------------------------------------------------------------------------- */
