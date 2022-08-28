@@ -42,6 +42,10 @@ a {
     text-decoration: none;
 }
 
+body > main {
+    margin-top: 73px;
+}
+
 /* --------------------------------------------------------------------------- */
 
 /*====================== Header Section ======================*/
@@ -108,14 +112,71 @@ body > header > nav > menu > li a:hover {
 /* --------------------------------------------------------------------------- */
 
 /*====================== Home Section ======================*/
+body > main > section#home_section {
+    border: 1px solid red;
+    height: 1000px;
+    position: relative;
+}
 
+body>main>section#home_section>section:first-child{
+    border: 1px solid orange;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 900px;
+}
 
+body>main>section#home_section>section:first-child>aside{
+    position: absolute;
+    top: 0;
+    bottom: 420px;
+    left: 15px;
+    margin: auto;
+    width: 150px;
+    height: 325px;
+}
 
+body>main>section#home_section>section:last-child{
+    position: absolute;
+    top: 78px;
+    right: 98px;
+}
 
+body>main>section#home_section>section:first-child>section#home_description{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
 
+body>main #home_social_links{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+body>main #home_social_links>div{
+    background: black;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
 
+body>main #home_social_links>div>a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
 
+body>main #home_social_links>div>a>i{
+    position: relative;
+}
 
 
 
