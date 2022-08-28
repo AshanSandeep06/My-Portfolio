@@ -13,7 +13,7 @@
 }
 
 /*====================== CSS Variables ======================*/
-:root{
+:root {
     --font-regular: 400;
     --font-semi-bold: 600;
 }
@@ -21,12 +21,12 @@
 /* --------------------------------------------------------------------------- */
 
 /*====================== Customized Scroll bar ======================*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 8px;
     background: #A8A8A8;;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: #7461E2;
 }
 
@@ -34,18 +34,18 @@ html {
     scroll-behavior: smooth;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /* --------------------------------------------------------------------------- */
 
 /*====================== Header Section ======================*/
-body>header{
+body > header {
     position: fixed;
     background: #FBFBFE;
     width: 100%;
@@ -55,7 +55,7 @@ body>header{
     /*box-shadow: 0 -1px 4px rgb(162 160 160);*/
 }
 
-body>header>div{
+body > header > div {
     position: relative;
     left: 90px;
     top: auto;
@@ -64,7 +64,7 @@ body>header>div{
     display: inline-block;
 }
 
-body>header>div>h2{
+body > header > div > h2 {
     /*font-weight: var(--font-regular);*/
     font-weight: 500;
     display: inline-block;
@@ -73,7 +73,7 @@ body>header>div>h2{
     margin-bottom: 0;
 }
 
-body>header>div>h2:hover {
+body > header > div > h2:hover {
     color: #7461E2;
 }
 
@@ -82,26 +82,26 @@ body>header>div>h2:hover {
     color: #7461E2;
 }*/
 
-body>header>nav{
+body > header > nav {
     position: absolute;
     right: 68px;
     top: 0;
 }
 
-body>header>nav>menu>li{
+body > header > nav > menu > li {
     display: inline-block;
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
 }
 
-body>header>nav>menu>li a{
+body > header > nav > menu > li a {
     color: #000000;
     font-size: 15px;
     font-weight: 500;
 }
 
-body>header>nav>menu>li a:hover{
+body > header > nav > menu > li a:hover {
     color: #7461E2;
 }
 
