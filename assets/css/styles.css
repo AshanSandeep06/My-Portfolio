@@ -56,7 +56,7 @@ body > header {
     height: 73px;
     top: 0;
     z-index: 1;
-    /*box-shadow: 0 -1px 4px rgb(162 160 160);*/
+    box-shadow: 0 -1px 8px 2px #1c1717e8;
 }
 
 body > header > div {
@@ -109,24 +109,40 @@ body > header > nav > menu > li a:hover {
     color: #7461E2;
 }
 
+body > header > nav > menu > li>a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: #7461E2;
+    border-radius: 26%;
+    transition: width .3s;
+}
+
+
+body > header > nav > menu > li>a:hover::after {
+    width: 40%;
+    transition: width .3s;
+}
+
 /* --------------------------------------------------------------------------- */
 
 /*====================== Home Section ======================*/
 body > main > section#home_section {
-    border: 1px solid red;
-    height: 1000px;
+    /*border: 1px solid red;*/
+    height: 723px;
     position: relative;
 }
 
-body>main>section#home_section>section:first-child{
-    border: 1px solid orange;
+body > main > section#home_section > section:first-child {
+    /*border: 1px solid orange;*/
     position: absolute;
     top: 0;
     bottom: 0;
     width: 900px;
 }
 
-body>main>section#home_section>section:first-child>aside{
+body > main > section#home_section > section:first-child > aside {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -134,64 +150,95 @@ body>main>section#home_section>section:first-child>aside{
     margin: auto;
     width: 200px;
     /*height: 325px;*/
-    background: red;
 }
 
-body>main>section#home_section>section:last-child{
+body > main > section#home_section > section:last-child {
     position: absolute;
-    top: 78px;
-    right: 98px;
+    left: 900px;
+    height: 100%;
+    width: 626px;
 }
 
-body>main>section#home_section>section:first-child>section#home_description{
+body > main > section#home_section > section:first-child > section#home_description {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
 }
 
-body>main #home_social_links{
+body > main #home_social_links {
     display: flex;
-    gap: 16px;
+    /* gap: 28px; */
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    justify-content: space-evenly;
+    height: 500px;
+    position: relative;
+    top: 94px;
 }
 
-body>main #home_social_links>div{
-    background: black;
+body > main #home_social_links > div {
+    background: linear-gradient(5deg, black, dimgray);
+    /*background: rgba(255, 255, 255, 0.1);*/
     border-radius: 100%;
-    /*height: 50px;
-    width: 50px;*/
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    height: 72px;
+    width: 72px;
+    position: relative;
 }
 
-body>main #home_social_links>div>a{
+body > main #home_social_links > div > a {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     margin: auto;
+    background: rgba(255, 255, 255, 0.1);
 }
 
-body>main #home_social_links>div>a>i{
+body > main #home_social_links > div > a > i {
     position: relative;
+    font-size: 2.4em;
+    color: white;
 }
 
+body>main #home_social_links>div:hover{
+    color: #7461E2;
+}
 
+body > main #home_social_links > div:first-child > a > i {
+    top: 24%;
+    left: 32%;
+}
 
+body > main #home_social_links > div:nth-child(2) > a > i {
+    top: 26%;
+    left: 25%;
+}
 
+body > main #home_social_links > div:nth-child(3) > a > i {
+    top: 23%;
+    left: 25%;
+}
 
+body > main #home_social_links > div:nth-child(4) > a > i {
+    top: 24%;
+    left: 27%;
+}
+
+main>#home_section>section:last-child>div{
+    background-color: red;
+    background: url(../images/My_Image.png);
+    background-size: cover;
+    background-position: center;
+    width: 310px;
+    height: 412px;
+    display: inline-block;
+    border-radius: 100%;
+    position: relative;
+    top: 88px;
+    left: 158px;
+}
 
 
 
