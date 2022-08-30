@@ -274,7 +274,7 @@ main>section:first-child>section:first-child>#home_description>pre {
     position: relative;
     top: 96px;
     left: 218px;
-    font-size: 19px;
+    font-size: 18px;
     font-family: poppins;
     font-weight: 500;
     color: hsl(250deg 8% 45%);
@@ -294,8 +294,8 @@ main>#home_section>section:last-child>div {
     background: url(../images/My_Image.png);
     background-size: cover;
     background-position: center;
-    width: 310px;
-    height: 412px;
+    width: 294px;
+    height: 396px;
     display: inline-block;
     border-radius: 100%;
     position: relative;
