@@ -114,15 +114,28 @@ body > header > nav > menu > li > a::after {
     content: '';
     display: block;
     width: 0;
-    height: 4px;
+    height: 5px;
     background-color: #7461E2;
     border-radius: 26%;
     transition: width .3s;
 }
 
+body > header > nav > menu > li:first-child>a{
+    color: #7461E2;
+}
+
+body > header > nav > menu > li:first-child > a::after {
+    content: '';
+    display: block;
+    width: 43%;
+    height: 5px;
+    background-color: #7461E2;
+    border-radius: 26%;
+    transition: width .3s;
+}
 
 body > header > nav > menu > li > a:hover::after {
-    width: 40%;
+    width: 43%;
     transition: width .3s;
 }
 
@@ -300,7 +313,6 @@ main > section:first-child > section:first-child > #home_description > button:ho
 }
 
 main > #home_section > section:last-child > div {
-    background-color: red;
     background: url(../images/My_Image.png);
     background-size: cover;
     background-position: center;
@@ -348,6 +360,14 @@ main > section:nth-child(2)#about_section > section:first-child > h5 {
     top: 40px;
     margin: auto;
     width: max-content;
+}
+
+main > section:nth-child(2)#about_section > section:nth-child(2) div {
+    background: url(../images/My_image_02.png);
+    background-size: cover;
+    background-position: center;
+    width: 294px;
+    height: 396px;
 }
 
 
