@@ -132,6 +132,7 @@ body > main > section#home_section {
     /*border: 1px solid red;*/
     height: 723px;
     position: relative;
+    border: 1px solid red;
 }
 
 body > main > section#home_section > section:first-child {
@@ -140,6 +141,7 @@ body > main > section#home_section > section:first-child {
     top: 0;
     bottom: 0;
     width: 900px;
+    border: 1px solid black;
 }
 
 body > main > section#home_section > section:first-child > aside {
@@ -208,7 +210,7 @@ body>main #home_social_links>div:hover{
 
 body > main #home_social_links > div:first-child > a > i {
     top: 24%;
-    left: 32%;
+    left: 33%;
 }
 
 body > main #home_social_links > div:nth-child(2) > a > i {
@@ -224,6 +226,14 @@ body > main #home_social_links > div:nth-child(3) > a > i {
 body > main #home_social_links > div:nth-child(4) > a > i {
     top: 24%;
     left: 27%;
+}
+
+/*body > main #home_social_links > div > a > i:hover{
+    color: #7461E2;
+}*/
+
+body > main #home_social_links > div:hover{
+    background: #7461E2;
 }
 
 main>#home_section>section:last-child>div{
