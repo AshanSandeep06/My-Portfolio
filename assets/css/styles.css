@@ -52,12 +52,12 @@ body > main {
 /*====================== Header Section ======================*/
 body > header {
     position: fixed;
-    background: #FBFBFE;
+    background: #fafaff;
     width: 100%;
     height: 73px;
     top: 0;
     z-index: 1;
-    box-shadow: 0 -1px 8px 2px #1c1717e8;
+    /*box-shadow: 0 -1px 8px 2px #1c1717e8;*/
 }
 
 body > header > div {
@@ -210,6 +210,7 @@ body > main > section#home_section {
     position: relative;
     display: flex;
     justify-content: space-between;
+    background: #fafaff;
 }
 
 body > main > section#home_section > section:first-child {
@@ -307,6 +308,11 @@ main>#home_section>section:last-child>div {
     top: 88px;
     left: 5px;
 }
+
+/* --------------------------------------------------------------------------- */
+
+/*====================== About Section ======================*/
+
 
 
 
