@@ -320,11 +320,34 @@ main > #home_section > section:last-child > div {
 main > section:nth-child(2)#about_section {
     /*height: 723px;*/
     width: 100%;
-    border: 1px solid red;
     position: relative;
     /*display: flex;*/
     /*justify-content: space-between;*/
-    background: deepskyblue;
+    background: #215fc2;
+}
+
+main > section:nth-child(2)#about_section > section:first-child {
+    position: relative;
+    background: yellow;
+    height: 100px;
+}
+
+main > section:nth-child(2)#about_section > section:first-child > h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: max-content;
+}
+
+main > section:nth-child(2)#about_section > section:first-child > h5 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    margin: auto;
+    width: max-content;
 }
 
 
