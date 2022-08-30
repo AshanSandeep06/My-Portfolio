@@ -280,9 +280,9 @@ main>section:first-child>section:first-child>#home_description>pre {
     top: 96px;
     left: 218px;
     font-size: 18px;
-    font-family: poppins;
+    font-family: poppins, sans-serif;
     font-weight: 500;
-    color: hsl(250deg 8% 45%);
+    color: hsl(250, 8%, 45%);
     margin-top: 0;
 }
 
