@@ -23,7 +23,7 @@
 /*====================== Customized Scroll bar ======================*/
 ::-webkit-scrollbar {
     width: 8px;
-    background: #A8A8A8;;
+    background: #A8A8A8;
 }
 
 ::-webkit-scrollbar-thumb {
