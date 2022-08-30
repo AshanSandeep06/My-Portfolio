@@ -110,7 +110,7 @@ body > header > nav > menu > li a:hover {
     color: #7461E2;
 }
 
-body > header > nav > menu > li>a::after {
+body > header > nav > menu > li > a::after {
     content: '';
     display: block;
     width: 0;
@@ -121,7 +121,7 @@ body > header > nav > menu > li>a::after {
 }
 
 
-body > header > nav > menu > li>a:hover::after {
+body > header > nav > menu > li > a:hover::after {
     width: 40%;
     transition: width .3s;
 }
@@ -166,7 +166,7 @@ body > main #home_social_links > div > a > i {
     color: white;
 }
 
-body>main #home_social_links>div:hover{
+body > main #home_social_links > div:hover {
     color: #7461E2;
 }
 
@@ -175,7 +175,7 @@ body > main #home_social_links > div:first-child > a > i {
     left: 33%;
 }
 
-body > main #home_social_links > div:nth-child(2) > a > i  {
+body > main #home_social_links > div:nth-child(2) > a > i {
     top: 23%;
     left: 27%;
 }
@@ -199,7 +199,7 @@ body > main #home_social_links > div:nth-child(5) > a > i {
     color: #7461E2;
 }*/
 
-body > main #home_social_links > div:hover{
+body > main #home_social_links > div:hover {
     background: #149DDD;
 }
 
@@ -230,7 +230,7 @@ body > main > section#home_section > section:first-child > section#home_descript
     width: 74%;
 }
 
-main>section:first-child>section:first-child>#home_description>button{
+main > section:first-child > section:first-child > #home_description > button {
     width: 186px;
     height: 56px;
     background-color: #7461E2;
@@ -245,7 +245,7 @@ main>section:first-child>section:first-child>#home_description>button{
     padding: 0;
 }
 
-main>section:first-child>section:first-child>#home_description>h1:first-child{
+main > section:first-child > section:first-child > #home_description > h1:first-child {
     font-size: 50px;
     font-weight: 600;
     margin-bottom: 0;
@@ -255,7 +255,7 @@ main>section:first-child>section:first-child>#home_description>h1:first-child{
     width: 330px;
 }
 
-main>section:first-child>section:first-child>#home_description>h1:nth-child(2){
+main > section:first-child > section:first-child > #home_description > h1:nth-child(2) {
     font-size: 50px;
     font-weight: 600;
     margin-top: 0;
@@ -265,7 +265,7 @@ main>section:first-child>section:first-child>#home_description>h1:nth-child(2){
     width: 230px;
 }
 
-main>section:first-child>section:first-child>#home_description>h3 {
+main > section:first-child > section:first-child > #home_description > h3 {
     width: 302px;
     position: relative;
     top: 115px;
@@ -275,7 +275,7 @@ main>section:first-child>section:first-child>#home_description>h3 {
     padding-top: 4px;
 }
 
-main>section:first-child>section:first-child>#home_description>pre {
+main > section:first-child > section:first-child > #home_description > pre {
     width: 372px;
     position: relative;
     top: 96px;
@@ -287,7 +287,7 @@ main>section:first-child>section:first-child>#home_description>pre {
     margin-top: 0;
 }
 
-main>section:first-child>section:first-child>#home_description>button {
+main > section:first-child > section:first-child > #home_description > button {
     width: 140px;
     height: 50px;
     position: relative;
@@ -295,7 +295,11 @@ main>section:first-child>section:first-child>#home_description>button {
     left: 218px;
 }
 
-main>#home_section>section:last-child>div {
+main > section:first-child > section:first-child > #home_description > button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+main > #home_section > section:last-child > div {
     background-color: red;
     background: url(../images/My_Image.png);
     background-size: cover;
@@ -313,6 +317,15 @@ main>#home_section>section:last-child>div {
 
 /*====================== About Section ======================*/
 
+main > section:nth-child(2)#about_section {
+    /*height: 723px;*/
+    width: 100%;
+    border: 1px solid red;
+    position: relative;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    background: deepskyblue;
+}
 
 
 
