@@ -23,7 +23,8 @@
 /*====================== Customized Scroll bar ======================*/
 ::-webkit-scrollbar {
     width: 8px;
-    background: #A8A8A8;
+    /*background: #A8A8A8;*/
+    background: #2f2b2b;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -197,20 +198,6 @@ body > main #home_social_links > div:hover{
     background: #149DDD;
 }
 
-main>#home_section>section:last-child>div{
-    background-color: red;
-    background: url(../images/My_Image.png);
-    background-size: cover;
-    background-position: center;
-    width: 310px;
-    height: 412px;
-    display: inline-block;
-    border-radius: 100%;
-    position: relative;
-    top: 88px;
-    left: 52px;
-}
-
 /* 2022-08-30 Changed Codes below ------------------------- */
 body > main > section#home_section {
     height: 723px;
@@ -221,39 +208,102 @@ body > main > section#home_section {
 }
 
 body > main > section#home_section > section:first-child {
-    width: 60%;
-    border: 1px solid black;
+    width: 55%;
     display: flex;
 }
 
 body > main > section#home_section > section:last-child {
-    width: 40%;
+    width: 45%;
 }
 
 body > main > section#home_section > section:first-child > aside {
-    width: 22%;
+    width: 26%;
 }
 
 body > main > section#home_section > section:first-child > section#home_description {
-    width: 78%;
+    width: 74%;
 }
 
 main>section:first-child>section:first-child>#home_description>button{
     width: 186px;
     height: 56px;
     background-color: #7461E2;
-    border-radius: 0.6rem;
+    border-radius: 0.5rem;
     box-shadow: 28px 28px 50px rgb(13 39 80 / 28%);
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
-    font-size: 22px;
+    font-size: 19px;
     color: #FFFFFF;
     cursor: pointer;
     border-width: 0;
     padding: 0;
 }
 
+main>section:first-child>section:first-child>#home_description>h1:first-child{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    position: relative;
+    top: 115px;
+    left: 219px;
+    width: 330px;
+/* display: inline-block;*/
+}
 
+main>section:first-child>section:first-child>#home_description>h1:nth-child(2){
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 0px;
+    position: relative;
+    /* display: inline-block; */
+    top: 115px;
+    left: 216px;
+    width: 230px;
+}
+
+main>section:first-child>section:first-child>#home_description>h3 {
+    width: 302px;
+    position: relative;
+    top: 115px;
+    left: 218px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 4px;
+}
+
+main>section:first-child>section:first-child>#home_description>pre {
+    width: 372px;
+    position: relative;
+    top: 96px;
+    left: 218px;
+    font-size: 19px;
+    font-family: poppins;
+    font-weight: 500;
+    color: hsl(250deg 8% 45%);
+    margin-top: 0;
+}
+
+main>section:first-child>section:first-child>#home_description>button {
+    width: 140px;
+    height: 50px;
+    position: relative;
+    top: 109px;
+    left: 224px;
+}
+
+main>#home_section>section:last-child>div {
+    background-color: red;
+    background: url(../images/My_Image.png);
+    background-size: cover;
+    background-position: center;
+    width: 310px;
+    height: 412px;
+    display: inline-block;
+    border-radius: 100%;
+    position: relative;
+    top: 88px;
+    left: 5px;
+}
 
 
 
