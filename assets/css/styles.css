@@ -175,19 +175,24 @@ body > main #home_social_links > div:first-child > a > i {
     left: 33%;
 }
 
-body > main #home_social_links > div:nth-child(2) > a > i {
+body > main #home_social_links > div:nth-child(2) > a > i  {
+    top: 23%;
+    left: 27%;
+}
+
+body > main #home_social_links > div:nth-child(3) > a > i {
     top: 26%;
     left: 25%;
 }
 
-body > main #home_social_links > div:nth-child(3) > a > i {
+body > main #home_social_links > div:nth-child(4) > a > i {
     top: 23%;
     left: 25%;
 }
 
-body > main #home_social_links > div:nth-child(4) > a > i {
-    top: 24%;
-    left: 27%;
+body > main #home_social_links > div:nth-child(5) > a > i {
+    top: 23%;
+    left: 28%;
 }
 
 /*body > main #home_social_links > div > a > i:hover{
