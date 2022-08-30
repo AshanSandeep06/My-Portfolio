@@ -128,50 +128,6 @@ body > header > nav > menu > li>a:hover::after {
 /* --------------------------------------------------------------------------- */
 
 /*====================== Home Section ======================*/
-/*body > main > section#home_section {
-    !*border: 1px solid red;*!
-    height: 723px;
-    position: relative;
-    border: 1px solid red;
-}*/
-
-/*body > main > section#home_section > section:first-child {
-    !*border: 1px solid orange;*!
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 800px;
-    border: 1px solid black;
-}*/
-
-/*body > main > section#home_section > section:first-child > aside {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    width: 200px;
-    !*height: 325px;*!
-}*/
-/*
-body > main > section#home_section > section:last-child {
-    position: relative;
-    !* display: inline-block; *!
-    !* left: 800px; *!
-    height: 100%;
-    !* margin: 800px; *!
-    margin-left: 800px;
-    !* width: 46%; *!
-    !* width: max-content; *!
-    !* width: calc(114% / 3); *!
-}*/
-
-/*body > main > section#home_section > section:first-child > section#home_description {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-}*/
 
 body > main #home_social_links {
     display: flex;
@@ -238,7 +194,7 @@ body > main #home_social_links > div:nth-child(4) > a > i {
 }*/
 
 body > main #home_social_links > div:hover{
-    background: #7461E2;
+    background: #149DDD;
 }
 
 main>#home_section>section:last-child>div{
@@ -257,53 +213,45 @@ main>#home_section>section:last-child>div{
 
 /* 2022-08-30 Changed Codes below ------------------------- */
 body > main > section#home_section {
-    /* border: 1px solid red; */
     height: 723px;
     width: 100%;
     position: relative;
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
 }
 
 body > main > section#home_section > section:first-child {
-    /* border: 1px solid orange; */
-    /* position: absolute; */
-    /* top: 0; */
-    /* bottom: 0; */
     width: 60%;
     border: 1px solid black;
     display: flex;
-    /* height: 500px; */
 }
 
 body > main > section#home_section > section:last-child {
-    /* position: absolute; */
-    /* height: 100%; */
-    /* right: 0; */
-    /* margin-left: 800px; */
     width: 40%;
 }
 
 body > main > section#home_section > section:first-child > aside {
-    /* position: absolute; */
-    /* top: 0; */
-    /* bottom: 0; */
-    /* left: 0; */
-    /* margin: auto; */
     width: 22%;
-    /* height: 325px; */
 }
 
 body > main > section#home_section > section:first-child > section#home_description {
-    /* position: absolute; */
-    /* top: 0; */
-    /* bottom: 0; */
-    /* right: 0; */
     width: 78%;
 }
 
-
+main>section:first-child>section:first-child>#home_description>button{
+    width: 186px;
+    height: 56px;
+    background-color: #7461E2;
+    border-radius: 0.6rem;
+    box-shadow: 28px 28px 50px rgb(13 39 80 / 28%);
+    font-weight: 600;
+    text-align: center;
+    font-size: 22px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-width: 0;
+    padding: 0;
+}
 
 
 
