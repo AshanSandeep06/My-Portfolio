@@ -181,6 +181,12 @@ body > main #home_social_links > div > a > i {
 
 body > main #home_social_links > div:hover {
     color: #7461E2;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* NEW */
+body > main #home_social_links > div:hover>a {
+    background: transparent;
 }
 
 body > main #home_social_links > div:first-child > a > i {
