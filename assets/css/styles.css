@@ -539,3 +539,25 @@ main > #about_section > section:nth-child(2) > article > section:nth-child(2) > 
     right: 61px;
     top: 204px;
 }
+
+#scroll_up_btn {
+    position: fixed;
+    /* opacity: 0; */
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #7461E2;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+#scroll_up_btn > i {
+    font-size: 19px;
+    color: #fff;
+    line-height: 0;
+    position: absolute;
+    right: 10px;
+    top: 17px;
+}
