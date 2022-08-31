@@ -344,12 +344,13 @@ main > section:nth-child(2)#about_section {
     /* display: flex;
      justify-content: space-between;
     background: #215fc2;*/
+    background: #b6bedb;
 }
 
 main > section:nth-child(2)#about_section > section:first-child {
     position: relative;
-    /*background: yellow;*/
-    height: 108px;
+    height: 112px;
+    background: yellow;
 }
 
 main > section:nth-child(2)#about_section > section:first-child > h1 {
@@ -360,7 +361,7 @@ main > section:nth-child(2)#about_section > section:first-child > h1 {
     margin: auto;
     width: max-content;
     text-align: center;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 600;
     margin-bottom: 8px;
     margin-top: 8px;
@@ -370,7 +371,7 @@ main > section:nth-child(2)#about_section > section:first-child > h5 {
     position: absolute;
     left: 0;
     right: 0;
-    top: 48px;
+    top: 54px;
     margin: auto;
     width: max-content;
 
@@ -383,7 +384,7 @@ main > section:nth-child(2)#about_section > section:first-child > h5 {
 
 main > section:nth-child(2)#about_section > section:nth-child(2) {
     position: absolute;
-    top: 108px;
+    top: 112px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -395,8 +396,10 @@ main > section:nth-child(2)#about_section > section:nth-child(2) div {
     background: url(../images/My_image_02.png);
     background-size: cover;
     background-position: center;
-    width: 294px;
-    height: 396px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    left: 72px;
     /* display: inline-block;
      position: absolute;
      top: 0;
@@ -444,3 +447,33 @@ main>#about_section>section:first-child>h5::after{
     left: calc(50% - 20px);
 }
 
+main>#about_section>section:nth-child(2) section>h2{
+    font-size: 30px;
+    margin: 0;
+    font-weight: 600;
+}
+
+main>#about_section>section:nth-child(2) section>pre{
+    color: #728394;
+    font-size: 16px;
+    font-family: poppins, sans-serif;
+    margin-top: 0;
+}
+
+main>#about_section>section:nth-child(2) section{
+    position: relative;
+    width: 700px;
+    height: 465px;
+    top: 57px;
+    right: 62px;
+}
+
+main>#about_section>section:nth-child(2) section>p>i{
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+main>#about_section>section:nth-child(2) section>p>strong{
+    font-size: 16px;
+    margin-right: 10px;
+}
