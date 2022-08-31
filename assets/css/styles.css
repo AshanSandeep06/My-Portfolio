@@ -542,7 +542,7 @@ main > #about_section > section:nth-child(2) > article > section:nth-child(2) > 
 
 #scroll_up_btn {
     position: fixed;
-    /* opacity: 0; */
+    opacity: 0.9;
     right: 15px;
     bottom: 15px;
     z-index: 996;
