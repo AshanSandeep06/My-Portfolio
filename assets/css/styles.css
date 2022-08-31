@@ -465,7 +465,7 @@ main > #about_section > section:nth-child(2) section {
     position: relative;
     width: 700px;
     height: 465px;
-    top: 43px;
+    top: 37px;
     right: 62px;
 }
 
@@ -488,14 +488,19 @@ main > #about_section > section:nth-child(2) section > p > strong {
 }
 
 main > #about_section > section:nth-child(2) section >button{
-    width: 171px;
-    height: 46px;
     position: relative;
     color: white;
     text-align: left;
-    background: darkblue;
     font-weight: 500;
+    top: 3px;
+    border-radius: 0.5rem;
+    box-shadow: 28px 28px 50px rgb(13 39 80 / 10%);
+    background-color: #7461E2;
+    border-width: 0;
+    width: 172px;
+    height: 50px;
     padding-left: 19px;
+    left: 6px;
 }
 
 main > #about_section > section:nth-child(2) section >button>a {
@@ -509,10 +514,10 @@ main > #about_section > section:nth-child(2) section >button>a {
 
 main > #about_section > section:nth-child(2) section >button>a>div {
     /*display: inline-block;*/
-    position: absolute;
-    right: 10px;
-    bottom: 0;
-    top: 0;
-    margin: auto;
     height: 25px;
+    position: absolute;
+    bottom: 0;
+    top: 1px;
+    margin: auto;
+    right: 16px;
 }
