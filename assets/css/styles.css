@@ -474,8 +474,9 @@ main > #about_section > section:nth-child(2) section > p:nth-child(4) {
 }
 
 main > #about_section > section:nth-child(2) section > p {
-    margin-top: 20px;
+    margin-top: 22px;
     margin-bottom: 24px;
+    padding-left: 4px;
 }
 
 main > #about_section > section:nth-child(2) section > p > i {
@@ -501,7 +502,7 @@ main > #about_section > section:nth-child(2) section >button{
     width: 172px;
     height: 50px;
     padding-left: 19px;
-    left: 6px;
+    left: 3px;
 }
 
 main > #about_section > section:nth-child(2) section >button>a {
@@ -525,4 +526,16 @@ main > #about_section > section:nth-child(2) section >button>a>div {
 
 main > #about_section > section:nth-child(2) section>p>i{
     color: #7461E2;
+}
+
+main>#about_section>section:nth-child(2)>article>section:nth-child(2)>p:nth-child(9){
+position: absolute;
+right: 165px;
+top: 161px;
+}
+
+main>#about_section>section:nth-child(2)>article>section:nth-child(2)>p:nth-child(10){
+position: absolute;
+right: 61px;
+top: 204px;
 }
