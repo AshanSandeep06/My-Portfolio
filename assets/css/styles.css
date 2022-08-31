@@ -455,18 +455,18 @@ main > #about_section > section:nth-child(2) section > h2 {
 }
 
 main > #about_section > section:nth-child(2) section > pre {
-    color: #728394;
     font-size: 16px;
     font-family: poppins, sans-serif;
     margin-top: 0;
+    color: hsl(250, 8%, 45%);
 }
 
 main > #about_section > section:nth-child(2) section {
     position: relative;
     width: 700px;
-    height: 465px;
     top: 37px;
     right: 62px;
+    height: 502px;
 }
 
 main > #about_section > section:nth-child(2) section > p:nth-child(4) {
@@ -474,6 +474,7 @@ main > #about_section > section:nth-child(2) section > p:nth-child(4) {
 }
 
 main > #about_section > section:nth-child(2) section > p {
+    margin-top: 20px;
     margin-bottom: 24px;
 }
 
@@ -520,4 +521,8 @@ main > #about_section > section:nth-child(2) section >button>a>div {
     top: 1px;
     margin: auto;
     right: 16px;
+}
+
+main > #about_section > section:nth-child(2) section>p>i{
+    color: #7461E2;
 }
