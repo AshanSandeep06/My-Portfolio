@@ -364,7 +364,8 @@ main > section:nth-child(2)#about_section > section:first-child > h1 {
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 8px;
-    margin-top: 8px;
+    padding-bottom: 15px;
+    margin-top: 10px;
 }
 
 main > section:nth-child(2)#about_section > section:first-child > h5 {
@@ -374,7 +375,7 @@ main > section:nth-child(2)#about_section > section:first-child > h5 {
     top: 54px;
     margin: auto;
     width: max-content;
-
+    display: none;
     margin-top: 9px;
     color: hsl(250, 8%, 45%);
     font-size: 15px;
@@ -426,7 +427,7 @@ main > section:nth-child(2)#about_section > section:nth-child(2) > article {
      height: 100%;
 }*/
 
-main > #about_section > section:first-child > h5::before {
+main > #about_section > section:first-child > h1::before {
     content: "";
     position: absolute;
     display: block;
@@ -437,7 +438,7 @@ main > #about_section > section:first-child > h5::before {
     left: calc(50% - 60px);
 }
 
-main > #about_section > section:first-child > h5::after {
+main > #about_section > section:first-child > h1::after {
     content: "";
     position: absolute;
     display: block;
@@ -565,3 +566,7 @@ main > #about_section > section:nth-child(2) > article > section:nth-child(2) > 
 /* --------------------------------------------------------------------------- */
 
 /*====================== Education Section ======================*/
+main>section#education_section{
+    border: 1px solid red;
+    background: #cbafaf;
+}
