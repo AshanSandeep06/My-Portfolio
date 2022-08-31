@@ -392,7 +392,7 @@ main > section:nth-child(2)#about_section > section:nth-child(2) {
     width: 100%;
 }
 
-main > section:nth-child(2)#about_section > section:nth-child(2) div {
+main > section:nth-child(2)#about_section > section:nth-child(2)>article>div {
     background: url(../images/My_image_02.png);
     background-size: cover;
     background-position: center;
@@ -480,4 +480,21 @@ main > #about_section > section:nth-child(2) section > p > i {
 main > #about_section > section:nth-child(2) section > p > strong {
     font-size: 16px;
     margin-right: 10px;
+}
+
+main > #about_section > section:nth-child(2) section >button{
+    display: inline-block;
+    background-color: #7461E2;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    border-width: 0;
+}
+
+main > #about_section > section:nth-child(2) section >button>i {
+    font-size: 1.25rem;
+    margin-left: 8px;
+    transition: .3s;
+    color: white;
 }
