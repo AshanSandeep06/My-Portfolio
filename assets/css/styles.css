@@ -488,9 +488,31 @@ main > #about_section > section:nth-child(2) section > p > strong {
 }
 
 main > #about_section > section:nth-child(2) section >button{
-
+    width: 171px;
+    height: 46px;
+    position: relative;
+    color: white;
+    text-align: left;
+    background: darkblue;
+    font-weight: 500;
+    padding-left: 19px;
 }
 
-main > #about_section > section:nth-child(2) section >button>i {
+main > #about_section > section:nth-child(2) section >button>a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
 
+main > #about_section > section:nth-child(2) section >button>a>div {
+    /*display: inline-block;*/
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    height: 25px;
 }
