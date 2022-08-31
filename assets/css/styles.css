@@ -500,9 +500,9 @@ main > #about_section > section:nth-child(2) section > button {
     background-color: #7461E2;
     border-width: 0;
     width: 172px;
-    height: 50px;
     padding-left: 19px;
     left: 3px;
+    height: 47px;
 }
 
 main > #about_section > section:nth-child(2) section > button > a {
