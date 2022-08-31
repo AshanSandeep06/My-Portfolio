@@ -366,6 +366,7 @@ main > section:nth-child(2)#about_section > section:first-child > h1 {
     margin-bottom: 8px;
     padding-bottom: 15px;
     margin-top: 10px;
+    text-transform: uppercase;
 }
 
 main > section:nth-child(2)#about_section > section:first-child > h5 {
@@ -567,6 +568,55 @@ main > #about_section > section:nth-child(2) > article > section:nth-child(2) > 
 
 /*====================== Education Section ======================*/
 main>section#education_section{
-    border: 1px solid red;
-    background: #cbafaf;
+    /*border: 1px solid red;*/
+    background: #FAFAFF;
+}
+
+main>section#education_section>section:first-child{
+    position: relative;
+    height: 102px;
+    /*background: yellow;*/
+}
+
+main>section#education_section>section:first-child>h1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: max-content;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    padding-bottom: 17px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+main>section#education_section>section:first-child>h1::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 202px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(29% - 60px);
+}
+
+main>section#education_section>section:first-child>h1::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 65px;
+    height: 3px;
+    background: #7461E2;
+    bottom: 0;
+    left: calc(43% - 20px);
+}
+
+main>section#education_section>section:first-child>h5{
+    margin: 0;
+    display: none;
 }
