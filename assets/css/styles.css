@@ -344,13 +344,13 @@ main > section:nth-child(2)#about_section {
     /* display: flex;
      justify-content: space-between;
     background: #215fc2;*/
-    background: #b6bedb;
+    /*background: #b6bedb;*/
 }
 
 main > section:nth-child(2)#about_section > section:first-child {
     position: relative;
     height: 112px;
-    background: yellow;
+    /*background: yellow;*/
 }
 
 main > section:nth-child(2)#about_section > section:first-child > h1 {
@@ -400,6 +400,7 @@ main > section:nth-child(2)#about_section > section:nth-child(2)>article>div {
     height: 400px;
     position: relative;
     left: 72px;
+    border-radius: 0.5rem;
     /* display: inline-block;
      position: absolute;
      top: 0;
@@ -464,8 +465,12 @@ main > #about_section > section:nth-child(2) section {
     position: relative;
     width: 700px;
     height: 465px;
-    top: 57px;
+    top: 43px;
     right: 62px;
+}
+
+main > #about_section > section:nth-child(2) section > p:nth-child(4) {
+    margin-top: 34px;
 }
 
 main > #about_section > section:nth-child(2) section > p {
@@ -483,18 +488,9 @@ main > #about_section > section:nth-child(2) section > p > strong {
 }
 
 main > #about_section > section:nth-child(2) section >button{
-    display: inline-block;
-    background-color: #7461E2;
-    color: white;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    border-width: 0;
+
 }
 
 main > #about_section > section:nth-child(2) section >button>i {
-    font-size: 1.25rem;
-    margin-left: 8px;
-    transition: .3s;
-    color: white;
+
 }
