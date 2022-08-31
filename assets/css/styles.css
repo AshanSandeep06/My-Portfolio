@@ -425,7 +425,7 @@ main > section:nth-child(2)#about_section > section:nth-child(2) > article {
      height: 100%;
 }*/
 
-main>#about_section>section:first-child>h5::before{
+main > #about_section > section:first-child > h5::before {
     content: "";
     position: absolute;
     display: block;
@@ -436,7 +436,7 @@ main>#about_section>section:first-child>h5::before{
     left: calc(50% - 60px);
 }
 
-main>#about_section>section:first-child>h5::after{
+main > #about_section > section:first-child > h5::after {
     content: "";
     position: absolute;
     display: block;
@@ -447,20 +447,20 @@ main>#about_section>section:first-child>h5::after{
     left: calc(50% - 20px);
 }
 
-main>#about_section>section:nth-child(2) section>h2{
+main > #about_section > section:nth-child(2) section > h2 {
     font-size: 30px;
     margin: 0;
     font-weight: 600;
 }
 
-main>#about_section>section:nth-child(2) section>pre{
+main > #about_section > section:nth-child(2) section > pre {
     color: #728394;
     font-size: 16px;
     font-family: poppins, sans-serif;
     margin-top: 0;
 }
 
-main>#about_section>section:nth-child(2) section{
+main > #about_section > section:nth-child(2) section {
     position: relative;
     width: 700px;
     height: 465px;
@@ -468,12 +468,16 @@ main>#about_section>section:nth-child(2) section{
     right: 62px;
 }
 
-main>#about_section>section:nth-child(2) section>p>i{
+main > #about_section > section:nth-child(2) section > p {
+    margin-bottom: 24px;
+}
+
+main > #about_section > section:nth-child(2) section > p > i {
     margin-right: 5px;
     font-size: 16px;
 }
 
-main>#about_section>section:nth-child(2) section>p>strong{
+main > #about_section > section:nth-child(2) section > p > strong {
     font-size: 16px;
     margin-right: 10px;
 }
