@@ -392,7 +392,7 @@ main > section:nth-child(2)#about_section > section:nth-child(2) {
     width: 100%;
 }
 
-main > section:nth-child(2)#about_section > section:nth-child(2)>article>div {
+main > section:nth-child(2)#about_section > section:nth-child(2) > article > div {
     background: url(../images/My_image_02.png);
     background-size: cover;
     background-position: center;
@@ -489,7 +489,7 @@ main > #about_section > section:nth-child(2) section > p > strong {
     margin-right: 10px;
 }
 
-main > #about_section > section:nth-child(2) section >button{
+main > #about_section > section:nth-child(2) section > button {
     position: relative;
     color: white;
     text-align: left;
@@ -505,7 +505,7 @@ main > #about_section > section:nth-child(2) section >button{
     left: 3px;
 }
 
-main > #about_section > section:nth-child(2) section >button>a {
+main > #about_section > section:nth-child(2) section > button > a {
     position: absolute;
     top: 0;
     right: 0;
@@ -514,7 +514,7 @@ main > #about_section > section:nth-child(2) section >button>a {
     margin: auto;
 }
 
-main > #about_section > section:nth-child(2) section >button>a>div {
+main > #about_section > section:nth-child(2) section > button > a > div {
     /*display: inline-block;*/
     height: 25px;
     position: absolute;
@@ -524,18 +524,18 @@ main > #about_section > section:nth-child(2) section >button>a>div {
     right: 16px;
 }
 
-main > #about_section > section:nth-child(2) section>p>i{
+main > #about_section > section:nth-child(2) section > p > i {
     color: #7461E2;
 }
 
-main>#about_section>section:nth-child(2)>article>section:nth-child(2)>p:nth-child(9){
-position: absolute;
-right: 165px;
-top: 161px;
+main > #about_section > section:nth-child(2) > article > section:nth-child(2) > p:nth-child(9) {
+    position: absolute;
+    right: 165px;
+    top: 161px;
 }
 
-main>#about_section>section:nth-child(2)>article>section:nth-child(2)>p:nth-child(10){
-position: absolute;
-right: 61px;
-top: 204px;
+main > #about_section > section:nth-child(2) > article > section:nth-child(2) > p:nth-child(10) {
+    position: absolute;
+    right: 61px;
+    top: 204px;
 }
