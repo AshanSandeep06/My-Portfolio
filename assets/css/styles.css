@@ -400,7 +400,7 @@ main > section:nth-child(2)#about_section > section:nth-child(2) > article > div
     height: 400px;
     position: relative;
     left: 72px;
-    border-radius: 0.6rem;
+    border-radius: 0.9rem;
     /* display: inline-block;
      position: absolute;
      top: 0;
