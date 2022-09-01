@@ -569,13 +569,24 @@ main > #about_section > section:nth-child(2) > article > section:nth-child(2) > 
 /*====================== Education Section ======================*/
 main > section#education_section {
     /*border: 1px solid red;*/
-    background: #FAFAFF;
+    background: #d7d7e5;
+    height: 726px;
+    width: 100%;
+    position: relative;
 }
 
 main > section#education_section > section:first-child {
     position: relative;
     height: 102px;
-    /*background: yellow;*/
+    background: yellow;
+}
+
+main > section#education_section > section:nth-child(2){
+    background: orange;
+}
+
+main > section#education_section > section:nth-child(2) ul {
+    margin: 0;
 }
 
 main > section#education_section > section:first-child > h1 {
