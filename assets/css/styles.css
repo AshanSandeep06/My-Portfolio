@@ -693,7 +693,7 @@ main > section#education_section > section:nth-child(3) > div:nth-child(2) {
     box-shadow: -16px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
     position: absolute;
     width: 356px;
-    right: 236px;
+    right: 239px;
     background: #F0F1F8;
     border-radius: 50px;
     height: 143px;
@@ -737,6 +737,60 @@ main > section#education_section > section:nth-child(3) > div:nth-child(2)>p:las
 }
 
 main > section#education_section > section:nth-child(3) > div:nth-child(2)>p:last-child>i {
+    margin-right: 4px;
+    position: relative;
+}
+
+/* Second div */
+main > section#education_section > section:nth-child(3) > div:nth-child(3) {
+    /*box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);*/
+    box-shadow: -16px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    position: absolute;
+    width: 356px;
+    left: 233px;
+    background: #F0F1F8;
+    border-radius: 50px;
+    height: 143px;
+    top: 220px;
+}
+
+main > section#education_section > section:nth-child(3) > div:nth-child(3)>h4 {
+    font-size: 19px;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 13px;
+    margin: auto;
+    width: max-content;
+}
+
+main > section#education_section > section:nth-child(3) > div:nth-child(3)>p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin: auto;
+    width: max-content;
+    color: hsl(250, 8%, 45%);
+}
+
+main > section#education_section > section:nth-child(3) > div:nth-child(3)>p:last-child {
+    font-size: 15px;
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 97px;
+    margin: auto;
+    width: max-content;
+    /*color: hsl(250, 8%, 65%);*/
+    color: hsl(250, 6%, 59%);
+}
+
+main > section#education_section > section:nth-child(3) > div:nth-child(3)>p:last-child>i {
     margin-right: 4px;
     position: relative;
 }
