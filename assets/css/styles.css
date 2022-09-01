@@ -354,7 +354,7 @@ main > section:nth-child(2)#about_section {
 
 main > section:nth-child(2)#about_section > section:first-child {
     position: relative;
-    height: 112px;
+    height: 78px;
     /*background: yellow;*/
 }
 
@@ -370,7 +370,7 @@ main > section:nth-child(2)#about_section > section:first-child > h1 {
     font-weight: 600;
     margin-bottom: 8px;
     padding-bottom: 15px;
-    margin-top: 10px;
+    margin-top: 17px;
     text-transform: uppercase;
 }
 
@@ -391,7 +391,7 @@ main > section:nth-child(2)#about_section > section:first-child > h5 {
 
 main > section:nth-child(2)#about_section > section:nth-child(2) {
     position: absolute;
-    top: 112px;
+    top: 78px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -612,8 +612,8 @@ main > section#education_section > section:first-child > h1 {
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 8px;
+    margin-top: 13px;
     padding-bottom: 17px;
-    margin-top: 10px;
     text-transform: uppercase;
 }
 
