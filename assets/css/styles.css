@@ -912,11 +912,14 @@ main > section#skills_section > section:first-child > h5 {
 }
 
 main > section#skills_section > section:nth-child(2) {
-    background: gray;
+    background: #ead4d4;
     position: relative;
 }
 
 main > section#skills_section > section:nth-child(2) > h2:first-child {
+    font-weight: 500;
+    font-size: 25px;
+    color: hsl(250, 8%, 45%);
     position: absolute;
     left: 10px;
     right: 0;
