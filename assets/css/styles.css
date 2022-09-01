@@ -573,7 +573,6 @@ main > #about_section > section:nth-child(2) > article > section:nth-child(2) > 
 
 /*====================== Education Section ======================*/
 main > section#education_section {
-    /*border: 1px solid red;*/
     background: #fafaff;
     width: 100%;
     position: relative;
@@ -665,7 +664,6 @@ main > section#education_section > section:nth-child(2) > div:last-child > i {
 }
 
 main > section#education_section > section:last-child {
-    /*background: #50ac36;*/
     margin-top: 40px;
     height: 610px;
     position: relative;
@@ -855,7 +853,6 @@ main > section#education_section > section:nth-child(3) > div:nth-child(4) > p:l
 
 /*====================== Skills Section ======================*/
 main > section#skills_section {
-    /*border: 1px solid red;*/
     background: orange;
     width: 100%;
     position: relative;
@@ -936,3 +933,5 @@ main > section#skills_section > section:nth-child(2) > section:nth-child(3) {
     display: flex;
     height: 350px;
 }
+
+/* --------------------------------------------------------------------------- */
