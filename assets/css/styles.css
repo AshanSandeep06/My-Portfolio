@@ -361,7 +361,7 @@ main > section:nth-child(2)#about_section > section:first-child > h1 {
     margin: auto;
     width: max-content;
     text-align: center;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 600;
     margin-bottom: 8px;
     padding-bottom: 15px;
@@ -578,11 +578,9 @@ main > section#education_section {
 main > section#education_section > section:first-child {
     position: relative;
     height: 102px;
-    background: yellow;
 }
 
 main > section#education_section > section:nth-child(2) {
-    background: orange;
     display: flex;
     justify-content: space-evenly;
     height: 36px;
@@ -606,7 +604,7 @@ main > section#education_section > section:first-child > h1 {
     margin: auto;
     width: max-content;
     text-align: center;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 600;
     margin-bottom: 8px;
     padding-bottom: 17px;
@@ -678,7 +676,6 @@ main > section#education_section > section:nth-child(3) > div:first-child {
     background-position: center;
     width: 299px;
     height: 492px;
-    border: 1px solid red;
     position: absolute;
     left: 0;
     right: 0;
@@ -690,7 +687,7 @@ main > section#education_section > section:nth-child(3) > div:first-child {
 /* First div */
 main > section#education_section > section:nth-child(3) > div:nth-child(2) {
     /*box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);*/
-    box-shadow: -16px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    box-shadow: -4px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
     position: absolute;
     width: 356px;
     right: 237px;
@@ -798,7 +795,7 @@ main > section#education_section > section:nth-child(3) > div:nth-child(3) > p:l
 /* Third div */
 main > section#education_section > section:nth-child(3) > div:nth-child(4) {
     /*box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);*/
-    box-shadow: -16px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    box-shadow: -4px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
     position: absolute;
     width: 356px;
     right: 237px;
