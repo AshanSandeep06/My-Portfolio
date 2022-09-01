@@ -570,9 +570,9 @@ main > #about_section > section:nth-child(2) > article > section:nth-child(2) > 
 main > section#education_section {
     /*border: 1px solid red;*/
     background: #d7d7e5;
-    height: 726px;
     width: 100%;
     position: relative;
+    height: 782px;
 }
 
 main > section#education_section > section:first-child {
@@ -583,6 +583,15 @@ main > section#education_section > section:first-child {
 
 main > section#education_section > section:nth-child(2){
     background: orange;
+    display: flex;
+    justify-content: space-evenly;
+    height: 36px;
+    width: 768px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 33px;
 }
 
 main > section#education_section > section:nth-child(2) ul {
@@ -630,5 +639,31 @@ main > section#education_section > section:first-child > h1::after {
 main > section#education_section > section:first-child > h5 {
     margin: 0;
     display: none;
+}
+
+main > section#education_section > section:nth-child(2)>div{
+    color: hsl(250, 8%, 45%);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+main>section#education_section>section:nth-child(2) i{
+    margin-right: 4px;
+    bottom: 1px  ;
+    position: relative;
+}
+
+main>section#education_section>section:nth-child(2)>div:last-child>i{
+    margin-right: 7px;
+}
+
+main>section#education_section>section:last-child {
+    background: #50ac36;
+    margin-top: 69px;
+    height: 610px;
 }
 
