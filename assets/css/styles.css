@@ -667,3 +667,6 @@ main>section#education_section>section:last-child {
     height: 610px;
 }
 
+main>section#education_section>section:nth-child(2)>div:hover ,main>section#education_section>section:nth-child(2)>div>i:hover{
+    color: #7461E2;
+}
