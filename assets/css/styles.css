@@ -572,7 +572,7 @@ main > section#education_section {
     background: #fafaff;
     width: 100%;
     position: relative;
-    height: 782px;
+    height: 753px;
 }
 
 main > section#education_section > section:first-child {
@@ -591,7 +591,7 @@ main > section#education_section > section:nth-child(2) {
     left: 0;
     right: 0;
     margin: auto;
-    margin-bottom: 33px;
+    /*margin-bottom: 33px;*/
 }
 
 main > section#education_section > section:nth-child(2) ul {
@@ -663,7 +663,7 @@ main > section#education_section > section:nth-child(2) > div:last-child > i {
 
 main > section#education_section > section:last-child {
     /*background: #50ac36;*/
-    margin-top: 69px;
+    margin-top: 40px;
     height: 610px;
     position: relative;
 }
