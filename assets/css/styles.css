@@ -459,8 +459,8 @@ main > #about_section > section:nth-child(2) section > h2 {
 main > #about_section > section:nth-child(2) section > pre {
     font-size: 16px;
     font-family: poppins, sans-serif;
-    margin-top: 0;
     color: hsl(250, 8%, 45%);
+    margin-top: 2px;
 }
 
 main > #about_section > section:nth-child(2) section {
@@ -476,9 +476,9 @@ main > #about_section > section:nth-child(2) section > p:nth-child(4) {
 }
 
 main > #about_section > section:nth-child(2) section > p {
-    margin-top: 22px;
     margin-bottom: 24px;
     padding-left: 4px;
+    margin-top: 24px;
 }
 
 main > #about_section > section:nth-child(2) section > p > i {
@@ -567,18 +567,18 @@ main > #about_section > section:nth-child(2) > article > section:nth-child(2) > 
 /* --------------------------------------------------------------------------- */
 
 /*====================== Education Section ======================*/
-main>section#education_section{
+main > section#education_section {
     /*border: 1px solid red;*/
     background: #FAFAFF;
 }
 
-main>section#education_section>section:first-child{
+main > section#education_section > section:first-child {
     position: relative;
     height: 102px;
     /*background: yellow;*/
 }
 
-main>section#education_section>section:first-child>h1{
+main > section#education_section > section:first-child > h1 {
     position: absolute;
     left: 0;
     right: 0;
@@ -594,7 +594,7 @@ main>section#education_section>section:first-child>h1{
     text-transform: uppercase;
 }
 
-main>section#education_section>section:first-child>h1::before{
+main > section#education_section > section:first-child > h1::before {
     content: "";
     position: absolute;
     display: block;
@@ -605,7 +605,7 @@ main>section#education_section>section:first-child>h1::before{
     left: calc(29% - 60px);
 }
 
-main>section#education_section>section:first-child>h1::after{
+main > section#education_section > section:first-child > h1::after {
     content: "";
     position: absolute;
     display: block;
@@ -616,7 +616,7 @@ main>section#education_section>section:first-child>h1::after{
     left: calc(43% - 20px);
 }
 
-main>section#education_section>section:first-child>h5{
+main > section#education_section > section:first-child > h5 {
     margin: 0;
     display: none;
 }
