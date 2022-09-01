@@ -581,7 +581,7 @@ main > section#education_section > section:first-child {
     background: yellow;
 }
 
-main > section#education_section > section:nth-child(2){
+main > section#education_section > section:nth-child(2) {
     background: orange;
     display: flex;
     justify-content: space-evenly;
@@ -641,7 +641,7 @@ main > section#education_section > section:first-child > h5 {
     display: none;
 }
 
-main > section#education_section > section:nth-child(2)>div{
+main > section#education_section > section:nth-child(2) > div {
     color: hsl(250, 8%, 45%);
     font-size: 20px;
     font-weight: 500;
@@ -651,22 +651,38 @@ main > section#education_section > section:nth-child(2)>div{
     position: relative;
 }
 
-main>section#education_section>section:nth-child(2) i{
+main > section#education_section > section:nth-child(2) i {
     margin-right: 4px;
-    bottom: 1px  ;
+    bottom: 1px;
     position: relative;
 }
 
-main>section#education_section>section:nth-child(2)>div:last-child>i{
+main > section#education_section > section:nth-child(2) > div:last-child > i {
     margin-right: 7px;
 }
 
-main>section#education_section>section:last-child {
-    background: #50ac36;
+main > section#education_section > section:last-child {
+    /*background: #50ac36;*/
     margin-top: 69px;
     height: 610px;
+    position: relative;
 }
 
-main>section#education_section>section:nth-child(2)>div:hover ,main>section#education_section>section:nth-child(2)>div>i:hover{
+main > section#education_section > section:nth-child(2) > div:hover, main > section#education_section > section:nth-child(2) > div > i:hover {
     color: #7461E2;
+}
+
+main > section#education_section > section:nth-child(3) > div:first-child {
+    background: url(../images/Education_section_option_chart.png);
+    background-size: cover;
+    background-position: center;
+    width: 299px;
+    height: 492px;
+    border: 1px solid red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 10px;
+    margin: auto;
 }
