@@ -856,7 +856,7 @@ main > section#education_section > section:nth-child(3) > div:nth-child(4) > p:l
 /*====================== Skills Section ======================*/
 main > section#skills_section {
     /*border: 1px solid red;*/
-    /*background: orange;*/
+    background: orange;
     width: 100%;
     position: relative;
     /*height: 753px;*/
@@ -865,7 +865,7 @@ main > section#skills_section {
 main > section#skills_section > section:first-child {
     position: relative;
     height: 102px;
-    /*background: yellow;*/
+    background: yellow;
 }
 
 main > section#skills_section > section:first-child > h1 {
@@ -909,4 +909,18 @@ main > section#skills_section > section:first-child > h1::after {
 main > section#skills_section > section:first-child > h5 {
     margin: 0;
     display: none;
+}
+
+main > section#skills_section > section:nth-child(2) {
+    background: gray;
+    position: relative;
+}
+
+main > section#skills_section > section:nth-child(2) > h2:first-child {
+    position: absolute;
+    left: 10px;
+    right: 0;
+    top: 19px;
+    width: max-content;
+    margin: auto;
 }
