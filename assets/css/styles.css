@@ -12,6 +12,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/**::selection{
+    color: white;
+    background: #7461E2;
+}*/
+
 /*====================== CSS Variables ======================*/
 :root {
     --font-regular: 400;
