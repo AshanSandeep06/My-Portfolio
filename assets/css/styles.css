@@ -914,6 +914,7 @@ main > section#skills_section > section:first-child > h5 {
 main > section#skills_section > section:nth-child(2) {
     background: #ead4d4;
     position: relative;
+    height: 500px;
 }
 
 main > section#skills_section > section:nth-child(2) > h2:first-child {
@@ -926,4 +927,12 @@ main > section#skills_section > section:nth-child(2) > h2:first-child {
     top: 19px;
     width: max-content;
     margin: auto;
+}
+
+main > section#skills_section > section:nth-child(2)>section:nth-child(3) {
+    background: darkblue;
+    position: relative;
+    margin-top: 36px;
+    display: flex;
+    height: 350px;
 }
