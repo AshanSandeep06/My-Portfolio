@@ -4,10 +4,9 @@ body{
 
 body>div{
     background: gray;
-    border-top: 25px solid crimson;
-    border-right: 25px solid white;
-    border-left: 25px solid white;
-    border-bottom: 25px solid white;
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -15,13 +14,9 @@ body>div{
     left: 0;
     margin: auto;
     border-radius: 100%;
-    width: 450px;
-    height: 450px;
-    cursor: pointer;
 }
 
 body>div>h2{
-    font-family: poppins, sans-serif;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -30,20 +25,28 @@ body>div>h2{
     margin: auto;
     width: max-content;
     height: max-content;
-    font-size: 48px;
+    font-size: 28px;
     color: white;
 }
 
-div:hover{
+div::before{
+    content: '';
+    border: 25px solid white;
+    border-top: 25px solid crimson;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 100%;
+}
+
+div:hover::before{
     transform: rotate(360deg);
     transition-property: all;
     transition-duration: 2s;
 
     /* Shorthand Property */
     /*transition: all 2s;*/
-}
-
-div:hover>h2{
-    transform: rotate(-360deg);
-    transition: all 2s
 }
