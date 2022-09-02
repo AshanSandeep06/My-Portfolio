@@ -1,0 +1,37 @@
+body{
+    background: dodgerblue;
+}
+
+body>div{
+    background: gray;
+    border-top: 25px solid blue;
+    border-right: 25px solid white;
+    border-left: 25px solid white;
+    border-bottom: 25px solid white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 100%;
+    width: 450px;
+    height: 450px;
+}
+
+body>div>h2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    font-size: 48px;
+    color: white;
+}
+
+div:hover{
+
+}
