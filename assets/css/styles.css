@@ -936,4 +936,17 @@ main > section#skills_section > section:nth-child(2) > section:nth-child(3) {
     justify-content: space-evenly;
 }
 
+main > section#skills_section > section:nth-child(2) > section:nth-child(3)>div{
+    position: relative;
+    height: 126px;
+}
+
+main > section#skills_section > section:nth-child(2) > section:nth-child(3)>div>h5{
+    width: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 /* --------------------------------------------------------------------------- */
