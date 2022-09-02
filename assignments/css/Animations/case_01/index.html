@@ -8,42 +8,71 @@
     <link rel="stylesheet" href="../../../../assets/fonts/css/all.min.css">
 
     <style>
+        ::-webkit-scrollbar{
+            width: 0;
+        }
+
         div{
+            background: blue;
             width: 200px;
             height: 100px;
-            background: black;
-            border-radius: 20px;
+            border-radius: 25px;
+            position: absolute;
 
             animation-name: my-animation;
-            animation-duration: 10s;
             animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-duration: 4s;
+            animation-direction: alternate;
         }
 
         @keyframes my-animation {
-            0%{
-                background: yellow;
-            }
-
-            25%{
-                background: blue;
-
-            }
-
-            50%{
-                background: orange;
-
-            }
-
-            75%{
+            0% {
                 background: red;
+                /*margin: 0 0 0 0;*/
 
+                left: 0;
+                top: 0;
+                transform: rotate(0deg);
             }
 
-            100%{
-                background: mediumpurple;
+            25% {
+                background: orange;
+                /*margin: 0 0 0 400px;*/
 
+                top: 0;
+                left: 850px;
+                transform: rotate(180deg);
+            }
+
+            50% {
+                background: green;
+                /*margin: 400px 0 0 400px;*/
+
+                top: 450px;
+                left: 850px;
+                transform: rotate(360deg);
+            }
+
+            75% {
+                background: mediumpurple;
+                /*margin: 400px 0 0 0;*/
+
+                top: 450px;
+                left: 0;
+                transform: rotate(180deg);
+            }
+
+            100% {
+                background: yellow;
+                /*margin: 0 0 0 0;*/
+
+                left: 0;
+                top: 0;
+                transform: rotate(360deg);
             }
         }
+
     </style>
 
 </head>
