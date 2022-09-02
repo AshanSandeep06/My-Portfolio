@@ -4,7 +4,7 @@ body{
 
 body>div{
     background: gray;
-    border-top: 25px solid blue;
+    border-top: 25px solid crimson;
     border-right: 25px solid white;
     border-left: 25px solid white;
     border-bottom: 25px solid white;
@@ -17,6 +17,7 @@ body>div{
     border-radius: 100%;
     width: 450px;
     height: 450px;
+    cursor: pointer;
 }
 
 body>div>h2{
@@ -34,5 +35,10 @@ body>div>h2{
 }
 
 div:hover{
+    transform: rotate(360deg);
+    transition-property: all;
+    transition-duration: 2s;
 
+    /* Shorthand Property */
+    /*transition: all 2s;*/
 }
