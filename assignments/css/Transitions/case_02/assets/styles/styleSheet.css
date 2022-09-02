@@ -20,6 +20,7 @@ body>div{
 }
 
 body>div>h2{
+    font-family: poppins, sans-serif;
     position: absolute;
     top: 0;
     bottom: 0;
