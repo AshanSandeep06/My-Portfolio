@@ -42,3 +42,8 @@ div:hover{
     /* Shorthand Property */
     /*transition: all 2s;*/
 }
+
+div:hover>h2{
+    transform: rotate(-360deg);
+    transition: all 2s
+}
