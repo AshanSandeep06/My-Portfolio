@@ -1042,5 +1042,28 @@ main>section#skills_section>section:nth-child(3)>section {
     top: 50px;
 }
 
+main>section#skills_section>section:nth-child(3)>section>div>h5{
+    width: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>section#skills_section>section:nth-child(3)>section>div{
+    position: relative;
+    height: max-content;
+    width: max-content;
+}
+
+main>section#skills_section>section:nth-child(3)>section>div:nth-child(4)>img{
+    width: 162px;
+    height: 162px;
+}
+
+main>section#skills_section>section:nth-child(3)>section>div:nth-child(4)>h5{
+    font-weight: 600;
+    font-size: 26px;
+}
 
 /* --------------------------------------------------------------------------- */
