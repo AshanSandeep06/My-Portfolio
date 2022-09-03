@@ -1133,19 +1133,19 @@ main > section#skills_section > section:nth-child(3) > section > div:first-child
     border-radius: 100%;
 }
 
-main>section#skills_section>section:nth-child(2) div:first-of-type:hover i{
+main > section#skills_section > section:nth-child(2) div:first-of-type:hover i {
     color: #7461E2;
 }
 
-main>section#skills_section>section:nth-child(2) div:last-of-type:hover i{
+main > section#skills_section > section:nth-child(2) div:last-of-type:hover i {
     color: #7461E2;
 }
 
-main>section#skills_section>section:nth-child(3) div:first-of-type:hover i{
+main > section#skills_section > section:nth-child(3) div:first-of-type:hover i {
     color: #7461E2;
 }
 
-main>section#skills_section>section:nth-child(3) div:last-of-type:hover i{
+main > section#skills_section > section:nth-child(3) div:last-of-type:hover i {
     color: #7461E2;
 }
 
