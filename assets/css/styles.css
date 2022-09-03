@@ -1319,7 +1319,7 @@ main > section#projects_section > section:nth-child(3)> section:nth-child(1)>sec
 }
 
 main> section#projects_section>section:nth-child(3)>section:first-child>section:nth-child(2) {
-    width: 336px;
+    width: 260px;
     height: 72px;
     position: relative;
     display: flex;
@@ -1329,9 +1329,17 @@ main> section#projects_section>section:nth-child(3)>section:first-child>section:
 }
 
 main> section#projects_section>section:nth-child(3)>section:first-child>section:nth-child(2) i{
-    font-size: 48px;
+    font-size: 44px;
 }
 
+main> section#projects_section>section:nth-child(3)>section:first-child>section:nth-child(2)>i{
+    font-size: 10px;
+    color: hsl(250, 8%, 45%);
+}
+
+main> section#projects_section>section:nth-child(3)>section:first-child>section:nth-child(2)>i:nth-child(2){
+    color:  #7461E2;
+}
 
 
 
