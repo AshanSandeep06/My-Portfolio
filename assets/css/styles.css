@@ -1242,8 +1242,8 @@ main > section#projects_section > section:nth-child(3) > section:first-child {
     width: 50%;
     background: #9d9dc8;
     display: flex;
-   /* align-items: center;
-    justify-content: center;*/
+    /* align-items: center;
+     justify-content: center;*/
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -1254,7 +1254,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) {
     background: #585882;
 }
 
-main > section#projects_section > section:nth-child(3) > section:nth-child(1)> section:nth-child(1)>div:nth-child(1){
+main > section#projects_section > section:nth-child(3) > section:nth-child(1) > section:nth-child(1) > div:nth-child(1) {
     width: 323px;
     height: 404px;
     margin-right: -57px;
@@ -1262,7 +1262,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(1)> s
     position: relative;
 }
 
-main > section#projects_section > section:nth-child(3) > section:nth-child(1)>section:nth-child(1)>div:nth-child(2){
+main > section#projects_section > section:nth-child(3) > section:nth-child(1) > section:nth-child(1) > div:nth-child(2) {
     width: 380px;
     height: 481px;
     z-index: 1;
@@ -1270,7 +1270,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(1)>se
     position: relative;
 }
 
-main > section#projects_section > section:nth-child(3) > section:nth-child(1)>section:nth-child(1)>div:nth-child(3){
+main > section#projects_section > section:nth-child(3) > section:nth-child(1) > section:nth-child(1) > div:nth-child(3) {
     width: 323px;
     height: 404px;
     margin-left: -57px;
@@ -1278,7 +1278,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(1)>se
     position: relative;
 }
 
-main > section#projects_section > section:nth-child(3) > section:nth-child(1)>section:nth-child(1) {
+main > section#projects_section > section:nth-child(3) > section:nth-child(1) > section:nth-child(1) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1288,7 +1288,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(1)>se
     top: 13px;
 }
 
-main > section#projects_section > section:nth-child(3)> section:nth-child(1)>section:nth-child(1)>div:first-child>nav{
+main > section#projects_section > section:nth-child(3) > section:nth-child(1) > section:nth-child(1) > div:first-child > nav {
     background: url(../images/Hotel_Reservation_Project_SS.jpeg);
     background-size: cover;
     background-position: center;
@@ -1303,7 +1303,7 @@ main > section#projects_section > section:nth-child(3)> section:nth-child(1)>sec
     margin: auto;
 }
 
-main > section#projects_section > section:nth-child(3)> section:nth-child(1)>section:nth-child(1)>div:nth-child(2)>nav{
+main > section#projects_section > section:nth-child(3) > section:nth-child(1) > section:nth-child(1) > div:nth-child(2) > nav {
     background: url(../images/Pos_System_Project_SS.jpeg);
     background-size: cover;
     background-position: center;
@@ -1317,7 +1317,7 @@ main > section#projects_section > section:nth-child(3)> section:nth-child(1)>sec
     margin: auto;
 }
 
-main > section#projects_section > section:nth-child(3)> section:nth-child(1)>section:nth-child(1)>div:nth-child(3)>nav{
+main > section#projects_section > section:nth-child(3) > section:nth-child(1) > section:nth-child(1) > div:nth-child(3) > nav {
     background: url(../images/Vehicle_Parking_System_Project_SS.jpeg);
     background-size: cover;
     background-position: center;
@@ -1333,7 +1333,7 @@ main > section#projects_section > section:nth-child(3)> section:nth-child(1)>sec
     margin: auto;
 }
 
-main> section#projects_section>section:nth-child(3)>section:first-child>section:nth-child(2) {
+main > section#projects_section > section:nth-child(3) > section:first-child > section:nth-child(2) {
     width: 260px;
     height: 72px;
     position: relative;
@@ -1343,20 +1343,20 @@ main> section#projects_section>section:nth-child(3)>section:first-child>section:
     right: 5px;
 }
 
-main> section#projects_section>section:nth-child(3)>section:first-child>section:nth-child(2) i{
+main > section#projects_section > section:nth-child(3) > section:first-child > section:nth-child(2) i {
     font-size: 44px;
 }
 
-main> section#projects_section>section:nth-child(3)>section:first-child>section:nth-child(2)>i{
+main > section#projects_section > section:nth-child(3) > section:first-child > section:nth-child(2) > i {
     font-size: 10px;
     color: hsl(250, 8%, 45%);
 }
 
-main> section#projects_section>section:nth-child(3)>section:first-child>section:nth-child(2)>i:nth-child(2){
-    color:  #7461E2;
+main > section#projects_section > section:nth-child(3) > section:first-child > section:nth-child(2) > i:nth-child(2) {
+    color: #7461E2;
 }
 
-main> section#projects_section>section:nth-child(3)>section:first-child>section:nth-child(1)>div>p{
+main > section#projects_section > section:nth-child(3) > section:first-child > section:nth-child(1) > div > p {
     position: absolute;
     left: 0;
     right: 0;
@@ -1365,7 +1365,7 @@ main> section#projects_section>section:nth-child(3)>section:first-child>section:
     width: max-content;
 }
 
-main> section#projects_section>section:nth-child(3)>section:first-child>section:nth-child(1)>div>pre{
+main > section#projects_section > section:nth-child(3) > section:first-child > section:nth-child(1) > div > pre {
     position: absolute;
     right: 0;
     left: 0;
