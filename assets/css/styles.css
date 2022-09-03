@@ -1015,5 +1015,17 @@ main > section#skills_section > section:nth-child(2) > section:nth-child(2) > di
     font-size: 48px;
 }
 
+main>section#skills_section>section:nth-child(3)>h2{
+    font-weight: 500;
+    font-size: 25px;
+    color: hsl(250, 8%, 45%);
+    position: absolute;
+    left: 10px;
+    right: 0;
+    top: 19px;
+    width: max-content;
+    margin: auto;
+}
+
 
 /* --------------------------------------------------------------------------- */
