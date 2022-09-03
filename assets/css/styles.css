@@ -873,9 +873,9 @@ main > section#skills_section > section:first-child {
 }
 
 main > section#skills_section > section:nth-child(3) {
-    background: yellow;
+    /*background: yellow;*/
     position: relative;
-    height: 440px;
+    height: 420px;
 }
 
 main > section#skills_section > section:first-child > h1 {
@@ -924,7 +924,8 @@ main > section#skills_section > section:first-child > h5 {
 main > section#skills_section > section:nth-child(2) {
     /*background: #ead4d4;*/
     position: relative;
-    height: 440px;
+    height: 420px;
+
 }
 
 main > section#skills_section > section:nth-child(2) > h2:first-child {
@@ -934,7 +935,7 @@ main > section#skills_section > section:nth-child(2) > h2:first-child {
     position: absolute;
     left: 10px;
     right: 0;
-    top: 19px;
+    top: 9px;
     width: max-content;
     margin: auto;
 }
@@ -951,7 +952,7 @@ main > section#skills_section > section:nth-child(2) > section:nth-child(2) {
     left: 0;
     right: 0;
     margin: auto;
-    top: 50px;
+    top: 40px;
 }
 
 main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div {
@@ -1022,13 +1023,13 @@ main > section#skills_section > section:nth-child(3) > h2 {
     position: absolute;
     left: 10px;
     right: 0;
-    top: 19px;
+    top: 9px;
     width: max-content;
     margin: auto;
 }
 
 main > section#skills_section > section:nth-child(3) > section {
-    background: #b5b5c5;
+    /*background: #b5b5c5;*/
     position: absolute;
     /* margin-top: 36px; */
     display: flex;
@@ -1039,7 +1040,7 @@ main > section#skills_section > section:nth-child(3) > section {
     left: 0;
     right: 0;
     margin: auto;
-    top: 50px;
+    top: 36px;
 }
 
 main > section#skills_section > section:nth-child(3) > section > div > h5 {
