@@ -1070,7 +1070,8 @@ main > section#skills_section > section:nth-child(3) > section > div:nth-child(4
 }
 
 main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(5) > h5 {
-    left: 8px;
+    /*left: 8px;*/
+    right: 1px;
 }
 
 main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(3) > img, main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(5) > img {
