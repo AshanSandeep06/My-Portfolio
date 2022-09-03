@@ -1027,5 +1027,20 @@ main>section#skills_section>section:nth-child(3)>h2{
     margin: auto;
 }
 
+main>section#skills_section>section:nth-child(3)>section {
+    background: #b5b5c5;
+    position: absolute;
+    /* margin-top: 36px; */
+    display: flex;
+    height: 350px;
+    align-items: center;
+    justify-content: space-between;
+    width: 82%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50px;
+}
+
 
 /* --------------------------------------------------------------------------- */
