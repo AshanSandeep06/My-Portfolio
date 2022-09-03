@@ -1015,7 +1015,7 @@ main > section#skills_section > section:nth-child(2) > section:nth-child(2) > di
     font-size: 48px;
 }
 
-main>section#skills_section>section:nth-child(3)>h2{
+main > section#skills_section > section:nth-child(3) > h2 {
     font-weight: 500;
     font-size: 25px;
     color: hsl(250, 8%, 45%);
@@ -1027,7 +1027,7 @@ main>section#skills_section>section:nth-child(3)>h2{
     margin: auto;
 }
 
-main>section#skills_section>section:nth-child(3)>section {
+main > section#skills_section > section:nth-child(3) > section {
     background: #b5b5c5;
     position: absolute;
     /* margin-top: 36px; */
@@ -1042,7 +1042,7 @@ main>section#skills_section>section:nth-child(3)>section {
     top: 50px;
 }
 
-main>section#skills_section>section:nth-child(3)>section>div>h5{
+main > section#skills_section > section:nth-child(3) > section > div > h5 {
     width: max-content;
     position: absolute;
     left: 0;
@@ -1051,24 +1051,24 @@ main>section#skills_section>section:nth-child(3)>section>div>h5{
     font-weight: 500;
 }
 
-main>section#skills_section>section:nth-child(3)>section>div{
+main > section#skills_section > section:nth-child(3) > section > div {
     position: relative;
     height: max-content;
     width: max-content;
 }
 
-main>section#skills_section>section:nth-child(3)>section>div:nth-child(4)>img{
+main > section#skills_section > section:nth-child(3) > section > div:nth-child(4) > img {
     width: 162px;
     height: 162px;
 }
 
-main>section#skills_section>section:nth-child(3)>section>div:nth-child(4)>h5{
+main > section#skills_section > section:nth-child(3) > section > div:nth-child(4) > h5 {
     font-weight: 600;
     font-size: 26px;
     left: 8px;
 }
 
-main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(5) > h5{
+main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(5) > h5 {
     left: 8px;
 }
 
