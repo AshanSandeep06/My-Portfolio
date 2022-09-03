@@ -12,6 +12,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+* {
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
 /**::selection{
     color: white;
     background: #7461E2;
