@@ -1090,4 +1090,22 @@ main > section#skills_section > section:nth-child(3) > section:nth-child(2) > di
     font-size: 17px;
 }
 
+main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:first-child {
+    position: relative;
+    top: 6px;
+    /* right: 24px; */
+    height: max-content;
+    width: max-content;
+    font-size: 48px;
+}
+
+main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(7) {
+    position: relative;
+    top: 6px;
+    /* left: 24px; */
+    height: max-content;
+    width: max-content;
+    font-size: 48px;
+}
+
 /* --------------------------------------------------------------------------- */
