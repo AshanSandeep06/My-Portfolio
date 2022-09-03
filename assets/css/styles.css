@@ -972,6 +972,7 @@ main > section#skills_section > section:nth-child(2) > section:nth-child(2) > di
 main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(4) > h5 {
     font-weight: 600;
     font-size: 26px;
+    left: -2px;
 }
 
 main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(4) > img {
