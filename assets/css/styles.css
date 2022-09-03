@@ -1158,7 +1158,7 @@ main > section#projects_section {
     /*background: #e5dfce;*/
     width: 100%;
     position: relative;
-    /*height: 753px;*/
+    height: 690px;
 }
 
 main > section#projects_section > section:first-child {
@@ -1219,6 +1219,7 @@ main > section#projects_section > section:nth-child(2) {
     left: 0;
     right: 0;
     margin: auto;
+    /*background: darkblue;*/
 }
 
 main > section#projects_section > section:nth-child(2) > h2 {
@@ -1229,8 +1230,22 @@ main > section#projects_section > section:nth-child(2) > h2 {
     margin: 0;
 }
 
-main > section#projects_section > section:nth-child(3){
-    background: navajowhite;
+main > section#projects_section > section:nth-child(3) {
+    background: #dabe96;
+    position: relative;
+    top: 36px;
+    height: 552px;
+    display: flex;
+}
+
+main > section#projects_section > section:nth-child(3) > section:first-child {
+    width: 50%;
+    background: #9d9dc8;
+}
+
+main > section#projects_section > section:nth-child(3) > section:nth-child(2) {
+    width: 50%;
+    background: #585882;
 }
 
 
