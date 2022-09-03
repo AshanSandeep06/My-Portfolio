@@ -1341,6 +1341,25 @@ main> section#projects_section>section:nth-child(3)>section:first-child>section:
     color:  #7461E2;
 }
 
+main> section#projects_section>section:nth-child(3)>section:first-child>section:nth-child(1)>div>p{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15px;
+    margin: auto;
+    width: max-content;
+}
+
+main> section#projects_section>section:nth-child(3)>section:first-child>section:nth-child(1)>div>pre{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+    margin: auto;
+    width: max-content;
+    font-family: poppins, sans-serif;
+}
+
 
 
 
