@@ -1158,7 +1158,7 @@ main > section#projects_section {
     /*background: #e5dfce;*/
     width: 100%;
     position: relative;
-    height: 690px;
+    height: 770px;
 }
 
 main > section#projects_section > section:first-child {
@@ -1214,11 +1214,11 @@ main > section#projects_section > section:nth-child(2) {
     display: flex;
     justify-content: space-around;
     height: 36px;
-    width: 1156px;
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
+    width: 1492px;
     /*background: darkblue;*/
 }
 
@@ -1234,13 +1234,19 @@ main > section#projects_section > section:nth-child(3) {
     background: #dabe96;
     position: relative;
     top: 36px;
-    height: 552px;
     display: flex;
+    height: 632px;
 }
 
 main > section#projects_section > section:nth-child(3) > section:first-child {
     width: 50%;
     background: #9d9dc8;
+    display: flex;
+   /* align-items: center;
+    justify-content: center;*/
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 main > section#projects_section > section:nth-child(3) > section:nth-child(2) {
@@ -1248,6 +1254,83 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) {
     background: #585882;
 }
 
+main > section#projects_section > section:nth-child(3) > section:nth-child(1)> section:nth-child(1)>div:nth-child(1){
+    width: 323px;
+    height: 404px;
+    margin-right: -57px;
+    background: deeppink;
+}
+
+main > section#projects_section > section:nth-child(3) > section:nth-child(1)>section:nth-child(1)>div:nth-child(2){
+    width: 380px;
+    height: 481px;
+    z-index: 1;
+    background: orange;
+    position: relative;
+}
+
+main > section#projects_section > section:nth-child(3) > section:nth-child(1)>section:nth-child(1)>div:nth-child(3){
+    width: 323px;
+    height: 404px;
+    margin-left: -57px;
+    background: yellow;
+}
+
+main > section#projects_section > section:nth-child(3) > section:nth-child(1)>section:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 91%;
+    height: 512px;
+    position: relative;
+    top: 13px;
+}
+
+main > section#projects_section > section:nth-child(3)> section:nth-child(1)>section:nth-child(1)>div:first-child>nav{
+    background: url("../images/Hotel_Reservation_Project_SS.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 133px;
+    display: inline-block;
+}
+
+main > section#projects_section > section:nth-child(3)> section:nth-child(1)>section:nth-child(1)>div:nth-child(2)>nav{
+    background: url("../images/Pos_System_Project_SS.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 260px;
+    height: 142px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 86px;
+    margin: auto;
+}
+
+main > section#projects_section > section:nth-child(3)> section:nth-child(1)>section:nth-child(1)>div:nth-child(3)>nav{
+    background: url("../images/Vehicle_Parking_System_Project_SS.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 260px;
+    height: 142px;
+    display: inline-block;
+}
+
+main> section#projects_section>section:nth-child(3)>section:first-child>section:nth-child(2) {
+    width: 336px;
+    height: 72px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 5px;
+}
+
+main> section#projects_section>section:nth-child(3)>section:first-child>section:nth-child(2) i{
+    font-size: 48px;
+}
 
 
 
