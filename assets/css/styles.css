@@ -861,7 +861,6 @@ main > section#education_section > section:nth-child(3) > div:nth-child(4) > p:l
 /*====================== Skills Section ======================*/
 main > section#skills_section {
     /*background: orange;*/
-    background: #cbbea6;
     width: 100%;
     position: relative;
     /*height: 753px;*/
@@ -1156,7 +1155,7 @@ main > section#skills_section > section:nth-child(3) div:last-of-type:hover i {
 
 /*====================== Projects and Assignments Section ======================*/
 main > section#projects_section {
-    background: orange;
+    /*background: #e5dfce;*/
     width: 100%;
     position: relative;
     /*height: 753px;*/
@@ -1165,7 +1164,73 @@ main > section#projects_section {
 main > section#projects_section > section:first-child {
     position: relative;
     height: 102px;
-    background: yellow;
+    /*background: yellow;*/
+}
+
+main > section#projects_section > section:first-child > h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: max-content;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 17px;
+    padding-bottom: 17px;
+    text-transform: uppercase;
+}
+
+main > section#projects_section > section:first-child > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 172px;
+    height: 1px;
+    background: #ddd;
+    bottom: 3px;
+    left: calc(34% - 60px);
+}
+
+main > section#projects_section > section:first-child > h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 64px;
+    height: 3px;
+    background: #7461E2;
+    bottom: 2px;
+    left: calc(42% - 20px);
+}
+
+main > section#projects_section > section:first-child > h5 {
+    margin: 0;
+    display: none;
+}
+
+main > section#projects_section > section:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    height: 36px;
+    width: 1156px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*background: #f1baba;*/
+    /*margin-bottom: 33px;*/
+}
+
+main > section#projects_section > section:nth-child(2)>h2{
+    font-weight: 500;
+    font-size: 25px;
+    color: hsl(250, 8%, 45%);
+    position: relative;
+    /* width: max-content; */
+    /* height: max-content; */
+    margin: 0;
 }
 
 
