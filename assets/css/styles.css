@@ -1219,17 +1219,13 @@ main > section#projects_section > section:nth-child(2) {
     left: 0;
     right: 0;
     margin: auto;
-    /*background: #f1baba;*/
-    /*margin-bottom: 33px;*/
 }
 
-main > section#projects_section > section:nth-child(2)>h2{
+main > section#projects_section > section:nth-child(2) > h2 {
     font-weight: 500;
     font-size: 25px;
     color: hsl(250, 8%, 45%);
     position: relative;
-    /* width: max-content; */
-    /* height: max-content; */
     margin: 0;
 }
 
