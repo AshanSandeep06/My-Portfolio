@@ -1229,6 +1229,10 @@ main > section#projects_section > section:nth-child(2) > h2 {
     margin: 0;
 }
 
+main > section#projects_section > section:nth-child(3){
+    background: navajowhite;
+}
+
 
 
 
