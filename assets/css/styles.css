@@ -1456,6 +1456,21 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
     font-size: 15px;
 }
 
+main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) > div:first-child > nav {
+    background: url(../images/Hotel_Reservation_Project_SS.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 271px;
+    height: 142px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 18px;
+    right: 0;
+    bottom: 83px;
+    margin: auto;
+}
+
 
 
 
