@@ -1611,7 +1611,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
 
 /*====================== Services Section ======================*/
 main > section#services_section {
-    background: orange;
+    /*background: orange;*/
     width: 100%;
     position: relative;
     height: 803px;
@@ -1620,7 +1620,7 @@ main > section#services_section {
 main > section#services_section > section:first-child {
     position: relative;
     height: 102px;
-    background-color: darkgray;
+    /*background-color: darkgray;*/
 }
 
 main > section#services_section > section:first-child > h1 {
@@ -1659,6 +1659,11 @@ main > section#services_section > section:first-child > h1::after {
     background: #7461E2;
     bottom: 2px;
     left: calc(44% - 20px);
+}
+
+main > section#services_section > section:first-child > h5 {
+    margin: 0;
+    display: none;
 }
 
 
