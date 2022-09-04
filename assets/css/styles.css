@@ -2064,8 +2064,7 @@ main > section#activities_section > section:last-child{
     right: 0;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    z-index: 1;
+    /*flex-wrap: wrap;*/
 }
 
 
