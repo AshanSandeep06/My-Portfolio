@@ -1260,24 +1260,33 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(1) > 
     width: 323px;
     height: 404px;
     margin-right: -57px;
-    background: #FBFBFE;
     position: relative;
+    background: #f6f6f6;
+    box-shadow: inset 236px 16px 65px #ffffff, inset -16px 49px 50px rgba(15, 29, 134, 0.16);
+    filter: drop-shadow(-23px -23px 45px rgba(13, 39, 80, 0.15)) drop-shadow(28px 28px 50px rgba(13, 39, 80, 0.16));
 }
 
 main > section#projects_section > section:nth-child(3) > section:nth-child(1) > section:nth-child(1) > div:nth-child(2) {
+
     width: 380px;
     height: 481px;
     z-index: 1;
-    background: #FBFBFE;
+    background: #ffffff;
     position: relative;
+    filter: drop-shadow(-25px 35px 45px rgba(13, 39, 80, 0.15)) drop-shadow(28px 28px 50px rgba(13, 39, 80, 0.16));
 }
 
 main > section#projects_section > section:nth-child(3) > section:nth-child(1) > section:nth-child(1) > div:nth-child(3) {
     width: 323px;
     height: 404px;
     margin-left: -57px;
-    background: #FBFBFE;
+    /* background: #f6f6f6; */
+    /*background: #fafafd;*/
+    /*background: #fbfbfb;*/
+    background: #fdfdfd;
     position: relative;
+    /*box-shadow: inset 236px 16px 65px #ffffff, inset -16px 49px 50px rgba(15, 29, 134, 0.16);*/
+    filter: drop-shadow(-23px -23px 45px rgba(13, 39, 80, 0.15)) drop-shadow(28px 28px 50px rgba(13, 39, 80, 0.16));
 }
 
 main > section#projects_section > section:nth-child(3) > section:nth-child(1) > section:nth-child(1) {
@@ -1519,7 +1528,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
 }
 
 main > section#projects_section>section:nth-child(3) div{
-    border: 1px solid #000000;
+    border: 1px solid #ebe5e5;
     border-radius: 53px;
 }
 
