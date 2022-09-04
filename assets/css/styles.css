@@ -1240,7 +1240,6 @@ main > section#projects_section > section:nth-child(3) {
 
 main > section#projects_section > section:nth-child(3) > section:first-child {
     width: 50%;
-    background: #9d9dc8;
     display: flex;
     /* align-items: center;
      justify-content: center;*/
@@ -1251,7 +1250,6 @@ main > section#projects_section > section:nth-child(3) > section:first-child {
 
 main > section#projects_section > section:nth-child(3) > section:nth-child(2) {
     width: 50%;
-    background: #585882;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1367,7 +1365,7 @@ main > section#projects_section > section:nth-child(3) > section:first-child > s
     top: 37px;
     margin: auto;
     width: max-content;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 15px;
 }
 
@@ -1375,12 +1373,12 @@ main > section#projects_section > section:nth-child(3) > section:first-child > s
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 40px;
+    bottom: 148px;
     margin: auto;
     width: max-content;
     font-family: poppins, sans-serif;
     color: hsl(250, 8%, 45%);
-    font-size: 16px;
+    font-size: 15px;
 }
 
 main > section#projects_section > section:nth-child(3) > section:first-child > section:nth-child(1) > div:nth-child(2)>p {
@@ -1452,7 +1450,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
     top: 37px;
     margin: auto;
     width: max-content;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 15px;
 }
 
@@ -1525,9 +1523,28 @@ main > section#projects_section>section:nth-child(3) div{
     border-radius: 53px;
 }
 
+main > section#projects_section > section:nth-child(3)>section:first-child>section:first-child>div:nth-child(2)>a{
+    background-color: hsl(250, 69%, 61%);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 49px;
+    margin: auto;
+    width: 120px;
+}
 
-
-
+main > section#projects_section > section:nth-child(3)>section:first-child>section:first-child>div:nth-child(2)>a>i{
+    font-size: 15px;
+    margin-left: 8px;
+    transition: .3s;
+}
 
 
 
