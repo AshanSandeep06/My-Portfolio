@@ -1676,8 +1676,6 @@ main > section#services_section > section:nth-child(2){
     z-index: 1;
 }
 
-/*-----------------------*/
-
 main > section#services_section > section:nth-child(2)>div:first-child {
     position: relative;
     left: 0;
@@ -1837,8 +1835,6 @@ main > section#services_section > section:nth-child(2)>div:nth-child(3)>p{
     color: hsl(250, 8%, 45%);
 }
 
-/* -----------------------*/
-
 main > section#services_section > section:nth-child(2)>div:nth-child(4){
     position: relative;
     left: 0;
@@ -1892,8 +1888,6 @@ main > section#services_section > section:nth-child(2)>div:nth-child(4)>p{
     color: hsl(250, 8%, 45%);
 }
 
-/* -----------------------*/
-
 main > section#services_section > section:nth-child(2)>div:nth-child(5){
     position: relative;
     left: 0;
@@ -1946,6 +1940,9 @@ main > section#services_section > section:nth-child(2)>div:nth-child(5)>p{
     line-height: 24px;
     color: hsl(250, 8%, 45%);
 }
+
+
+
 
 
 
