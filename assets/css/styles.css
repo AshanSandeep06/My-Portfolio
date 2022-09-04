@@ -1679,6 +1679,8 @@ main > section#services_section > section:nth-child(2){
     z-index: 1;
 }
 
+/*-----------------------*/
+
 main > section#services_section > section:nth-child(2)>div:first-child {
     position: relative;
     left: 0;
@@ -1878,6 +1880,58 @@ main > section#services_section > section:nth-child(2)>div:nth-child(4)>p{
     margin: auto;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: #9494A1 !important;
+}
+
+/* -----------------------*/
+
+main > section#services_section > section:nth-child(2)>div:nth-child(5){
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto auto 65px;
+    width: 356px;
+    height: 356px;
+    background: #ECF0F3;
+    box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 25px;
+}
+
+main > section#services_section > section:nth-child(2)>div:nth-child(5)>div{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    height: 50px;
+    margin: auto;
+}
+
+main > section#services_section > section:nth-child(2)>div:nth-child(5)>div>i{
+    color: #7461E2;
+    font-size: 2.40em;
+}
+
+main > section#services_section > section:nth-child(2)>div:nth-child(5)>h4{
+    position: absolute;
+    top: 84px;
+    left: 0;
+    right: 0;
+    font-size: 22px;
+    text-align: center;
+    color: #000000;
+}
+
+main > section#services_section > section:nth-child(2)>div:nth-child(5)>p{
+    position: absolute;
+    width: 264px;
+    top: 155px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
     font-size: 20px;
     line-height: 24px;
     color: #9494A1 !important;
