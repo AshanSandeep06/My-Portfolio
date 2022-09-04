@@ -1597,6 +1597,14 @@ main > section#projects_section > section:nth-child(3)>section:nth-child(1)>sect
     left: 19px;
 }
 
+main > section#projects_section > section:nth-child(3)>section:first-child>section:first-child>div:nth-child(2)>a:hover {
+    background-color: #5A43CB;
+}
+
+main > section#projects_section > section:nth-child(3)>section:nth-child(2)>section:first-child>div:nth-child(2)>a:hover{
+    background-color: #5A43CB;
+}
+
 
 
 
