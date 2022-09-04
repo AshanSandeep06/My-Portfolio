@@ -1765,7 +1765,8 @@ main > section#services_section > section:nth-child(2)>div:nth-child(2)>h4{
     top: 84px;
     left: 0;
     right: 0;
-    font-size: 22px;
+    font-size: 21px;
+    font-weight: 600;
     text-align: center;
     color: #000000;
 }
@@ -1815,7 +1816,8 @@ main > section#services_section > section:nth-child(2)>div:nth-child(3)>h4{
     top: 84px;
     left: 0;
     right: 0;
-    font-size: 22px;
+    font-size: 21px;
+    font-weight: 600;
     text-align: center;
     color: #000000;
 }
@@ -1867,7 +1869,8 @@ main > section#services_section > section:nth-child(2)>div:nth-child(4)>h4{
     top: 84px;
     left: 0;
     right: 0;
-    font-size: 22px;
+    font-size: 21px;
+    font-weight: 600;
     text-align: center;
     color: #000000;
 }
@@ -1919,7 +1922,8 @@ main > section#services_section > section:nth-child(2)>div:nth-child(5)>h4{
     top: 84px;
     left: 0;
     right: 0;
-    font-size: 22px;
+    font-size: 21px;
+    font-weight: 600;
     text-align: center;
     color: #000000;
 }
