@@ -1663,7 +1663,7 @@ main > section#services_section > section:first-child > h5 {
     display: none;
 }
 
-main > section#services_section > section:nth-child(2){
+main > section#services_section > section:nth-child(2) {
     position: absolute;
     width: 1280px;
     height: 803px;
@@ -1676,7 +1676,7 @@ main > section#services_section > section:nth-child(2){
     z-index: 1;
 }
 
-main > section#services_section > section:nth-child(2)>div:first-child {
+main > section#services_section > section:nth-child(2) > div:first-child {
     position: relative;
     left: 0;
     right: 0;
@@ -1689,7 +1689,7 @@ main > section#services_section > section:nth-child(2)>div:first-child {
     border-radius: 25px;
 }
 
-main > section#services_section > section:nth-child(2)>div:first-child>div {
+main > section#services_section > section:nth-child(2) > div:first-child > div {
     position: absolute;
     top: 48px;
     left: 0;
@@ -1699,12 +1699,12 @@ main > section#services_section > section:nth-child(2)>div:first-child>div {
     margin: auto;
 }
 
-main > section#services_section > section:nth-child(2)>div:first-child>div>i {
+main > section#services_section > section:nth-child(2) > div:first-child > div > i {
     color: #7461E2;
     font-size: 2.40em;
 }
 
-main > section#services_section > section:nth-child(2)>div:first-child>h4{
+main > section#services_section > section:nth-child(2) > div:first-child > h4 {
     position: absolute;
     top: 84px;
     left: 0;
@@ -1715,7 +1715,7 @@ main > section#services_section > section:nth-child(2)>div:first-child>h4{
     color: #000000;
 }
 
-main > section#services_section > section:nth-child(2)>div:first-child>p{
+main > section#services_section > section:nth-child(2) > div:first-child > p {
     position: absolute;
     width: 300px;
     top: 165px;
@@ -1729,7 +1729,7 @@ main > section#services_section > section:nth-child(2)>div:first-child>p{
     color: hsl(250, 8%, 45%);
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(2){
+main > section#services_section > section:nth-child(2) > div:nth-child(2) {
     position: relative;
     left: 0;
     right: 0;
@@ -1742,7 +1742,7 @@ main > section#services_section > section:nth-child(2)>div:nth-child(2){
     border-radius: 25px;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(2)>div{
+main > section#services_section > section:nth-child(2) > div:nth-child(2) > div {
     position: absolute;
     top: 48px;
     left: 0;
@@ -1752,12 +1752,12 @@ main > section#services_section > section:nth-child(2)>div:nth-child(2)>div{
     margin: auto;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(2)>div>i{
+main > section#services_section > section:nth-child(2) > div:nth-child(2) > div > i {
     color: #7461E2;
     font-size: 2.40em;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(2)>h4{
+main > section#services_section > section:nth-child(2) > div:nth-child(2) > h4 {
     position: absolute;
     top: 84px;
     left: 0;
@@ -1768,7 +1768,7 @@ main > section#services_section > section:nth-child(2)>div:nth-child(2)>h4{
     color: #000000;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(2)>p{
+main > section#services_section > section:nth-child(2) > div:nth-child(2) > p {
     position: absolute;
     width: 300px;
     top: 165px;
@@ -1782,7 +1782,7 @@ main > section#services_section > section:nth-child(2)>div:nth-child(2)>p{
     color: hsl(250, 8%, 45%);
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(3){
+main > section#services_section > section:nth-child(2) > div:nth-child(3) {
     position: relative;
     left: 0;
     right: 0;
@@ -1795,7 +1795,7 @@ main > section#services_section > section:nth-child(2)>div:nth-child(3){
     border-radius: 25px;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(3)>div{
+main > section#services_section > section:nth-child(2) > div:nth-child(3) > div {
     position: absolute;
     top: 48px;
     left: 0;
@@ -1805,12 +1805,12 @@ main > section#services_section > section:nth-child(2)>div:nth-child(3)>div{
     margin: auto;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(3)>div>i{
+main > section#services_section > section:nth-child(2) > div:nth-child(3) > div > i {
     color: #7461E2;
     font-size: 2.40em;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(3)>h4{
+main > section#services_section > section:nth-child(2) > div:nth-child(3) > h4 {
     position: absolute;
     top: 84px;
     left: 0;
@@ -1821,7 +1821,7 @@ main > section#services_section > section:nth-child(2)>div:nth-child(3)>h4{
     color: #000000;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(3)>p{
+main > section#services_section > section:nth-child(2) > div:nth-child(3) > p {
     position: absolute;
     width: 300px;
     top: 165px;
@@ -1835,7 +1835,7 @@ main > section#services_section > section:nth-child(2)>div:nth-child(3)>p{
     color: hsl(250, 8%, 45%);
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(4){
+main > section#services_section > section:nth-child(2) > div:nth-child(4) {
     position: relative;
     left: 0;
     right: 0;
@@ -1848,7 +1848,7 @@ main > section#services_section > section:nth-child(2)>div:nth-child(4){
     border-radius: 25px;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(4)>div{
+main > section#services_section > section:nth-child(2) > div:nth-child(4) > div {
     position: absolute;
     top: 48px;
     left: 0;
@@ -1858,12 +1858,12 @@ main > section#services_section > section:nth-child(2)>div:nth-child(4)>div{
     margin: auto;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(4)>div>i{
+main > section#services_section > section:nth-child(2) > div:nth-child(4) > div > i {
     color: #7461E2;
     font-size: 2.40em;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(4)>h4{
+main > section#services_section > section:nth-child(2) > div:nth-child(4) > h4 {
     position: absolute;
     top: 84px;
     left: 0;
@@ -1874,7 +1874,7 @@ main > section#services_section > section:nth-child(2)>div:nth-child(4)>h4{
     color: #000000;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(4)>p{
+main > section#services_section > section:nth-child(2) > div:nth-child(4) > p {
     position: absolute;
     width: 300px;
     top: 165px;
@@ -1888,7 +1888,7 @@ main > section#services_section > section:nth-child(2)>div:nth-child(4)>p{
     color: hsl(250, 8%, 45%);
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(5){
+main > section#services_section > section:nth-child(2) > div:nth-child(5) {
     position: relative;
     left: 0;
     right: 0;
@@ -1901,7 +1901,7 @@ main > section#services_section > section:nth-child(2)>div:nth-child(5){
     border-radius: 25px;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(5)>div{
+main > section#services_section > section:nth-child(2) > div:nth-child(5) > div {
     position: absolute;
     top: 48px;
     left: 0;
@@ -1911,12 +1911,12 @@ main > section#services_section > section:nth-child(2)>div:nth-child(5)>div{
     margin: auto;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(5)>div>i{
+main > section#services_section > section:nth-child(2) > div:nth-child(5) > div > i {
     color: #7461E2;
     font-size: 2.40em;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(5)>h4{
+main > section#services_section > section:nth-child(2) > div:nth-child(5) > h4 {
     position: absolute;
     top: 84px;
     left: 0;
@@ -1927,7 +1927,7 @@ main > section#services_section > section:nth-child(2)>div:nth-child(5)>h4{
     color: #000000;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(5)>p{
+main > section#services_section > section:nth-child(2) > div:nth-child(5) > p {
     position: absolute;
     width: 300px;
     top: 165px;
@@ -1942,7 +1942,7 @@ main > section#services_section > section:nth-child(2)>div:nth-child(5)>p{
 }
 
 /*    */
-main > section#services_section > section:nth-child(2)>div:nth-child(6){
+main > section#services_section > section:nth-child(2) > div:nth-child(6) {
     position: relative;
     left: 0;
     right: 0;
@@ -1955,7 +1955,7 @@ main > section#services_section > section:nth-child(2)>div:nth-child(6){
     border-radius: 25px;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(6)>div{
+main > section#services_section > section:nth-child(2) > div:nth-child(6) > div {
     position: absolute;
     top: 48px;
     left: 0;
@@ -1965,12 +1965,12 @@ main > section#services_section > section:nth-child(2)>div:nth-child(6)>div{
     margin: auto;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(6)>div>i{
+main > section#services_section > section:nth-child(2) > div:nth-child(6) > div > i {
     color: #7461E2;
     font-size: 2.40em;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(6)>h4{
+main > section#services_section > section:nth-child(2) > div:nth-child(6) > h4 {
     position: absolute;
     top: 84px;
     left: 0;
@@ -1981,7 +1981,7 @@ main > section#services_section > section:nth-child(2)>div:nth-child(6)>h4{
     color: #000000;
 }
 
-main > section#services_section > section:nth-child(2)>div:nth-child(6)>p{
+main > section#services_section > section:nth-child(2) > div:nth-child(6) > p {
     position: absolute;
     width: 300px;
     top: 165px;
@@ -2053,7 +2053,7 @@ main > section#activities_section > section:first-child > h5 {
     display: none;
 }
 
-main > section#activities_section > section:last-child{
+main > section#activities_section > section:last-child {
     position: absolute;
     width: 1380px;
     /*height: 233px;*/
@@ -2065,7 +2065,7 @@ main > section#activities_section > section:last-child{
     justify-content: space-between;
 }
 
-main>section#activities_section> section:last-child>div{
+main > section#activities_section > section:last-child > div {
     width: 250px;
     height: 182px;
     position: relative;
@@ -2075,7 +2075,7 @@ main>section#activities_section> section:last-child>div{
     border-radius: 16px;
 }
 
-main>section#activities_section> section:last-child>div>p{
+main > section#activities_section > section:last-child > div > p {
     position: relative;
     text-align: center;
     bottom: -112px;
@@ -2083,7 +2083,7 @@ main>section#activities_section> section:last-child>div>p{
     font-weight: 600;
 }
 
-main>section#activities_section> section:last-child div.DivImages{
+main > section#activities_section > section:last-child div.DivImages {
     width: 90px;
     height: 90px;
     position: absolute;
@@ -2093,31 +2093,31 @@ main>section#activities_section> section:last-child div.DivImages{
     top: 16px;
 }
 
-main>section#activities_section> section:last-child>div:first-child>div{
+main > section#activities_section > section:last-child > div:first-child > div {
     background: url(../images/Movies.png);
     background-size: cover;
     background-position: center;
 }
 
-main>section#activities_section> section:last-child>div:nth-child(2)>div{
+main > section#activities_section > section:last-child > div:nth-child(2) > div {
     background: url(../images/Watching.png);
     background-size: cover;
     background-position: center;
 }
 
-main>section#activities_section> section:last-child>div:nth-child(3)>div{
+main > section#activities_section > section:last-child > div:nth-child(3) > div {
     background: url(../images/Music.png);
     background-size: cover;
     background-position: center;
 }
 
-main>section#activities_section> section:last-child>div:nth-child(4)>div{
+main > section#activities_section > section:last-child > div:nth-child(4) > div {
     background: url(../images/Gym.png);
     background-size: cover;
     background-position: center;
 }
 
-main>section#activities_section> section:last-child>div:nth-child(5)>div{
+main > section#activities_section > section:last-child > div:nth-child(5) > div {
     background: url(../images/Web_Surfing.png);
     background-size: cover;
     background-position: center;
