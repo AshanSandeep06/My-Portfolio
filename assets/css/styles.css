@@ -1502,6 +1502,22 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
     font-size: 16px;
 }
 
+main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) > div:nth-child(3) > nav {
+    background: url(../images/Vehicle_Parking_System_Project_SS.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 234px;
+    height: 142px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 23px;
+    bottom: 83px;
+    /* top: 0; */
+    margin: auto;
+}
+
 
 
 
