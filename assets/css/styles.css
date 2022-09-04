@@ -2070,8 +2070,8 @@ main > section#activities_section > section:last-child{
 main>section#activities_section> section:last-child>div{
     width: 250px;
     height: 182px;
-    background-color: white;
     position: relative;
+    background: #fafaff;
     box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
     border-radius: 16px;
 }
