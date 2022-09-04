@@ -2256,5 +2256,24 @@ main > section#contact_section > section:last-child > aside>div:nth-child(3)>div
 main>section#contact_section>section:last-child>aside i{
     color: #7461E2;
     font-size: 30px;
+    margin-right: 15px;
+    width: 30px;
 }
 
+main>section#contact_section>section:last-child>aside>div>div{
+    display: flex;
+    flex-direction: column;
+}
+
+main>section#contact_section>section:last-child>aside>div>div>h4{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+main>section#contact_section>section:last-child>aside>div>div>p{
+    margin: 0;
+}
+
+main>section#contact_section>section:last-child>aside>div{
+    margin-bottom: 18px;
+}
