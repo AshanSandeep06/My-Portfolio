@@ -2314,4 +2314,10 @@ main > section#contact_section > section:last-child > section:nth-child(2){
     height: 665px;
 }
 
+main > section#contact_section > section:last-child > section:nth-child(2)>section:last-child >form{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
 
