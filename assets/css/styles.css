@@ -1357,6 +1357,7 @@ main > section#projects_section > section:nth-child(3) > section:first-child > s
 
 main > section#projects_section > section:nth-child(3) > section:first-child > section:nth-child(2) i {
     font-size: 44px;
+    color: #7461E2;
 }
 
 main > section#projects_section > section:nth-child(3) > section:first-child > section:nth-child(2) > i {
