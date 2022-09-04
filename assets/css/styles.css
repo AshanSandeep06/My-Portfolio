@@ -1429,6 +1429,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
     z-index: 1;
     background: #FBFBFE;
     position: relative;
+    filter: drop-shadow(-25px 35px 45px rgba(13, 39, 80, 0.15)) drop-shadow(28px 28px 50px rgba(13, 39, 80, 0.16));
 }
 
 main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) > div:nth-child(3) {
