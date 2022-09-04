@@ -2057,14 +2057,20 @@ main > section#activities_section > section:first-child > h5 {
 main > section#activities_section > section:last-child{
     background-color: navajowhite;
     position: absolute;
-    width: 1280px;
+    width: 1372px;
     height: 803px;
     top: 133px;
     left: 0;
     right: 0;
     margin: auto;
     display: flex;
-    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+}
+
+main>section#activities_section> section:last-child>div{
+    width: 250px;
+    height: 182px;
+    background-color: white;
 }
 
 
