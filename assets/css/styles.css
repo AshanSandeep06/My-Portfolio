@@ -1164,7 +1164,6 @@ main > section#projects_section {
 main > section#projects_section > section:first-child {
     position: relative;
     height: 102px;
-    /*background: yellow;*/
 }
 
 main > section#projects_section > section:first-child > h1 {
@@ -1219,7 +1218,6 @@ main > section#projects_section > section:nth-child(2) {
     right: 0;
     margin: auto;
     width: 1492px;
-    /*background: darkblue;*/
 }
 
 main > section#projects_section > section:nth-child(2) > h2 {
@@ -1231,7 +1229,6 @@ main > section#projects_section > section:nth-child(2) > h2 {
 }
 
 main > section#projects_section > section:nth-child(3) {
-    /*background: #dabe96;*/
     position: relative;
     top: 36px;
     display: flex;
@@ -1241,8 +1238,6 @@ main > section#projects_section > section:nth-child(3) {
 main > section#projects_section > section:nth-child(3) > section:first-child {
     width: 50%;
     display: flex;
-    /* align-items: center;
-     justify-content: center;*/
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
