@@ -1457,7 +1457,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
 }
 
 main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) > div:first-child > nav {
-    background: url(../images/Hotel_Reservation_Project_SS.jpeg);
+    background: url(../images/CSS_Assignment-02.jpg);
     background-size: cover;
     background-position: center;
     width: 271px;
@@ -1477,17 +1477,18 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
 }
 
 main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) > div:nth-child(2) > nav {
-    background: url(../images/Pos_System_Project_SS.jpeg);
+    background: url(../images/CSS_Assignment-01.jpg);
     background-size: cover;
     background-position: center;
     width: 273px;
-    height: 155px;
+    height: 134px;
     display: inline-block;
     position: absolute;
     left: 0;
     right: 0;
     top: 86px;
     margin: auto;
+    border: 1px solid #c3bebe;
 }
 
 main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) > div > pre {
@@ -1503,7 +1504,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
 }
 
 main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) > div:nth-child(3) > nav {
-    background: url(../images/Vehicle_Parking_System_Project_SS.jpeg);
+    background: url(../images/CSS_GridLayout_Assignment.jpg);
     background-size: cover;
     background-position: center;
     width: 234px;
