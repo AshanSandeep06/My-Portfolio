@@ -2072,14 +2072,16 @@ main>section#activities_section> section:last-child>div{
     height: 182px;
     background-color: white;
     position: relative;
+    box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 16px;
 }
 
 main>section#activities_section> section:last-child>div>p{
     position: relative;
     text-align: center;
-    font-size: 18px;
-    /* color: #d5c7c7; */
-    bottom: -106px;
+    bottom: -112px;
+    font-size: 19px;
+    font-weight: 600;
 }
 
 main>section#activities_section> section:last-child div.DivImages{
