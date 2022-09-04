@@ -1695,11 +1695,11 @@ main > section#services_section > section:nth-child(2)>div:first-child {
 
 main > section#services_section > section:nth-child(2)>div:first-child>div {
     position: absolute;
-    top: 50px;
+    top: 48px;
     left: 0;
     right: 0;
-    width: fit-content;
-    height: 50px;
+    width: max-content;
+    height: 40px;
     margin: auto;
 }
 
@@ -1720,15 +1720,15 @@ main > section#services_section > section:nth-child(2)>div:first-child>h4{
 
 main > section#services_section > section:nth-child(2)>div:first-child>p{
     position: absolute;
-    width: 264px;
-    top: 155px;
+    width: 300px;
+    top: 160px;
     left: 0;
     right: 0;
     margin: auto;
     text-align: center;
     font-size: 20px;
     line-height: 24px;
-    color: #9494A1 !important;
+    color: #9494A1;
 }
 
 main > section#services_section > section:nth-child(2)>div:nth-child(2){
@@ -1745,11 +1745,11 @@ main > section#services_section > section:nth-child(2)>div:nth-child(2){
 
 main > section#services_section > section:nth-child(2)>div:nth-child(2)>div{
     position: absolute;
-    top: 50px;
+    top: 48px;
     left: 0;
     right: 0;
-    width: fit-content;
-    height: 50px;
+    width: max-content;
+    height: 40px;
     margin: auto;
 }
 
@@ -1770,15 +1770,15 @@ main > section#services_section > section:nth-child(2)>div:nth-child(2)>h4{
 
 main > section#services_section > section:nth-child(2)>div:nth-child(2)>p{
     position: absolute;
-    width: 264px;
-    top: 155px;
+    width: 300px;
+    top: 160px;
     left: 0;
     right: 0;
     margin: auto;
     text-align: center;
     font-size: 20px;
     line-height: 24px;
-    color: #9494A1 !important;
+    color: #9494A1;
 }
 
 main > section#services_section > section:nth-child(2)>div:nth-child(3){
@@ -1795,11 +1795,11 @@ main > section#services_section > section:nth-child(2)>div:nth-child(3){
 
 main > section#services_section > section:nth-child(2)>div:nth-child(3)>div{
     position: absolute;
-    top: 50px;
+    top: 48px;
     left: 0;
     right: 0;
-    width: fit-content;
-    height: 50px;
+    width: max-content;
+    height: 40px;
     margin: auto;
 }
 
@@ -1820,16 +1820,15 @@ main > section#services_section > section:nth-child(2)>div:nth-child(3)>h4{
 
 main > section#services_section > section:nth-child(2)>div:nth-child(3)>p{
     position: absolute;
-    width: 264px;
-    top: 155px;
+    width: 300px;
+    top: 160px;
     left: 0;
     right: 0;
     margin: auto;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     line-height: 24px;
-    color: #9494A1 !important;
+    color: #9494A1;
 }
 
 /* -----------------------*/
@@ -1848,11 +1847,11 @@ main > section#services_section > section:nth-child(2)>div:nth-child(4){
 
 main > section#services_section > section:nth-child(2)>div:nth-child(4)>div{
     position: absolute;
-    top: 50px;
+    top: 48px;
     left: 0;
     right: 0;
-    width: fit-content;
-    height: 50px;
+    width: max-content;
+    height: 40px;
     margin: auto;
 }
 
@@ -1873,16 +1872,15 @@ main > section#services_section > section:nth-child(2)>div:nth-child(4)>h4{
 
 main > section#services_section > section:nth-child(2)>div:nth-child(4)>p{
     position: absolute;
-    width: 264px;
-    top: 155px;
+    width: 300px;
+    top: 160px;
     left: 0;
     right: 0;
     margin: auto;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     line-height: 24px;
-    color: #9494A1 !important;
+    color: #9494A1;
 }
 
 /* -----------------------*/
@@ -1901,11 +1899,11 @@ main > section#services_section > section:nth-child(2)>div:nth-child(5){
 
 main > section#services_section > section:nth-child(2)>div:nth-child(5)>div{
     position: absolute;
-    top: 50px;
+    top: 48px;
     left: 0;
     right: 0;
-    width: fit-content;
-    height: 50px;
+    width: max-content;
+    height: 40px;
     margin: auto;
 }
 
@@ -1926,15 +1924,15 @@ main > section#services_section > section:nth-child(2)>div:nth-child(5)>h4{
 
 main > section#services_section > section:nth-child(2)>div:nth-child(5)>p{
     position: absolute;
-    width: 264px;
-    top: 155px;
+    width: 300px;
+    top: 160px;
     left: 0;
     right: 0;
     margin: auto;
     text-align: center;
     font-size: 20px;
     line-height: 24px;
-    color: #9494A1 !important;
+    color: #9494A1;
 }
 
 
