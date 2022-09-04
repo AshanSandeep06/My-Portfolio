@@ -1609,6 +1609,12 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
 /* --------------------------------------------------------------------------- */
 
 /*====================== Services Section ======================*/
+main > section#services_section {
+    background: orange;
+    width: 100%;
+    position: relative;
+    height: 803px;
+}
 
 
 
