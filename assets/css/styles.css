@@ -1610,7 +1610,6 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
 
 /*====================== Services Section ======================*/
 main > section#services_section {
-    background: orange;
     width: 100%;
     position: relative;
     height: 1000px;
@@ -1619,7 +1618,6 @@ main > section#services_section {
 main > section#services_section > section:first-child {
     position: relative;
     height: 102px;
-    background-color: darkgray;
 }
 
 main > section#services_section > section:first-child > h1 {
