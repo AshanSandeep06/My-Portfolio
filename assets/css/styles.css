@@ -1155,7 +1155,8 @@ main > section#skills_section > section:nth-child(3) div:last-of-type:hover i {
 
 /*====================== Projects and Assignments Section ======================*/
 main > section#projects_section {
-    background: #fafaff;
+    /*background: #fafaff;*/
+    background-color: cornflowerblue;
     width: 100%;
     position: relative;
     height: 803px;
@@ -1614,6 +1615,12 @@ main > section#services_section {
     width: 100%;
     position: relative;
     height: 803px;
+}
+
+main > section#services_section > section:first-child {
+    position: relative;
+    height: 102px;
+    background-color: darkgray;
 }
 
 
