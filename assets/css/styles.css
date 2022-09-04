@@ -1520,6 +1520,10 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
     border: 1px solid #c3bebe;
 }
 
+main > section#projects_section>section:nth-child(3) div{
+    border: 1px solid #000000;
+    border-radius: 53px;
+}
 
 
 
