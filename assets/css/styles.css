@@ -2320,4 +2320,10 @@ main > section#contact_section > section:last-child > section:nth-child(2)>secti
     gap: 29px;
 }
 
+main > section#contact_section > section:last-child > section:nth-child(2)>section:last-child >form#contactForm>div:first-child{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
 
