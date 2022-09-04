@@ -1394,7 +1394,7 @@ main > section#projects_section > section:nth-child(3) > section:first-child > s
     font-size: 15px;
 }
 
-main > section#projects_section > section:nth-child(3) > section:first-child > section:nth-child(1) > div:nth-child(2)>p {
+main > section#projects_section > section:nth-child(3) > section:first-child > section:nth-child(1) > div:nth-child(2) > p {
     font-size: 21px;
     top: 20px;
 }
@@ -1490,7 +1490,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
     margin: auto;
 }
 
-main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) > div:nth-child(2)>p {
+main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) > div:nth-child(2) > p {
     font-size: 21px;
     top: 20px;
 }
@@ -1539,12 +1539,12 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
     border: 1px solid #c3bebe;
 }
 
-main > section#projects_section>section:nth-child(3) div{
+main > section#projects_section > section:nth-child(3) div {
     border: 1px solid #ebe5e5;
     border-radius: 53px;
 }
 
-main > section#projects_section > section:nth-child(3)>section:first-child>section:first-child>div:nth-child(2)>a{
+main > section#projects_section > section:nth-child(3) > section:first-child > section:first-child > div:nth-child(2) > a {
     background-color: hsl(250, 69%, 61%);
     color: white;
     border-radius: 0.5rem;
@@ -1561,13 +1561,13 @@ main > section#projects_section > section:nth-child(3)>section:first-child>secti
     width: 120px;
 }
 
-main > section#projects_section > section:nth-child(3)>section:first-child>section:first-child>div:nth-child(2)>a>i{
+main > section#projects_section > section:nth-child(3) > section:first-child > section:first-child > div:nth-child(2) > a > i {
     font-size: 15px;
     margin-left: 8px;
     transition: .3s;
 }
 
-main > section#projects_section > section:nth-child(3)>section:nth-child(2)>section:first-child>div:nth-child(2)>a{
+main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:first-child > div:nth-child(2) > a {
     background-color: hsl(250, 69%, 61%);
     color: white;
     border-radius: 0.5rem;
@@ -1584,7 +1584,7 @@ main > section#projects_section > section:nth-child(3)>section:nth-child(2)>sect
     width: 120px;
 }
 
-main > section#projects_section > section:nth-child(3)>section:nth-child(2)>section:first-child>div:nth-child(2)>a>i{
+main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:first-child > div:nth-child(2) > a > i {
     font-size: 15px;
     margin-left: 8px;
     transition: .3s;
@@ -1599,15 +1599,15 @@ main > section#projects_section > section:nth-child(2) > h2:nth-child(2) {
     left: 21px;
 }
 
-main > section#projects_section > section:nth-child(3)>section:nth-child(1)>section:nth-child(1)>div:nth-child(3)>p{
+main > section#projects_section > section:nth-child(3) > section:nth-child(1) > section:nth-child(1) > div:nth-child(3) > p {
     left: 19px;
 }
 
-main > section#projects_section > section:nth-child(3)>section:first-child>section:first-child>div:nth-child(2)>a:hover {
+main > section#projects_section > section:nth-child(3) > section:first-child > section:first-child > div:nth-child(2) > a:hover {
     background-color: #5A43CB;
 }
 
-main > section#projects_section > section:nth-child(3)>section:nth-child(2)>section:first-child>div:nth-child(2)>a:hover{
+main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:first-child > div:nth-child(2) > a:hover {
     background-color: #5A43CB;
 }
 
