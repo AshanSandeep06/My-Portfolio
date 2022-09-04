@@ -1610,7 +1610,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
 
 /*====================== Services Section ======================*/
 main > section#services_section {
-    /*background: orange;*/
+    background: orange;
     width: 100%;
     position: relative;
     height: 1000px;
@@ -1666,7 +1666,7 @@ main > section#services_section > section:first-child > h5 {
 }
 
 main > section#services_section > section:nth-child(2){
-    /*background-color: deepskyblue;*/
+    background-color: deepskyblue;
     position: absolute;
     width: 1280px;
     height: 711px;
@@ -1687,7 +1687,7 @@ main > section#services_section > section:nth-child(2)>div:first-child {
     width: 356px;
     height: 356px;
     background: #ECF0F3;
-    box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgb(13 39 80 / 16%);
+    box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
     border-radius: 25px;
 }
 
