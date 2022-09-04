@@ -2126,7 +2126,61 @@ main > section#activities_section > section:last-child > div:nth-child(5) > div 
 /* --------------------------------------------------------------------------- */
 
 /*====================== Contact Section ======================*/
+main > section#contact_section {
+    position: relative;
+    width: 100%;
+    /*background: orange;*/
+    height: max-content;
+}
 
+main > section#contact_section > section:first-child {
+    position: relative;
+    height: 102px;
+    /*background-color: darkgray;*/
+}
+
+main > section#contact_section > section:first-child > h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: max-content;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 17px;
+    padding-bottom: 17px;
+    text-transform: uppercase;
+}
+
+main > section#contact_section > section:first-child > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 224px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(28% - 60px);
+}
+
+main > section#contact_section > section:first-child > h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 82px;
+    height: 3px;
+    background: #7461E2;
+    bottom: 0;
+    left: calc(41% - 20px);
+}
+
+main > section#contact_section > section:first-child > h5 {
+    margin: 0;
+    display: none;
+}
 
 
 
