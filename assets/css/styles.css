@@ -1546,6 +1546,29 @@ main > section#projects_section > section:nth-child(3)>section:first-child>secti
     transition: .3s;
 }
 
+main > section#projects_section > section:nth-child(3)>section:nth-child(2)>section:first-child>div:nth-child(2)>a{
+    background-color: hsl(250, 69%, 61%);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 49px;
+    margin: auto;
+    width: 120px;
+}
+
+main > section#projects_section > section:nth-child(3)>section:nth-child(2)>section:first-child>div:nth-child(2)>a>i{
+    font-size: 15px;
+    margin-left: 8px;
+    transition: .3s;
+}
+
 
 
 
