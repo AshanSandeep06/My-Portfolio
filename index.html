@@ -585,17 +585,22 @@ Restaurant using Java FX</pre>
                 <section>
                     <form action="details" method="post">
                         <div>
-                            <input type="text" id="clientName" placeholder="Your Name">
+                            <div>
+                                <input type="text" id="clientName" placeholder="Your Name">
+                            </div>
+                            <div>
+                                <input type="email" id="clientEmail" placeholder="Email" required>
+                            </div>
                         </div>
-                        <div>
-                            <input type="email" id="clientEmail" placeholder="Email" required>
-                        </div>
+
                         <div>
                             <input type="text" id="clientSubject" placeholder="Subject" required>
                         </div>
+
                         <div>
                             <textarea name="message" placeholder="Message" required></textarea>
                         </div>
+
                         <div>
                             <button type="button">Send Message</button>
                         </div>
