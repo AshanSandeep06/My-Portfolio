@@ -2058,8 +2058,8 @@ main > section#activities_section > section:last-child{
     background-color: navajowhite;
     position: absolute;
     width: 1380px;
-    height: 803px;
-    top: 133px;
+    /*height: 233px;*/
+    top: 126px;
     left: 0;
     right: 0;
     margin: auto;
