@@ -2216,7 +2216,7 @@ main > section#contact_section > section:last-child > aside {
     flex-direction: column;
     position: relative;
     left: 112px;
-    top: 64px;
+    /*top: 64px;*/
 }
 
 /*------------*/
@@ -2294,7 +2294,7 @@ main > section#contact_section > section:last-child > section:last-child {
     display: inline-block;
     position: relative;
     left: 185px;
-    /*background: red;*/
+    background: red;
     width: 700px;
     height: 550px;
 }
