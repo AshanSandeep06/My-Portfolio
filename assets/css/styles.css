@@ -1774,14 +1774,15 @@ main > section#services_section > section:nth-child(2)>div:nth-child(2)>h4{
 main > section#services_section > section:nth-child(2)>div:nth-child(2)>p{
     position: absolute;
     width: 300px;
-    top: 160px;
+    top: 165px;
     left: 0;
     right: 0;
     margin: auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 400;
     line-height: 24px;
-    color: #9494A1;
+    color: hsl(250, 8%, 45%);
 }
 
 main > section#services_section > section:nth-child(2)>div:nth-child(3){
@@ -1825,14 +1826,15 @@ main > section#services_section > section:nth-child(2)>div:nth-child(3)>h4{
 main > section#services_section > section:nth-child(2)>div:nth-child(3)>p{
     position: absolute;
     width: 300px;
-    top: 160px;
+    top: 165px;
     left: 0;
     right: 0;
     margin: auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 400;
     line-height: 24px;
-    color: #9494A1;
+    color: hsl(250, 8%, 45%);
 }
 
 /* -----------------------*/
@@ -1878,14 +1880,15 @@ main > section#services_section > section:nth-child(2)>div:nth-child(4)>h4{
 main > section#services_section > section:nth-child(2)>div:nth-child(4)>p{
     position: absolute;
     width: 300px;
-    top: 160px;
+    top: 165px;
     left: 0;
     right: 0;
     margin: auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 400;
     line-height: 24px;
-    color: #9494A1;
+    color: hsl(250, 8%, 45%);
 }
 
 /* -----------------------*/
@@ -1931,14 +1934,15 @@ main > section#services_section > section:nth-child(2)>div:nth-child(5)>h4{
 main > section#services_section > section:nth-child(2)>div:nth-child(5)>p{
     position: absolute;
     width: 300px;
-    top: 160px;
+    top: 165px;
     left: 0;
     right: 0;
     margin: auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 400;
     line-height: 24px;
-    color: #9494A1;
+    color: hsl(250, 8%, 45%);
 }
 
 
