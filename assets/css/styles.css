@@ -2260,7 +2260,7 @@ main > section#contact_section > section:last-child > aside > div:nth-child(3) >
 
 main > section#contact_section > section:last-child > aside i {
     color: #7461E2;
-    font-size: 30px;
+    font-size: 32px;
     margin-right: 36px;
     width: 30px;
     left: 8px;
@@ -2275,10 +2275,15 @@ main > section#contact_section > section:last-child > aside > div > div {
 main > section#contact_section > section:last-child > aside > div > div > h4 {
     margin: 0;
     margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 20px;
+    color: hsl(250, 8%, 15%);
 }
 
 main > section#contact_section > section:last-child > aside > div > div > p {
     margin: 0;
+    color: hsl(250, 8%, 65%);
+    font-size: 15px;
 }
 
 main > section#contact_section > section:last-child > aside > div {
@@ -2293,3 +2298,9 @@ main > section#contact_section > section:last-child > section:last-child {
     width: 700px;
     height: 550px;
 }
+
+main > section#contact_section > section:last-child > aside>div:last-child i{
+    left: 11.3px;
+}
+
+
