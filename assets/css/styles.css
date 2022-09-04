@@ -2001,7 +2001,7 @@ main > section#services_section > section:nth-child(2)>div:nth-child(6)>p{
 main > section#activities_section {
     width: 100%;
     position: relative;
-    height: 950px;
+    height: 340px;
     background-color: orange;
 }
 
