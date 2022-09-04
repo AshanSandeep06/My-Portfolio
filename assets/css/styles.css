@@ -2265,3 +2265,8 @@ main > section#contact_section > section:last-child > aside>div:nth-child(3)>div
     background: gray;
 }
 
+main>section#contact_section>section:last-child>aside i{
+    color: #7461E2;
+    font-size: 30px;
+}
+
