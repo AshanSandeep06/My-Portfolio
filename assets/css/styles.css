@@ -1666,7 +1666,6 @@ main > section#services_section > section:first-child > h5 {
 }
 
 main > section#services_section > section:nth-child(2){
-    background-color: deepskyblue;
     position: absolute;
     width: 1280px;
     height: 803px;
