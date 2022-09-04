@@ -2001,14 +2001,13 @@ main > section#services_section > section:nth-child(2)>div:nth-child(6)>p{
 main > section#activities_section {
     width: 100%;
     position: relative;
-    height: 340px;
-    background-color: orange;
+    height: 380px;
+    background: #fafaff;
 }
 
 main > section#activities_section > section:first-child {
     position: relative;
     height: 102px;
-    background-color: #cbcbaa;
 }
 
 main > section#activities_section > section:first-child > h1 {
@@ -2055,7 +2054,6 @@ main > section#activities_section > section:first-child > h5 {
 }
 
 main > section#activities_section > section:last-child{
-    background-color: navajowhite;
     position: absolute;
     width: 1380px;
     /*height: 233px;*/
@@ -2071,7 +2069,7 @@ main>section#activities_section> section:last-child>div{
     width: 250px;
     height: 182px;
     position: relative;
-    background: #fafaff;
+    background: #f8f8f8;
     box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
     border-radius: 16px;
 }
