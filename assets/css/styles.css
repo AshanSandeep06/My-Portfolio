@@ -2092,6 +2092,36 @@ main>section#activities_section> section:last-child div.DivImages{
     top: 8px;
 }
 
+main>section#activities_section> section:last-child>div:first-child>div{
+    background: url(../images/Movies.png);
+    background-size: cover;
+    background-position: center;
+}
+
+main>section#activities_section> section:last-child>div:nth-child(2)>div{
+    background: url(../images/Movies.png);
+    background-size: cover;
+    background-position: center;
+}
+
+main>section#activities_section> section:last-child>div:nth-child(3)>div{
+    background: url(../images/Movies.png);
+    background-size: cover;
+    background-position: center;
+}
+
+main>section#activities_section> section:last-child>div:nth-child(4)>div{
+    background: url(../images/Movies.png);
+    background-size: cover;
+    background-position: center;
+}
+
+main>section#activities_section> section:last-child>div:nth-child(5)>div{
+    background: url(../images/Movies.png);
+    background-size: cover;
+    background-position: center;
+}
+
 
 
 
