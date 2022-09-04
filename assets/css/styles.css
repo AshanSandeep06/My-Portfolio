@@ -1158,7 +1158,7 @@ main > section#projects_section {
     background: #fafaff;
     width: 100%;
     position: relative;
-    height: 770px;
+    height: 803px;
 }
 
 main > section#projects_section > section:first-child {
@@ -1235,7 +1235,7 @@ main > section#projects_section > section:nth-child(3) {
     position: relative;
     top: 36px;
     display: flex;
-    height: 632px;
+    height: 665px;
 }
 
 main > section#projects_section > section:nth-child(3) > section:first-child {
