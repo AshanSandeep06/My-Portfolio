@@ -1941,6 +1941,60 @@ main > section#services_section > section:nth-child(2)>div:nth-child(5)>p{
     color: hsl(250, 8%, 45%);
 }
 
+/*    */
+main > section#services_section > section:nth-child(2)>div:nth-child(6){
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto auto 65px;
+    width: 340px;
+    height: 340px;
+    /*background: #ECF0F3;*/
+    background: #fafaff;
+    box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 25px;
+}
+
+main > section#services_section > section:nth-child(2)>div:nth-child(6)>div{
+    position: absolute;
+    top: 48px;
+    left: 0;
+    right: 0;
+    width: max-content;
+    height: 40px;
+    margin: auto;
+}
+
+main > section#services_section > section:nth-child(2)>div:nth-child(6)>div>i{
+    color: #7461E2;
+    font-size: 2.40em;
+}
+
+main > section#services_section > section:nth-child(2)>div:nth-child(6)>h4{
+    position: absolute;
+    top: 84px;
+    left: 0;
+    right: 0;
+    font-size: 21px;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+}
+
+main > section#services_section > section:nth-child(2)>div:nth-child(6)>p{
+    position: absolute;
+    width: 300px;
+    top: 165px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    color: hsl(250, 8%, 45%);
+}
+
 /* --------------------------------------------------------------------------- */
 
 /*====================== Activities Section ======================*/
