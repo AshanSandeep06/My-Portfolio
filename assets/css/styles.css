@@ -2130,7 +2130,7 @@ main > section#contact_section {
     position: relative;
     width: 100%;
     background: orange;
-    height: 850px;
+    height: 890px;
 }
 
 main > section#contact_section > section:first-child {
@@ -2184,7 +2184,7 @@ main > section#contact_section > section:first-child > h5 {
 
 main > section#contact_section > section:last-child {
     background: lightgoldenrodyellow;
-    height: 650px;
+    height: fit-content;
     width: 100%;
 }
 
@@ -2217,6 +2217,7 @@ main > section#contact_section > section:last-child > section:nth-child(2)>aside
     position: relative;
     left: 112px;
     /*top: 64px;*/
+    bottom: 76px;
 }
 
 /*------------*/
@@ -2291,16 +2292,26 @@ main > section#contact_section > section:last-child > section:nth-child(2)>aside
 }
 
 main > section#contact_section > section:last-child > section:nth-child(2)>section:last-child {
-    display: inline-block;
     position: relative;
     left: 185px;
     background: red;
-    width: 700px;
+    width: 859px;
     height: 550px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 69px;
 }
 
 main > section#contact_section > section:last-child > section:nth-child(2)>aside>div:last-child i{
     left: 11.3px;
+}
+
+main > section#contact_section > section:last-child > section:nth-child(2){
+    width: 100%;
+    position: relative;
+    height: 665px;
 }
 
 
