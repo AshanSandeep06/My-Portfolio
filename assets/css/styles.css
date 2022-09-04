@@ -2129,14 +2129,14 @@ main > section#activities_section > section:last-child > div:nth-child(5) > div 
 main > section#contact_section {
     position: relative;
     width: 100%;
-    background: orange;
+    /*background: orange;*/
     height: 890px;
 }
 
 main > section#contact_section > section:first-child {
     position: relative;
     height: 102px;
-    background-color: darkgray;
+    /*background-color: darkgray;*/
 }
 
 main > section#contact_section > section:first-child > h1 {
@@ -2183,13 +2183,13 @@ main > section#contact_section > section:first-child > h5 {
 }
 
 main > section#contact_section > section:last-child {
-    background: lightgoldenrodyellow;
+    /*background: lightgoldenrodyellow;*/
     height: fit-content;
     width: 100%;
 }
 
 main > section#contact_section > section:last-child > section:first-child {
-    background: darksalmon;
+    /*background: darksalmon;*/
     position: relative;
     width: 100%;
     height: 69px;
@@ -2208,7 +2208,7 @@ main > section#contact_section > section:last-child > section:first-child > h4 {
     margin-bottom: 10px;
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2)>aside {
+main > section#contact_section > section:last-child > section:nth-child(2) > aside {
     width: 350px;
     height: 210px;
     /*background: green;*/
@@ -2222,44 +2222,44 @@ main > section#contact_section > section:last-child > section:nth-child(2)>aside
 
 /*------------*/
 
-main > section#contact_section > section:last-child > section:nth-child(2)>aside > div:first-child {
+main > section#contact_section > section:last-child > section:nth-child(2) > aside > div:first-child {
     /*background: yellow;*/
     display: flex;
     /*justify-content: space-around;*/
     align-items: center;
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2)>aside > div:first-child > div:nth-child(2) {
+main > section#contact_section > section:last-child > section:nth-child(2) > aside > div:first-child > div:nth-child(2) {
     /*background: gray;*/
 }
 
 /*------------*/
 
-main > section#contact_section > section:last-child > section:nth-child(2)>aside > div:nth-child(2) {
+main > section#contact_section > section:last-child > section:nth-child(2) > aside > div:nth-child(2) {
     /*background: yellow;*/
     display: flex;
     /*justify-content: space-around;*/
     align-items: center;
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2)>aside > div:nth-child(2) > div:nth-child(2) {
+main > section#contact_section > section:last-child > section:nth-child(2) > aside > div:nth-child(2) > div:nth-child(2) {
     /*background: gray;*/
 }
 
 /*------------*/
 
-main > section#contact_section > section:last-child > section:nth-child(2)>aside > div:nth-child(3) {
+main > section#contact_section > section:last-child > section:nth-child(2) > aside > div:nth-child(3) {
     /*background: yellow;*/
     display: flex;
     /*justify-content: space-around;*/
     align-items: center;
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2)>aside > div:nth-child(3) > div:nth-child(2) {
+main > section#contact_section > section:last-child > section:nth-child(2) > aside > div:nth-child(3) > div:nth-child(2) {
     /*background: gray;*/
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2)>aside i {
+main > section#contact_section > section:last-child > section:nth-child(2) > aside i {
     color: #7461E2;
     font-size: 32px;
     margin-right: 36px;
@@ -2268,12 +2268,12 @@ main > section#contact_section > section:last-child > section:nth-child(2)>aside
     position: relative;
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2)>aside > div > div {
+main > section#contact_section > section:last-child > section:nth-child(2) > aside > div > div {
     display: flex;
     flex-direction: column;
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2)>aside > div > div > h4 {
+main > section#contact_section > section:last-child > section:nth-child(2) > aside > div > div > h4 {
     margin: 0;
     margin-bottom: 4px;
     font-weight: 500;
@@ -2281,20 +2281,20 @@ main > section#contact_section > section:last-child > section:nth-child(2)>aside
     color: hsl(250, 8%, 15%);
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2)>aside > div > div > p {
+main > section#contact_section > section:last-child > section:nth-child(2) > aside > div > div > p {
     margin: 0;
     color: hsl(250, 8%, 65%);
     font-size: 15px;
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2)>aside > div {
+main > section#contact_section > section:last-child > section:nth-child(2) > aside > div {
     margin-bottom: 33px;
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2)>section:last-child {
+main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child {
     position: relative;
     left: 185px;
-    background: red;
+    /*background: red;*/
     width: 859px;
     height: 550px;
 
@@ -2302,27 +2302,28 @@ main > section#contact_section > section:last-child > section:nth-child(2)>secti
     align-items: center;
     justify-content: center;
     margin-top: 69px;
+    border: 1px solid red;
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2)>aside>div:last-child i{
+main > section#contact_section > section:last-child > section:nth-child(2) > aside > div:last-child i {
     left: 11.3px;
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2){
+main > section#contact_section > section:last-child > section:nth-child(2) {
     width: 100%;
     position: relative;
     height: 665px;
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2)>section:last-child >form{
+main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form {
     display: flex;
     flex-direction: column;
     gap: 29px;
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2)>section:last-child >form#contactForm>div:first-child{
+main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:first-child {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
 
