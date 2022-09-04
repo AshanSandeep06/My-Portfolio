@@ -1460,7 +1460,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
     background: url(../images/CSS_Assignment-02.jpg);
     background-size: cover;
     background-position: center;
-    width: 271px;
+    width: 307px;
     height: 142px;
     display: inline-block;
     position: absolute;
@@ -1517,6 +1517,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
     bottom: 83px;
     /* top: 0; */
     margin: auto;
+    border: 1px solid #c3bebe;
 }
 
 
