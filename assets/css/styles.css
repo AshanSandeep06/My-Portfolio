@@ -1344,7 +1344,7 @@ main > section#projects_section > section:nth-child(3) > section:first-child > s
     display: flex;
     justify-content: space-between;
     align-items: center;
-    right: 5px;
+    right: -2px;
 }
 
 main > section#projects_section > section:nth-child(3) > section:first-child > section:nth-child(2) i {
@@ -1405,7 +1405,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    right: 5px;
+    right: -2px;
 }
 
 main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) > div:nth-child(1) {
