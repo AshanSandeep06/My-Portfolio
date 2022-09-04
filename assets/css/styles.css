@@ -1445,6 +1445,17 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
     color: #7461E2;
 }
 
+main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) > div > p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 37px;
+    margin: auto;
+    width: max-content;
+    font-weight: 500;
+    font-size: 15px;
+}
+
 
 
 
