@@ -1471,6 +1471,25 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
     margin: auto;
 }
 
+main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) > div:nth-child(2)>p {
+    font-size: 21px;
+    top: 20px;
+}
+
+main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:nth-child(1) > div:nth-child(2) > nav {
+    background: url(../images/Pos_System_Project_SS.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 273px;
+    height: 155px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 86px;
+    margin: auto;
+}
+
 
 
 
