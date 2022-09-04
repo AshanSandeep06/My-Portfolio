@@ -2073,6 +2073,26 @@ main>section#activities_section> section:last-child>div{
     background-color: white;
 }
 
+main>section#activities_section> section:last-child>div:first-child{
+
+}
+
+main>section#activities_section> section:last-child>div:nth-child(2){
+
+}
+
+main>section#activities_section> section:last-child>div:nth-child(3){
+
+}
+
+main>section#activities_section> section:last-child>div:nth-child(4){
+
+}
+
+main>section#activities_section> section:last-child>div:nth-child(5){
+
+}
+
 
 
 
