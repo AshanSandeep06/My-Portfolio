@@ -2083,13 +2083,13 @@ main>section#activities_section> section:last-child>div>p{
 }
 
 main>section#activities_section> section:last-child div.DivImages{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
-    top: 8px;
+    top: 16px;
 }
 
 main>section#activities_section> section:last-child>div:first-child>div{
@@ -2099,25 +2099,25 @@ main>section#activities_section> section:last-child>div:first-child>div{
 }
 
 main>section#activities_section> section:last-child>div:nth-child(2)>div{
-    background: url(../images/Movies.png);
+    background: url(../images/Watching.png);
     background-size: cover;
     background-position: center;
 }
 
 main>section#activities_section> section:last-child>div:nth-child(3)>div{
-    background: url(../images/Movies.png);
+    background: url(../images/Music.png);
     background-size: cover;
     background-position: center;
 }
 
 main>section#activities_section> section:last-child>div:nth-child(4)>div{
-    background: url(../images/Movies.png);
+    background: url(../images/Gym.png);
     background-size: cover;
     background-position: center;
 }
 
 main>section#activities_section> section:last-child>div:nth-child(5)>div{
-    background: url(../images/Movies.png);
+    background: url(../images/Web_Surfing.png);
     background-size: cover;
     background-position: center;
 }
