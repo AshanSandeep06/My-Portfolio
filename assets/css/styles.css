@@ -2211,8 +2211,8 @@ main > section#contact_section > section:last-child > section:first-child > h4 {
 main > section#contact_section > section:last-child > aside {
     width: 350px;
     height: 210px;
-    background: green;
-    display: flex;
+    /*background: green;*/
+    display: inline-flex;
     flex-direction: column;
     position: relative;
     left: 112px;
@@ -2222,46 +2222,46 @@ main > section#contact_section > section:last-child > aside {
 /*------------*/
 
 main > section#contact_section > section:last-child > aside > div:first-child {
-    background: yellow;
+    /*background: yellow;*/
     display: flex;
     /*justify-content: space-around;*/
     align-items: center;
 }
 
 main > section#contact_section > section:last-child > aside > div:first-child > div:nth-child(2) {
-    background: gray;
+    /*background: gray;*/
 }
 
 /*------------*/
 
 main > section#contact_section > section:last-child > aside > div:nth-child(2) {
-    background: yellow;
+    /*background: yellow;*/
     display: flex;
     /*justify-content: space-around;*/
     align-items: center;
 }
 
 main > section#contact_section > section:last-child > aside > div:nth-child(2) > div:nth-child(2) {
-    background: gray;
+    /*background: gray;*/
 }
 
 /*------------*/
 
 main > section#contact_section > section:last-child > aside > div:nth-child(3) {
-    background: yellow;
+    /*background: yellow;*/
     display: flex;
     /*justify-content: space-around;*/
     align-items: center;
 }
 
 main > section#contact_section > section:last-child > aside > div:nth-child(3) > div:nth-child(2) {
-    background: gray;
+    /*background: gray;*/
 }
 
 main > section#contact_section > section:last-child > aside i {
     color: #7461E2;
     font-size: 30px;
-    margin-right: 24px;
+    margin-right: 36px;
     width: 30px;
     left: 8px;
     position: relative;
@@ -2274,7 +2274,7 @@ main > section#contact_section > section:last-child > aside > div > div {
 
 main > section#contact_section > section:last-child > aside > div > div > h4 {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 4px;
 }
 
 main > section#contact_section > section:last-child > aside > div > div > p {
@@ -2282,5 +2282,14 @@ main > section#contact_section > section:last-child > aside > div > div > p {
 }
 
 main > section#contact_section > section:last-child > aside > div {
-    margin-bottom: 18px;
+    margin-bottom: 33px;
+}
+
+main > section#contact_section > section:last-child > section:last-child {
+    display: inline-block;
+    position: relative;
+    left: 185px;
+    /*background: red;*/
+    width: 700px;
+    height: 550px;
 }
