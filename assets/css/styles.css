@@ -2069,7 +2069,8 @@ main>section#activities_section> section:last-child>div{
     width: 250px;
     height: 182px;
     position: relative;
-    background: #f8f8f8;
+    /*background: #f8f8f8;*/
+    background: #F7F8FA;
     box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
     border-radius: 16px;
 }
