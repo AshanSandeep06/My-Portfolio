@@ -1639,6 +1639,28 @@ main > section#services_section > section:first-child > h1 {
     text-transform: uppercase;
 }
 
+main > section#services_section > section:first-child > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 156px;
+    height: 1px;
+    background: #ddd;
+    bottom: 3px;
+    left: calc(39% - 60px);
+}
+
+main > section#services_section > section:first-child > h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #7461E2;
+    bottom: 2px;
+    left: calc(44% - 20px);
+}
+
 
 
 
