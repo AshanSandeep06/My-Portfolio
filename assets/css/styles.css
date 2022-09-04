@@ -2129,14 +2129,14 @@ main > section#activities_section > section:last-child > div:nth-child(5) > div 
 main > section#contact_section {
     position: relative;
     width: 100%;
-    /*background: orange;*/
+    background: orange;
     height: max-content;
 }
 
 main > section#contact_section > section:first-child {
     position: relative;
     height: 102px;
-    /*background-color: darkgray;*/
+    background-color: darkgray;
 }
 
 main > section#contact_section > section:first-child > h1 {
@@ -2180,6 +2180,10 @@ main > section#contact_section > section:first-child > h1::after {
 main > section#contact_section > section:first-child > h5 {
     margin: 0;
     display: none;
+}
+
+main > section#contact_section>section:last-child{
+    background: lightgoldenrodyellow;
 }
 
 
