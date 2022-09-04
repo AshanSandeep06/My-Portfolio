@@ -2208,7 +2208,7 @@ main > section#contact_section > section:last-child > section:first-child > h4 {
     margin-bottom: 10px;
 }
 
-main > section#contact_section > section:last-child > aside {
+main > section#contact_section > section:last-child > section:nth-child(2)>aside {
     width: 350px;
     height: 210px;
     /*background: green;*/
@@ -2221,44 +2221,44 @@ main > section#contact_section > section:last-child > aside {
 
 /*------------*/
 
-main > section#contact_section > section:last-child > aside > div:first-child {
+main > section#contact_section > section:last-child > section:nth-child(2)>aside > div:first-child {
     /*background: yellow;*/
     display: flex;
     /*justify-content: space-around;*/
     align-items: center;
 }
 
-main > section#contact_section > section:last-child > aside > div:first-child > div:nth-child(2) {
+main > section#contact_section > section:last-child > section:nth-child(2)>aside > div:first-child > div:nth-child(2) {
     /*background: gray;*/
 }
 
 /*------------*/
 
-main > section#contact_section > section:last-child > aside > div:nth-child(2) {
+main > section#contact_section > section:last-child > section:nth-child(2)>aside > div:nth-child(2) {
     /*background: yellow;*/
     display: flex;
     /*justify-content: space-around;*/
     align-items: center;
 }
 
-main > section#contact_section > section:last-child > aside > div:nth-child(2) > div:nth-child(2) {
+main > section#contact_section > section:last-child > section:nth-child(2)>aside > div:nth-child(2) > div:nth-child(2) {
     /*background: gray;*/
 }
 
 /*------------*/
 
-main > section#contact_section > section:last-child > aside > div:nth-child(3) {
+main > section#contact_section > section:last-child > section:nth-child(2)>aside > div:nth-child(3) {
     /*background: yellow;*/
     display: flex;
     /*justify-content: space-around;*/
     align-items: center;
 }
 
-main > section#contact_section > section:last-child > aside > div:nth-child(3) > div:nth-child(2) {
+main > section#contact_section > section:last-child > section:nth-child(2)>aside > div:nth-child(3) > div:nth-child(2) {
     /*background: gray;*/
 }
 
-main > section#contact_section > section:last-child > aside i {
+main > section#contact_section > section:last-child > section:nth-child(2)>aside i {
     color: #7461E2;
     font-size: 32px;
     margin-right: 36px;
@@ -2267,12 +2267,12 @@ main > section#contact_section > section:last-child > aside i {
     position: relative;
 }
 
-main > section#contact_section > section:last-child > aside > div > div {
+main > section#contact_section > section:last-child > section:nth-child(2)>aside > div > div {
     display: flex;
     flex-direction: column;
 }
 
-main > section#contact_section > section:last-child > aside > div > div > h4 {
+main > section#contact_section > section:last-child > section:nth-child(2)>aside > div > div > h4 {
     margin: 0;
     margin-bottom: 4px;
     font-weight: 500;
@@ -2280,17 +2280,17 @@ main > section#contact_section > section:last-child > aside > div > div > h4 {
     color: hsl(250, 8%, 15%);
 }
 
-main > section#contact_section > section:last-child > aside > div > div > p {
+main > section#contact_section > section:last-child > section:nth-child(2)>aside > div > div > p {
     margin: 0;
     color: hsl(250, 8%, 65%);
     font-size: 15px;
 }
 
-main > section#contact_section > section:last-child > aside > div {
+main > section#contact_section > section:last-child > section:nth-child(2)>aside > div {
     margin-bottom: 33px;
 }
 
-main > section#contact_section > section:last-child > section:last-child {
+main > section#contact_section > section:last-child > section:nth-child(2)>section:last-child {
     display: inline-block;
     position: relative;
     left: 185px;
@@ -2299,7 +2299,7 @@ main > section#contact_section > section:last-child > section:last-child {
     height: 550px;
 }
 
-main > section#contact_section > section:last-child > aside>div:last-child i{
+main > section#contact_section > section:last-child > section:nth-child(2)>aside>div:last-child i{
     left: 11.3px;
 }
 
