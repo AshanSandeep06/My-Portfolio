@@ -2206,5 +2206,62 @@ main > section#contact_section > section:last-child > section:first-child>h4{
     margin-bottom: 10px;
 }
 
+main > section#contact_section > section:last-child > aside {
+    width: 350px;
+    height: 500px;
+    background: green;
+    display: flex;
+    flex-direction: column;
+}
 
+/*------------*/
+
+main > section#contact_section > section:last-child > aside>div:first-child{
+    background: yellow;
+    display: flex;
+    /*justify-content: space-around;*/
+    align-items: center;
+}
+
+main > section#contact_section > section:last-child > aside>div:first-child>div:first-child{
+    background: gainsboro;
+}
+
+main > section#contact_section > section:last-child > aside>div:first-child>div:nth-child(2){
+    background: gray;
+}
+
+/*------------*/
+
+main > section#contact_section > section:last-child > aside>div:nth-child(2){
+    background: yellow;
+    display: flex;
+    /*justify-content: space-around;*/
+    align-items: center;
+}
+
+main > section#contact_section > section:last-child > aside>div:nth-child(2)>div:first-child{
+    background: gainsboro;
+}
+
+main > section#contact_section > section:last-child > aside>div:nth-child(2)>div:nth-child(2){
+    background: gray;
+}
+
+/*------------*/
+
+main > section#contact_section > section:last-child > aside>div:nth-child(3){
+    background: yellow;
+    display: flex;
+    /*justify-content: space-around;*/
+    align-items: center;
+}
+
+main > section#contact_section > section:last-child > aside>div:nth-child(3)>div:first-child{
+    background: gainsboro;
+}
+
+main > section#contact_section > section:last-child > aside>div:nth-child(3)>div:nth-child(2){
+    background: gray;
+}
 
