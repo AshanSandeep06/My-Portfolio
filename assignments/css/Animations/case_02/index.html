@@ -7,16 +7,34 @@
 
     <style>
         div {
-            width: 50px;
-            height: 50px;
-            border: 5px solid red;
             position: absolute;
             right: 0;
             left: 0;
             bottom: 0;
             top: 0;
             margin: auto;
+            border: 5px solid navajowhite;
             border-radius: 100%;
+            animation-name: my-animation;
+            /*animation-direction: normal;*/
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            /*animation-play-state: running;*/
+            animation-timing-function: linear;
+            /*animation-delay: .2s;*/
+        }
+
+        @keyframes my-animation {
+            from {
+                width: 50px;
+                height: 50px;
+            }
+
+            to {
+                width: 300px;
+                height: 300px;
+                opacity: 0;
+            }
         }
     </style>
 
