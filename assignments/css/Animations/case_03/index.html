@@ -3,10 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <title>Animations | Assignment-03</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+
+    <style>
+        section{
+            width: 400vw;
+            height: 97vh;
+            display: flex;
+        }
+
+        div{
+            animation-name: my-animation;
+            animation-direction: alternate-reverse;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            height: 100%;
+            width: 25%;
+        }
+
+        div:first-child{
+            background: url("../../../../assets/images/CSS_Assignment-01.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        div:nth-child(2){
+            background: url("../../../../assets/images/CSS_Assignment-02.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        div:nth-child(3){
+            background: url("../../../../assets/images/CSS_GridLayout_Assignment.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        div:nth-child(4){
+            background: url("../../../../assets/images/Pos_System_Project_SS.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes my-animation {
+            0%{
+                align-self: flex-start;
+            }
+
+            25%{
+                align-self: flex-start;
+            }
+
+            50%{
+                align-self: flex-start;
+            }
+
+            75%{
+                align-self: flex-start;
+            }
+
+            100%{
+                align-self: flex-start;
+            }
+        }
+    </style>
+
 </head>
 <body>
 
-
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
 
 </body>
 </html>
