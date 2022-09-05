@@ -2,82 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Animations | Assignment-03</title>
-    <link rel="stylesheet" href="assets/styles/normalize.css">
-
+    <title>CSS Animations | IJSE | Slide Show</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="assets/styles/normalize.css" rel="stylesheet">
     <style>
-        section{
-            width: 400vw;
-            height: 97vh;
-            display: flex;
+        main {
+            width: 900px;
+            height: 480px;
+            box-shadow: 1px 3px 5px 1px #736060;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            /*overflow-x: scroll;*/
+            overflow-x: hidden;
         }
 
-        div{
-            animation-name: my-animation;
-            animation-direction: alternate-reverse;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
+        main > section {
             height: 100%;
-            width: 25%;
+            width: 400%;
+            display: flex;
+            position: relative;
+
+            animation-name: slider-animation;
+            animation-iteration-count: infinite;
+            animation-duration: 20s;
+            animation-direction: normal;
+            animation-timing-function: linear;
         }
 
-        div:first-child{
+        main > section > div {
+            height: 100%;
+            width: 100%;
+        }
+
+        main>section>div:nth-child(1){
             background: url("../../../../assets/images/CSS_Assignment-01.jpg");
             background-size: cover;
             background-position: center;
         }
 
-        div:nth-child(2){
+        main>section>div:nth-child(2){
             background: url("../../../../assets/images/CSS_Assignment-02.jpg");
             background-size: cover;
             background-position: center;
         }
 
-        div:nth-child(3){
+        main>section>div:nth-child(3){
             background: url("../../../../assets/images/CSS_GridLayout_Assignment.jpg");
             background-size: cover;
             background-position: center;
         }
 
-        div:nth-child(4){
-            background: url("../../../../assets/images/Pos_System_Project_SS.jpeg");
+        main>section>div:nth-child(4){
+            background: url("../../../../assets/images/Layerd_Project_Photo.jpeg");
             background-size: cover;
             background-position: center;
         }
 
-        @keyframes my-animation {
+        @keyframes slider-animation {
             0%{
-                align-self: flex-start;
+                transform: translateX(0);
             }
 
             25%{
-                align-self: flex-start;
+                transform: translateX(-25%);
             }
 
             50%{
-                align-self: flex-start;
+                transform: translateX(-50%);
             }
 
             75%{
-                align-self: flex-start;
-            }
-
-            100%{
-                align-self: flex-start;
+                transform: translateX(-75%);
             }
         }
-    </style>
 
+    </style>
 </head>
 <body>
 
-<section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</section>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
 
 </body>
 </html>
