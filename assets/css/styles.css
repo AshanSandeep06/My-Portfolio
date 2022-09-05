@@ -2186,6 +2186,7 @@ main > section#contact_section > section:last-child {
     background: lightgoldenrodyellow;
     height: fit-content;
     width: 100%;
+    margin-top: 33px;
 }
 
 main > section#contact_section > section:last-child > section:first-child {
@@ -2193,7 +2194,6 @@ main > section#contact_section > section:last-child > section:first-child {
     position: relative;
     width: 100%;
     height: 69px;
-    margin-top: 33px;
 }
 
 main > section#contact_section > section:last-child > section:first-child > h3 {
@@ -2215,9 +2215,9 @@ main > section#contact_section > section:last-child > section:nth-child(2) > asi
     display: inline-flex;
     flex-direction: column;
     position: relative;
-    left: 112px;
-    /*top: 64px;*/
-    bottom: 76px;
+    /* left: 112px; */
+    /* top: 64px; */
+    bottom: 111px;
 }
 
 /*------------*/
@@ -2292,16 +2292,15 @@ main > section#contact_section > section:last-child > section:nth-child(2) > asi
 }
 
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child {
-    position: relative;
+    /* position: relative; */
     left: 185px;
     background: red;
     width: 859px;
     height: 550px;
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-top: 69px;
+    /* margin-top: 69px; */
     border: 1px solid red;
 }
 
@@ -2313,6 +2312,13 @@ main > section#contact_section > section:last-child > section:nth-child(2) {
     width: 100%;
     position: relative;
     height: 665px;
+    background: #b49c9c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 48px; */
+    /* row-gap: 48px; */
+    column-gap: 48px;
 }
 
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form {
