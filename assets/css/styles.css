@@ -2129,14 +2129,14 @@ main > section#activities_section > section:last-child > div:nth-child(5) > div 
 main > section#contact_section {
     position: relative;
     width: 100%;
-    /*background: orange;*/
+    background: orange;
     height: 890px;
 }
 
 main > section#contact_section > section:first-child {
     position: relative;
     height: 102px;
-    /*background-color: darkgray;*/
+    background-color: darkgray;
 }
 
 main > section#contact_section > section:first-child > h1 {
@@ -2183,13 +2183,13 @@ main > section#contact_section > section:first-child > h5 {
 }
 
 main > section#contact_section > section:last-child {
-    /*background: lightgoldenrodyellow;*/
+    background: lightgoldenrodyellow;
     height: fit-content;
     width: 100%;
 }
 
 main > section#contact_section > section:last-child > section:first-child {
-    /*background: darksalmon;*/
+    background: darksalmon;
     position: relative;
     width: 100%;
     height: 69px;
@@ -2211,7 +2211,7 @@ main > section#contact_section > section:last-child > section:first-child > h4 {
 main > section#contact_section > section:last-child > section:nth-child(2) > aside {
     width: 350px;
     height: 210px;
-    /*background: green;*/
+    background: green;
     display: inline-flex;
     flex-direction: column;
     position: relative;
@@ -2294,7 +2294,7 @@ main > section#contact_section > section:last-child > section:nth-child(2) > asi
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child {
     position: relative;
     left: 185px;
-    /*background: red;*/
+    background: red;
     width: 859px;
     height: 550px;
 
