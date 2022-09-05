@@ -2372,6 +2372,12 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
     padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
+main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(3){
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
+}
+
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(3)>label{
     font-size: 13px;
     color: black;
