@@ -2379,7 +2379,7 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
     height: max-content;
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:last-child>button{
+main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:last-child > button {
     background: #7461e2;
     color: white;
     width: 170px;
@@ -2393,24 +2393,24 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
     cursor: pointer;
 }
 
-main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:last-child>button>i{
+main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:last-child > button > i {
     color: white;
     margin-left: 10px;
     font-size: 18px;
 }
 
-main form#contactForm>div:first-child>div, main form#contactForm>div:nth-child(2), main form#contactForm>div:nth-child(3), main form#contactForm>div:nth-child(4){
+main form#contactForm > div:first-child > div, main form#contactForm > div:nth-child(2), main form#contactForm > div:nth-child(3), main form#contactForm > div:nth-child(4) {
     background: hsl(250, 70%, 96%);
     border-radius: 0.5rem;
     padding: 0.75rem 1rem 0.25rem;
 }
 
-main form#contactForm label{
+main form#contactForm label {
     font-size: 13px;
-    color :hsl(250, 8%, 15%);
+    color: hsl(250, 8%, 15%);
 }
 
-main form#contactForm input{
+main form#contactForm input {
     width: 100%;
     background-color: hsl(250, 70%, 96%);
     color: hsl(250, 8%, 45%);
