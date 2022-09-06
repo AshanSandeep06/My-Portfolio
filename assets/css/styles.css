@@ -2382,7 +2382,7 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:last-child>button{
     background: #7461e2;
     color: white;
-    width: 168px;
+    width: 170px;
     height: 50px;
     border: none;
     display: flex;
