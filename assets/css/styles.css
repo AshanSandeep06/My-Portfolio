@@ -2130,7 +2130,7 @@ main > section#activities_section > section:last-child > div:nth-child(5) > div 
 main > section#contact_section {
     position: relative;
     width: 100%;
-    /*background: mediumpurple;*/
+    background: mediumpurple;
 }
 
 main > section#contact_section > section:first-child {
@@ -2440,8 +2440,9 @@ main form#contactForm div.contactForm_details {
     box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
 }
 
-body>footer{
+body > footer {
     background: darkblue;
+    color: white;
 }
 
 
