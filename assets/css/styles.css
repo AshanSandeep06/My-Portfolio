@@ -2466,12 +2466,10 @@ body>footer>nav:first-child>menu i{
 }
 
 footer>aside{
-   /* display: inline-flex;
-    flex-direction: column;*/
+    display: inline-flex;
+    flex-direction: column;
 
     background: gray;
-    display: inline-grid;
-    grid-template-rows: repeat(3, 1fr);
     position: relative;
     top: 58px;
     left: 136px;
