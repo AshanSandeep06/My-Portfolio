@@ -2477,15 +2477,21 @@ footer>aside{
 
 footer>aside>h1:first-child{
     margin-bottom: 0;
+    font-size: 36px;
+    font-weight: 600;
 }
 
 footer>aside>h1:last-of-type{
     margin-top: 0;
     margin-bottom: 6px;
+    font-size: 36px;
+    font-weight: 600;
 }
 
 footer>aside>h5{
     margin: 0;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 
