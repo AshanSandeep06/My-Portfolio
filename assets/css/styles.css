@@ -2395,7 +2395,7 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
 
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:last-child>button>i{
     color: white;
-    margin-left: 8px;
+    margin-left: 10px;
     font-size: 18px;
 }
 
