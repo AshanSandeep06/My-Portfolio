@@ -2475,5 +2475,18 @@ footer>aside{
     left: 136px;
 }
 
+footer>aside>h1:first-child{
+    margin-bottom: 0;
+}
+
+footer>aside>h1:last-of-type{
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+footer>aside>h5{
+    margin: 0;
+}
+
 
 
