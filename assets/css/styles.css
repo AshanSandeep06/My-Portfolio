@@ -2451,7 +2451,6 @@ body > footer {
 }
 
 body > footer > nav:first-child {
-    background: red;
     height: 100px;
     padding-top: 33px;
 }
@@ -2478,9 +2477,9 @@ footer > aside {
 
     background: gray;
     position: relative;
-    top: 58px;
+    top: 33px;
     left: 136px;
-    margin-bottom: 125px;
+    margin-bottom: 85px;
 }
 
 footer > aside > h1:first-child {
