@@ -2210,7 +2210,6 @@ main > section#contact_section > section:last-child > section:first-child > h4 {
 main > section#contact_section > section:last-child > section:nth-child(2) > aside {
     width: 350px;
     height: 210px;
-    background: green;
     display: inline-flex;
     flex-direction: column;
     position: relative;
@@ -2384,8 +2383,8 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:last-child > button {
     background: #7461e2;
     color: white;
-    width: 170px;
-    height: 50px;
+    width: 168px;
+    height: 49px;
     border: none;
     display: flex;
     align-items: center;
