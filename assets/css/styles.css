@@ -2302,7 +2302,7 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
 }
 
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:first-child > div {
-    background-color: white;
+    background-color: hsl(250, 70%, 96%);
     border-radius: 0.5rem;
     padding: 0.75rem 1rem 0.25rem;
 }
@@ -2314,18 +2314,18 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
 
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:first-child > div > input {
     width: 100%;
-    background-color: white;
-    color: black;
+    background-color: hsl(250, 70%, 96%);
     font-family: poppins, sans-serif;
     font-weight: 400;
     font-size: 16px;
     border: none;
     outline: none;
     padding: 0.25rem 0.5rem 0.5rem 0;
+    color: hsl(250, 8%, 45%);
 }
 
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(2) {
-    background-color: white;
+    background-color: hsl(250, 70%, 96%);
     border-radius: 0.5rem;
     padding: 0.75rem 1rem 0.25rem;
 }
@@ -2337,8 +2337,8 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
 
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(2) > input {
     width: 100%;
-    background-color: white;
-    color: gray;
+    color: hsl(250, 8%, 45%);
+    background-color: hsl(250, 70%, 96%);
     font-family: poppins, sans-serif;
     font-size: 16px;
     border: none;
@@ -2347,7 +2347,7 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
 }
 
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(3) {
-    background-color: white;
+    background-color: hsl(250, 70%, 96%);
     border-radius: 0.5rem;
     padding: 0.75rem 1rem 0.25rem;
 }
@@ -2359,8 +2359,8 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
 
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(3) > textarea {
     width: 100%;
-    background-color: white;
-    color: gray;
+    background-color: hsl(250, 70%, 96%);
+    color: hsl(250, 8%, 45%);
     font-family: poppins, sans-serif;
     font-size: 16px;
     border: none;
@@ -2382,8 +2382,8 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:last-child>button{
     background: #7461e2;
     color: white;
-    width: 174px;
-    height: 48px;
+    width: 168px;
+    height: 50px;
     border: none;
     display: flex;
     align-items: center;
@@ -2398,4 +2398,28 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
     margin-left: 8px;
     font-size: 18px;
 }
+
+main form#contactForm>div:first-child>div, main form#contactForm>div:nth-child(2), main form#contactForm>div:nth-child(3), main form#contactForm>div:nth-child(4){
+    background: hsl(250, 70%, 96%);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
+}
+
+main form#contactForm label{
+    font-size: 13px;
+    color :hsl(250, 8%, 15%);
+}
+
+main form#contactForm input{
+    width: 100%;
+    background-color: hsl(250, 70%, 96%);
+    color: hsl(250, 8%, 45%);
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+
 
