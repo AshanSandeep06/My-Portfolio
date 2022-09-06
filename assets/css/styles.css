@@ -2473,6 +2473,7 @@ body>footer>nav:first-child>menu i{
 footer>aside{
     display: inline-flex;
     flex-direction: column;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
     background: gray;
     position: relative;
