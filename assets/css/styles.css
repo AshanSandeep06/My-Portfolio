@@ -2447,6 +2447,7 @@ body > footer {
 body>footer>nav:first-child{
     background: red;
     height: 158px;
+    padding-top: 33px;
 }
 
 body>footer>nav:first-child>menu{
