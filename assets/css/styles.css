@@ -2212,6 +2212,7 @@ main > section#contact_section > section:last-child > section:nth-child(2) > asi
     flex-direction: column;
     position: relative;
     top: 109px;
+    left: 30px;
 }
 
 main > section#contact_section > section:last-child > section:nth-child(2) > aside > div:first-child {
@@ -2283,7 +2284,7 @@ main > section#contact_section > section:last-child > section:nth-child(2) {
     background: #2d0707;
     display: flex;
     justify-content: center;
-    column-gap: 48px;
+    /*column-gap: 48px;*/
 }
 
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form {
