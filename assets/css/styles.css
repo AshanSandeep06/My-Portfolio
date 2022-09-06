@@ -2197,13 +2197,15 @@ main > section#contact_section > section:last-child > section:first-child > h3 {
     text-align: center;
     color: #7461E2;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 24px;
 }
 
 main > section#contact_section > section:last-child > section:first-child > h4 {
     text-align: center;
     margin-top: 14px;
     margin-bottom: 10px;
+    font-size: 18px;
+    color: #363131;
 }
 
 main > section#contact_section > section:last-child > section:nth-child(2) > aside {
