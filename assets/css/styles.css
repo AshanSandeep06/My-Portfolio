@@ -2196,6 +2196,8 @@ main > section#contact_section > section:last-child > section:first-child > h3 {
     margin: auto;
     text-align: center;
     color: #7461E2;
+    font-weight: 600;
+    font-size: 23px;
 }
 
 main > section#contact_section > section:last-child > section:first-child > h4 {
