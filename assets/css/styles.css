@@ -2392,7 +2392,10 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+    /*text-shadow: 1px 2px hsl(250, 11%, 37%);*/
+    text-shadow: 1px 2px hsl(250, 56%, 44%);
 }
+
 
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:last-child > button > i {
     color: white;
