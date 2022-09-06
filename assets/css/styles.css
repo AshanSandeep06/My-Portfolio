@@ -2498,6 +2498,7 @@ footer>aside>h5{
 }
 
 footer>div:last-child{
+    text-align: center;
   /*  position: absolute;
     left: 0;
     top: 0;
