@@ -2501,10 +2501,17 @@ footer > aside > h5 {
 
 footer > div:last-child {
     text-align: center;
+    position: relative;
 }
 
 footer > div:last-child > small {
     font-size: 13px;
+}
+
+footer > div:last-child > i {
+    font-size: 13px;
+    position: relative;
+    top: 0.7px;
 }
 
 
