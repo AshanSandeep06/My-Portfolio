@@ -2446,7 +2446,7 @@ body > footer {
 
 body>footer>nav:first-child{
     background: red;
-    height: 158px;
+    height: 100px;
     padding-top: 33px;
 }
 
@@ -2462,6 +2462,11 @@ body>footer>nav:first-child>menu{
 body>footer>nav:first-child>menu i{
     color: white;
     font-size: 35px;
+}
+
+footer>aside{
+    display: inline-flex;
+    flex-direction: column;
 }
 
 
