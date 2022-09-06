@@ -2284,7 +2284,6 @@ main > section#contact_section > section:last-child > section:nth-child(2) {
     width: 100%;
     position: relative;
     height: auto;
-    background: #2d0707;
     display: flex;
     justify-content: center;
     /*column-gap: 48px;*/
