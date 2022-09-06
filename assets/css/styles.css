@@ -2425,5 +2425,13 @@ main form#contactForm input {
     padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
+main form#contactForm>div:last-child:hover{
+    background-color: #5a43cb !important;
+}
+
+main form#contactForm>div:last-child>button:hover{
+    background-color: #5a43cb !important;
+}
+
 
 
