@@ -2130,7 +2130,6 @@ main > section#activities_section > section:last-child > div:nth-child(5) > div 
 main > section#contact_section {
     position: relative;
     width: 100%;
-    background: mediumpurple;
 }
 
 main > section#contact_section > section:first-child {
@@ -2443,6 +2442,25 @@ main form#contactForm div.contactForm_details {
 body > footer {
     background: darkblue;
     color: white;
+}
+
+body>footer>nav:first-child{
+    background: red;
+    height: 158px;
+}
+
+body>footer>nav:first-child>menu{
+    margin: 0;
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+body>footer>nav:first-child>menu i{
+    color: white;
+    font-size: 35px;
 }
 
 
