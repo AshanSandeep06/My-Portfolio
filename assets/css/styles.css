@@ -2130,7 +2130,6 @@ main > section#contact_section {
     position: relative;
     width: 100%;
     background: orange;
-    height: 890px;
 }
 
 main > section#contact_section > section:first-child {
@@ -2216,8 +2215,7 @@ main > section#contact_section > section:last-child > section:nth-child(2) > asi
     flex-direction: column;
     position: relative;
     /* left: 112px; */
-    /* top: 64px; */
-    bottom: 111px;
+    top: 64px;
 }
 
 /*------------*/
@@ -2292,16 +2290,16 @@ main > section#contact_section > section:last-child > section:nth-child(2) > asi
 }
 
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child {
-    /* position: relative; */
-    left: 185px;
+    position: relative;
     background: red;
-    width: 859px;
-    height: 550px;
+    width: 890px;
+    /* height: 550px; */
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 69px; */
+    margin-top: 69px;
     border: 1px solid red;
+    margin-bottom: 40px;
 }
 
 main > section#contact_section > section:last-child > section:nth-child(2) > aside > div:last-child i {
@@ -2311,10 +2309,11 @@ main > section#contact_section > section:last-child > section:nth-child(2) > asi
 main > section#contact_section > section:last-child > section:nth-child(2) {
     width: 100%;
     position: relative;
-    height: 665px;
-    background: #b49c9c;
+    /* margin-top: 106px; */
+    height: auto;
+    background: #2d0707;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     /* gap: 48px; */
     /* row-gap: 48px; */
@@ -2325,7 +2324,8 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
     display: flex;
     flex-direction: column;
     gap: 29px;
-    width: 758px;
+    width: 759px;
+    margin: 33px;
 }
 
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:first-child {
@@ -2430,6 +2430,6 @@ main > section#contact_section > section:last-child > section:nth-child(2) > sec
 main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:last-child>button>i{
     color: white;
     margin-left: 8px;
-    font-size: 19px;
+    font-size: 18px;
 }
 
