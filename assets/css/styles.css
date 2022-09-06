@@ -2450,13 +2450,13 @@ body > footer {
     position: relative;
 }
 
-body>footer>nav:first-child{
+body > footer > nav:first-child {
     background: red;
     height: 100px;
     padding-top: 33px;
 }
 
-body>footer>nav:first-child>menu{
+body > footer > nav:first-child > menu {
     margin: 0;
     display: flex;
     height: 65px;
@@ -2465,13 +2465,13 @@ body>footer>nav:first-child>menu{
     column-gap: 50px;
 }
 
-body>footer>nav:first-child>menu i{
+body > footer > nav:first-child > menu i {
     color: white;
     font-size: 35px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-footer>aside{
+footer > aside {
     display: inline-flex;
     flex-direction: column;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -2483,30 +2483,30 @@ footer>aside{
     margin-bottom: 125px;
 }
 
-footer>aside>h1:first-child{
+footer > aside > h1:first-child {
     margin-bottom: 0;
     font-size: 36px;
     font-weight: 600;
 }
 
-footer>aside>h1:last-of-type{
+footer > aside > h1:last-of-type {
     margin-top: 0;
     margin-bottom: 6px;
     font-size: 36px;
     font-weight: 600;
 }
 
-footer>aside>h5{
+footer > aside > h5 {
     margin: 0;
     font-size: 16px;
     font-weight: 400;
 }
 
-footer>div:last-child{
+footer > div:last-child {
     text-align: center;
 }
 
-footer>div:last-child>small{
+footer > div:last-child > small {
     font-size: 13px;
 }
 
