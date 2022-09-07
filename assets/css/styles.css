@@ -559,7 +559,7 @@ main > #about_section > section:nth-child(2) > article > section:nth-child(2) > 
 
 #scroll_up_btn {
     position: fixed;
-    opacity: 0.9;
+    opacity: 0.8;
     right: 15px;
     bottom: 15px;
     z-index: 996;
@@ -568,6 +568,11 @@ main > #about_section > section:nth-child(2) > article > section:nth-child(2) > 
     height: 35px;
     border-radius: 4px;
     transition: all 0.4s;
+}
+
+#scroll_up_btn:hover{
+    opacity: 1.0;
+    transform: translateY(-10px);
 }
 
 #scroll_up_btn > i {
