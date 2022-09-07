@@ -570,7 +570,7 @@ main > #about_section > section:nth-child(2) > article > section:nth-child(2) > 
     transition: all 0.4s;
 }
 
-#scroll_up_btn:hover{
+#scroll_up_btn:hover {
     opacity: 1.0;
     transform: translateY(-10px);
 }
@@ -2522,29 +2522,29 @@ footer > div:last-child > i {
     top: 0.7px;
 }
 
-footer>nav>menu>li:hover{
+footer > nav > menu > li:hover {
     transition: all 0.4s;
     transform: translateY(-10px);
 }
 
-main>section#home_section>section:first-child>aside>nav#home_social_links>div:first-child:hover{
+main > section#home_section > section:first-child > aside > nav#home_social_links > div:first-child:hover {
     background: #2f59b1;
 }
 
-main>section#home_section>section:first-child>aside>nav#home_social_links>div:nth-child(2):hover{
+main > section#home_section > section:first-child > aside > nav#home_social_links > div:nth-child(2):hover {
     /*background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);*/
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);;
 }
 
-main>section#home_section>section:first-child>aside>nav#home_social_links>div:nth-child(3):hover{
-  background: #1DA1F2;
+main > section#home_section > section:first-child > aside > nav#home_social_links > div:nth-child(3):hover {
+    background: #1DA1F2;
 }
 
-main>section#home_section>section:first-child>aside>nav#home_social_links>div:nth-child(4):hover{
+main > section#home_section > section:first-child > aside > nav#home_social_links > div:nth-child(4):hover {
     background: #333;
 }
 
-main>section#home_section>section:first-child>aside>nav#home_social_links>div:nth-child(5):hover{
+main > section#home_section > section:first-child > aside > nav#home_social_links > div:nth-child(5):hover {
     background: #0A66C2;
 }
 
