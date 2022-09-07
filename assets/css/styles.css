@@ -2527,5 +2527,26 @@ footer>nav>menu>li:hover{
     transform: translateY(-10px);
 }
 
+main>section#home_section>section:first-child>aside>nav#home_social_links>div:first-child:hover{
+    background: #2f59b1;
+}
+
+main>section#home_section>section:first-child>aside>nav#home_social_links>div:nth-child(2):hover{
+    /*background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);*/
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);;
+}
+
+main>section#home_section>section:first-child>aside>nav#home_social_links>div:nth-child(3):hover{
+  background: #1DA1F2;
+}
+
+main>section#home_section>section:first-child>aside>nav#home_social_links>div:nth-child(4):hover{
+    background: #333;
+}
+
+main>section#home_section>section:first-child>aside>nav#home_social_links>div:nth-child(5):hover{
+    background: #0A66C2;
+}
+
 
 
