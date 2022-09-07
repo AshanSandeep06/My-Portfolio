@@ -54,6 +54,7 @@ li {
 
 a {
     text-decoration: none;
+    background: transparent;
 }
 
 body > main {
