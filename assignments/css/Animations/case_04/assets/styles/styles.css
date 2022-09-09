@@ -18,7 +18,7 @@
 
 #city_div {
     position: absolute;
-    top: 185px;
+    top: 188px;
     width: 100%;
     height: max-content;
 }
@@ -52,4 +52,8 @@
 #car_div>img{
     width: 375px;
     height: max-content;
+}
+
+#wheel_div{
+
 }
