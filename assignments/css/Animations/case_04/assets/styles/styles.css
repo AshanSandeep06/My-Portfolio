@@ -2,9 +2,9 @@
     width: 0;
 }*/
 
-/*body{
-    overflow-y: hidden;
-}*/
+body{
+    overflow: hidden;
+}
 
 #sky_div {
     width: 100%;
@@ -18,9 +18,27 @@
 
 #city_div {
     position: absolute;
-    top: 188px;
+    top: 206px;
     width: 100%;
     height: max-content;
+    display: flex;
+    /*overflow-x: hidden;*/
+
+    animation-name: city-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+}
+
+@keyframes city-animation{
+    from{
+        margin-left: 0;
+    }
+
+    to{
+        margin-left: -150vw;
+    }
 }
 
 #city_div > img {
@@ -29,22 +47,38 @@
 
 #road_div {
     position: absolute;
-    bottom: 0em;
+    bottom: 1px;
     width: 100%;
-    height: max-content;
+    height: 265px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+
+    animation-name: road-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+}
+
+@keyframes road-animation{
+    from{
+        margin-left: 0;
+    }
+
+    to{
+        margin-left: -150vw;
+    }
 }
 
 #road_div > img {
-    height: 133px;
+    height: 100%;
     width: 100%;
 }
 
 #car_div {
     position: absolute;
     top: 416px;
-    left: 58px;
+    left: 419px;
     width: fit-content;
     height: max-content;
 }
@@ -57,7 +91,7 @@
 #wheel_div {
     position: absolute;
     top: 497px;
-    left: 90px;
+    left: 451px;
     width: 375px;
     height: max-content;
     display: flex;
