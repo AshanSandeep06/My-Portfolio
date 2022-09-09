@@ -26,7 +26,7 @@ body {
 
     animation-name: city-animation;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
+    animation-duration: 13s;
     animation-direction: normal;
     animation-timing-function: ease;
 }
@@ -55,7 +55,7 @@ body {
 
     animation-name: road-animation;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
+    animation-duration: 13s;
     animation-direction: normal;
     animation-timing-function: ease;
 }
@@ -77,7 +77,7 @@ body {
 
 #car_div {
     position: absolute;
-    top: 416px;
+    top: 438px;
     left: 419px;
     width: fit-content;
     height: max-content;
@@ -90,7 +90,7 @@ body {
 
 #wheel_div {
     position: absolute;
-    top: 497px;
+    top: 519px;
     left: 451px;
     width: 375px;
     height: max-content;
@@ -101,4 +101,24 @@ body {
 #wheel_div > img {
     width: 70px;
     height: 70px;
+
+    animation-name: wheel-animation;
+    animation-iteration-count: infinite;
+    /*animation-delay: .5s;*/
+    animation-timing-function: ease;
+    animation-duration: 13s;
+}
+
+@keyframes wheel-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
 }
