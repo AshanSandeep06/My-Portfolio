@@ -2,28 +2,35 @@
     width: 0;
 }*/
 
-#sky_div{
+#sky_div {
     width: 100%;
     height: 99.5vh;
 }
 
-#sky_div>img{
+#sky_div > img {
     width: 100%;
     height: 100%;
 }
 
-#city_div{
+#city_div {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    top: 11.125em;
     width: 100%;
     height: max-content;
 }
 
-#city_div>img{
+#city_div > img {
     width: 100%;
-    height: 100%;
+}
+
+#road_div {
+    position: absolute;
+    bottom: 0em;
+    width: 100%;
+    height: max-content;
+}
+
+#road_div > img {
+    height: 133px;
+    width: 100%;
 }
