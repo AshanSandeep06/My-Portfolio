@@ -2,7 +2,7 @@
     width: 0;
 }*/
 
-body{
+body {
     overflow: hidden;
 }
 
@@ -31,12 +31,12 @@ body{
     animation-timing-function: ease;
 }
 
-@keyframes city-animation{
-    from{
+@keyframes city-animation {
+    from {
         margin-left: 0;
     }
 
-    to{
+    to {
         margin-left: -150vw;
     }
 }
@@ -60,12 +60,12 @@ body{
     animation-timing-function: ease;
 }
 
-@keyframes road-animation{
-    from{
+@keyframes road-animation {
+    from {
         margin-left: 0;
     }
 
-    to{
+    to {
         margin-left: -150vw;
     }
 }
