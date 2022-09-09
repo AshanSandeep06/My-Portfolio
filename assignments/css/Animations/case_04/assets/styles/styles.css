@@ -41,7 +41,7 @@
     width: 100%;
 }
 
-#car_div{
+#car_div {
     position: absolute;
     top: 416px;
     left: 58px;
@@ -49,11 +49,22 @@
     height: max-content;
 }
 
-#car_div>img{
+#car_div > img {
     width: 375px;
     height: max-content;
 }
 
-#wheel_div{
+#wheel_div {
+    position: absolute;
+    top: 497px;
+    left: 90px;
+    width: 375px;
+    height: max-content;
+    display: flex;
+    column-gap: 159px;
+}
 
+#wheel_div > img {
+    width: 70px;
+    height: 70px;
 }
