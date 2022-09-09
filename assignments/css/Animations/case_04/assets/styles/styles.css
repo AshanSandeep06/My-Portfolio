@@ -2,9 +2,9 @@
     width: 0;
 }*/
 
-body{
+/*body{
     overflow-y: hidden;
-}
+}*/
 
 #sky_div {
     width: 100%;
@@ -18,7 +18,7 @@ body{
 
 #city_div {
     position: absolute;
-    top: 11.125em;
+    top: 185px;
     width: 100%;
     height: max-content;
 }
@@ -32,9 +32,24 @@ body{
     bottom: 0em;
     width: 100%;
     height: max-content;
+    display: flex;
+    flex-direction: column;
 }
 
 #road_div > img {
     height: 133px;
     width: 100%;
+}
+
+#car_div{
+    position: absolute;
+    top: 416px;
+    left: 58px;
+    width: fit-content;
+    height: max-content;
+}
+
+#car_div>img{
+    width: 375px;
+    height: max-content;
 }
