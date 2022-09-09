@@ -11,3 +11,19 @@
     width: 100%;
     height: 100%;
 }
+
+#city_div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: max-content;
+}
+
+#city_div>img{
+    width: 100%;
+    height: 100%;
+}
