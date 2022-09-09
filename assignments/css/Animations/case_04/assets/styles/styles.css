@@ -1,0 +1,13 @@
+/*::-webkit-scrollbar{
+    width: 0;
+}*/
+
+#sky_div{
+    width: 100%;
+    height: 99.5vh;
+}
+
+#sky_div>img{
+    width: 100%;
+    height: 100%;
+}
