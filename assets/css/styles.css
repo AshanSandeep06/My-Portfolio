@@ -1225,7 +1225,7 @@ main > section#projects_section > section:nth-child(2) {
     left: 0;
     right: 0;
     margin: auto;
-    width: 1492px;
+    width: 100%;
 }
 
 main > section#projects_section > section:nth-child(2) > h2 {
