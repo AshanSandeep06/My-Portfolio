@@ -591,7 +591,10 @@ main > section#education_section {
     background: #fafaff;
     width: 100%;
     position: relative;
-    height: 753px;
+    /*height: 753px;*/
+
+    /* 2022-09-10 */
+    height: 860px;
 }
 
 main > section#education_section > section:first-child {
@@ -679,9 +682,16 @@ main > section#education_section > section:nth-child(2) > div:last-child > i {
 }
 
 main > section#education_section > section:last-child {
-    margin-top: 40px;
+    /*margin-top: 40px;
     height: 610px;
+    position: relative;*/
+
+    /*2022-09-10*/
     position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 84px;
+    /*z-index: 1;*/
 }
 
 main > section#education_section > section:nth-child(2) > div:hover, main > section#education_section > section:nth-child(2) > div > i:hover {
@@ -689,6 +699,35 @@ main > section#education_section > section:nth-child(2) > div:hover, main > sect
 }
 
 main > section#education_section > section:nth-child(3) > div:first-child {
+    /*box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);*/
+   /* box-shadow: -4px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    position: absolute;
+    width: 356px;
+    right: 237px;
+    background: #F0F1F8;
+    border-radius: 50px;
+    height: 143px;
+    top: 85px;*/
+/*
+    background: url(../images/Education.png);
+    background-size: cover;
+    background-position: center;*/
+
+    /*2022-09-10*/
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 48px;
+}
+
+main > section#education_section > section:nth-child(3) > div:first-child>img{
+    width: 100vw;
+}
+
+/* First div */
+main > section#education_section > section:nth-child(3) > div:nth-child(2) {
     background: url(../images/Education_section_option_chart.png);
     background-size: cover;
     background-position: center;
@@ -702,20 +741,7 @@ main > section#education_section > section:nth-child(3) > div:first-child {
     margin: auto;
 }
 
-/* First div */
-main > section#education_section > section:nth-child(3) > div:nth-child(2) {
-    /*box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);*/
-    box-shadow: -4px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
-    position: absolute;
-    width: 356px;
-    right: 237px;
-    background: #F0F1F8;
-    border-radius: 50px;
-    height: 143px;
-    top: 85px;
-}
-
-main > section#education_section > section:nth-child(3) > div:nth-child(2) > h4 {
+main > section#education_section > section:nth-child(3) > div:nth-child(1) > h4 {
     font-size: 19px;
     font-weight: 600;
     position: absolute;
@@ -726,7 +752,7 @@ main > section#education_section > section:nth-child(3) > div:nth-child(2) > h4 
     width: max-content;
 }
 
-main > section#education_section > section:nth-child(3) > div:nth-child(2) > p:nth-child(2) {
+main > section#education_section > section:nth-child(3) > div:nth-child(1) > p:nth-child(2) {
     font-size: 16px;
     font-weight: 400;
     position: absolute;
@@ -738,7 +764,7 @@ main > section#education_section > section:nth-child(3) > div:nth-child(2) > p:n
     color: hsl(250, 8%, 45%);
 }
 
-main > section#education_section > section:nth-child(3) > div:nth-child(2) > p:last-child {
+main > section#education_section > section:nth-child(3) > div:nth-child(1) > p:last-child {
     font-size: 15px;
     font-weight: 400;
     position: absolute;
@@ -751,7 +777,7 @@ main > section#education_section > section:nth-child(3) > div:nth-child(2) > p:l
     color: hsl(250, 6%, 59%);
 }
 
-main > section#education_section > section:nth-child(3) > div:nth-child(2) > p:last-child > i {
+main > section#education_section > section:nth-child(3) > div:nth-child(1) > p:last-child > i {
     margin-right: 4px;
     position: relative;
 }
@@ -2551,7 +2577,7 @@ main > section#home_section > section:first-child > aside > nav#home_social_link
 /* ========================================================================================================= */
 
 /* Media Queries */
-@media all and (min-width: 1415px) and (max-width: 1520px){
+@media all and (min-width: 1415px) and (max-width: 1520px) {
     body > main > section#home_section > section:last-child {
         width: 42%;
     }
