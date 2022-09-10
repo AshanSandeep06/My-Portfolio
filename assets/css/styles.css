@@ -2548,5 +2548,26 @@ main > section#home_section > section:first-child > aside > nav#home_social_link
     background: #0A66C2;
 }
 
+/* ========================================================================================================= */
+
+/* Media Queries */
+@media all and (min-width: 1415px) and (max-width: 1520px){
+    body > main > section#home_section > section:last-child {
+        width: 42%;
+    }
+
+    main > section#education_section > section:nth-child(3) > div:nth-child(2) {
+        right: 193px;
+    }
+
+    main > section#education_section > section:nth-child(3) > div:nth-child(4) {
+        right: 193px;
+    }
+
+    main > section#education_section > section:nth-child(3) > div:nth-child(3) {
+        left: 189px;
+    }
+}
+
 
 
