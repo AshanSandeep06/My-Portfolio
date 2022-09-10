@@ -2624,7 +2624,6 @@ main > section#home_section > section:first-child > aside > nav#home_social_link
     /*body > main > section#home_section > section:last-child {
         width: 42%;
     }*/
-
     /*main > section#education_section > section:nth-child(3) > div:nth-child(2) {
         right: 193px;
     }
@@ -2662,14 +2661,13 @@ main > section#home_section > section:first-child > aside > nav#home_social_link
     }
 }
 
-@media all and (max-width: 1342px){
+@media all and (max-width: 1342px) {
     body > main > section#home_section > section:first-child {
         gap: 0;
         justify-content: space-around;
     }
 
     body > main > section#home_section > section:first-child > section#home_description {
-        background: wheat;
         transform: translateX(50px);
     }
 
