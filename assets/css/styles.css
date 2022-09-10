@@ -166,15 +166,21 @@ body > main #home_social_links {
     justify-content: space-evenly;
     height: 500px;
     position: relative;
-    top: 94px;
+
+    /* 2022-09-10 Changed ----- */
+    /*top: 94px;*/
+
+    /* 2022-09-10 Changed ----- */
+    margin-top: 62px;
+    margin-bottom: 85px;
 }
 
 body > main #home_social_links > div {
     background: linear-gradient(5deg, black, dimgray);
     /*background: rgba(255, 255, 255, 0.1);*/
     border-radius: 100%;
-    height: 72px;
-    width: 72px;
+    height: 62px;
+    width: 62px;
     position: relative;
 }
 
@@ -190,7 +196,7 @@ body > main #home_social_links > div > a {
 
 body > main #home_social_links > div > a > i {
     position: relative;
-    font-size: 2.4em;
+    font-size: 2.2em;
     color: white;
 }
 
@@ -205,27 +211,27 @@ body > main #home_social_links > div:hover > a {
 }
 
 body > main #home_social_links > div:first-child > a > i {
-    top: 24%;
-    left: 33%;
+    top: 23%;
+    left: 32%;
 }
 
 body > main #home_social_links > div:nth-child(2) > a > i {
     top: 23%;
-    left: 27%;
+    left: 25%;
 }
 
 body > main #home_social_links > div:nth-child(3) > a > i {
-    top: 26%;
-    left: 25%;
+    top: 25%;
+    left: 26%;
 }
 
 body > main #home_social_links > div:nth-child(4) > a > i {
-    top: 23%;
-    left: 25%;
+    top: 23.5%;
+    left: 23%;
 }
 
 body > main #home_social_links > div:nth-child(5) > a > i {
-    top: 23%;
+    top: 24%;
     left: 28%;
 }
 
@@ -241,29 +247,49 @@ body > main #home_social_links > div:hover {
 
 /* 2022-08-30 Changed Codes below ------------------------- */
 body > main > section#home_section {
-    height: 723px;
+    /* 2022-09-10 Changed ----- */
+    /*height: 723px;*/
+
     width: 100%;
     position: relative;
     display: flex;
-    justify-content: space-between;
-    background: #fafaff;
+    justify-content: space-around;
+    /*background: #fafaff;*/
+
+    /* 2022-09-10 Changed ----- */
+    background: deeppink;
+    flex-wrap: wrap;
 }
 
 body > main > section#home_section > section:first-child {
-    width: 55%;
+    /* 2022-09-10 Changed ----- */
+    background: darkgray;
+    width: 659px;
+    /* justify-content: space-between; */
+    /* width: 55%; */
     display: flex;
+    gap: 230px;
 }
 
 body > main > section#home_section > section:last-child {
-    width: 45%;
+    /* 2022-09-10 Changed ----- */
+    background: wheat;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+
+    /* 2022-09-10 Changed ----- */
+    /*width: 45%;*/
 }
 
 body > main > section#home_section > section:first-child > aside {
-    width: 26%;
+    /* 2022-09-10 Changed ----- */
+    /*width: 26%;*/
 }
 
 body > main > section#home_section > section:first-child > section#home_description {
-    width: 74%;
+    /* 2022-09-10 Changed ----- */
+    width: 359px;
 }
 
 main > section:first-child > section:first-child > #home_description > button {
@@ -287,7 +313,10 @@ main > section:first-child > section:first-child > #home_description > h1:first-
     margin-bottom: 0;
     position: relative;
     top: 115px;
-    left: 219px;
+
+    /* 2022-09-10 Changed ----- */
+    /*left: 219px;*/
+
     width: 330px;
 }
 
@@ -297,7 +326,10 @@ main > section:first-child > section:first-child > #home_description > h1:nth-ch
     margin-top: 0;
     position: relative;
     top: 115px;
-    left: 216px;
+
+    /* 2022-09-10 Changed ----- */
+    /*left: 216px;*/
+
     width: 230px;
 }
 
@@ -305,7 +337,10 @@ main > section:first-child > section:first-child > #home_description > h3 {
     width: 302px;
     position: relative;
     top: 115px;
-    left: 218px;
+
+    /* 2022-09-10 Changed ----- */
+    /*left: 218px;*/
+
     font-size: 20px;
     font-weight: 600;
     padding-top: 4px;
@@ -315,7 +350,10 @@ main > section:first-child > section:first-child > #home_description > pre {
     width: 372px;
     position: relative;
     top: 96px;
-    left: 218px;
+
+    /* 2022-09-10 Changed ----- */
+    /*left: 218px;*/
+
     font-size: 18px;
     font-family: poppins, sans-serif;
     font-weight: 500;
@@ -328,7 +366,9 @@ main > section:first-child > section:first-child > #home_description > button {
     height: 50px;
     position: relative;
     top: 109px;
-    left: 218px;
+
+    /* 2022-09-10 Changed ----- */
+    /*left: 218px;*/
 }
 
 main > section:first-child > section:first-child > #home_description > button:hover {
@@ -345,7 +385,9 @@ main > #home_section > section:last-child > div {
     border-radius: 100%;
     position: relative;
     top: 88px;
-    left: 5px;
+
+    /*Changed*/
+    /*left: 5px;*/
 }
 
 /* --------------------------------------------------------------------------- */
@@ -700,18 +742,18 @@ main > section#education_section > section:nth-child(2) > div:hover, main > sect
 
 main > section#education_section > section:nth-child(3) > div:first-child {
     /*box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);*/
-   /* box-shadow: -4px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
-    position: absolute;
-    width: 356px;
-    right: 237px;
-    background: #F0F1F8;
-    border-radius: 50px;
-    height: 143px;
-    top: 85px;*/
-/*
-    background: url(../images/Education.png);
-    background-size: cover;
-    background-position: center;*/
+    /* box-shadow: -4px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
+     position: absolute;
+     width: 356px;
+     right: 237px;
+     background: #F0F1F8;
+     border-radius: 50px;
+     height: 143px;
+     top: 85px;*/
+    /*
+        background: url(../images/Education.png);
+        background-size: cover;
+        background-position: center;*/
 
     /*2022-09-10*/
     width: 1100px;
@@ -722,7 +764,7 @@ main > section#education_section > section:nth-child(3) > div:first-child {
     margin-left: 48px;
 }
 
-main > section#education_section > section:nth-child(3) > div:first-child>img{
+main > section#education_section > section:nth-child(3) > div:first-child > img {
     width: 100vw;
 }
 
@@ -2582,7 +2624,7 @@ main > section#home_section > section:first-child > aside > nav#home_social_link
         width: 42%;
     }
 
-    main > section#education_section > section:nth-child(3) > div:nth-child(2) {
+    /*main > section#education_section > section:nth-child(3) > div:nth-child(2) {
         right: 193px;
     }
 
@@ -2592,6 +2634,28 @@ main > section#home_section > section:first-child > aside > nav#home_social_link
 
     main > section#education_section > section:nth-child(3) > div:nth-child(3) {
         left: 189px;
+    }*/
+}
+
+@media all and (max-width: 1375px) {
+    main > #home_section > section:last-child > div {
+        left: 30px;
+    }
+}
+
+@media all and (max-width: 1216px) {
+    main > #home_section > section:last-child > div {
+        left: 0;
+        top: 0;
+    }
+
+    body > main > section#home_section > section:last-child {
+        align-items: center;
+    }
+
+    body > main > section#home_section > section:first-child {
+        gap: 96px;
+        justify-content: space-around;
     }
 }
 
