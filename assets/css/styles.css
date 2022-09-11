@@ -2226,7 +2226,7 @@ main > section#activities_section > section:last-child > div {
     border-radius: 16px;
 }
 
-main > section#activities_section > section:last-child > div:hover{
+main > section#activities_section > section:last-child > div:hover {
     transition: all 0.8s ease;
     -webkit-transform: scale(0.97);
     transform: scale(0.97);
