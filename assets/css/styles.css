@@ -2205,12 +2205,12 @@ main > section#activities_section > section:last-child {
     justify-content: space-between;*/
 
     /* 2022-09-11 Added */
-    width: 1380px;
+    /*width: 1380px;*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 36px;
+    gap: 30px;
     margin-bottom: 76px;
     margin-left: 45px;
     margin-right: 45px;
