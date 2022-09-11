@@ -2765,7 +2765,13 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 @media all and (max-width: 1216px) {
     main > #home_section {
-        height: 920px;
+        /*height: 920px;*/
+    }
+
+    body > main > section#home_section {
+        flex-wrap: wrap-reverse;
+        padding-top: 10px;
+        transition: all 2s;
     }
 
     main > #home_section > section:last-child > div {
@@ -2776,7 +2782,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     body > main > section#home_section > section:last-child {
         align-items: center;
         position: relative;
-        bottom: 85px;
+        /*bottom: 85px;*/
     }
 
     body > main > section#home_section > section:first-child {
