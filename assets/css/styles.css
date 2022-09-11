@@ -2226,6 +2226,14 @@ main > section#activities_section > section:last-child > div {
     border-radius: 16px;
 }
 
+main > section#activities_section > section:last-child > div:hover{
+    transition: all 0.8s ease;
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+    box-shadow: 1px 1px 54px 1px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+}
+
 main > section#activities_section > section:last-child > div > p {
     position: relative;
     text-align: center;
