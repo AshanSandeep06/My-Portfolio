@@ -2864,6 +2864,16 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child {
         width: 645px;
     }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:last-child > button {
+        width: 152px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:last-child > button > i {
+        font-size: 16px;
+    }
 }
 
 
