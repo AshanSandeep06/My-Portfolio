@@ -1803,7 +1803,7 @@ main > section#services_section > section:first-child > h5 {
 }
 
 main > section#services_section > section:nth-child(2) {
-    position: absolute;
+    /*position: absolute;
     width: 1280px;
     height: 803px;
     top: 133px;
@@ -1812,7 +1812,7 @@ main > section#services_section > section:nth-child(2) {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    z-index: 1;
+    z-index: 1;*/
 }
 
 main > section#services_section > section:nth-child(2) > div:first-child {
@@ -1828,7 +1828,7 @@ main > section#services_section > section:nth-child(2) > div:first-child {
     border-radius: 25px;
 }
 
-main > section#services_section > section:nth-child(2) > div:first-child > div {
+main > section#services_section > section:nth-child(2) > section > div:first-child > div {
     position: absolute;
     top: 48px;
     left: 0;
@@ -1838,12 +1838,12 @@ main > section#services_section > section:nth-child(2) > div:first-child > div {
     margin: auto;
 }
 
-main > section#services_section > section:nth-child(2) > div:first-child > div > i {
+main > section#services_section > section:nth-child(2) > section >  div:first-child > div > i {
     color: #7461E2;
     font-size: 2.40em;
 }
 
-main > section#services_section > section:nth-child(2) > div:first-child > h4 {
+main > section#services_section > section:nth-child(2) > section >  div:first-child > h4 {
     position: absolute;
     top: 84px;
     left: 0;
@@ -1854,7 +1854,7 @@ main > section#services_section > section:nth-child(2) > div:first-child > h4 {
     color: #000000;
 }
 
-main > section#services_section > section:nth-child(2) > div:first-child > p {
+main > section#services_section > section:nth-child(2) > section >  div:first-child > p {
     position: absolute;
     width: 300px;
     top: 165px;
@@ -1881,7 +1881,7 @@ main > section#services_section > section:nth-child(2) > div:nth-child(2) {
     border-radius: 25px;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(2) > div {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(2) > div {
     position: absolute;
     top: 48px;
     left: 0;
@@ -1891,12 +1891,12 @@ main > section#services_section > section:nth-child(2) > div:nth-child(2) > div 
     margin: auto;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(2) > div > i {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(2) > div > i {
     color: #7461E2;
     font-size: 2.40em;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(2) > h4 {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(2) > h4 {
     position: absolute;
     top: 84px;
     left: 0;
@@ -1907,7 +1907,7 @@ main > section#services_section > section:nth-child(2) > div:nth-child(2) > h4 {
     color: #000000;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(2) > p {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(2) > p {
     position: absolute;
     width: 300px;
     top: 165px;
@@ -1934,7 +1934,7 @@ main > section#services_section > section:nth-child(2) > div:nth-child(3) {
     border-radius: 25px;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(3) > div {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(3) > div {
     position: absolute;
     top: 48px;
     left: 0;
@@ -1944,12 +1944,12 @@ main > section#services_section > section:nth-child(2) > div:nth-child(3) > div 
     margin: auto;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(3) > div > i {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(3) > div > i {
     color: #7461E2;
     font-size: 2.40em;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(3) > h4 {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(3) > h4 {
     position: absolute;
     top: 84px;
     left: 0;
@@ -1960,7 +1960,7 @@ main > section#services_section > section:nth-child(2) > div:nth-child(3) > h4 {
     color: #000000;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(3) > p {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(3) > p {
     position: absolute;
     width: 300px;
     top: 165px;
@@ -1987,7 +1987,7 @@ main > section#services_section > section:nth-child(2) > div:nth-child(4) {
     border-radius: 25px;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(4) > div {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(4) > div {
     position: absolute;
     top: 48px;
     left: 0;
@@ -1997,12 +1997,12 @@ main > section#services_section > section:nth-child(2) > div:nth-child(4) > div 
     margin: auto;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(4) > div > i {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(4) > div > i {
     color: #7461E2;
     font-size: 2.40em;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(4) > h4 {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(4) > h4 {
     position: absolute;
     top: 84px;
     left: 0;
@@ -2013,7 +2013,7 @@ main > section#services_section > section:nth-child(2) > div:nth-child(4) > h4 {
     color: #000000;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(4) > p {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(4) > p {
     position: absolute;
     width: 300px;
     top: 165px;
@@ -2040,7 +2040,7 @@ main > section#services_section > section:nth-child(2) > div:nth-child(5) {
     border-radius: 25px;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(5) > div {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(5) > div {
     position: absolute;
     top: 48px;
     left: 0;
@@ -2050,12 +2050,12 @@ main > section#services_section > section:nth-child(2) > div:nth-child(5) > div 
     margin: auto;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(5) > div > i {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(5) > div > i {
     color: #7461E2;
     font-size: 2.40em;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(5) > h4 {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(5) > h4 {
     position: absolute;
     top: 84px;
     left: 0;
@@ -2066,7 +2066,7 @@ main > section#services_section > section:nth-child(2) > div:nth-child(5) > h4 {
     color: #000000;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(5) > p {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(5) > p {
     position: absolute;
     width: 300px;
     top: 165px;
@@ -2094,7 +2094,7 @@ main > section#services_section > section:nth-child(2) > div:nth-child(6) {
     border-radius: 25px;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(6) > div {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(6) > div {
     position: absolute;
     top: 48px;
     left: 0;
@@ -2104,12 +2104,12 @@ main > section#services_section > section:nth-child(2) > div:nth-child(6) > div 
     margin: auto;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(6) > div > i {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(6) > div > i {
     color: #7461E2;
     font-size: 2.40em;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(6) > h4 {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(6) > h4 {
     position: absolute;
     top: 84px;
     left: 0;
@@ -2120,7 +2120,7 @@ main > section#services_section > section:nth-child(2) > div:nth-child(6) > h4 {
     color: #000000;
 }
 
-main > section#services_section > section:nth-child(2) > div:nth-child(6) > p {
+main > section#services_section > section:nth-child(2) > section >  div:nth-child(6) > p {
     position: absolute;
     width: 300px;
     top: 165px;
@@ -2680,6 +2680,48 @@ main > section#home_section > section:first-child > aside > nav#home_social_link
 }
 
 /* ========================================================================================================= */
+
+main > section#services_section > section:nth-child(2) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 66px;
+    margin-left: 69px;
+    margin-right: 69px;
+    margin-bottom: 62px;
+    /*margin: 66px 69px 62px 69px;*/
+    transition: all 2s;
+}
+
+main > section#services_section > section:nth-child(2)> section{
+    width: 1095px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 66px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 2s;
+}
+
+main > section#services_section > section:nth-child(2)> section>div {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    background: #fafaff;
+    /*box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);*/
+    box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 25px;
+}
+
+main > section#services_section > section:nth-child(2)> section>div:hover{
+    transition: all 0.8s ease;
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+    box-shadow: 1px 1px 54px 1px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+}
 
 /* Media Queries */
 @media all and (min-width: 1415px) and (max-width: 1520px) {
