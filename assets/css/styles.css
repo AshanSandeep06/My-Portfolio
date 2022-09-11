@@ -1751,7 +1751,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
 main > section#services_section {
     width: 100%;
     position: relative;
-    height: 950px;
+    /*height: 950px;*/
 }
 
 main > section#services_section > section:first-child {
