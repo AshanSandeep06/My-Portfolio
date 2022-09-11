@@ -396,13 +396,9 @@ main > #home_section > section:last-child > div {
 /*====================== About Section ======================*/
 
 main > section:nth-child(2)#about_section {
-    height: 726px;
+    /*height: 726px;*/
     width: 100%;
     position: relative;
-    /* display: flex;
-     justify-content: space-between;
-    background: #215fc2;*/
-    /*background: #b6bedb;*/
 }
 
 main > section:nth-child(2)#about_section > section:first-child {
@@ -443,13 +439,21 @@ main > section:nth-child(2)#about_section > section:first-child > h5 {
 }
 
 main > section:nth-child(2)#about_section > section:nth-child(2) {
-    position: absolute;
+    /* 2022-09-11 Commented */
+    /*position: absolute;
     top: 78px;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 100%;
+    width: 100%;*/
+
+    /* 2022-09-11 Added */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 68px;
 }
 
 main > section:nth-child(2)#about_section > section:nth-child(2) > article > div {
@@ -458,8 +462,10 @@ main > section:nth-child(2)#about_section > section:nth-child(2) > article > div
     background-position: center;
     width: 300px;
     height: 400px;
-    position: relative;
-    left: 72px;
+
+    /* 2022-09-11 Commented */
+    /*position: relative;
+    left: 72px;*/
     border-radius: 0.9rem;
     /* display: inline-block;
      position: absolute;
@@ -467,14 +473,29 @@ main > section:nth-child(2)#about_section > section:nth-child(2) > article > div
      bottom: 0;
      left: 92px;
      margin: auto;*/
+
+    /* 2022-09-11 Added */
+    margin-bottom: 69px;
 }
 
 main > section:nth-child(2)#about_section > section:nth-child(2) > article {
-    height: 100%;
+    /* 2022-09-11 Commented */
+    /*height: 100%;
     position: relative;
     display: flex;
     justify-content: space-around;
+    align-items: center;*/
+
+    /* 2022-09-11 Added */
+    width: 1296px;
+    display: flex;
+    gap: 95px;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 63px;
+    margin-right: 63px;
+    transition: all 2s;
 }
 
 /*main > section:nth-child(2)#about_section > section:nth-child(2) section {
@@ -509,9 +530,16 @@ main > #about_section > section:first-child > h1::after {
 }
 
 main > #about_section > section:nth-child(2) section > h2 {
-    font-size: 30px;
-    margin: 0;
+    /* 2022-09-11 Commented */
+    /*font-size: 30px;
+    margin: 0;*/
     font-weight: 600;
+
+    /* 2022-09-11 Added */
+    font-size: 32px;
+    /* line-height: 52px; */
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
 main > #about_section > section:nth-child(2) section > pre {
@@ -521,30 +549,60 @@ main > #about_section > section:nth-child(2) section > pre {
     margin-top: 2px;
 }
 
-main > #about_section > section:nth-child(2) section {
+/* 2022-09-11 Added */
+main > #about_section > section:nth-child(2) section > pre:last-of-type {
+    margin-bottom: 20px;
+}
+
+/*------------*/
+
+main > #about_section > section:nth-child(2) section > div {
     position: relative;
+    width: 655px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+    /* flex-direction: column; */
+    gap: 38px;
+}
+
+main > #about_section > section:nth-child(2) section > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+main > #about_section > section:nth-child(2) section {
+    /* 2022-09-11 Commented */
+    /*position: relative;
     width: 700px;
     top: 37px;
     right: 62px;
-    height: 502px;
+    height: 502px;*/
+
+    /* 2022-09-11 Added */
+    width: 667px;
+    display: flex;
+    flex-direction: column;
 }
 
-main > #about_section > section:nth-child(2) section > p:nth-child(4) {
-    margin-top: 34px;
+/*-------------------*/ /* Warp within a Div 2022-09-10 */
+
+main > #about_section > section:nth-child(2) section > div > p:nth-child(4) {
+    /*margin-top: 34px;*/
 }
 
-main > #about_section > section:nth-child(2) section > p {
-    margin-bottom: 24px;
+main > #about_section > section:nth-child(2) section > div p {
+    margin-bottom: 20px;
     padding-left: 4px;
-    margin-top: 24px;
+    margin-top: 8px;
 }
 
-main > #about_section > section:nth-child(2) section > p > i {
+main > #about_section > section:nth-child(2) section > div p > i {
     margin-right: 5px;
     font-size: 16px;
 }
 
-main > #about_section > section:nth-child(2) section > p > strong {
+main > #about_section > section:nth-child(2) section > div p > strong {
     font-size: 16px;
     margin-right: 10px;
 }
@@ -563,6 +621,10 @@ main > #about_section > section:nth-child(2) section > button {
     padding-left: 19px;
     left: 3px;
     height: 47px;
+
+    /* 2022-09-11 Added */
+    margin-top: 3px;
+    margin-bottom: 80px;
 }
 
 main > #about_section > section:nth-child(2) section > button > a {
@@ -584,20 +646,20 @@ main > #about_section > section:nth-child(2) section > button > a > div {
     right: 16px;
 }
 
-main > #about_section > section:nth-child(2) section > p > i {
+main > #about_section > section:nth-child(2) section > div p > i {
     color: #7461E2;
 }
 
-main > #about_section > section:nth-child(2) > article > section:nth-child(2) > p:nth-child(9) {
-    position: absolute;
+main > #about_section > section:nth-child(2) > article > section:nth-child(2) > div > p:nth-child(9) {
+    /*position: absolute;
     right: 165px;
-    top: 161px;
+    top: 161px;*/
 }
 
-main > #about_section > section:nth-child(2) > article > section:nth-child(2) > p:nth-child(10) {
-    position: absolute;
+main > #about_section > section:nth-child(2) > article > section:nth-child(2) > div > p:nth-child(10) {
+    /*position: absolute;
     right: 61px;
-    top: 204px;
+    top: 204px;*/
 }
 
 #scroll_up_btn {
@@ -2644,6 +2706,10 @@ main > section#home_section > section:first-child > aside > nav#home_social_link
 }
 
 @media all and (max-width: 1216px) {
+    main > #home_section {
+        height: 920px;
+    }
+
     main > #home_section > section:last-child > div {
         left: 0;
         top: 0;
@@ -2652,7 +2718,7 @@ main > section#home_section > section:first-child > aside > nav#home_social_link
     body > main > section#home_section > section:last-child {
         align-items: center;
         position: relative;
-        bottom: 30px;
+        bottom: 85px;
     }
 
     body > main > section#home_section > section:first-child {
@@ -2696,6 +2762,12 @@ main > section#home_section > section:first-child > aside > nav#home_social_link
         width: 110px;
         height: 38px;
         font-size: 16px;
+    }
+}
+
+@media all and (max-width: 1196px) {
+    main > section:nth-child(2)#about_section > section:nth-child(2) > article > div {
+        margin-bottom: 0;
     }
 }
 
