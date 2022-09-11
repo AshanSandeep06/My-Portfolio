@@ -2140,7 +2140,7 @@ main > section#services_section > section:nth-child(2) > section > div:nth-child
 main > section#activities_section {
     width: 100%;
     position: relative;
-    height: 380px;
+    /*height: 380px;*/
     background: #fafaff;
 }
 
@@ -2193,15 +2193,27 @@ main > section#activities_section > section:first-child > h5 {
 }
 
 main > section#activities_section > section:last-child {
-    position: absolute;
+    /* 2022-09-11 Commented */
+    /*position: absolute;
     width: 1380px;
-    /*height: 233px;*/
+    !*height: 233px;*!
     top: 126px;
     left: 0;
     right: 0;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;*/
+
+    /* 2022-09-11 Added */
+    width: 1380px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    margin-bottom: 76px;
+    margin-left: 45px;
+    margin-right: 45px;
 }
 
 main > section#activities_section > section:last-child > div {
