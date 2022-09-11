@@ -2856,5 +2856,15 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 }
 
+@media all and (max-width: 1216px) {
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form {
+        width: 570px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child {
+        width: 645px;
+    }
+}
+
 
 
