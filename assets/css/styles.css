@@ -2647,6 +2647,11 @@ body > footer {
     width: 100%;
     height: 348px;
     position: relative;
+
+    /* 2022-09-13 Added */
+    display: flex;
+    flex-direction: column;
+
 }
 
 body > footer > nav:first-child {
@@ -2673,10 +2678,11 @@ footer > aside {
     display: inline-flex;
     flex-direction: column;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    position: relative;
+   /* position: relative;
     top: 22px;
-    left: 136px;
+    left: 136px;*/
     margin-bottom: 75px;
+    margin-left: 58px;
 }
 
 footer > aside > h1:first-child {
