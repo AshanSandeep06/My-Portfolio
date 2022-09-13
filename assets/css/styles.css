@@ -857,7 +857,7 @@ main > section#education_section > section:nth-child(3) > div:first-child {
         background-position: center;*/
 
     /*2022-09-10*/
-    width: 1100px;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -866,7 +866,7 @@ main > section#education_section > section:nth-child(3) > div:first-child {
 }
 
 main > section#education_section > section:nth-child(3) > div:first-child > img {
-    width: 100vw;
+    width: 100%;
 }
 
 /* First div */
@@ -2893,13 +2893,12 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 
     body > main > section#home_section > section:last-child {
-        align-items: center;
         position: relative;
         /*bottom: 85px;*/
     }
 
     body > main > section#home_section > section:first-child {
-        gap: 96px;
+        gap: 118px;
         justify-content: space-around;
     }
 }
