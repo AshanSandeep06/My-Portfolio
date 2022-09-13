@@ -2406,7 +2406,7 @@ main > section#contact_section > section:last-child > section:first-child > h4 {
 }
 
 main > section#contact_section > section:last-child > section:nth-child(2) > aside {
-    width: 350px;
+    width: 315px;
     height: 210px;
     display: inline-flex;
     flex-direction: column;
@@ -3031,6 +3031,26 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     footer > aside {
         top: 14px;
         left: 100px;
+    }
+
+    main > section#contact_section > section:last-child > section:first-child > h3 {
+        font-size: 23px;
+    }
+
+    main > section#contact_section > section:last-child > section:first-child > h4 {
+        font-size: 17px;
+    }
+
+    section:last-child > section:nth-child(2) > aside {
+        margin-left: 46px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child {
+        width: 610px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form {
+        width: 536px;
     }
 }
 
