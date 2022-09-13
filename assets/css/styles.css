@@ -179,8 +179,12 @@ body > main #home_social_links > div {
     background: linear-gradient(5deg, black, dimgray);
     /*background: rgba(255, 255, 255, 0.1);*/
     border-radius: 100%;
-    height: 62px;
-    width: 62px;
+
+   /* height: 62px;
+    width: 62px;*/
+
+    height: 72px;
+    width: 72px;
     position: relative;
 }
 
