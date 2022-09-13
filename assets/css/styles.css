@@ -3061,6 +3061,28 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form {
         width: 536px;
     }
+
+    body > header > nav {
+        display: none;
+        transition: all .5s;
+    }
+
+    #btn-burger{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin-right: 52px;
+        background: none;
+        border: none;
+        transition: all .5s;
+    }
+
+    #btn-burger > #burger{
+        font-size: 1.8em;
+        transition: all .5s;
+    }
 }
 
 
