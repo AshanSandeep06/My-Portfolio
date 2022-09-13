@@ -3015,6 +3015,23 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     main > section#skills_section > section:nth-child(3) > section > div:nth-child(4) > h5 {
         font-size: 27px;
     }
+
+    body > footer > nav:first-child > menu i {
+        font-size: 34px;
+    }
+
+    footer > div:last-child > small {
+        font-size: 12px;
+    }
+
+    footer > div:last-child > i {
+        font-size: 12px;
+    }
+
+    footer > aside {
+        top: 14px;
+        left: 100px;
+    }
 }
 
 
