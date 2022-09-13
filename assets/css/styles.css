@@ -180,12 +180,13 @@ body > main #home_social_links > div {
     /*background: rgba(255, 255, 255, 0.1);*/
     border-radius: 100%;
 
-   /* height: 62px;
-    width: 62px;*/
+    /* height: 62px;
+     width: 62px;*/
 
     height: 72px;
     width: 72px;
     position: relative;
+    font-size: 17px;
 }
 
 body > main #home_social_links > div > a {
@@ -382,7 +383,7 @@ main > section:first-child > section:first-child > #home_description > h3 {
 }
 
 main > section:first-child > section:first-child > #home_description > pre {
-    width: 372px;
+    width: max-content;
     position: relative;
     top: 96px;
 
@@ -2801,7 +2802,8 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 @media all and (max-width: 1342px) {
     body > main > section#home_section > section:first-child {
         gap: 0;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding-left: 33px;
     }
 }
 
@@ -2861,6 +2863,12 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         width: 110px;
         height: 38px;
         font-size: 16px;
+    }
+
+    body > main #home_social_links > div {
+        width: 63px;
+        height: 63px;
+        font-size: 15px;
     }
 }
 
