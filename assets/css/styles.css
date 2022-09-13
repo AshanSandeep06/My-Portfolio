@@ -3195,6 +3195,19 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         height: 60px;
         font-size: 14px;
     }
+
+    main > section:nth-child(2)#about_section > section:nth-child(2) > article {
+        gap: 65px;
+    }
+
+    main > section:nth-child(2)#about_section > section:nth-child(2) > article > div {
+        width: 290px;
+        height: 330px;
+    }
+
+    main > #about_section > section:nth-child(2) section > h2 {
+        font-size: 30px;
+    }
 }
 
 
