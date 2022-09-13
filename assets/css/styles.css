@@ -3157,5 +3157,17 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 }
 
+@media (max-width: 885px) {
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form {
+        width: 450px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child {
+        width: 500px;
+    }
+}
+
+
+
 
 
