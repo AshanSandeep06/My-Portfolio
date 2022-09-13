@@ -311,10 +311,13 @@ body > main > section#home_section > section:last-child {
     /*background: wheat;*/
     width: 550px;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
 
     /* 2022-09-10 Changed ----- */
     /*width: 45%;*/
+
+    padding-left: 50px;
+    padding-top: 82px;
 }
 
 body > main > section#home_section > section:first-child > aside {
@@ -420,7 +423,7 @@ main > #home_section > section:last-child > div {
     display: inline-block;
     border-radius: 100%;
     position: relative;
-    top: 88px;
+    /*top: 88px;*/
 
     /*Changed*/
     /*left: 5px;*/
@@ -2795,7 +2798,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 @media all and (max-width: 1375px) {
     main > #home_section > section:last-child > div {
-        left: 30px;
+        /*left: 30px;*/
     }
 }
 
@@ -2835,34 +2838,35 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
     /* -------------- 2022-09-13 Added */
     body > main > section#home_section > section:first-child > section#home_description {
-        transform: translateX(50px);
+        /*transform: translateX(50px);*/
+        transform: translateX(25px);
     }
 
     main > #home_section > section:last-child > div {
-        width: 233px;
-        height: 330px;
+        width: 256px;
+        height: 352px;
     }
 
     main > section:first-child > section:first-child > #home_description > h1:first-child {
-        font-size: 43px;
+        font-size: 45px;
     }
 
     main > section:first-child > section:first-child > #home_description > h1:nth-child(2) {
-        font-size: 43px;
+        font-size: 45px;
     }
 
     main > section:first-child > section:first-child > #home_description > h3 {
-        font-size: 17px;
+        font-size: 19px;
     }
 
     main > section:first-child > section:first-child > #home_description > pre {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     main > section:first-child > section:first-child > #home_description > button {
-        width: 110px;
-        height: 38px;
-        font-size: 16px;
+        width: 130px;
+        height: 46px;
+        font-size: 18px;
     }
 
     body > main #home_social_links > div {
@@ -2878,7 +2882,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 
     body > main > section#home_section {
-        flex-wrap: wrap-reverse;
+        flex-wrap: nowrap;
         padding-top: 10px;
         transition: all 2s;
     }
