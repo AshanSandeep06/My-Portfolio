@@ -2778,6 +2778,15 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     cursor: pointer;
 }
 
+#btn-burger{
+    display: none;
+}
+
+#btn-burger > #burger{
+    font-size: 20px;
+    color: #7461E2;
+}
+
 /* Media Queries */
 @media all and (min-width: 1415px) and (max-width: 1520px) {
     /*body > main > section#home_section > section:last-child {
