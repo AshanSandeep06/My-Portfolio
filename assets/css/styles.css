@@ -211,28 +211,58 @@ body > main #home_social_links > div:hover > a {
 }
 
 body > main #home_social_links > div:first-child > a > i {
-    top: 23%;
-    left: 32%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
 }
 
 body > main #home_social_links > div:nth-child(2) > a > i {
-    top: 23%;
-    left: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
 }
 
 body > main #home_social_links > div:nth-child(3) > a > i {
-    top: 25%;
-    left: 26%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
 }
 
 body > main #home_social_links > div:nth-child(4) > a > i {
-    top: 23.5%;
-    left: 23%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
 }
 
 body > main #home_social_links > div:nth-child(5) > a > i {
-    top: 22%;
-    left: 28%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
 }
 
 /*body > main #home_social_links > div > a > i:hover{
