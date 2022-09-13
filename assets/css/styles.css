@@ -288,7 +288,7 @@ body > main > section#home_section {
     width: 100%;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background: #fafaff;
 
     /* 2022-09-10 Changed ----- */
@@ -737,7 +737,7 @@ main > section#education_section {
     /*height: 753px;*/
 
     /* 2022-09-10 */
-    height: 860px;
+    /*height: 860px;*/
 }
 
 main > section#education_section > section:first-child {
@@ -2921,6 +2921,10 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:last-child > button > i {
         font-size: 16px;
     }
+}
+
+@media all and (max-width: 1033px){
+
 }
 
 
