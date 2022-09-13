@@ -3168,7 +3168,33 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 }
 
 @media (max-width: 850px) {
+    main > section:first-child > section:first-child > #home_description > h1:first-child {
+        font-size: 41px;
+    }
 
+    main > section:first-child > section:first-child > #home_description > h1:nth-child(2) {
+        font-size: 41px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > h3 {
+        font-size: 18px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > pre {
+        font-size: 16px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > button {
+        font-size: 17.5px;
+        width: 125px;
+        height: 43px;
+    }
+
+    body > main #home_social_links > div {
+        width: 60px;
+        height: 60px;
+        font-size: 14px;
+    }
 }
 
 
