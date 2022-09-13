@@ -657,7 +657,7 @@ main > #about_section > section:nth-child(2) section > button {
     border-width: 0;
     width: 172px;
     padding-left: 19px;
-    left: 3px;
+    /*left: 3px;*/
     height: 47px;
 
     /* 2022-09-11 Added */
@@ -3083,6 +3083,59 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         font-size: 1.8em;
         color: #7461e2;
         transition: all .5s;
+    }
+}
+
+@media (max-width: 990px) {
+    body > main > section#home_section {
+        flex-wrap: wrap-reverse;
+    }
+
+    main > #home_section > section:last-child > div {
+        width: 256px;
+        height: 340px;
+    }
+
+    body > main > section#home_section > section:last-child {
+        padding: 0;
+        justify-content: center;
+    }
+
+    body > main > section#home_section > section:first-child {
+        justify-content: flex-start;
+        gap: 113px;
+    }
+
+    body > main #home_social_links {
+        margin-top: 25px;
+    }
+
+    body > main > section#home_section > section:first-child > section#home_description {
+         transform: translateX(0px);
+    }
+
+    main > section:first-child > section:first-child > #home_description > h1:first-child {
+        top: 80px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > h1:nth-child(2) {
+        top: 80px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > h3 {
+        top: 80px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > pre {
+        top: 61px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > button {
+        top: 75px;
+    }
+
+    body > main > section#home_section > section:first-child > section#home_description {
+        width: 359px;
     }
 }
 
