@@ -1336,6 +1336,7 @@ main > section#projects_section {
     width: 100%;
     position: relative;
     height: 803px;
+    display: none;
 }
 
 main > section#projects_section > section:first-child {
@@ -3094,6 +3095,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     main > #home_section > section:last-child > div {
         width: 256px;
         height: 340px;
+        /*border-radius: 49% 45% 43% 45% / 27% 25% 76% 74% ;*/
     }
 
     body > main > section#home_section > section:last-child {
@@ -3111,7 +3113,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 
     body > main > section#home_section > section:first-child > section#home_description {
-         transform: translateX(0px);
+        transform: translateX(0px);
     }
 
     main > section:first-child > section:first-child > #home_description > h1:first-child {
