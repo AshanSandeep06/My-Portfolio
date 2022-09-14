@@ -3441,7 +3441,13 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 }
 
 @media (max-width: 700px) {
+    body > header > div {
+        left: 48px;
+    }
 
+    body > header > div > h2 {
+        font-size: 22px;
+    }
 }
 
 
