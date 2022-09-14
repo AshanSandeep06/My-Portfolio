@@ -3094,6 +3094,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         background: none;
         border: none;
         transition: all .5s;
+        cursor: pointer;
     }
 
     #btn-burger > #burger {
