@@ -3428,6 +3428,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
     footer > aside {
         margin-bottom: 86px;
+        margin-left: 40px;
     }
 
     main > section#contact_section > section:last-child > section:nth-child(2) > aside {
