@@ -3546,6 +3546,8 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     main > #about_section > section:nth-child(2) section > div {
         gap: 28px;
         width: 100%;
+        margin-right: 29px;
+        flex-wrap: wrap;
     }
 
     main > section#contact_section > section:last-child > section:nth-child(2) > aside {
@@ -3564,6 +3566,83 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form {
         width: 333px;
     }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:first-child > div > input {
+        font-size: 14px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(2) > input {
+        font-size: 14px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(3) > textarea {
+        font-size: 14px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:first-child > div > label {
+        font-size: 12px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(2) > label {
+        font-size: 12px;
+        color: black;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(3) > label {
+        font-size: 12px;
+    }
+
+    main > section:nth-child(2)#about_section > section:nth-child(2) > article {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    main > #about_section > section:nth-child(2) section > div {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    main > #about_section > section:nth-child(2) section > button {
+        top: 19px;
+    }
+
+    main > section:nth-child(2)#about_section > section:nth-child(2) > article > div {
+        width: 275px;
+        height: 315px;
+    }
+
+    body > main #home_social_links > div {
+        width: 56px;
+        height: 56px;
+        font-size: 14px;
+    }
+
+    footer > aside {
+        margin-left: 29px;
+        margin-top: 15px;
+    }
+
+    footer > aside > h1:first-child {
+        font-size: 31px;
+    }
+
+    footer > aside > h1:last-of-type {
+        font-size: 31px;
+    }
+
+    footer > aside > h5 {
+        font-size: 13px;
+    }
+
+    footer > div:last-child > small {
+        font-size: 11.5px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) {
+        flex-wrap: wrap;
+    }
+
 
 }
 
