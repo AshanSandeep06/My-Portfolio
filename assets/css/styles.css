@@ -3361,6 +3361,47 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         transition: all 2s;
         width: 45%;
     }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > aside > div > div > h4 {
+        font-size: 18px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > aside > div > div > p {
+        font-size: 13px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > aside i {
+        font-size: 26px;
+        margin-right: 33px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:first-child > div > input {
+        font-size: 15px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(2) > input {
+        font-size: 15px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(3) > textarea {
+        font-size: 15px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:last-child > button {
+        width: 145px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child {
+        width: max-content;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form {
+        width: 379px;
+        margin: 0;
+        padding-top: 33px;
+    }
 }
 
 
