@@ -3351,6 +3351,11 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         height: 34px;
         font-size: 34px;
     }
+
+    main > section#services_section > section:nth-child(2) > section > div {
+        width: 98%;
+        transition: all 2s;
+    }
 }
 
 
