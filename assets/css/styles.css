@@ -759,7 +759,7 @@ main > section#education_section > section:nth-child(2) {
     display: flex;
     justify-content: space-evenly;
     height: 36px;
-    width: 768px;
+    width: 100%;
     position: absolute;
     left: 0;
     right: 0;
