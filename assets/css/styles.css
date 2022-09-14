@@ -3448,6 +3448,63 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     body > header > div > h2 {
         font-size: 22px;
     }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:first-child {
+        width: 29px;
+        height: 29px;
+        font-size: 29px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(2) > img, main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(6) > img {
+        width: 58px;
+        height: 58px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(2) > h5, main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(6) > h5 {
+        font-size: 14px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(3) > img, main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(5) > img {
+        width: 76px;
+        height: 76px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(3) > h5, main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(5) > h5 {
+        font-size: 16px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(4) > img {
+        width: 130px;
+        height: 130px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(4) > h5 {
+        font-size: 21px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) {
+        height: 298px;
+    }
+
+    main > section#skills_section > section:nth-child(2) {
+        height: 362px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(7) {
+        width: 29px;
+        height: 29px;
+        font-size: 29px;
+    }
+
+    main > section#skills_section > section:nth-child(3) {
+        height: 362px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section {
+        height: 298px;
+    }
+
+
 }
 
 
