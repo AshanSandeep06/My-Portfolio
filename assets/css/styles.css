@@ -3207,7 +3207,6 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 
     /*------------About Section--------------*/
-
     main > section:nth-child(2)#about_section > section:nth-child(2) > article {
         gap: 65px;
     }
@@ -3223,12 +3222,12 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         text-align: center;
     }
 
-    main > #about_section > section:nth-child(2) section > pre{
+    main > #about_section > section:nth-child(2) section > pre {
         font-size: 14.5px;
         text-align: center;
     }
 
-    main > #about_section > section:nth-child(2) section > pre:first-of-type{
+    main > #about_section > section:nth-child(2) section > pre:first-of-type {
         margin-bottom: 12px;
     }
 
