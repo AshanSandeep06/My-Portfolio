@@ -580,6 +580,16 @@ main > #about_section > section:nth-child(2) section > h2 {
     margin-bottom: 8px;
 }
 
+main > #about_section > section:nth-child(2) section > button i {
+    color: white;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 4px;
+    margin: auto;
+    height: max-content;
+}
+
 main > #about_section > section:nth-child(2) section > pre {
     font-size: 16px;
     font-family: poppins, sans-serif;
@@ -596,7 +606,7 @@ main > #about_section > section:nth-child(2) section > pre:last-of-type {
 
 main > #about_section > section:nth-child(2) section > div {
     position: relative;
-    width: 655px;
+    /*width: 655px;*/
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 6px;
@@ -3196,6 +3206,8 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         font-size: 14px;
     }
 
+    /*------------About Section--------------*/
+
     main > section:nth-child(2)#about_section > section:nth-child(2) > article {
         gap: 65px;
     }
@@ -3206,7 +3218,49 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 
     main > #about_section > section:nth-child(2) section > h2 {
-        font-size: 30px;
+        font-size: 31px;
+        margin-bottom: 14px;
+        text-align: center;
+    }
+
+    main > #about_section > section:nth-child(2) section > pre{
+        font-size: 14.5px;
+        text-align: center;
+    }
+
+    main > #about_section > section:nth-child(2) section > pre:first-of-type{
+        margin-bottom: 12px;
+    }
+
+    main > #about_section > section:nth-child(2) section > div p > i {
+        font-size: 1em;
+    }
+
+    main > #about_section > section:nth-child(2) section > div p > strong {
+        font-size: 1em;
+    }
+
+    main > #about_section > section:nth-child(2) section > div p {
+        font-size: 14.5px;
+    }
+
+    main > #about_section > section:nth-child(2) section {
+        align-items: center;
+    }
+
+    main > #about_section > section:nth-child(2) section > pre:last-of-type {
+        margin-bottom: 25px;
+    }
+
+    main > #about_section > section:nth-child(2) section > button {
+        font-size: 14px;
+        width: 152px;
+        height: 42px;
+    }
+
+    main > #about_section > section:nth-child(2) section > div {
+        gap: 42px;
+        padding-left: 53px;
     }
 }
 
