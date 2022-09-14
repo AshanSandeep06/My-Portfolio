@@ -3643,7 +3643,10 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         flex-wrap: wrap;
     }
 
-
+    main > section#contact_section > section:last-child > section:nth-child(2) > aside {
+        margin-top: 125px;
+        margin-left: 0;
+    }
 }
 
 
