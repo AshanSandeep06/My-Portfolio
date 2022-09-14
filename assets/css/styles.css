@@ -3356,6 +3356,11 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         width: 98%;
         transition: all 2s;
     }
+
+    main > section#activities_section > section:last-child > div {
+        transition: all 2s;
+        width: 45%;
+    }
 }
 
 
