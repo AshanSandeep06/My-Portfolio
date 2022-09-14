@@ -3406,7 +3406,37 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 }
 
 @media (max-width: 780px) {
+    body > footer > nav:first-child > menu i {
+        font-size: 31px;
+    }
 
+    footer > aside > h1:first-child {
+        font-size: 33px;
+    }
+
+    footer > aside > h1:last-of-type {
+        font-size: 33px;
+    }
+
+    footer > aside > h5 {
+        font-size: 14px;
+    }
+
+    footer > div:last-child > small {
+        font-size: 11px;
+    }
+
+    footer > aside {
+        margin-bottom: 86px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > aside {
+        margin-left: 0;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form {
+        width: 358px;
+    }
 }
 
 
