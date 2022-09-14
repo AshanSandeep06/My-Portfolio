@@ -3261,6 +3261,96 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         gap: 42px;
         padding-left: 53px;
     }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:first-child {
+        width: 34px;
+        height: 34px;
+        font-size: 34px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(2) > img, main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(6) > img {
+        width: 68px;
+        height: 68px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(2) > h5, main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(6) > h5 {
+        font-size: 15px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(3) > img, main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(5) > img {
+        width: 89px;
+        height: 89px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(3) > h5, main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(5) > h5 {
+        font-size: 17.5px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(4) > img {
+        width: 146px;
+        height: 146px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(4) > h5 {
+        font-size: 23px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(7) {
+        width: 34px;
+        height: 34px;
+        font-size: 34px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:first-child {
+        width: 34px;
+        height: 34px;
+        font-size: 34px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(7) {
+        width: 34px;
+        height: 34px;
+        font-size: 34px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:first-child {
+        width: 34px;
+        height: 34px;
+        font-size: 34px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(2) > img, main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(6) > img {
+        width: 68px;
+        height: 68px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(2) > h5, main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(6) > h5 {
+        font-size: 15px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(3) > img, main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(5) > img {
+        width: 89px;
+        height: 89px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(3) > h5, main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(5) > h5 {
+        font-size: 17.5px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section > div:nth-child(4) > img {
+        width: 132px;
+        height: 132px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section > div:nth-child(4) > h5 {
+        font-size: 23px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(7) {
+        width: 34px;
+        height: 34px;
+        font-size: 34px;
+    }
 }
 
 
