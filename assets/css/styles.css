@@ -3221,13 +3221,13 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     main > #about_section > section:nth-child(2) section > h2 {
         font-size: 31px;
         margin-bottom: 14px;
-        text-align: center;
+        /*text-align: center;*/
     }
 
     /* Pre changed into Paragraph */
     main > #about_section > section:nth-child(2) section > p {
         font-size: 14.5px;
-        text-align: center;
+        /*text-align: center;*/
     }
 
     /* Pre changed into Paragraph */
@@ -3248,7 +3248,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 
     main > #about_section > section:nth-child(2) section {
-        align-items: center;
+        /*align-items: center;*/
     }
 
     /* Pre changed into Paragraph */
@@ -3264,7 +3264,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
     main > #about_section > section:nth-child(2) section > div {
         gap: 42px;
-        padding-left: 53px;
+        /*padding-left: 53px;*/
     }
 
     main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:first-child {
@@ -3446,7 +3446,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 @media (max-width: 738px) {
     main > #about_section > section:nth-child(2) section {
-        width: 100%;
+        width: 99%;
     }
 }
 
@@ -3833,6 +3833,22 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         width: 52px;
         height: 52px;
         font-size: 13.5px;
+    }
+
+    main > #about_section > section:nth-child(2) section > h2 {
+        text-align: center;
+    }
+
+    main > #about_section > section:nth-child(2) section > p {
+        text-align: center;
+    }
+
+    main > #about_section > section:nth-child(2) section {
+        align-items: center;
+    }
+
+    main > #about_section > section:nth-child(2) section > div {
+        padding-left: 53px;
     }
 }
 
