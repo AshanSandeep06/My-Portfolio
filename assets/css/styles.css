@@ -3644,8 +3644,26 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 
     main > section#contact_section > section:last-child > section:nth-child(2) > aside {
-        margin-top: 125px;
-        margin-left: 0px;
+        margin-top: 73px;
+        margin-left: 36px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) {
+        flex-wrap: wrap;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child {
+        align-self: center;
+        width: 92%;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form {
+        width: 92%;
+        /* width: 333px; */
     }
 }
 
