@@ -3665,6 +3665,31 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         width: 92%;
         /* width: 333px; */
     }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:first-child > div > label {
+        font-size: 13px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(2) > label {
+        font-size: 13px;
+        color: black;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(3) > label {
+        font-size: 13px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:first-child > div > input {
+        font-size: 15px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(2) > input {
+        font-size: 15px;
+    }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(3) > textarea {
+        font-size: 15px;
+    }
 }
 
 
