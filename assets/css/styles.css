@@ -3977,6 +3977,32 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     body > main > section#home_section > section:first-child {
         gap: 45px;
     }
+
+    body > main #home_social_links {
+        margin-bottom: 18px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > h1:first-child {
+        font-size: 31px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > h1:nth-child(2) {
+        font-size: 31px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > h3 {
+        font-size: 15.5px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > p {
+        font-size: 15px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > button {
+        font-size: 15px;
+        width: 100px;
+        height: 33px;
+    }
 }
 
 
