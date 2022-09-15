@@ -2422,7 +2422,7 @@ main > section#contact_section > section:last-child > section:nth-child(2) > asi
     display: inline-flex;
     flex-direction: column;
     position: relative;
-    top: 109px;
+    top: 136px;
     left: 30px;
 }
 
