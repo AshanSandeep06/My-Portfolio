@@ -531,8 +531,8 @@ main > section:nth-child(2)#about_section > section:nth-child(2) > article {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: 63px;
-    margin-right: 63px;
+    margin-left: 25px;
+    margin-right: 25px;
     transition: all 2s;
 }
 
@@ -590,15 +590,16 @@ main > #about_section > section:nth-child(2) section > button i {
     height: max-content;
 }
 
-main > #about_section > section:nth-child(2) section > pre {
+/* Pre changed into Paragraph */
+main > #about_section > section:nth-child(2) section > p {
     font-size: 16px;
     font-family: poppins, sans-serif;
     color: hsl(250, 8%, 45%);
     margin-top: 2px;
 }
 
-/* 2022-09-11 Added */
-main > #about_section > section:nth-child(2) section > pre:last-of-type {
+/* Pre changed into Paragraph */
+main > #about_section > section:nth-child(2) section > p:last-of-type {
     margin-bottom: 20px;
 }
 
@@ -3223,12 +3224,14 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         text-align: center;
     }
 
-    main > #about_section > section:nth-child(2) section > pre {
+    /* Pre changed into Paragraph */
+    main > #about_section > section:nth-child(2) section > p {
         font-size: 14.5px;
         text-align: center;
     }
 
-    main > #about_section > section:nth-child(2) section > pre:first-of-type {
+    /* Pre changed into Paragraph */
+    main > #about_section > section:nth-child(2) section > p:first-of-type {
         margin-bottom: 12px;
     }
 
@@ -3248,7 +3251,8 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         align-items: center;
     }
 
-    main > #about_section > section:nth-child(2) section > pre:last-of-type {
+    /* Pre changed into Paragraph */
+    main > #about_section > section:nth-child(2) section > p:last-of-type {
         margin-bottom: 25px;
     }
 
@@ -3440,6 +3444,12 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 }
 
+@media (max-width: 738px) {
+    main > #about_section > section:nth-child(2) section {
+        width: 100%;
+    }
+}
+
 @media (max-width: 700px) {
     body > header > div {
         left: 48px;
@@ -3594,6 +3604,14 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
     main > section:nth-child(2)#about_section > section:nth-child(2) > article {
         width: 100%;
+    }
+}
+
+/* 2022-09-15 Added */
+@media (max-width: 691px) {
+    main > #about_section > section:nth-child(2) section > div {
+        gap: 0;
+        flex-direction: column;
     }
 }
 
