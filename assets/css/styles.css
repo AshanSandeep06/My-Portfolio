@@ -3794,6 +3794,15 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form {
         width: 88%;
     }
+
+    main > section:nth-child(2)#about_section > section:nth-child(2) > article > div {
+        width: 260px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 570px) {
+
 }
 
 
