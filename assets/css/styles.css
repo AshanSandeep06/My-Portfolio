@@ -3940,5 +3940,12 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 }
 
+@media (max-width: 429px) {
+    main > #home_section > section:last-child > div {
+        width: 236px;
+        height: 312px;
+    }
+}
+
 
 
