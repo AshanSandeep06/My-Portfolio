@@ -3712,6 +3712,10 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     footer > div:last-child > small {
         font-size: 10.5px;
     }
+
+    main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form {
+        width: 88%;
+    }
 }
 
 
