@@ -3879,8 +3879,8 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         font-size: 27px;
     }
 
-    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(5){
-       display: none;
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(5) {
+        display: none;
     }
 
 
