@@ -3690,6 +3690,84 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     main > section#contact_section > section:last-child > section:nth-child(2) > section:last-child > form#contactForm > div:nth-child(3) > textarea {
         font-size: 15px;
     }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:first-child {
+        width: 25px;
+        height: 25px;
+        font-size: 25px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(7) {
+        width: 25px;
+        height: 25px;
+        font-size: 25px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(2) > img, main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(6) > img {
+        width: 51px;
+        height: 51px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(2) > h5, main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(6) > h5 {
+        font-size: 13px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(3) > img, main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(5) > img {
+        width: 68px;
+        height: 68px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(3) > h5, main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(5) > h5 {
+        font-size: 14px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(4) > img {
+        width: 115px;
+        height: 115px;
+    }
+
+    main > section#skills_section > section:nth-child(2) > section:nth-child(2) > div:nth-child(4) > h5 {
+        font-size: 18px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:first-child {
+        width: 25px;
+        height: 25px;
+        font-size: 25px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(7) {
+        width: 25px;
+        height: 25px;
+        font-size: 25px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(2) > img, main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(6) > img {
+        width: 51px;
+        height: 51px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(2) > h5, main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(6) > h5 {
+        font-size: 13px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(3) > img, main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(5) > img {
+        width: 65px;
+        height: 65px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(3) > h5, main > section#skills_section > section:nth-child(3) > section:nth-child(2) > div:nth-child(5) > h5 {
+        font-size: 14px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section > div:nth-child(4) > img {
+        width: 98px;
+        height: 98px;
+    }
+
+    main > section#skills_section > section:nth-child(3) > section > div:nth-child(4) > h5 {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 600px) {
