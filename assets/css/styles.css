@@ -4486,6 +4486,9 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     main > section#services_section > section:nth-child(2) > section > div:nth-child(3) {
         height: 298px;
     }
+}
+
+@media (max-width: 390px) {
 
 }
 
