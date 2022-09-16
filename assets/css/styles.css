@@ -4415,6 +4415,13 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     footer > div:last-child {
         order: 3;
     }
+
+    body > main #home_social_links {
+        margin-top: 22px;
+        gap: 28px;
+        justify-content: flex-start;
+        height: 400px;
+    }
 }
 
 @media (max-width: 415px) {
@@ -4542,5 +4549,8 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     body > footer > nav:first-child > menu {
         column-gap: 43px;
     }
+}
+
+@media (max-width: 380px) {
 
 }
