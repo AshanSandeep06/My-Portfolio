@@ -4673,4 +4673,9 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     main > section#services_section > section:nth-child(2) {
         margin: 66px 25px 75px 25px;
     }
+
+    main > section#activities_section > section:last-child > div {
+        transition: all 2s;
+        width: 98%;
+    }
 }
