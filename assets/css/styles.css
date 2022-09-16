@@ -4325,7 +4325,61 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         border-radius: 10px;
     }
 
+    main > section#contact_section > section:first-child > h1 {
+        font-size: 32px;
+        transition: all 2s;
+    }
 
+    main > section#contact_section > section:first-child > h1::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 1px;
+        background: #ddd;
+        bottom: 1px;
+        left: calc(32% - 60px);
+    }
+
+    main > section#contact_section > section:first-child > h1::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 82px;
+        height: 4px;
+        background: #7461E2;
+        bottom: -1px;
+        left: calc(41% - 20px);
+        border-radius: 10px;
+    }
+
+    main > section#contact_section > section:last-child > section:first-child > h3 {
+        font-size: 21px;
+    }
+
+    main > section#contact_section > section:last-child > section:first-child > h4 {
+        font-size: 16px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > h1:first-child {
+        top: 25px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > h1:nth-child(2) {
+        top: 25px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > h3 {
+        top: 25px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > p {
+        top: 6px;
+    }
+
+    main > section:first-child > section:first-child > #home_description > button {
+        top: 20px;
+    }
 }
 
 
