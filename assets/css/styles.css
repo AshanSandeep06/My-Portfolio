@@ -4397,6 +4397,15 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         top: 8px;
         margin-left: 10px;
     }
+
+    main > section#education_section > section:nth-child(2) {
+        justify-content: center;
+        gap: 70px;
+    }
+
+    main > section#education_section > section:nth-child(2) > div {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 415px) {
@@ -4474,6 +4483,9 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         transform: translate(-5px);
     }
 
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(3) {
+        height: 298px;
+    }
 
 }
 
