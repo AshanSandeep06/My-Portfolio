@@ -4380,6 +4380,23 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     main > section:first-child > section:first-child > #home_description > button {
         top: 20px;
     }
+
+    main > #about_section > section:nth-child(2) section > p {
+        text-align: left;
+    }
+
+    main > #about_section > section:nth-child(2) section > div {
+        padding-left: 0;
+    }
+
+    main > #about_section > section:nth-child(2) section {
+         align-items: flex-start;
+    }
+
+    main > #about_section > section:nth-child(2) section > button {
+        top: 8px;
+        margin-left: 10px;
+    }
 }
 
 @media (max-width: 415px) {
