@@ -868,7 +868,6 @@ main > section#education_section > section:nth-child(3) > div:first-child {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: 48px;
 }
 
 main > section#education_section > section:nth-child(3) > div:first-child > img {
