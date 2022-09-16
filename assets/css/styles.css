@@ -4493,7 +4493,38 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 }
 
 @media (max-width: 390px) {
+    main > section:nth-child(2)#about_section > section:nth-child(2) > article > div {
+        width: 250px;
+        height: 288px;
+    }
 
+    main > section#services_section > section:nth-child(2) > section > div:first-child {
+        height: 300px;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(2) {
+        height: 290px;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(3) {
+        height: 302px;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(4) {
+        height: 310px;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(5) {
+        height: 334px;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:last-child {
+        height: 290px;
+    }
+
+    main > section#services_section > section:nth-child(2) {
+        margin: 66px 58px 75px 58px;
+    }
 }
 
 
