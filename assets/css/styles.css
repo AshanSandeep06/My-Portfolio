@@ -4009,6 +4009,101 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         height: 29px;
         font-size: 29px;
     }
+
+    /* Services Section */
+    main > section#services_section > section:nth-child(2) > section > div {
+        height: 284px;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:first-child > h4 {
+        font-size: 19px;
+        margin-bottom: 0;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:first-child > p {
+        font-size: 15px;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:first-child > p {
+        top: 162px;
+        width: fit-content;
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(2) > h4 {
+        font-size: 19px;
+        margin-bottom: 0;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(2) > p {
+        top: 162px;
+        width: fit-content;
+        margin-right: 12px;
+        margin-left: 12px;
+        font-size: 15px;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(3) > h4 {
+        font-size: 19px;
+        margin-bottom: 0;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(3) > p {
+        top: 162px;
+        width: fit-content;
+        margin-right: 12px;
+        margin-left: 12px;
+        font-size: 15px;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(4) > h4 {
+        font-size: 19px;
+        margin-bottom: 0;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(4) > p {
+        top: 162px;
+        width: fit-content;
+        margin-right: 12px;
+        margin-left: 12px;
+        font-size: 15px;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(4){
+        height: 306px;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(5) > h4 {
+        font-size: 19px;
+        margin-bottom: 0;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(5) > p {
+        top: 162px;
+        width: fit-content;
+        margin-right: 12px;
+        margin-left: 12px;
+        font-size: 15px;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(5) {
+        height: 310px;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(6) > h4 {
+        font-size: 19px;
+        margin-bottom: 0;
+    }
+
+    main > section#services_section > section:nth-child(2) > section > div:nth-child(6) > p {
+        top: 162px;
+        width: fit-content;
+        margin-right: 12px;
+        margin-left: 12px;
+        font-size: 15px;
+    }
+
 }
 
 @media (max-width: 429px) {
