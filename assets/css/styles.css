@@ -1296,9 +1296,6 @@ main > section#skills_section > section:nth-child(3) > section:nth-child(2) > di
 main > section#skills_section > section:nth-child(2) > section button, main > section#skills_section > section:nth-child(3) > section button {
     background: transparent;
     border: none;
-    /* background: rgba(236, 240, 243, 0.85); */
-    /* box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgb(13 39 80 / 16%); */
-    /* border-radius: 25px; */
     position: absolute;
     top: 0;
     right: 0;
@@ -1541,8 +1538,6 @@ main > section#projects_section > section:nth-child(3) > section:first-child > s
 
 main > section#projects_section > section:nth-child(3) > section:first-child > section:nth-child(2) > i {
     font-size: 10px;
-    /*color: hsl(250, 8%, 45%);*/
-    /*color: #c5c5c7;*/
     color: #bebec7;
 }
 
@@ -1867,7 +1862,6 @@ main > section#services_section > section:nth-child(2) > div:first-child {
     margin: auto auto 65px;
     width: 340px;
     height: 340px;
-    /*background: #ECF0F3;*/
     background: #fafaff;
     box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
     border-radius: 25px;
@@ -4526,6 +4520,3 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         margin: 66px 58px 75px 58px;
     }
 }
-
-
-
