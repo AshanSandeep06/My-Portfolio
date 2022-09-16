@@ -4421,6 +4421,10 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         justify-content: flex-start;
         height: 400px;
     }
+
+    main > section:nth-child(2)#about_section > section:nth-child(2) > article {
+        gap: 49px;
+    }
 }
 
 @media (max-width: 415px) {
