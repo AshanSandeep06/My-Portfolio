@@ -4666,5 +4666,11 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 }
 
 @media (max-width: 325px) {
+    body > footer > nav:first-child > menu {
+        column-gap: 36px;
+    }
 
+    main > section#services_section > section:nth-child(2) {
+        margin: 66px 25px 75px 25px;
+    }
 }
