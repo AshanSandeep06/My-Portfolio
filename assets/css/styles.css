@@ -4400,7 +4400,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
     main > section#education_section > section:nth-child(2) {
         justify-content: center;
-        gap: 70px;
+        gap: 72px;
     }
 
     main > section#education_section > section:nth-child(2) > div {
