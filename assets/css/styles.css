@@ -4664,3 +4664,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         height: 200px;
     }
 }
+
+@media (max-width: 325px) {
+
+}
