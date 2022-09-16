@@ -4314,7 +4314,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         width: 65px;
         height: 4px;
         background: #7461E2;
-        bottom: 0px;
+        bottom: 0;
         left: calc(43% - 20px);
         border-radius: 10px;
     }
