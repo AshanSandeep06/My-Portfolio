@@ -4390,7 +4390,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 
     main > #about_section > section:nth-child(2) section {
-         align-items: flex-start;
+        align-items: flex-start;
     }
 
     main > #about_section > section:nth-child(2) section > button {
