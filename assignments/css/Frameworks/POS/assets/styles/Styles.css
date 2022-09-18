@@ -15,3 +15,7 @@ header > nav {
 .modal-footer > button:nth-child(2) {
     width: 75px;
 }
+
+#customer-form{
+    margin: 15px;
+}
