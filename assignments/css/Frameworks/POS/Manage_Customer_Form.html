@@ -71,10 +71,10 @@
         </div>
     </section>
 
-    <section class="col-12">
+    <section class="col-12 row">
 
         <!--Customer table-->
-        <section class="col-7" style="border: 1px solid red">
+        <section class="col-7">
             <!--<div class="dropdown">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Customer ID
@@ -209,11 +209,42 @@
         </section>
 
         <!--Customer Manage Form-->
-        <section class="col-5" style="background: green">
-
+        <section class="col-5 row justify-content-end">
+            <section class="col-8">
+                <!--<div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>-->
+                <form>
+                    <div class="mb-3">
+                        <label for="CId" class="form-label">Customer ID</label>
+                        <input type="text" class="form-control" id="CId" aria-describedby="idHelp" placeholder="C001">
+                        <div id="idHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="CName" class="form-label">Customer Name</label>
+                        <input type="text" class="form-control" id="CName" aria-describedby="nameHelp" placeholder="Nimal Perera">
+                        <div id="nameHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="CAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="CAddress" aria-describedby="addressHelp" placeholder="Galle">
+                        <div id="addressHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="CSalary" class="form-label">Salary</label>
+                        <input type="text" class="form-control" id="CSalary" aria-describedby="salaryHelp" placeholder="35000">
+                        <div id="salaryHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </section>
         </section>
     </section>
-
 </main>
 
 <script src="assets/js/bootstrap.min.js"></script>
