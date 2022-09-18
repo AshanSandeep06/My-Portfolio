@@ -2,3 +2,16 @@ header > nav {
     padding-bottom: 15px !important;
     padding-top: 15px !important;
 }
+
+.modal-header {
+    background: #16168b;
+    color: white;
+}
+
+.modal-header > button:hover {
+    border: 1px solid white;
+}
+
+.modal-footer > button:nth-child(2) {
+    width: 75px;
+}
