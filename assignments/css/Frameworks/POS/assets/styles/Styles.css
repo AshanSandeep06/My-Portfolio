@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-header{
+header {
     /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 41%, rgba(0,212,255,1) 100%);*/
     /*background: linear-gradient(90deg, rgba(27,20,154,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);*/
     /*background: linear-gradient(90deg, rgba(27,20,154,1) 0%, rgba(9,9,121,1) 35%, rgba(6,173,207,1) 100%);*/
-    background: linear-gradient(90deg, rgba(15,12,93,1) 0%, rgba(24,24,140,1) 35%, rgba(9,205,247,1) 100%);
-
+    background: linear-gradient(90deg, rgba(15, 12, 93, 1) 0%, rgba(24, 24, 140, 1) 35%, rgba(9, 205, 247, 1) 100%);
 }
 
-.header-nav{
+.header-nav {
     color: rgba(255, 255, 255, 0.67);
 }
 
-.header-nav:hover{
+.header-nav:hover {
     color: #f6f3f3;
 }
 
@@ -21,7 +20,7 @@ header > nav {
     padding-top: 6px !important;
 }
 
-#customer-nav{
+#customer-nav {
     font-weight: 600;
     color: white !important;
 }
@@ -35,22 +34,22 @@ header > nav {
     width: 75px;
 }
 
-#customer-form{
+#customer-form {
     margin: 15px;
 }
 
-#updated-btn{
+#updated-btn {
     margin-bottom: 8px;
 }
 
-#clear-btn{
+#clear-btn {
     margin-bottom: 8px;
 }
 
-#delete-btn{
+#delete-btn {
     margin-bottom: 8px;
 }
 
-header{
+header {
     font-family: poppins, sans-serif;
 }
