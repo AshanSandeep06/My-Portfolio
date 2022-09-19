@@ -8,6 +8,10 @@ header {
     color: rgba(255, 255, 255, 0.67);
 }
 
+.header-nav:active {
+    color: rgba(255, 255, 255, 0.67)!important;
+}
+
 .header-nav:hover {
     color: #f6f3f3;
 }
