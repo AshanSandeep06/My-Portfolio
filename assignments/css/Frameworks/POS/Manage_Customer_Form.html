@@ -61,9 +61,9 @@
     </nav>
 </header>
 
-<main class="row mx-5 position-relative">
+<main class="row mx-4 position-relative">
     <section class="col-12 mb-4">
-        <div class="row ">
+        <div class="row">
             <div class="p-1 px-3 col rounded-3 fw-bolder bg-secondary text-light fs-3 mt-4 shadow-sm"><i
                     class="fas fa-user-edit me-2"></i>
                 Manage Customer
@@ -91,7 +91,7 @@
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search Customer">
             </div>-->
 
-            <section class="col-12 mb-5">
+            <section class="col-12 mt-4 mb-5">
                 <form class="row g-3">
                     <div class="col-2">
                         <select id="disabledSelect" class="form-select">
@@ -159,7 +159,7 @@
 
             <section class="col-12">
                 <!--Customer Table-->
-                <table class="table table-hover table-striped">
+                <table class="table table-hover table-striped mt-2">
                     <thead class="text-white" style="background: #0d6efd">
                     <tr>
                         <th>Customer ID</th>
@@ -240,7 +240,12 @@
                         <input type="text" class="form-control" id="CSalary" aria-describedby="salaryHelp" placeholder="35000">
                         <div id="salaryHelp" class="form-text">Only numbers are allowed.</div>
                     </div>
-                    <button id="updated-btn" type="submit" class="btn btn-primary">Update</button>
+                    <div style="display: inline-block" class="me-2">
+                        <button id="updated-btn" type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                    <div style="display: inline-block">
+                        <button id="clear-btn" type="button" class="btn btn-danger">Delete</button>
+                    </div>
                 </form>
             </section>
         </section>
