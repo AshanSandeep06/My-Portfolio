@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 header{
-    background: #0d6efd;
+    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 41%, rgba(0,212,255,1) 100%);*/
+    /*background: linear-gradient(90deg, rgba(27,20,154,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);*/
+    /*background: linear-gradient(90deg, rgba(27,20,154,1) 0%, rgba(9,9,121,1) 35%, rgba(6,173,207,1) 100%);*/
+    background: linear-gradient(90deg, rgba(15,12,93,1) 0%, rgba(24,24,140,1) 35%, rgba(9,205,247,1) 100%);
+
 }
 
 .header-nav{
