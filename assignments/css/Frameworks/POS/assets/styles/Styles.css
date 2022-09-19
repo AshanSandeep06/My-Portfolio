@@ -54,3 +54,12 @@ header > nav {
 header {
     font-family: poppins, sans-serif;
 }
+
+#main-h2 {
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+#navbarTogglerDemo02{
+    margin-top: 1px;
+}
