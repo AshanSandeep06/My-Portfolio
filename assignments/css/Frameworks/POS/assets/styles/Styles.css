@@ -63,3 +63,7 @@ header {
 #navbarTogglerDemo02{
     margin-top: 1px;
 }
+
+#navbarTogglerDemo02>ul>li i{
+    padding-right: 5px;
+}
