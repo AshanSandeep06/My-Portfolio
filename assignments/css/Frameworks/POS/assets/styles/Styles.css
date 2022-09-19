@@ -10,10 +10,6 @@ header > nav {
     color: white;
 }
 
-.modal-header > button:hover {
-    border: 1px solid white;
-}
-
 .modal-footer > button:nth-child(2) {
     width: 75px;
 }
