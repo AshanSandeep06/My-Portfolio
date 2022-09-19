@@ -1,8 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+header{
+    background: #0d6efd;
+}
+
+.header-nav{
+    color: rgba(255, 255, 255, 0.67);
+}
+
+.header-nav:hover{
+    color: #f6f3f3;
+}
+
 header > nav {
-    padding-bottom: 15px !important;
-    padding-top: 15px !important;
+    padding-bottom: 6px !important;
+    padding-top: 6px !important;
+}
+
+#customer-nav{
+    font-weight: 600;
+    color: white !important;
 }
 
 .modal-header {
