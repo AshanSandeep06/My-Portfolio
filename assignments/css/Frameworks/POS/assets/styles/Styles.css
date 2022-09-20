@@ -5,15 +5,19 @@ header {
 }
 
 .header-nav {
-    color: rgba(255, 255, 255, 0.67);
+    color: rgba(255, 255, 255, 0.67)!important;
 }
 
 .header-nav:active {
     color: rgba(255, 255, 255, 0.67)!important;
 }
 
+.header-nav:visited{
+    color: rgba(255, 255, 255, 0.67)!important;
+}
+
 .header-nav:hover {
-    color: #f6f3f3;
+    color: #f6f3f3!important;
 }
 
 header > nav {
@@ -22,6 +26,11 @@ header > nav {
 }
 
 #customer-nav {
+    font-weight: 600;
+    color: white !important;
+}
+
+#item-nav {
     font-weight: 600;
     color: white !important;
 }
