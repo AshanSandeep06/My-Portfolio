@@ -5,19 +5,19 @@ header {
 }
 
 .header-nav {
-    color: rgba(255, 255, 255, 0.67)!important;
+    color: rgba(255, 255, 255, 0.67) !important;
 }
 
 .header-nav:active {
-    color: rgba(255, 255, 255, 0.67)!important;
+    color: rgba(255, 255, 255, 0.67) !important;
 }
 
-.header-nav:visited{
-    color: rgba(255, 255, 255, 0.67)!important;
+.header-nav:visited {
+    color: rgba(255, 255, 255, 0.67) !important;
 }
 
 .header-nav:hover {
-    color: #f6f3f3!important;
+    color: #f6f3f3 !important;
 }
 
 header > nav {
@@ -48,6 +48,10 @@ header > nav {
     margin: 15px;
 }
 
+#item-form {
+    margin: 15px;
+}
+
 #updated-btn {
     margin-bottom: 8px;
 }
@@ -69,14 +73,14 @@ header {
     margin-top: 7px;
 }
 
-#navbarTogglerDemo02{
+#navbarTogglerDemo02 {
     margin-top: 1px;
 }
 
-#navbarTogglerDemo02>ul>li i{
+#navbarTogglerDemo02 > ul > li i {
     padding-right: 5px;
 }
 
-#navbarTogglerDemo02>ul>li{
+#navbarTogglerDemo02 > ul > li {
     margin-right: 2px;
 }
