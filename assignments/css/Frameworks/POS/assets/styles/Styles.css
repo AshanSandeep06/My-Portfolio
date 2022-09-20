@@ -35,6 +35,11 @@ header > nav {
     color: white !important;
 }
 
+#order-nav {
+    font-weight: 600;
+    color: white !important;
+}
+
 .modal-header {
     background: #2626a7;
     color: white;
