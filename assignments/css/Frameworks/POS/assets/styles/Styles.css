@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 header {
     background: linear-gradient(90deg, rgba(15, 12, 93, 1) 0%, rgba(24, 24, 140, 1) 35%, rgba(9, 205, 247, 1) 100%);
@@ -69,8 +70,12 @@ header > nav {
     margin-bottom: 8px;
 }
 
-header {
-    font-family: poppins, sans-serif;
+/*#headerBar{
+    font-family: Poppins, sans-serif!important;
+}*/
+
+* {
+    font-family: Ubuntu, sans-serif;
 }
 
 #main-h2 {
