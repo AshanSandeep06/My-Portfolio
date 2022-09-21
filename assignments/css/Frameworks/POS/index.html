@@ -3,8 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>POS | DashBoard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/Styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="../../../../assets/fonts/css/all.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="container-fluid">
 
+<!--Header-->
+<header id="headerBar" class="row position-relative">
+    <nav class="navbar navbar-expand-lg bg-transparent border-bottom shadow-lg">
+        <div class="container-fluid">
+            <!--            <h2 id="main-h2" class="navbar-brand fw-bolder fs-2" style="color: white">POS System</h2>-->
+
+            <h2 id="main-h2"><a class="navbar-brand fw-bolder fs-2 position-relative" style="color: white" href="#"><img
+                    width="42" height="42" class="position-relative" style="bottom: 3px; margin-right: 1px;"
+                    src="assets/img/Cart1.png"> POS <span
+                    class="text-success" style="color: #328532!important;">System</span></a></h2>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link header-nav" aria-current="page" href="index.html"><i
+                                class="fa-solid fa-house-chimney"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header-nav" href="pages/Manage_Customer_Form.html"><i
+                                class="fa-solid fa-user"></i>Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="item-nav" class="nav-link" href="pages/Manage_Item_Form.html"><i
+                                class="fa-solid fa-burger"></i>Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header-nav" href="pages/Purchase_Order_Form.html"><i
+                                class="fa-solid fa-cart-arrow-down"></i>Orders</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-6 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white" aria-current="page" href="#"><i
+                                class="bi bi-person-plus-fill"></i>
+                            Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
