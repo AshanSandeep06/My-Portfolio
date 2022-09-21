@@ -63,17 +63,154 @@
 </header>
 
 <!--Place Order Content-->
-<main class="row mx-2 position-relative" style="background: wheat;">
-    <!-- For Invoice Details -->
-    <section class="col-12" style="background: dodgerblue; height: 50px;">
-        <section></section>
-        <section></section>
-        <section></section>
+<!--<main class="row mx-2 position-relative" style="background: wheat;">
+    &lt;!&ndash; For Invoice Details &ndash;&gt;
+    <section class="col-12" style="background: dodgerblue;">
+        <section>
+            <div class="row">
+                <div class="p-1 px-3 col rounded-3 fw-bolder bg-secondary text-light fs-3 mt-4 shadow-sm"><i
+                        class="fas fa-user-edit me-2"></i>
+                    Manage Customer
+                </div>
+            </div>
+        </section>
+
+        <section>
+             <div class="row">
+            <div class="p-1 px-3 col rounded-3 fw-bolder bg-secondary text-light fs-3 mt-4 shadow-sm"><i
+                    class="fas fa-user-edit me-2"></i>
+                Manage Customer
+            </div>
+        </div>
+        </section>
+
+        <section>
+             <div class="row">
+            <div class="p-1 px-3 col rounded-3 fw-bolder bg-secondary text-light fs-3 mt-4 shadow-sm"><i
+                    class="fas fa-user-edit me-2"></i>
+                Manage Customer
+            </div>
+        </div>
+        </section>
     </section>
 
-    <!-- For Cart Detail Table -->
+    &lt;!&ndash; For Cart Detail Table &ndash;&gt;
     <section class="col-12" style="background: red; height: 50px;">
         <section></section>
+    </section>
+</main>-->
+<main class="row justify-content-center">
+    <section class="row justify-content-evenly h-50">
+
+        <!-- invoice content -->
+        <section class="col-10 col-md-5 col-lg-4 p-3 mt-5 bg-white shadow-lg">
+            <h3 class="text-center bg-success p-2 text-light rounded-3 fs-4">Invoice Details</h3>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="orderId" class="form-label">Order ID :</label>
+                    <input class="form-control" id="orderId" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="orderDate" class="form-label">Order Date :</label>
+                    <input class="form-control" id="orderDate" type="date">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="customerId" class="form-label">Customer ID :</label>
+                    <select aria-label="Default select example" class="form-select" id="customerId">
+                        <option selected disabled>Select Customer</option>
+                        <option value="1">C001</option>
+                        <option value="2">C002</option>
+                        <option value="3">C003</option>
+                        <option value="4">C004</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="customerName" class="form-label">Name :</label>
+                    <input class="form-control" disabled id="customerName" type="text">
+                </div>
+            </div>
+            <div class="row mt-2 mb-2">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="customerAddress" class="form-label">Address :</label>
+                    <input class="form-control" disabled id="customerAddress" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="customerSalary" class="form-label">Salary :</label>
+                    <input class="form-control" disabled id="customerSalary" type="text">
+                </div>
+            </div>
+        </section>
+
+        <!-- select items content -->
+        <section class="col-10 col-md-5 col-lg-4 p-3 mt-5 bg-white shadow-lg">
+            <h3 class="text-center bg-success p-2 text-light rounded-3 fs-4">Items</h3>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="itemCode" class="form-label">Item Code :</label>
+                    <select aria-label="Default select example" class="form-select" id="itemCode">
+                        <option selected disabled>Select Item</option>
+                        <option value="1">I001</option>
+                        <option value="2">I002</option>
+                        <option value="3">I003</option>
+                        <option value="4">I004</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="itemName" class="form-label">Item Name :</label>
+                    <input class="form-control" disabled id="itemName" type="text">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="itemPrice" class="form-label">Unit Price :</label>
+                    <input class="form-control" disabled id="itemPrice" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="qtyOnHand" class="form-label">Qty On Hand :</label>
+                    <input class="form-control" disabled id="qtyOnHand" type="text">
+                </div>
+            </div>
+            <div class="row mt-2 mb-2">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <label for="buyQty" class="form-label">Ordered Qty :</label>
+                    <input class="form-control small" id="buyQty" type="text">
+                </div>
+                <!--                <div class="col-12 col-md-6 col-lg-6">-->
+                <!--                    <button class="btn btn-primary rounded-2" type="submit">Add To Cart</button>-->
+                <!--                    <button class="btn btn-danger rounded-2" type="submit">Clear</button>-->
+                <!--                </div>-->
+            </div>
+        </section>
+
+        <!--total section-->
+        <section class="col-10 col-md-10 col-lg-3 p-3 mt-5 bg-white shadow-lg" style="height: fit-content;">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <h3 class="text-start p-2 text-danger rounded-5">Total : <span class="text-center text-dark p-2"> 3500 LKR </span>
+                    </h3>
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="cash" class="form-label">Cash (LKR)</label>
+                    <input class="form-control" id="cash" type="text">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="discount" class="form-label">Discount</label>
+                    <input class="form-control" id="discount" type="number" role="spinbutton">
+                </div>
+            </div>
+            <div class="row mt-3 mb-3">
+                <div class="col-12 col-md-12 col-lg-12 h-25">
+                    <label for="balance" class="form-label">Balance (LKR)</label>
+                    <input class="form-control" disabled id="balance" type="text">
+                </div>
+            </div>
+        </section>
+
+
     </section>
 </main>
 
