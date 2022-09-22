@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+header {
+    background: linear-gradient(90deg, rgba(15, 12, 93, 1) 0%, rgba(24, 24, 140, 1) 35%, rgba(9, 205, 247, 1) 100%);
+}
+
+.header-nav {
+    color: rgba(255, 255, 255, 0.67) !important;
+}
+
+.header-nav:active {
+    color: rgba(255, 255, 255, 0.67) !important;
+}
+
+.header-nav:visited {
+    color: rgba(255, 255, 255, 0.67) !important;
+}
+
+.header-nav:hover {
+    color: #f6f3f3 !important;
+}
+
+header > nav {
+    padding-bottom: 6px !important;
+    padding-top: 6px !important;
+}
+
+#customer-nav {
+    font-weight: 600;
+    color: white !important;
+}
+
+#item-nav {
+    font-weight: 600;
+    color: white !important;
+}
+
+#order-nav {
+    font-weight: 600;
+    color: white !important;
+}
+
+#home-nav {
+    font-weight: 600;
+    color: white !important;
+}
+
+.modal-header {
+    background: #2626a7;
+    color: white;
+}
+
+.modal-footer > button:nth-child(2) {
+    width: 75px;
+}
+
+#customer-form {
+    margin: 15px;
+}
+
+#item-form {
+    margin: 15px;
+}
+
+#updated-btn {
+    margin-bottom: 8px;
+}
+
+#clear-btn {
+    margin-bottom: 8px;
+}
+
+#delete-btn {
+    margin-bottom: 8px;
+}
+
+/*#headerBar{
+    font-family: Poppins, sans-serif!important;
+}*/
+
+* {
+    font-family: Ubuntu, sans-serif;
+}
+
+#main-h2 {
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+#navbarTogglerDemo02 {
+    margin-top: 1px;
+}
+
+#navbarTogglerDemo02 > ul > li i {
+    padding-right: 5px;
+}
+
+#navbarTogglerDemo02 > ul > li {
+    margin-right: 2px;
+}
+
+#dashBoardHeader {
+    height: 69px;
+}
