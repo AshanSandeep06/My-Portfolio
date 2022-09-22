@@ -99,3 +99,7 @@ header > nav {
 #navbarTogglerDemo02 > ul > li {
     margin-right: 2px;
 }
+
+#dashBoardHeader{
+    height: 69px;
+}
