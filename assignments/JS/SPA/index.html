@@ -16,7 +16,101 @@
 </head>
 <body class="container-fluid">
 
+<!--Header-->
+<header id="dashBoardHeader" class="row position-relative">
+    <nav class="navbar navbar-expand-lg bg-transparent border-bottom shadow-lg">
+        <div class="container-fluid">
+            <!--            <h2 id="main-h2" class="navbar-brand fw-bolder fs-2" style="color: white">POS System</h2>-->
 
+            <h2 id="main-h2"><a class="navbar-brand fw-bolder fs-2 position-relative" style="color: white" href="#"><img
+                    width="42" height="42" class="position-relative" style="bottom: 3px; margin-right: 1px;"
+                    src="assets/img/Cart1.png"> POS <span
+                    class="text-success" style="color: #328532!important;">System</span></a></h2>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a id="home-nav" class="nav-link" aria-current="page" href="index.html"><i
+                                class="fa-solid fa-house-chimney"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header-nav" href="pages/Manage_Customer_Form.html"><i
+                                class="fa-solid fa-user"></i>Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header-nav" href="pages/Manage_Item_Form.html"><i
+                                class="fa-solid fa-burger"></i>Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header-nav" href="pages/Purchase_Order_Form.html"><i
+                                class="fa-solid fa-cart-arrow-down"></i>Orders</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-6 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white" aria-current="page" href="#"><i
+                                class="bi bi-person-plus-fill"></i>
+                            Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--DashBoard Content-->
+<main class="row">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="padding: 0">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/Carousel_img-01.jpg" class="d-block w-100" alt="..." style="height: 652px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/Carousel_img-05.jpg" class="d-block w-100" alt="..." style="height: 652px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/Carousel_img-02.jpg" class="d-block w-100" alt="..." style="height: 652px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/Carousel_img-06.jpg" class="d-block w-100" alt="..." style="height: 652px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fourth slide label</h5>
+                    <p>Some representative placeholder content for the fourth slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</main>
 
 <!--Bootstrap for js-->
 <script src="assets/js/bootstrap.min.js"></script>
