@@ -63,15 +63,15 @@ header > nav {
     margin: 15px;
 }
 
-#updated-btn {
+#updated-btn1, #updated-btn2 {
     margin-bottom: 8px;
 }
 
-#clear-btn {
+#clear-btn1, #clear-btn2{
     margin-bottom: 8px;
 }
 
-#delete-btn {
+#delete-btn1, #delete-btn2{
     margin-bottom: 8px;
 }
 
