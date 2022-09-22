@@ -637,10 +637,13 @@
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 
 <script>
-    $('#dashBoardSection').css("display", "block!important");
-    $('#customerSection').css("display", "none!important");
-    $('#itemSection').css("display", "none!important");
-    $('#placeOrderSection').css("display", "none!important");
+    /*This will only run once, When the DOM is ready for JavaScript code to execute.*/
+    $(function () {
+        $('#dashBoardSection').css("display", "block");
+        $('#customerSection').css("display", "none");
+        $('#itemSection').css("display", "none");
+        $('#placeOrderSection').css("display", "none");
+    });
 </script>
 
 </body>
