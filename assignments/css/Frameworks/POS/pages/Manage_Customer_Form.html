@@ -66,7 +66,8 @@
 <main class="row mx-4 position-relative">
     <section class="col-12 mb-4">
         <div class="row">
-            <div style="background: linear-gradient(to right, #0b2a72, #4286f4);" class="p-1 px-3 col rounded-3 fw-bolder bg-secondary text-light fs-3 mt-4 shadow-sm"><i
+            <div style="background: linear-gradient(to right, #0b2a72, #4286f4);"
+                 class="p-1 px-3 col rounded-3 fw-bolder bg-secondary text-light fs-3 mt-4 shadow-sm"><i
                     class="fas fa-user-edit me-2"></i>
                 Manage Customer
             </div>
@@ -98,7 +99,7 @@
                     </div>
 
                     <div class="col-3">
-                        <button id="btnSaveCustomer" type="button" class="btn btn-success align-self-end" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-success align-self-end" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">+ Add Customer
                         </button>
 
@@ -119,7 +120,8 @@
                                                 <input type="text" class="form-control" id="txtCustomerID">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="txtCustomerName" class="col-form-label">Customer Name:</label>
+                                                <label for="txtCustomerName" class="col-form-label">Customer
+                                                    Name:</label>
                                                 <input type="text" class="form-control" id="txtCustomerName">
                                             </div>
                                             <div class="mb-3">
@@ -135,7 +137,7 @@
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
                                         </button>
-                                        <button type="button" class="btn btn-primary">Save</button>
+                                        <button id="btnSaveCustomer" type="button" class="btn btn-primary">Save</button>
                                     </div>
                                 </div>
                             </div>
@@ -242,11 +244,22 @@
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
 
 <script>
-    $('#btnSaveCustomer').click(function (){
+    $('#btnSaveCustomer').click(function () {
 
         // Select all the four textfields and get their typed values.
+        let customerId = $('#txtCustomerID').val();
+        let customerName = $('#txtCustomerName').val();
+        let cusAddress = $('#txtAddress').val();
+        let cusSalary = $('#txtSalary').val();
 
+        //Print values with an alert
+        // alert($('#txtCustomerID').val());
 
+        //Variables in JS
+        /*var name = "Hello JS"
+        alert(name);*/
+
+        alert(customerId + " " + customerName + " " + cusAddress + " " + cusSalary);
     });
 </script>
 
