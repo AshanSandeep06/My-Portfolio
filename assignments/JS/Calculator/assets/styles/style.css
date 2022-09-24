@@ -7,12 +7,11 @@
 }
 
 #calculator-section {
-    /*width: 35%;
-    height: 75%;*/
     width: 600px;
     border: 2px solid black;
-    opacity: 55%;
-    background: rgb(87, 81, 81);
+    opacity: 82%;
+    /*background: rgb(132, 124, 124);*/
+    background: #000000;
 }
 
 #firstSection {
@@ -28,7 +27,7 @@
     width: 52px;
     height: 52px;
     opacity: 100% !important;
-    background: #cec7c7;
+    background: #A8A8A8;
     color: black !important;
 }
 
@@ -39,6 +38,7 @@
     background: none;
     font-size: 22px;
     text-align: right;
-    border: 2px solid black;
-    background: #aaaaaa;
+    border: 3px solid black;
+    background: rgb(45, 40, 40);
+    opacity: 93%;
 }
