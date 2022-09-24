@@ -37,8 +37,8 @@
     transition: all .5s;
 }
 
-#clear-btn:active{
-    transform: translateY(-10px);
+#clear-btn:active {
+    transform: translateY(-8px);
     transition: all .2s;
 }
 
@@ -54,6 +54,6 @@
     opacity: 93%;
 }
 
-#secondSection div{
-    display: inline-block;
+#secondSection div {
+    /*display: inline-block;*/
 }
