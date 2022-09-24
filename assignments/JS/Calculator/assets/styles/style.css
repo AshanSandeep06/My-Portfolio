@@ -12,11 +12,10 @@
     width: 600px;
     border: 2px solid black;
     opacity: 55%;
-    background: rgb(0, 0, 0);
+    background: rgb(87, 81, 81);
 }
 
 #firstSection {
-    /*background: dodgerblue;*/
     height: 98px;
 }
 
