@@ -29,12 +29,17 @@
     opacity: 100% !important;
     background: #A8A8A8;
     color: black !important;
-    transition: all .5s;
+    transition: all 1s;
 }
 
 #clear-btn:hover {
-    background: #cec9c9;
+    background: #ece7e7;
     transition: all .5s;
+}
+
+#clear-btn:active{
+    transform: translateY(-10px);
+    transition: all .2s;
 }
 
 #input-field {
