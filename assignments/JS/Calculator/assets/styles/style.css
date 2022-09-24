@@ -1,4 +1,7 @@
-#background-image{
+#mainSection{
     width: 100vw;
     height: 100vh;
+    background: url("../img/background.jpg");
+    background-position: center;
+    background-size: cover;
 }
