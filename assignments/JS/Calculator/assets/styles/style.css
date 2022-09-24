@@ -1,4 +1,4 @@
-#mainSection{
+#mainSection {
     width: 100vw;
     height: 100vh;
     background: url("../img/background.jpg");
@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-#calculator-section{
+#calculator-section {
     width: 35%;
     height: 75%;
     background: red;
