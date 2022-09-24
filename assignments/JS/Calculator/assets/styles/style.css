@@ -19,8 +19,8 @@
 }
 
 #secondSection {
-    background: green;
     height: 452px;
+    margin-bottom: 10px!important;
 }
 
 #clear-btn {
@@ -52,4 +52,11 @@
     border: 3px solid black;
     background: rgb(45, 40, 40);
     opacity: 93%;
+}
+
+#secondSection>section button{
+    font-size: 28px;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
 }
