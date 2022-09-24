@@ -60,3 +60,7 @@
     height: 100%;
     font-weight: bold;
 }
+
+#secondSection>section{
+    gap: 4px;
+}
