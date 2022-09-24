@@ -10,8 +10,9 @@
     /*width: 35%;
     height: 75%;*/
     width: 600px;
-    border: 2px solid red;
-    opacity: 65%;
+    border: 2px solid black;
+    opacity: 55%;
+    background: rgb(0, 0, 0);
 }
 
 #firstSection {
@@ -24,17 +25,21 @@
     height: 452px;
 }
 
-#clear-btn{
+#clear-btn {
     width: 52px;
     height: 52px;
-    opacity: 100%!important;
+    opacity: 100% !important;
+    background: #cec7c7;
+    color: black !important;
 }
 
-#input-field{
+#input-field {
     width: 465px;
     height: 52px;
     color: white;
     background: none;
     font-size: 22px;
     text-align: right;
+    border: 2px solid black;
+    background: #aaaaaa;
 }
