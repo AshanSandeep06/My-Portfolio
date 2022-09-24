@@ -11,14 +11,26 @@
     height: 75%;*/
     width: 600px;
     border: 2px solid red;
+    opacity: 65%;
 }
 
 #firstSection {
-    background: dodgerblue;
+    /*background: dodgerblue;*/
     height: 98px;
 }
 
 #secondSection {
     background: green;
     height: 452px;
+}
+
+#clear-btn{
+    width: 52px;
+    height: 52px;
+    opacity: 100%!important;
+}
+
+#input-field{
+    width: 450px;
+    height: 52px;
 }
