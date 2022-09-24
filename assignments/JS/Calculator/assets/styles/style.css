@@ -14,5 +14,17 @@
     height: 75%;*/
     width: 600px;
     height: 550px;
-    border: 5px solid red;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+#firstSection{
+    background: dodgerblue;
+    height: 98px;
+}
+
+#secondSection{
+    background: green;
+    height: 452px;
 }
