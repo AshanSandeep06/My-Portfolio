@@ -20,7 +20,7 @@
 
 #secondSection {
     height: 452px;
-    margin-bottom: 10px!important;
+    margin-bottom: 10px !important;
 }
 
 #clear-btn {
@@ -54,7 +54,7 @@
     opacity: 93%;
 }
 
-#secondSection>section button{
+#secondSection > section button {
     font-size: 28px;
     width: 100%;
     height: 100%;
