@@ -10,10 +10,7 @@
     /*width: 35%;
     height: 75%;*/
     width: 600px;
-    height: 550px;
     border: 2px solid red;
-    display: flex;
-    flex-direction: column;
 }
 
 #firstSection {
