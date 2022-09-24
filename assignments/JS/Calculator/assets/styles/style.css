@@ -33,4 +33,8 @@
 #input-field{
     width: 465px;
     height: 52px;
+    color: white;
+    background: none;
+    font-size: 22px;
+    text-align: right;
 }
