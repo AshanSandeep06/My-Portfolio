@@ -19,12 +19,12 @@
     flex-direction: column;
 }
 
-#firstSection{
+#firstSection {
     background: dodgerblue;
     height: 98px;
 }
 
-#secondSection{
+#secondSection {
     background: green;
     height: 452px;
 }
