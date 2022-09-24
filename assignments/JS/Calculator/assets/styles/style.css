@@ -48,3 +48,7 @@
     background: rgb(45, 40, 40);
     opacity: 93%;
 }
+
+#secondSection div{
+    display: inline-block;
+}
