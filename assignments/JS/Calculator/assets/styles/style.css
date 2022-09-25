@@ -87,3 +87,8 @@
 .yellow_buttons:hover {
     background-color: #f5aa3d !important;
 }
+
+#secondSection > section button:active {
+    transform: translateY(-8px);
+    transition: all .2s;
+}
