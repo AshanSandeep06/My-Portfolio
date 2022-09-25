@@ -47,8 +47,7 @@
                 </div>
 
                 <div class="col-3 d-flex align-items-center justify-content-center flex-shrink-1">
-                    <button id="btn-4" class="btn-operators rounded-2 yellow_buttons"><i
-                            class="fa-solid fa-plus"></i></button>
+                    <button id="btn-4" class="btn-operators rounded-2 yellow_buttons">+</button>
                 </div>
             </section>
 
@@ -67,9 +66,7 @@
                 </div>
 
                 <div class="col-3 d-flex align-items-center justify-content-center flex-shrink-1">
-                    <button id="btn-8" class="btn-operators rounded-2 yellow_buttons"><i
-                            class="fa-solid fa-minus"></i>
-                    </button>
+                    <button id="btn-8" class="btn-operators rounded-2 yellow_buttons">-</button>
                 </div>
             </section>
 
@@ -88,8 +85,7 @@
                 </div>
 
                 <div class="col-3 d-flex align-items-center justify-content-center flex-shrink-1">
-                    <button id="btn-12" class="btn-operators rounded-2 yellow_buttons"><i
-                            class="fa-solid fa-divide"></i>
+                    <button id="btn-12" class="btn-operators rounded-2 yellow_buttons">/
                     </button>
                 </div>
             </section>
@@ -105,13 +101,11 @@
                 </div>
 
                 <div class="col-3 d-flex align-items-center justify-content-center flex-shrink-1">
-                    <button id="btn-15" class="btn-operators rounded-2 yellow_buttons"><i
-                            class="fa-solid fa-equals"></i></button>
+                    <button id="btn-15" class="btn-operators rounded-2 yellow_buttons">=
                 </div>
 
                 <div class="col-3 d-flex align-items-center justify-content-center flex-shrink-1">
-                    <button id="btn-16" class="btn-operators rounded-2 yellow_buttons"><i
-                            class="fa-solid fa-xmark"></i>
+                    <button id="btn-16" class="btn-operators rounded-2 yellow_buttons">*
                     </button>
                 </div>
             </section>
@@ -126,5 +120,32 @@
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <!-- Custom JS Script for JS -->
 <script src="assets/js/script.js"></script>
+
+<script>
+    let number = 0;
+    let operator = "";
+    let outputNumber = 0;
+
+    for (let i = 0; i < 16; i++) {
+        $("#btn-" + i).click(function () {
+            let btnID = $('#btn-' + i);
+            let pressedBtnText = btnID.text();
+            // console.log(btnID.text());
+            switch (pressedBtnText) {
+                case "C" :
+                    $("#input-field").clear;
+                    break;
+
+                default:
+                    number = pressedBtnText;
+
+            }
+
+
+        });
+    }
+</script>
+
+
 </body>
 </html>

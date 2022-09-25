@@ -98,3 +98,7 @@
     transform: translateY(-8px);
     transition: all .2s;
 }
+
+.btn-operators {
+    font-size: 45px !important;
+}
