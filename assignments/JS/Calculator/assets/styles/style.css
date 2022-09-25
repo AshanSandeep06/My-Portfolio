@@ -30,7 +30,7 @@
     margin-bottom: 9px !important;
 }
 
-#clear-btn {
+#btn-0 {
     width: 53px;
     height: 53px;
     opacity: 100% !important;
@@ -39,12 +39,12 @@
     transition: all 1s;
 }
 
-#clear-btn:hover {
+#btn-0:hover {
     background: #ece7e7;
     transition: all .5s;
 }
 
-#clear-btn:active {
+#btn-0:active {
     transform: translateY(-8px);
     transition: all .2s;
 }
