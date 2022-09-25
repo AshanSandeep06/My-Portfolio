@@ -59,9 +59,11 @@
     width: 100%;
     height: 100%;
     font-weight: bold;
+    /*background-color: #b8b2b2;*/
+    background-color: #d5d5d5;
 }
 
 #secondSection > section {
     gap: 4px;
-    height: 24%!important;
+    height: 24% !important;
 }
