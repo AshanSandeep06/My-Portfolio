@@ -76,3 +76,11 @@
     /*background-color: #FF9601!important;*/
     background-color: #FE9700 !important;
 }
+
+#secondSection > section button:hover {
+    background-color: #93928f;
+}
+
+.yellow_buttons:hover{
+    background-color: #f5aa3d!important;
+}
