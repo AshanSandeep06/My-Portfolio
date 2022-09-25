@@ -9,7 +9,8 @@
 #calculator-section {
     width: 575px;
     border: 2px solid black;
-    opacity: 82%;
+    /*opacity: 82%;*/
+    opacity: 85%;
     /*background: rgb(132, 124, 124);*/
     background: #000000;
 }
