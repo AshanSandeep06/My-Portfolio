@@ -20,7 +20,7 @@
 
 #secondSection {
     height: 452px;
-    margin-bottom: 12px !important;
+    margin-bottom: 9px !important;
 }
 
 #clear-btn {
@@ -63,4 +63,5 @@
 
 #secondSection > section {
     gap: 4px;
+    height: 24%!important;
 }
