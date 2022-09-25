@@ -79,6 +79,9 @@
 
 #secondSection > section button:hover {
     background-color: #93928f;
+    transition: all 0.8s ease;
+    transform: scale(0.95);
+    box-shadow: 1px 1px 54px 1px rgba(0, 0, 0, 0.22);
 }
 
 .yellow_buttons:hover {
