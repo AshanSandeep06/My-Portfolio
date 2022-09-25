@@ -55,15 +55,23 @@
 }
 
 #secondSection > section button {
-    font-size: 28px;
+    font-size: 34px;
     width: 100%;
     height: 100%;
     font-weight: bold;
     /*background-color: #b8b2b2;*/
-    background-color: #d5d5d5;
+    /*background-color: #d5d5d5;*/
+    /*background-color: #4c4b4b;*/
+    background-color: #514f4f;
+    color: white;
 }
 
 #secondSection > section {
     gap: 4px;
     height: 24% !important;
+}
+
+.yellow_buttons {
+    /*background-color: #FF9601!important;*/
+    background-color: #FE9700 !important;
 }
