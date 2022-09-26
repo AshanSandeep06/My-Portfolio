@@ -26,7 +26,7 @@
                 </button>
             </div>
             <div>
-                <input disabled type="text" class="form-control shadow fw-semibold" id="input-field">
+                <input type="text" class="form-control shadow fw-semibold" id="input-field">
             </div>
         </section>
 
@@ -101,12 +101,11 @@
                 </div>
 
                 <div class="col-3 d-flex align-items-center justify-content-center flex-shrink-1">
-                    <button id="btn-15" class="btn-operators rounded-2 yellow_buttons">=
+                    <button id="btn-15" class="btn-operators rounded-2 yellow_buttons">=</button>
                 </div>
 
                 <div class="col-3 d-flex align-items-center justify-content-center flex-shrink-1">
-                    <button id="btn-16" class="btn-operators rounded-2 yellow_buttons">*
-                    </button>
+                    <button id="btn-16" class="btn-operators rounded-2 yellow_buttons">*</button>
                 </div>
             </section>
         </section>
@@ -122,85 +121,110 @@
 <script src="assets/js/script.js"></script>
 
 <script>
-    let number = 0;
-    let firstNumber = 0;
-    let secondNumber = 0;
+    let firstNumber = "";
+    let secondNumber = "";
+
+    let tempFirstNumber = "";
+    let tempSecondNumber = "";
+
     let operator = "";
     let outputNumber = 0;
 
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 17; i++) {
         $("#btn-" + i).click(function () {
             let btnID = $('#btn-' + i);
-            let pressedBtnText = btnID.text();
-            console.log(pressedBtnText);
-            if(pressedBtnText.equals("C")){
-                alert("FUCkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
-            }
+            let pressedBtnText = btnID.text().trim();
             switch (pressedBtnText) {
                 case "C" :
+                    firstNumber = "";
+                    secondNumber = "";
+                    tempFirstNumber = "";
+                    tempSecondNumber = "";
                     operator = "";
-                    firstNumber = 0;
-                    secondNumber = 0;
                     outputNumber = 0;
-                    // $("#input-field").val().empty();
-                    alert("FUCkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
+                    $('#input-field').val("0");
                     break;
 
                 case "+":
                     operator = pressedBtnText;
-                    firstNumber = 0;
+                    firstNumber = tempFirstNumber;
+                    tempFirstNumber = "Undefined";
+                    $('#input-field').val(" " + $('#input-field').val().concat(operator));
                     break;
 
                 case "-":
                     operator = pressedBtnText;
-                    firstNumber = 0;
+                    firstNumber = tempFirstNumber;
+                    tempFirstNumber = "Undefined";
+                    $('#input-field').val(" " + $('#input-field').val().concat(operator));
                     break;
 
                 case "/":
                     operator = pressedBtnText;
-                    firstNumber = 0;
+                    firstNumber = tempFirstNumber;
+                    tempFirstNumber = "Undefined";
+                    $('#input-field').val(" " + $('#input-field').val().concat(operator));
                     break;
 
                 case "*":
                     operator = pressedBtnText;
-                    firstNumber = 0;
+                    firstNumber = tempFirstNumber;
+                    tempFirstNumber = "Undefined";
+                    $('#input-field').val(" " + $('#input-field').val().concat(operator));
                     break;
 
                 case "=":
-                    // operator = pressedBtnText;
-                    // firstNumber = parseFloat(pressedBtnText);
-                    // secondNumber = parseFloat(pressedBtnText);
-                    outputNumber = operate(operator, firstNumber, secondNumber);
-                    $("#input-field").val(outputNumber);
+                    outputNumber = getOutPut(operator, firstNumber, secondNumber);
+                    $('#input-field').val(outputNumber);
+                    tempFirstNumber = "";
+                    tempSecondNumber = "";
+                    setNumbers(outputNumber, "");
                     break;
 
                 default:
-                    getOutPut(pressedBtnText);
-                    $("#input-field").val(pressedBtnText.trim());
+                    setNumbers(pressedBtnText, pressedBtnText);
+                    $('#input-field').val(pressedBtnText);
                     break;
             }
         });
     }
 
+    function operate() {
+        operator = pressedBtnText;
+        firstNumber = tempFirstNumber;
+        tempFirstNumber = "Undefined";
+    }
 
-    function operate(operator, firstNumber, secondNumber) {
-        if (operator.equals('+')) {
-            outputNumber = parseFloat(firstNumber) + parseFloat(secondNumber);
+
+    function getOutPut(operatorSign, fNumber, sNumber) {
+        if (operatorSign === "+") {
+            outputNumber = parseFloat(fNumber) + parseFloat(sNumber);
             return outputNumber;
-        } else if (operator.equals('-')) {
-            outputNumber = parseFloat(firstNumber) - parseFloat(secondNumber);
+        } else if (operatorSign === "-") {
+            outputNumber = parseFloat(fNumber) - parseFloat(sNumber);
             return outputNumber;
-        } else if (operator.equals('/')) {
-            outputNumber = parseFloat(firstNumber) / parseFloat(secondNumber);
+        } else if (operatorSign === "/") {
+            outputNumber = parseFloat(fNumber) / parseFloat(sNumber);
             return outputNumber;
         } else {
-            outputNumber = parseFloat(firstNumber) * parseFloat(secondNumber);
+            outputNumber = parseFloat(fNumber) * parseFloat(sNumber);
             return outputNumber;
         }
     }
 
-    function getOutPut(number) {
-        firstNumber += number;
+    function setNumbers(fNumber, sNumber) {
+        if (tempFirstNumber !== "Undefined") {
+            tempFirstNumber += fNumber;
+            var x = tempFirstNumber;
+            $('#input-field').val(x);
+            // document.getElementById("input-field").value = tempFirstNumber;
+        }
+
+        if (tempFirstNumber === "Undefined") {
+            tempSecondNumber += sNumber;
+            secondNumber = tempSecondNumber;
+            $('#input-field').val(" " + $('#input-field').val().concat(secondNumber));
+        }
     }
 
 
