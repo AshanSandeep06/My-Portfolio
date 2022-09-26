@@ -189,13 +189,6 @@
         });
     }
 
-    function operate() {
-        operator = pressedBtnText;
-        firstNumber = tempFirstNumber;
-        tempFirstNumber = "Undefined";
-    }
-
-
     function getOutPut(operatorSign, fNumber, sNumber) {
         if (operatorSign === "+") {
             outputNumber = parseFloat(fNumber) + parseFloat(sNumber);
