@@ -52,5 +52,8 @@ $("#btnSaveCustomer").click(function () {
 });
 
 /* Search Customer function */
+$("#btnSearchCustomer").click(function () {
+
+});
 
 
