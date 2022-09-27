@@ -122,7 +122,7 @@
 
 <script>
     let firstNumber = "";
-    let secondNumber = "";
+    let secondNumber = "$";
 
     let tempFirstNumber = "";
     let tempSecondNumber = "";
@@ -137,7 +137,7 @@
             switch (pressedBtnText) {
                 case "C" :
                     firstNumber = "";
-                    secondNumber = "";
+                    secondNumber = "$";
                     tempFirstNumber = "";
                     tempSecondNumber = "";
                     operator = "";
@@ -147,46 +147,81 @@
 
                 case "+":
                     operator = pressedBtnText;
+
+                    /*if(operator === "+"){
+                        firstNumber = tempFirstNumber;
+                        tempFirstNumber = "Undefined";
+                    }else{
+                        operator = operator.charAt(operator.length-1);
+                    }*/
+
                     firstNumber = tempFirstNumber;
                     tempFirstNumber = "Undefined";
 
-                    var x = $('#input-field').val() + " " + operator;
-                    $('#input-field').val(x);
+                    // var x = $('#input-field').val() + " " + operator;
+                    // $('#input-field').val(x);
                     break;
 
                 case "-":
                     operator = pressedBtnText;
+                    /* if(operator === "-"){
+                         firstNumber = tempFirstNumber;
+                         tempFirstNumber = "Undefined";
+                     }else{
+                         operator = operator.charAt(operator.length-1);
+                     }*/
+
                     firstNumber = tempFirstNumber;
                     tempFirstNumber = "Undefined";
 
-                    var x = $('#input-field').val() + " " + operator;
-                    $('#input-field').val(x);
+                    // var x = $('#input-field').val() + " " + operator;
+                    // $('#input-field').val(x);
                     break;
 
                 case "/":
                     operator = pressedBtnText;
+                    /*if(operator === "/"){
+                        firstNumber = tempFirstNumber;
+                        tempFirstNumber = "Undefined";
+                    }else{
+                        operator = operator.charAt(operator.length-1);
+                    }*/
+
                     firstNumber = tempFirstNumber;
                     tempFirstNumber = "Undefined";
 
-                    var x = $('#input-field').val() + " " + operator;
-                    $('#input-field').val(x);
+                    // var x = $('#input-field').val() + " " + operator;
+                    // $('#input-field').val(x);
                     break;
 
                 case "*":
                     operator = pressedBtnText;
+                    /*if(operator === "*"){
+                        firstNumber = tempFirstNumber;
+                        tempFirstNumber = "Undefined";
+                    }else{
+                        operator = operator.charAt(operator.length-1);
+                    }*/
+
                     firstNumber = tempFirstNumber;
                     tempFirstNumber = "Undefined";
 
-                    var x = $('#input-field').val() + " " + operator;
-                    $('#input-field').val(x);
+                    // var x = $('#input-field').val() + " " + operator;
+                    // $('#input-field').val(x);
                     break;
 
                 case "=":
-                    outputNumber = getOutPut(operator, firstNumber, secondNumber);
-                    $('#input-field').val(outputNumber);
-                    tempFirstNumber = "";
-                    tempSecondNumber = "";
-                    setNumbers(outputNumber, "");
+                    console.log("Second Number is : " + secondNumber);
+                    if (isNaN(secondNumber)) {
+                        $('#input-field').val(tempFirstNumber);
+                    } else {
+                        console.log("Operator is : " + operator);
+                        outputNumber = getOutPut(operator, firstNumber, secondNumber);
+                        $('#input-field').val(outputNumber);
+                        tempFirstNumber = "";
+                        tempSecondNumber = "";
+                        setNumbers(outputNumber, "");
+                    }
                     break;
 
                 default:
@@ -195,6 +230,10 @@
                     break;
             }
         });
+    }
+
+    function isFloat(n1, n2) {
+        return n1 % 1 === 0 && n2 % 1 === 0;
     }
 
     function getOutPut(operatorSign, fNumber, sNumber) {
@@ -216,7 +255,7 @@
     function setNumbers(fNumber, sNumber) {
         if (tempFirstNumber !== "Undefined") {
             tempFirstNumber += fNumber;
-            console.log(tempFirstNumber);
+            console.log("Temp f Number : " + tempFirstNumber);
             $('#input-field').val(tempFirstNumber);
 
             // document.getElementById("input-field").value = tempFirstNumber;
