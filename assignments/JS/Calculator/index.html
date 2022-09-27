@@ -180,12 +180,9 @@
                     break;
 
                 case "=":
-                    console.log("First Number is : " + firstNumber);
-                    console.log("Second Number is : " + secondNumber);
                     if (isNaN(secondNumber)) {
                         $('#input-field').val(tempFirstNumber);
                     } else {
-                        console.log("Operator is : " + operator);
                         outputNumber = getOutPut(operator, firstNumber, secondNumber);
                         $('#input-field').val(outputNumber);
                         tempFirstNumber = "";
@@ -221,7 +218,6 @@
     function setNumbers(fNumber, sNumber) {
         if (tempFirstNumber !== "Undefined") {
             tempFirstNumber += fNumber;
-            console.log("Temp f Number : " + tempFirstNumber);
             $('#input-field').val(tempFirstNumber);
         }
 
