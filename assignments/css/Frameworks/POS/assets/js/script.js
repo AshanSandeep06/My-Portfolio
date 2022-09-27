@@ -1,3 +1,6 @@
+/* Customer Object Array */
+var customers = [];
+
 $("#btnSaveCustomer").click(function () {
     let customerID = "";
     let customerName = "";
@@ -20,6 +23,29 @@ $("#btnSaveCustomer").click(function () {
             salary: cusSalary
         }
 
+        /* Newly added customer was stored in this array */
+        customers.push(customerObject);
 
+        $("#tblCustomer>tbody").empty();
+
+        for (let i = 0; i < customers.length; i++) {
+            var tblRow = `<tr><td>${customers[i].id}</td><td>${customers[i].name}</td><td>${customers[i].address}</td><td>${customers[i].salary}</td></tr>`;
+            $("#tblCustomer>tbody").append(tblRow);
+        }
+
+        // Success alert
+        Swal.fire(
+            'Successfully saved!',
+            'Customer has been saved successfully!',
+            'success'
+        )
+
+    }else{
+        // Error alert
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
     }
 });
