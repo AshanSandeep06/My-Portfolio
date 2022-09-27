@@ -240,45 +240,10 @@
     </section>
 </main>
 
+<!-- Bootstrap for JS -->
 <script src="../assets/js/bootstrap.min.js"></script>
+
+<!-- jQuery for JS -->
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
-
-<script>
-    var customers = [];
-    $('#btnSaveCustomer').click(function () {
-
-        // Select all the four textfields and get their typed values.
-        let customerId = $('#txtCustomerID').val();
-        let customerName = $('#txtCustomerName').val();
-        let cusAddress = $('#txtAddress').val();
-        let cusSalary = $('#txtSalary').val();
-
-        //Print values with an alert
-        // alert($('#txtCustomerID').val());
-
-        //Variables in JS
-        /*var name = "Hello JS"
-        alert(name);*/
-
-        var customerObject = {
-            id: customerId,
-            name: customerName,
-            address: cusAddress,
-            salary: cusSalary
-        }
-
-        customers.push(customerObject);
-
-        // 1 st method
-        // var row = "<tr><td>"+customerId+"</td><td>"+customerName+"</td><td>"+cusAddress+"</td><td>"+cusSalary+"</td></tr>"
-
-        // 2nd method
-        var row = `<tr><td>${customerId}</td><td>${customerName}</td><td>${cusAddress}</td><td>${cusSalary}</td></tr>`;
-
-        $("#tblCustomer>tbody").append(row);
-    });
-
-</script>
-
 </body>
 </html>
