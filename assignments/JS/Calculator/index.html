@@ -193,7 +193,7 @@
 
                 default:
                     setNumbers(pressedBtnText, pressedBtnText);
-                    $('#input-field').val(pressedBtnText);
+                    // $('#input-field').val(pressedBtnText);
                     break;
             }
         });
@@ -224,9 +224,7 @@
         if (tempFirstNumber === "Undefined") {
             tempSecondNumber += sNumber;
             secondNumber = tempSecondNumber;
-
-            var x = $('#input-field').val() + " " + secondNumber;
-            $('#input-field').val(x);
+            $('#input-field').val(secondNumber);
         }
     }
 
