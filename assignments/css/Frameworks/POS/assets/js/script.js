@@ -1,6 +1,7 @@
 /* Customer Object Array */
 var customers = [];
 
+/* Save Customer function */
 $("#btnSaveCustomer").click(function () {
     let customerID = "";
     let customerName = "";
@@ -49,3 +50,7 @@ $("#btnSaveCustomer").click(function () {
         })
     }
 });
+
+/* Search Customer function */
+
+
