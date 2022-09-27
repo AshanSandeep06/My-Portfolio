@@ -40,11 +40,11 @@ $("#btnSaveCustomer").click(function () {
             'success'
         )
 
-    }else{
+    } else {
         // Error alert
         Swal.fire({
             icon: 'error',
-            title: 'Oops...',
+            title: 'Error...',
             text: 'Something went wrong!',
         })
     }
