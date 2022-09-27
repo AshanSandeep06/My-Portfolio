@@ -102,3 +102,8 @@
 .btn-operators {
     font-size: 45px !important;
 }
+
+.btn-operators:focus {
+    background-color: white !important;
+    color: #FE9700 !important;
+}
