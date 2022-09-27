@@ -149,28 +149,36 @@
                     operator = pressedBtnText;
                     firstNumber = tempFirstNumber;
                     tempFirstNumber = "Undefined";
-                    $('#input-field').val(" " + $('#input-field').val().concat(operator));
+
+                    var x = $('#input-field').val() + " " + operator;
+                    $('#input-field').val(x);
                     break;
 
                 case "-":
                     operator = pressedBtnText;
                     firstNumber = tempFirstNumber;
                     tempFirstNumber = "Undefined";
-                    $('#input-field').val(" " + $('#input-field').val().concat(operator));
+
+                    var x = $('#input-field').val() + " " + operator;
+                    $('#input-field').val(x);
                     break;
 
                 case "/":
                     operator = pressedBtnText;
                     firstNumber = tempFirstNumber;
                     tempFirstNumber = "Undefined";
-                    $('#input-field').val(" " + $('#input-field').val().concat(operator));
+
+                    var x = $('#input-field').val() + " " + operator;
+                    $('#input-field').val(x);
                     break;
 
                 case "*":
                     operator = pressedBtnText;
                     firstNumber = tempFirstNumber;
                     tempFirstNumber = "Undefined";
-                    $('#input-field').val(" " + $('#input-field').val().concat(operator));
+
+                    var x = $('#input-field').val() + " " + operator;
+                    $('#input-field').val(x);
                     break;
 
                 case "=":
@@ -208,15 +216,19 @@
     function setNumbers(fNumber, sNumber) {
         if (tempFirstNumber !== "Undefined") {
             tempFirstNumber += fNumber;
-            var x = tempFirstNumber;
-            $("#input-field").val(x);
+            console.log(tempFirstNumber);
+            $('#input-field').val(tempFirstNumber);
+
             // document.getElementById("input-field").value = tempFirstNumber;
         }
 
         if (tempFirstNumber === "Undefined") {
             tempSecondNumber += sNumber;
             secondNumber = tempSecondNumber;
-            $('#input-field').val(" " + $('#input-field').val().concat(secondNumber));
+            // $('#input-field').val(" " + $('#input-field').val().concat(secondNumber));
+
+            var x = $('#input-field').val() + " " + secondNumber;
+            $('#input-field').val(x);
         }
     }
 
