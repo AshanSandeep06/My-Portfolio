@@ -155,10 +155,10 @@
                         tempFirstNumber = "Undefined";
                     }else{
                         operator = operator.charAt(operator.length-1);
-                    }*/
+                    }
 
-                    // var x = $('#input-field').val() + " " + operator;
-                    // $('#input-field').val(x);
+                    var x = $('#input-field').val() + " " + operator;
+                    $('#input-field').val(x);*/
                     break;
 
                 case "-":
@@ -193,7 +193,6 @@
 
                 default:
                     setNumbers(pressedBtnText, pressedBtnText);
-                    // $('#input-field').val(pressedBtnText);
                     break;
             }
         });
