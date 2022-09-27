@@ -53,7 +53,29 @@ $("#btnSaveCustomer").click(function () {
 
 /* Search Customer function */
 $("#btnSearchCustomer").click(function () {
+    if ($("#disabledSelect").val() === "ID") {
+        var typedId = $("#txtSearchCustomer").val();
+        var customer = null;
 
+        for (let i of customers) {
+            if (i.id === typedId) {
+                customer = i;
+                break;
+            }
+        }
+
+        if (customer !== null) {
+            $("#customerID").val(customer.id);
+            $("#customerName").val(customer.name);
+            $("#customerAddress").val(customer.address);
+            $("#customerSalary").val(customer.salary);
+        } else {
+            alert("This customer doesn't exist..!");
+        }
+
+    } else {
+
+    }
 });
 
 
