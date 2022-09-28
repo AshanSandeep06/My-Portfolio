@@ -1,3 +1,5 @@
+/* -------------------------------- Manage Customer Form ------------------------------------*/
+
 /* Customer Object Array */
 var customers = [];
 
@@ -128,6 +130,12 @@ $("#btnClear").click(function () {
 $("#btnSearchCustomerClear").click(function () {
     $("#txtSearchCustomer").val('');
 });
+
+
+/* -------------------------------- Manage Item Form ------------------------------------*/
+
+
+
 
 
 
