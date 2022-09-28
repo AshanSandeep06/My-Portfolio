@@ -820,6 +820,10 @@ main > section#education_section > section:nth-child(2) > div {
     position: relative;
 }
 
+#btnEducation{
+    color: #7461E2!important;
+}
+
 main > section#education_section > section:nth-child(2) i {
     margin-right: 4px;
     bottom: 1px;
