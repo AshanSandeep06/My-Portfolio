@@ -121,11 +121,11 @@ function clearCustomerFields() {
     $("#customerSalary").val('');
 }
 
-$("#btnClear").click(function(){
+$("#btnClear").click(function () {
     clearCustomerFields();
 });
 
-$("#btnSearchCustomerClear").click(function(){
+$("#btnSearchCustomerClear").click(function () {
     $("#txtSearchCustomer").val('');
 });
 
