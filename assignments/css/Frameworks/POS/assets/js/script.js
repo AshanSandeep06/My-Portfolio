@@ -53,47 +53,55 @@ $("#btnSaveCustomer").click(function () {
 
 /* Search Customer function */
 $("#btnSearchCustomer").click(function () {
-    if ($("#disabledSelect").val() === "ID") {
-        var typedId = $("#txtSearchCustomer").val();
-        var customer = null;
+    if ($("#txtSearchCustomer").val().length !== 0) {
+        if ($("#disabledSelect").val() === "ID") {
+            var typedId = $("#txtSearchCustomer").val();
+            var customer = null;
 
-        for (let i of customers) {
-            if (i.id === typedId) {
-                customer = i;
-                break;
+            for (let i of customers) {
+                if (i.id === typedId) {
+                    customer = i;
+                    break;
+                }
+            }
+
+            if (customer !== null) {
+                setCustomerData(customer);
+            } else {
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Oops...',
+                    text: 'This customer doesn\'t exist..!',
+                })
+            }
+
+        } else {
+            var typedName = $("#txtSearchCustomer").val();
+            customer = null;
+
+            for (let i of customers) {
+                if (i.name === typedName) {
+                    customer = i;
+                    break;
+                }
+            }
+
+            if (customer !== null) {
+                setCustomerData(customer);
+            } else {
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Oops...',
+                    text: 'This customer doesn\'t exist..!',
+                })
             }
         }
-
-        if (customer !== null) {
-            setCustomerData(customer);
-        } else {
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'This customer doesn\'t exist..!',
-            })
-        }
-
-    } else {
-        var typedName = $("#txtSearchCustomer").val();
-        customer = null;
-
-        for (let i of customers) {
-            if (i.name === typedName) {
-                customer = i;
-                break;
-            }
-        }
-
-        if (customer !== null) {
-            setCustomerData(customer);
-        } else {
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'This customer doesn\'t exist..!',
-            })
-        }
+    }else{
+        Swal.fire({
+            icon: 'error',
+            title: 'Empty field..',
+            text: 'Please input customer ID or name',
+        })
     }
 });
 
