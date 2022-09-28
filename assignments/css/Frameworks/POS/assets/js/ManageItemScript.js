@@ -56,49 +56,49 @@ $("#btnSaveItem").click(function () {
 /* ================================================================================== */
 
 /* Search Item function */
-$("#btnSearchCustomer").click(function () {
-    if ($("#txtSearchCustomer").val().length !== 0) {
-        if ($("#disabledSelect").val() === "ID") {
-            var typedId = $("#txtSearchCustomer").val();
-            var customer = null;
+$("#btnSearchItem").click(function () {
+    if ($("#txtSearchItem").val().length !== 0) {
+        if ($("#disabledSelect").val() === "Item Code") {
+            var typedId = $("#txtSearchItem").val();
+            var item = null;
 
-            for (let i of customers) {
-                if (i.id === typedId) {
-                    customer = i;
+            for (let i of items) {
+                if (i.itemCode === typedId) {
+                    item = i;
                     break;
                 }
             }
 
-            if (customer !== null) {
-                setCustomerData(customer);
+            if (item !== null) {
+                setItemData(item);
             } else {
-                clearCustomerFields();
+                clearItemFields();
                 Swal.fire({
                     icon: 'warning',
                     title: 'Oops...',
-                    text: 'This customer doesn\'t exist..!',
+                    text: 'This item doesn\'t exist..!',
                 })
             }
 
         } else {
-            var typedName = $("#txtSearchCustomer").val();
-            customer = null;
+            var typedName = $("#txtSearchItem").val();
+            item = null;
 
-            for (let i of customers) {
-                if (i.name === typedName) {
-                    customer = i;
+            for (let i of items) {
+                if (i.itemName === typedName) {
+                    item = i;
                     break;
                 }
             }
 
-            if (customer !== null) {
-                setCustomerData(customer);
+            if (item !== null) {
+                setItemData(item);
             } else {
-                clearCustomerFields();
+                clearItemFields();
                 Swal.fire({
                     icon: 'warning',
                     title: 'Oops...',
-                    text: 'This customer doesn\'t exist..!',
+                    text: 'This item doesn\'t exist..!',
                 })
             }
         }
@@ -106,29 +106,29 @@ $("#btnSearchCustomer").click(function () {
         Swal.fire({
             icon: 'error',
             title: 'Empty field..',
-            text: 'Please input customer ID or name',
+            text: 'Please input Item Code or item name',
         })
     }
 });
 
-function setCustomerData(c1) {
-    $("#customerID").val(c1.id);
-    $("#customerName").val(c1.name);
-    $("#customerAddress").val(c1.address);
-    $("#customerSalary").val(c1.salary);
+function setItemData(i) {
+    $("#itemCode").val(i.itemCode);
+    $("#itemName").val(i.itemName);
+    $("#unitPrice").val(i.unitPrice);
+    $("#qtyOnHand").val(i.qtyOnHand);
 }
 
-function clearCustomerFields() {
-    $("#customerID").val('');
-    $("#customerName").val('');
-    $("#customerAddress").val('');
-    $("#customerSalary").val('');
+function clearItemFields() {
+    $("#itemCode").val('');
+    $("#itemName").val('');
+    $("#unitPrice").val('');
+    $("#qtyOnHand").val('');
 }
 
 $("#btnClear").click(function () {
-    clearCustomerFields();
+    clearItemFields();
 });
 
-$("#btnSearchCustomerClear").click(function () {
-    $("#txtSearchCustomer").val('');
+$("#btnSearchItemClear").click(function () {
+    $("#txtSearchItem").val('');
 });
