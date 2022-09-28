@@ -65,17 +65,43 @@ $("#btnSearchCustomer").click(function () {
         }
 
         if (customer !== null) {
-            $("#customerID").val(customer.id);
-            $("#customerName").val(customer.name);
-            $("#customerAddress").val(customer.address);
-            $("#customerSalary").val(customer.salary);
+            setCustomerData(customer);
         } else {
-            alert("This customer doesn't exist..!");
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'This customer doesn\'t exist..!',
+            })
         }
 
     } else {
+        var typedName = $("#txtSearchCustomer").val();
+        customer = null;
 
+        for (let i of customers) {
+            if (i.name === typedName) {
+                customer = i;
+                break;
+            }
+        }
+
+        if (customer !== null) {
+            setCustomerData(customer);
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'This customer doesn\'t exist..!',
+            })
+        }
     }
 });
+
+function setCustomerData(c1) {
+    $("#customerID").val(c1.id);
+    $("#customerName").val(c1.name);
+    $("#customerAddress").val(c1.address);
+    $("#customerSalary").val(c1.salary);
+}
 
 
