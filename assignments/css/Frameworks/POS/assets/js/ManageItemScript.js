@@ -53,8 +53,6 @@ $("#btnSaveItem").click(function () {
     }
 });
 
-/* ================================================================================== */
-
 /* Search Item function */
 $("#btnSearchItem").click(function () {
     if ($("#txtSearchItem").val().length !== 0) {
