@@ -441,6 +441,7 @@ main > section:nth-child(2)#about_section > section:first-child {
 }
 
 main > section:nth-child(2)#about_section > section:first-child > h1 {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
     left: 0;
     right: 0;
@@ -768,6 +769,7 @@ main > section#education_section > section:nth-child(2) ul {
 }
 
 main > section#education_section > section:first-child > h1 {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
     left: 0;
     right: 0;
@@ -1065,6 +1067,7 @@ main > section#skills_section > section:nth-child(3) {
 }
 
 main > section#skills_section > section:first-child > h1 {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
     left: 0;
     right: 0;
@@ -1804,6 +1807,7 @@ main > section#services_section > section:first-child {
 }
 
 main > section#services_section > section:first-child > h1 {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
     left: 0;
     right: 0;
@@ -2192,6 +2196,7 @@ main > section#activities_section > section:first-child {
 }
 
 main > section#activities_section > section:first-child > h1 {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
     left: 0;
     right: 0;
@@ -2340,6 +2345,7 @@ main > section#contact_section > section:first-child {
 }
 
 main > section#contact_section > section:first-child > h1 {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
     left: 0;
     right: 0;
