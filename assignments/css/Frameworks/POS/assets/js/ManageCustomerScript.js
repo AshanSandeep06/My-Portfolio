@@ -132,9 +132,6 @@ $("#btnSearchCustomerClear").click(function () {
 });
 
 
-/* -------------------------------- Manage Item Form ------------------------------------*/
-
-
 
 
 
