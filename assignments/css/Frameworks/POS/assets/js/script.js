@@ -68,6 +68,7 @@ $("#btnSearchCustomer").click(function () {
             if (customer !== null) {
                 setCustomerData(customer);
             } else {
+                clearCustomerFields();
                 Swal.fire({
                     icon: 'warning',
                     title: 'Oops...',
@@ -89,6 +90,7 @@ $("#btnSearchCustomer").click(function () {
             if (customer !== null) {
                 setCustomerData(customer);
             } else {
+                clearCustomerFields();
                 Swal.fire({
                     icon: 'warning',
                     title: 'Oops...',
@@ -96,7 +98,7 @@ $("#btnSearchCustomer").click(function () {
                 })
             }
         }
-    }else{
+    } else {
         Swal.fire({
             icon: 'error',
             title: 'Empty field..',
@@ -110,6 +112,13 @@ function setCustomerData(c1) {
     $("#customerName").val(c1.name);
     $("#customerAddress").val(c1.address);
     $("#customerSalary").val(c1.salary);
+}
+
+function clearCustomerFields() {
+    $("#customerID").val('');
+    $("#customerName").val('');
+    $("#customerAddress").val('');
+    $("#customerSalary").val('');
 }
 
 
