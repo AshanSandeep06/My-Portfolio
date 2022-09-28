@@ -52,3 +52,83 @@ $("#btnSaveItem").click(function () {
         })
     }
 });
+
+/* ================================================================================== */
+
+/* Search Item function */
+$("#btnSearchCustomer").click(function () {
+    if ($("#txtSearchCustomer").val().length !== 0) {
+        if ($("#disabledSelect").val() === "ID") {
+            var typedId = $("#txtSearchCustomer").val();
+            var customer = null;
+
+            for (let i of customers) {
+                if (i.id === typedId) {
+                    customer = i;
+                    break;
+                }
+            }
+
+            if (customer !== null) {
+                setCustomerData(customer);
+            } else {
+                clearCustomerFields();
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Oops...',
+                    text: 'This customer doesn\'t exist..!',
+                })
+            }
+
+        } else {
+            var typedName = $("#txtSearchCustomer").val();
+            customer = null;
+
+            for (let i of customers) {
+                if (i.name === typedName) {
+                    customer = i;
+                    break;
+                }
+            }
+
+            if (customer !== null) {
+                setCustomerData(customer);
+            } else {
+                clearCustomerFields();
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Oops...',
+                    text: 'This customer doesn\'t exist..!',
+                })
+            }
+        }
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Empty field..',
+            text: 'Please input customer ID or name',
+        })
+    }
+});
+
+function setCustomerData(c1) {
+    $("#customerID").val(c1.id);
+    $("#customerName").val(c1.name);
+    $("#customerAddress").val(c1.address);
+    $("#customerSalary").val(c1.salary);
+}
+
+function clearCustomerFields() {
+    $("#customerID").val('');
+    $("#customerName").val('');
+    $("#customerAddress").val('');
+    $("#customerSalary").val('');
+}
+
+$("#btnClear").click(function () {
+    clearCustomerFields();
+});
+
+$("#btnSearchCustomerClear").click(function () {
+    $("#txtSearchCustomer").val('');
+});

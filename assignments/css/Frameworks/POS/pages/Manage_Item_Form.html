@@ -87,12 +87,12 @@
                     </div>
 
                     <div class="col">
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                        <input type="email" class="form-control" id="txtSearchItem"
                                placeholder="Search Item">
                     </div>
 
                     <div class="col-1" style="width: max-content">
-                        <button type="button" class="btn btn-outline-primary">Search</button>
+                        <button id="btnSearchItem" type="button" class="btn btn-outline-primary">Search</button>
                     </div>
 
                     <div class="col-1" style="width: max-content">
@@ -196,26 +196,25 @@
             <section class="col-8 border rounded shadow">
                 <form id="item-form">
                     <div class="mb-3">
-                        <label for="iCode" class="form-label">Item Code</label>
-                        <input type="text" class="form-control" id="iCode" aria-describedby="codeHelp"
-                               placeholder="I-001">
+                        <label for="itemCode" class="form-label">Item Code</label>
+                        <input type="text" class="form-control" id="itemCode" aria-describedby="codeHelp" placeholder="I-001">
                         <div id="codeHelp" class="form-text">Eg :- I-001</div>
                     </div>
                     <div class="mb-3">
-                        <label for="iName" class="form-label">Item Name</label>
-                        <input type="text" class="form-control" id="iName" aria-describedby="nameHelp"
+                        <label for="itemName" class="form-label">Item Name</label>
+                        <input type="text" class="form-control" id="itemName" aria-describedby="nameHelp"
                                placeholder="Soap">
                         <div id="nameHelp" class="form-text">At least, Name should be 3 characters long.</div>
                     </div>
                     <div class="mb-3">
-                        <label for="iPrice" class="form-label">Price (LKR)</label>
-                        <input type="text" class="form-control" id="iPrice" aria-describedby="priceHelp"
+                        <label for="unitPrice" class="form-label">Price (LKR)</label>
+                        <input type="text" class="form-control" id="unitPrice" aria-describedby="priceHelp"
                                placeholder="350.00">
                         <div id="priceHelp" class="form-text">Only numbers are allowed.</div>
                     </div>
                     <div class="mb-3">
-                        <label for="iQty" class="form-label">Quantity</label>
-                        <input type="text" class="form-control" id="iQty" aria-describedby="qtyHelp"
+                        <label for="qtyOnHand" class="form-label">Quantity</label>
+                        <input type="text" class="form-control" id="qtyOnHand" aria-describedby="qtyHelp"
                                placeholder="1000">
                         <div id="qtyHelp" class="form-text">Only integer numbers are allowed.</div>
                     </div>
