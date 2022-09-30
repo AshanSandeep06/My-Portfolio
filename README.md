@@ -25,7 +25,16 @@ This is a Bootstrap Framework Assignment
 
 * Mock-up URL : https://www.figma.com/file/HfV8RgQ1ltpC8Sfe8Xp4rG/POS-System?node-id=0%3A1
 # 
-<br>
+
+#### Clone this repository ✅
+```md
+git clone https://github.com/AshanSandeep06/My-Portfolio.git
+```
+###
+
+### License 📝
+[![GitHub license](https://img.shields.io/github/license/AshanSandeep06/My-Portfolio?&labelColor=black&color=3867d6&style=for-the-badge)](https://github.com/AshanSandeep06/My-Portfolio/blob/master/LICENSE)
+
 </b>
 </p>
 <div align="center">
