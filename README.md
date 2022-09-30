@@ -1,4 +1,7 @@
 # My-Portfolio Website 👍
+
+My Personal Website
+# 
 * Website URL : http://myportfolio2022.42web.io/?i=2
 
 * GitHub Page URL : https://ashansandeep06.github.io/My-Portfolio/
@@ -8,3 +11,17 @@
 * Wire-frame URL : https://wireframe.cc/jGLXjN
 
 * Mock-up URL : https://www.figma.com/file/DrdxbKV9803yk52JxFcD2l/Portfolio-Mock-up?node-id=0%3A1
+# 
+
+<hr>
+
+# Web POS System
+
+This is a Bootstrap Framework Assignment
+# 
+* Site-Map URL : https://www.gloomaps.com/ekxhncKqco
+
+* Wire-frame URL : https://wireframe.cc/lTf2DT
+
+* Mock-up URL : https://www.figma.com/file/HfV8RgQ1ltpC8Sfe8Xp4rG/POS-System?node-id=0%3A1
+# 
