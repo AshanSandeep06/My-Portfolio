@@ -676,6 +676,13 @@ main > #about_section > section:nth-child(2) section > button {
     /* 2022-09-11 Added */
     margin-top: 3px;
     margin-bottom: 80px;
+    transition: all .6s;
+}
+
+main > #about_section > section:nth-child(2) section > button:hover{
+    transition: all .6s;
+    transform: scale(1.03);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 main > #about_section > section:nth-child(2) section > button > a {
