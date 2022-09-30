@@ -35,6 +35,8 @@ git clone https://github.com/AshanSandeep06/My-Portfolio.git
 ### License 📝
 [![GitHub license](https://img.shields.io/github/license/AshanSandeep06/My-Portfolio?&labelColor=black&color=3867d6&style=for-the-badge)](https://github.com/AshanSandeep06/My-Portfolio/blob/master/License.md)
 
+<br>
+
 </b>
 </p>
 <div align="center">
