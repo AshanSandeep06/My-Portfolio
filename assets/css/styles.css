@@ -1356,11 +1356,16 @@ main > section#skills_section > section:nth-child(3) div:last-of-type:hover i {
 
 /*====================== Projects and Assignments Section ======================*/
 main > section#projects_section {
-    background: #fafaff;
+    /*background: #fafaff;*/
+    background-color: wheat;
     width: 100%;
     position: relative;
     height: 803px;
     /*display: none;*/
+}
+
+#project_header{
+    background-color: green;
 }
 
 main > section#projects_section > section:first-child {
@@ -1412,15 +1417,11 @@ main > section#projects_section > section:first-child > h5 {
     display: none;
 }
 
-main > section#projects_section > section:nth-child(2) {
+#projects_section > section:nth-child(2) {
+    background-color: yellow;
     display: flex;
     justify-content: space-around;
     height: 36px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
 }
 
 main > section#projects_section > section:nth-child(2) > h2 {
