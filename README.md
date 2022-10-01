@@ -2,15 +2,15 @@
 
 My Personal Website
 # 
-* Website URL : http://myportfolio2022.42web.io/?i=2
+* Website URL : <a href="http://myportfolio2022.42web.io/?i=2" target="_blank">http://myportfolio2022.42web.io/?i=2</a>
 
-* GitHub Page URL : https://ashansandeep06.github.io/My-Portfolio/
+* GitHub Page URL : <a href="https://ashansandeep06.github.io/My-Portfolio/" target="_blank">https://ashansandeep06.github.io/My-Portfolio/</a>
 
-* Site Map URL : https://www.gloomaps.com/z46kePAHbp
+* Site Map URL : <a href="https://www.gloomaps.com/z46kePAHbp" target="_blank">https://www.gloomaps.com/z46kePAHbp</a>
 
-* Wire-frame URL : https://wireframe.cc/jGLXjN
+* Wire-frame URL : <a href="https://wireframe.cc/jGLXjN" target="_blank">https://wireframe.cc/jGLXjN</a>
 
-* Mock-up URL : https://www.figma.com/file/DrdxbKV9803yk52JxFcD2l/Portfolio-Mock-up?node-id=0%3A1
+* Mock-up URL : <a href="https://www.figma.com/file/DrdxbKV9803yk52JxFcD2l/Portfolio-Mock-up?node-id=0%3A1" target="_blank">https://www.figma.com/file/DrdxbKV9803yk52JxFcD2l/Portfolio-Mock-up?node-id=0%3A1</a>
 # 
 
 
@@ -19,13 +19,13 @@ My Personal Website
 
 This is a Bootstrap Framework Assignment
 # 
-* Site-Map URL : https://www.gloomaps.com/ekxhncKqco
+* Site-Map URL : <a href="https://www.gloomaps.com/ekxhncKqco" target="_blank">https://www.gloomaps.com/ekxhncKqco</a>
 
-* Wire-frame URL : https://wireframe.cc/lTf2DT
+* Wire-frame URL : <a href="https://wireframe.cc/lTf2DT" target="_blank">https://wireframe.cc/lTf2DT</a>
 
-* Mock-up URL : https://www.figma.com/file/HfV8RgQ1ltpC8Sfe8Xp4rG/POS-System?node-id=0%3A1
+* Mock-up URL : <a href="https://www.figma.com/file/HfV8RgQ1ltpC8Sfe8Xp4rG/POS-System?node-id=0%3A1" target="_blank">https://www.figma.com/file/HfV8RgQ1ltpC8Sfe8Xp4rG/POS-System?node-id=0%3A1</a>
 
-* GitHub Page : https://ashansandeep06.github.io/My-Portfolio/assignments/css/Frameworks/POS
+* GitHub Page : <a href="https://ashansandeep06.github.io/My-Portfolio/assignments/css/Frameworks/POS" target="_blank">https://ashansandeep06.github.io/My-Portfolio/assignments/css/Frameworks/POS</a>
 # 
 
 #### Clone this repository ✅
