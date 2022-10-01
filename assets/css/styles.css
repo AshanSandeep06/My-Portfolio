@@ -680,7 +680,7 @@ main > #about_section > section:nth-child(2) section > button {
     transition: all .6s;
 }
 
-main > #about_section > section:nth-child(2) section > button:hover{
+main > #about_section > section:nth-child(2) section > button:hover {
     background-color: #6b57d7;
     transition: all .6s;
     transform: scale(1.03);
