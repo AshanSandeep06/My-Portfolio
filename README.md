@@ -28,6 +28,15 @@ This is a Bootstrap Framework Assignment
 * GitHub Page : <a href="https://ashansandeep06.github.io/My-Portfolio/assignments/css/Frameworks/POS" target="_blank">https://ashansandeep06.github.io/My-Portfolio/assignments/css/Frameworks/POS</a>
 # 
 
+# Calculator
+
+This is the Calculator Assignment
+# 
+
+* GitHub Page : <a href="https://ashansandeep06.github.io/My-Portfolio/assignments/css/Frameworks/POS" target="_blank">https://ashansandeep06.github.io/My-Portfolio/assignments/JS/Calculator</a>
+
+# 
+
 #### Clone this repository ✅
 ```md
 git clone https://github.com/AshanSandeep06/My-Portfolio.git
