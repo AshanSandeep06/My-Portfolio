@@ -1433,10 +1433,10 @@ main > section#projects_section > section:first-child > h5 {
 }
 
 #projects-container > div {
+    background: #efeffc;
     position: relative;
     width: 380px;
     height: 380px;
-    background: #fafaff;
     box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
     border-radius: 25px;
 }
@@ -2846,7 +2846,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     text-align: center;
     font-weight: 500;
     border-radius: 0.5rem;
-    box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.10);
+    /*box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.10);*/
     background-color: #7461E2;
     border-width: 0;
     height: 47px;
