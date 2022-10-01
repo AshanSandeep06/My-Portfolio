@@ -1436,7 +1436,7 @@ main > section#projects_section > section:first-child > h5 {
     background: #efeffc;
     position: relative;
     width: 380px;
-    height: 380px;
+    height: 372px;
     box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
     border-radius: 25px;
 }
@@ -2881,13 +2881,13 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 #projects-container > div {
     display: flex;
-    gap: 16px;
+    gap: 24px;
     align-items: center;
     flex-direction: column;
 }
 
-#projects-container > div > h2{
-    margin-top: 40px;
+#projects-container > div > h2 {
+    margin-top: 43px;
     font-size: 21px;
 }
 
