@@ -1436,7 +1436,7 @@ main > section#projects_section > section:first-child > h5 {
     background: #efeffc;
     position: relative;
     width: 380px;
-    height: 372px;
+    height: 379px;
     box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
     border-radius: 25px;
 }
