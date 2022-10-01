@@ -1421,7 +1421,7 @@ main > section#projects_section > section:first-child > h5 {
     transition: all 2s;
 }
 
-#projects_section>section:nth-child(2)>section#projects-container{
+#projects_section > section:nth-child(2) > section#projects-container {
     /*width: 1095px;*/
     display: flex;
     flex-wrap: wrap;
@@ -2840,7 +2840,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     color: #7461E2;
 }
 
-#project_sections-btn{
+#project_sections-btn {
     position: relative;
     color: white;
     text-align: center;
@@ -2856,14 +2856,14 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     width: 133px;
 }
 
-#project_sections-btn:hover{
+#project_sections-btn:hover {
     transition: all .6s;
     transform: scale(1.03);
     background-color: #6b57d7;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-#project_sections-btn>a{
+#project_sections-btn > a {
     position: absolute;
     top: 0;
     right: 0;
@@ -2873,17 +2873,28 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     border-radius: 0.5rem;
 }
 
-#projects-container>div:hover{
+#projects-container > div:hover {
     transition: all 0.8s ease;
     transform: scale(0.97);
     box-shadow: 1px 1px 54px 1px rgba(0, 0, 0, 0.22);
     cursor: pointer;
 }
 
-#projects-container > div{
-    background: url("../images/My_Image.png");
-    background-position: center;
-    background-size: cover;
+#projects-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: url("../images/Pos_System_Project_SS.jpeg");*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+}
+
+#projects-container > div > img{
+    width: 100%;
+    /*height: 100%;*/
+    /*background: url("../images/Pos_System_Project_SS.jpeg");*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
 }
 
 /* Media Queries */
