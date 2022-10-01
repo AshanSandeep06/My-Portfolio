@@ -1419,13 +1419,15 @@ main > section#projects_section > section:first-child > h5 {
 
 #projects_section > section:nth-child(2) {
     background-color: yellow;
-    display: flex;
-    justify-content: space-around;
+    /*display: flex;
+    justify-content: space-around;*/
     height: 36px;
 }
 
 #projects_section>section:nth-child(2)>section#projects-container{
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 main > section#projects_section > section:nth-child(2) > h2 {
