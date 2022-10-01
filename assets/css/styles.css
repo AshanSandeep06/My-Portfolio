@@ -2877,6 +2877,8 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     transform: scale(0.97);
     box-shadow: 1px 1px 54px 1px rgba(0, 0, 0, 0.22);
     cursor: pointer;
+    background: #7461e2;
+    color: white;
 }
 
 #projects-container > div {
@@ -2884,6 +2886,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     gap: 24px;
     align-items: center;
     flex-direction: column;
+    transition: all 0.8s ease;
 }
 
 #projects-container > div > h2 {
