@@ -1421,13 +1421,16 @@ main > section#projects_section > section:first-child > h5 {
     background-color: yellow;
     /*display: flex;
     justify-content: space-around;*/
-    height: 36px;
+    /*height: 36px;*/
 }
 
 #projects_section>section:nth-child(2)>section#projects-container{
+    background-color: deepskyblue;
+    height: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 
 main > section#projects_section > section:nth-child(2) > h2 {
