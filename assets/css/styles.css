@@ -1417,7 +1417,7 @@ main > section#projects_section > section:first-child > h5 {
     align-items: center;
     justify-content: center;
     margin: 30px 69px 0 69px;
-    padding-bottom: 58px;
+    padding-bottom: 65px;
     transition: all 2s;
 }
 
@@ -2881,12 +2881,18 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 #projects-container > div {
     display: flex;
-    justify-content: center;
+    gap: 16px;
     align-items: center;
+    flex-direction: column;
+}
+
+#projects-container > div > h2{
+    margin-top: 40px;
+    font-size: 21px;
 }
 
 #projects-container > div > img {
-    width: 100%;
+    width: 88%;
 }
 
 /* Media Queries */
