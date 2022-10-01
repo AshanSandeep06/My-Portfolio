@@ -24,6 +24,8 @@ This is a Bootstrap Framework Assignment
 * Wire-frame URL : https://wireframe.cc/lTf2DT
 
 * Mock-up URL : https://www.figma.com/file/HfV8RgQ1ltpC8Sfe8Xp4rG/POS-System?node-id=0%3A1
+
+* GitHub Page : https://ashansandeep06.github.io/My-Portfolio/assignments/css/Frameworks/POS
 # 
 
 #### Clone this repository ✅
