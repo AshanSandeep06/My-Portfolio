@@ -1356,16 +1356,9 @@ main > section#skills_section > section:nth-child(3) div:last-of-type:hover i {
 
 /*====================== Projects and Assignments Section ======================*/
 main > section#projects_section {
-    /*background: #fafaff;*/
-    background-color: wheat;
+    background: #fafaff;
     width: 100%;
     position: relative;
-    height: 803px;
-    /*display: none;*/
-}
-
-#project_header{
-    background-color: green;
 }
 
 main > section#projects_section > section:first-child {
@@ -1418,19 +1411,34 @@ main > section#projects_section > section:first-child > h5 {
 }
 
 #projects_section > section:nth-child(2) {
-    background-color: yellow;
-    /*display: flex;
-    justify-content: space-around;*/
-    /*height: 36px;*/
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 69px 0 69px;
+    padding-bottom: 58px;
+    transition: all 2s;
 }
 
 #projects_section>section:nth-child(2)>section#projects-container{
-    background-color: deepskyblue;
-    height: 50px;
+    /*width: 1095px;*/
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 55px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 2s;
+}
 
+#projects-container > div {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    background: #fafaff;
+    box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 25px;
 }
 
 main > section#projects_section > section:nth-child(2) > h2 {
@@ -2830,6 +2838,52 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 #btn-burger > #burger {
     font-size: 20px;
     color: #7461E2;
+}
+
+#project_sections-btn{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.10);
+    background-color: #7461E2;
+    border-width: 0;
+    /*padding-left: 19px;*/
+    height: 47px;
+    transition: all .6s;
+    cursor: pointer;
+    width: 133px;
+}
+
+#project_sections-btn:hover{
+    transition: all .6s;
+    transform: scale(1.03);
+    background-color: #6b57d7;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#project_sections-btn>a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+#projects-container>div:hover{
+    transition: all 0.8s ease;
+    transform: scale(0.97);
+    box-shadow: 1px 1px 54px 1px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+}
+
+#projects-container > div{
+    background: url("../images/My_Image.png");
+    background-position: center;
+    background-size: cover;
 }
 
 /* Media Queries */
