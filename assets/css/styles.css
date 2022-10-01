@@ -1424,6 +1424,10 @@ main > section#projects_section > section:first-child > h5 {
     height: 36px;
 }
 
+#projects_section>section:nth-child(2)>section#projects-container{
+
+}
+
 main > section#projects_section > section:nth-child(2) > h2 {
     font-weight: 500;
     font-size: 25px;
