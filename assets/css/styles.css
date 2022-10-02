@@ -1450,15 +1450,6 @@ main > section#projects_section > section:first-child > h5 {
     transition: all 2s;
 }
 
-#projects-container > div {
-    background: #efeffc;
-    position: relative;
-    width: 380px;
-    height: 405px;
-    box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
-    border-radius: 25px;
-}
-
 main > section#projects_section > section:nth-child(2) > h2 {
     font-weight: 500;
     font-size: 25px;
@@ -2895,8 +2886,13 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     transform: scale(0.97);
     box-shadow: 1px 1px 54px 1px rgba(0, 0, 0, 0.22);
     cursor: pointer;
-    background: #f1f1fb;
-    /*color: white;*/
+    /*background: #f1f1fb;*/
+    background: #7461E2;
+}
+
+#projects-container > div:hover > h2{
+    transition: all 0.8s ease;
+    color: white;
 }
 
 #projects-container > div {
@@ -2905,6 +2901,12 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     gap: 24px;
     align-items: center;
     flex-direction: column;
+
+    background: #efeffc;
+    width: 380px;
+    height: 405px;
+    box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 25px;
     transition: all 0.8s ease;
 }
 
@@ -2964,7 +2966,8 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     stroke-width: 13px;
     fill: transparent;
     /*stroke: #19f6e8;*/
-    stroke: #7461e2;
+    /*stroke: #7461e2;*/
+    stroke: #edf1fa;
     border-bottom: 5px solid black;
     transition-timing-function: linear;
     transition: stroke-dashoffset 2.5s, stroke-dasharray 2.5s;
@@ -3029,21 +3032,21 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     left: 0;
     bottom: 0;
     margin: auto;
-    color: white;
+    color: black;
     text-align: center;
     font-weight: 500;
     border-radius: 0.5rem;
-    background-color: #7461E2;
+    background-color: gold;
     height: 43px;
     transition: all .6s;
     cursor: pointer;
     width: 120px;
-    border: 3px solid #7461E2;
-    font-size: 14.5px;
+    border: 3px solid gold;
+    font-size: 15px;
 }
 
 #projects-container > div > div > button:hover {
-    background: #7461E2;
+    background-color: gold;
 }
 
 #projects-container > div > div > button:hover::before {
@@ -3064,15 +3067,15 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
     25% {
         clip-path: inset(0 95% 0 0);
-        border: 3px solid gold;
+        border: 3px solid #6b57d7;
     }
     50% {
         clip-path: inset(95% 0 0 0);
-        border: 3px solid gold;
+        border: 3px solid #6b57d7;
     }
     75% {
         clip-path: inset(0 0 0 95%);
-        border: 3px solid gold;
+        border: 3px solid #6b57d7;
     }
 }
 
