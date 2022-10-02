@@ -1969,11 +1969,113 @@ main > section#assignments_section > section:first-child > h5 {
     color: white;
 }
 
-.svg-wrapper, .projects_p, .projects_btn {
+.svg-wrapper, .assignments_p, .assignments_btn {
     visibility: hidden;
     transition: visibility .6s;
 }
 
+#assignments-container > div:hover .svg-wrapper {
+    visibility: visible;
+    transition: all .6s;
+}
+
+#assignments-container > div:hover .shape1, #assignments-container > div:hover .shape2 {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1120;
+}
+
+.assignments_p {
+    text-align: center;
+    font-weight: 400;
+}
+
+#assignments-container > div > div > p {
+    position: absolute;
+    top: 28px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: max-content;
+    /* margin: auto; */
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+#assignments-container > div:hover .assignments_p {
+    visibility: visible;
+    transition: all .6s;
+}
+
+#assignments-container > div:hover .assignments_btn {
+    visibility: visible;
+    transition: all .6s;
+}
+
+#assignments-container > div > div > button {
+    position: absolute;
+    top: 156px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    background-color: gold;
+    height: 43px;
+    transition: all .6s;
+    cursor: pointer;
+    width: 120px;
+    border: 3px solid gold;
+    font-size: 15px;
+}
+
+#assignments-container > div > div > button:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .5s;
+    animation: clippath .8s 1 linear;
+}
+
+@keyframes clippath {
+    0%, 100% {
+        clip-path: inset(0 0 95% 0);
+    }
+
+    25% {
+        clip-path: inset(0 95% 0 0);
+        border: 3px solid #6b57d7;
+    }
+    50% {
+        clip-path: inset(95% 0 0 0);
+        border: 3px solid #6b57d7;
+    }
+    75% {
+        clip-path: inset(0 0 0 95%);
+        border: 3px solid #6b57d7;
+    }
+}
+
+#btnAssignmentsViewMore {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    /* box-shadow: 28px 28px 50px rgb(13 39 80 / 10%); */
+    background-color: #7461E2;
+    border-width: 0;
+    height: 47px;
+    transition: all .6s;
+    cursor: pointer;
+    width: 133px;
+}
 
 /* --------------------------------------------------------------------------- */
 
