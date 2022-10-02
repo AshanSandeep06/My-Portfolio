@@ -2959,19 +2959,24 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     stroke-dashoffset: -1120;
 }
 
+.svg-wrapper, .projects_p, .projects_btn {
+    visibility: hidden;
+    transition: visibility .6s;
+}
+
 #projects-container > div:hover .svg-wrapper {
-    transition: all .6s;
     visibility: visible;
+     transition: all .6s;
 }
 
 #projects-container > div:hover .projects_p {
-    transition: all .6s;
     visibility: visible;
+     transition: all .6s;
 }
 
 #projects-container > div:hover .projects_btn {
-    transition: all .6s;
     visibility: visible;
+     transition: all .6s;
 }
 
 #projects-container > div:hover .shape1,
@@ -3044,11 +3049,6 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         clip-path: inset(0 0 0 95%);
         border: 3px solid gold;
     }
-}
-
-.svg-wrapper, .projects_p, .projects_btn {
-    visibility: hidden;
-    transition: visibility .6s;
 }
 
 /* Media Queries */
