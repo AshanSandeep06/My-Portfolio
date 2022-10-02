@@ -1910,6 +1910,28 @@ main > section#assignments_section > section:first-child > h5 {
     display: none;
 }
 
+#assignments_section > section:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 69px 0 69px;
+    padding-bottom: 65px;
+    transition: all 2s;
+}
+
+#assignments_section > section:nth-child(2) > section#assignments-container {
+    /*width: 1095px;*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 2s;
+}
+
 /* --------------------------------------------------------------------------- */
 
 /*====================== Services Section ======================*/
