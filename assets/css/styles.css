@@ -2966,17 +2966,17 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 #projects-container > div:hover .svg-wrapper {
     visibility: visible;
-     transition: all .6s;
+    transition: all .6s;
 }
 
 #projects-container > div:hover .projects_p {
     visibility: visible;
-     transition: all .6s;
+    transition: all .6s;
 }
 
 #projects-container > div:hover .projects_btn {
     visibility: visible;
-     transition: all .6s;
+    transition: all .6s;
 }
 
 #projects-container > div:hover .shape1,
@@ -3009,12 +3009,13 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     text-align: center;
     font-weight: 500;
     border-radius: 0.5rem;
-    background-color: transparent;
-    height: 46px;
+    background-color: #7461E2;
+    height: 43px;
     transition: all .6s;
     cursor: pointer;
-    width: 128px;
+    width: 120px;
     border: 3px solid #7461E2;
+    font-size: 14.5px;
 }
 
 #projects-container > div > div > button:hover {
