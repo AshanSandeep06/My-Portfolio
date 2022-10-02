@@ -1952,6 +1952,7 @@ main > section#assignments_section > section:first-child > h5 {
 }
 
 #assignments-container > div > img {
+    border: 1px solid;
     width: 88%;
     height: 165px;
 }
