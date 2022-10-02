@@ -2964,7 +2964,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     stroke-dasharray: 1120;
 }
 
-#projects-container > div > div >p{
+#projects-container > div > div > p {
     position: absolute;
     top: 0;
     right: 0;
@@ -2973,6 +2973,25 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     /* margin: auto; */
     margin-left: 20px;
     margin-right: 20px;
+}
+
+#projects-container > div > div > button {
+    position: absolute;
+    top: 156px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    background-color: #ff008d;
+    border-width: 0;
+    height: 46px;
+    transition: all .6s;
+    cursor: pointer;
+    width: 128px;
 }
 
 /* Media Queries */
