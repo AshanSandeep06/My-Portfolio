@@ -2980,6 +2980,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 .projects_p {
     text-align: center;
+    font-weight: 500;
 }
 
 .svg-wrapper, .projects_p, .projects_btn {
