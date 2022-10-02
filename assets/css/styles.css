@@ -1967,6 +1967,16 @@ main > section#assignments_section > section:first-child > h5 {
     border-radius: 0.5rem;
 }
 
+#btnAssignmentsViewMore > a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
 #assignments-container > div:hover {
     transition: all 0.8s ease;
     transform: scale(0.97);
