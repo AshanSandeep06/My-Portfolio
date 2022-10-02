@@ -2077,6 +2077,13 @@ main > section#assignments_section > section:first-child > h5 {
     width: 133px;
 }
 
+#btnAssignmentsViewMore:hover {
+    transition: all .6s;
+    transform: scale(1.03);
+    background-color: #6b57d7;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* --------------------------------------------------------------------------- */
 
 /*====================== Services Section ======================*/
