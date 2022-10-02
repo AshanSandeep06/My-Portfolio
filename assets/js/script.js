@@ -1,5 +1,6 @@
 /* ------------------------------------ My Portfolio js file ------------------------------------------------ */
 
+/* ------------------------ Projects Section -------------------- */
 $("#btnProjectsViewMore").on("click", function () {
     $("#btnProjectsViewMore>a").attr("target", "_blank");
     $("#btnProjectsViewMore>a").attr("href", "https://github.com/AshanSandeep06?tab=repositories");
@@ -18,4 +19,11 @@ $('#btnHostelProject').on('click', function () {
 $('#btnHotelReservationProject').on('click', function () {
     $("#btnHotelReservationProject>a").attr("target", "_blank");
     $("#btnHotelReservationProject>a").attr("href", "https://github.com/AshanSandeep06/Hotel_Reservation-System");
+});
+
+
+/* ------------------------ Assignments Section -------------------- */
+$("#btnAssignmentsViewMore").on("click", function () {
+    $("#btnAssignmentsViewMore>a").attr("target", "_blank");
+    $("#btnAssignmentsViewMore>a").attr("href", "https://github.com/AshanSandeep06?tab=repositories");
 });
