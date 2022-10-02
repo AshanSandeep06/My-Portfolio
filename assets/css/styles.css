@@ -1955,6 +1955,25 @@ main > section#assignments_section > section:first-child > h5 {
     width: 88%;
 }
 
+#assignments-container > div:hover {
+    transition: all 0.8s ease;
+    transform: scale(0.97);
+    box-shadow: 1px 1px 54px 1px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    /* background: #f1f1fb; */
+    background: #7461E2;
+}
+
+#assignments-container > div:hover > h2 {
+    transition: all 0.8s ease;
+    color: white;
+}
+
+.svg-wrapper, .projects_p, .projects_btn {
+    visibility: hidden;
+    transition: visibility .6s;
+}
+
 
 /* --------------------------------------------------------------------------- */
 
