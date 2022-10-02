@@ -1354,7 +1354,7 @@ main > section#skills_section > section:nth-child(3) div:last-of-type:hover i {
 
 /* --------------------------------------------------------------------------- */
 
-/*====================== Projects and Assignments Section ======================*/
+/*====================== Projects Section ======================*/
 main > section#projects_section {
     background: #fafaff;
     width: 100%;
@@ -1832,6 +1832,82 @@ main > section#projects_section > section:nth-child(3) > section:first-child > s
 
 main > section#projects_section > section:nth-child(3) > section:nth-child(2) > section:first-child > div:nth-child(2) > a:hover {
     background-color: #5A43CB;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/*====================== Assignments Section ======================*/
+main > section#assignments_section {
+    background: #fafaff;
+    width: 100%;
+    position: relative;
+}
+
+main > section#assignments_section > section:first-child {
+    /* position: relative;
+     height: 102px;*/
+
+    position: relative;
+    height: 155px;
+}
+
+main > section#assignments_section > section:first-child > h1 {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: max-content;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 17px;
+    padding-bottom: 17px;
+    text-transform: uppercase;
+}
+
+main > section#assignments_section > section:first-child > h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    text-align: center;
+    width: max-content;
+    margin-bottom: 8px;
+    margin-top: 110px;
+    font-weight: 500;
+    font-size: 22px;
+    color: hsl(250, 8%, 45%);
+}
+
+main > section#assignments_section > section:first-child > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 240px;
+    height: 1px;
+    background: #ddd;
+    bottom: 3px;
+    left: calc(25% - 60px);
+}
+
+main > section#assignments_section > section:first-child > h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 84px;
+    height: 4px;
+    background: #7461E2;
+    bottom: 2px;
+    left: calc(40% - 20px);
+}
+
+main > section#assignments_section > section:first-child > h5 {
+    margin: 0;
+    display: none;
 }
 
 /* --------------------------------------------------------------------------- */
