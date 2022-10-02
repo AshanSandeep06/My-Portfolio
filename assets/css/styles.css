@@ -2890,7 +2890,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     transition: all 0.8s ease;
 }
 
-#projects-container > div > div {
+/*#projects-container > div > div {
     position: absolute;
     top: 72px;
     left: 0;
@@ -2900,10 +2900,10 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     width: 233px;
     height: 250px;
     transition: all 2s;
-}
+}*/
 
-#projects-container > div > div:hover {
-    /*transition: all 2s;*/
+/*#projects-container > div > div:hover {
+    !*transition: all 2s;*!
 }
 
 #projects-container > div > div::before {
@@ -2916,7 +2916,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     left: 0;
     bottom: 0;
     margin: auto;
-}
+}*/
 
 #projects-container > div > h2 {
     margin-top: 43px;
@@ -2925,6 +2925,43 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 #projects-container > div > img {
     width: 88%;
+}
+
+.svg-wrapper {
+    position: absolute;
+    top: 69px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 233px;
+    height: 250px;
+    transition: all 2s;
+}
+
+.shape1,
+.shape2 {
+    stroke-dasharray: 1120;
+    stroke-width: 10px;
+    fill: transparent;
+    stroke: #19f6e8;
+    border-bottom: 5px solid black;
+    transition-timing-function: linear;
+    transition: stroke-dashoffset 2.5s, stroke-dasharray 2.5s;
+}
+
+.shape1 {
+    stroke-dashoffset: 1120;
+}
+
+.shape2 {
+    stroke-dashoffset: -1120;
+}
+
+#projects-container > div:hover .shape1,
+#projects-container > div:hover .shape2 {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1120;
 }
 
 /* Media Queries */
