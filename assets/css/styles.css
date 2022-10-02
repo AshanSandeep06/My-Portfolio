@@ -2890,7 +2890,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     background: #7461E2;
 }
 
-#projects-container > div:hover > h2{
+#projects-container > div:hover > h2 {
     transition: all 0.8s ease;
     color: white;
 }
@@ -3077,6 +3077,16 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         clip-path: inset(0 0 0 95%);
         border: 3px solid #6b57d7;
     }
+}
+
+#btnPOSProject > a, #btnHostelProject > a, #btnHotelReservationProject > a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 0.5rem;
 }
 
 /* Media Queries */
