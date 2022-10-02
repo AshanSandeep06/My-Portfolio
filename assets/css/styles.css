@@ -3002,12 +3002,16 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     text-align: center;
     font-weight: 500;
     border-radius: 0.5rem;
-    background-color: #ff008d;
-    border-width: 0;
+    background-color: transparent;
     height: 46px;
     transition: all .6s;
     cursor: pointer;
     width: 128px;
+    border: 3px solid #7461E2;
+}
+
+#projects-container > div > div > button:hover{
+    background: #7461E2;
 }
 
 #projects-container > div > div > button:hover::before {
@@ -3017,7 +3021,6 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    border: 2px solid gold;
     transition: all .5s;
     animation: clippath .8s 1 linear;
 }
@@ -3029,12 +3032,15 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
     25% {
         clip-path: inset(0 95% 0 0);
+        border: 3px solid gold;
     }
     50% {
         clip-path: inset(95% 0 0 0);
+        border: 3px solid gold;
     }
     75% {
         clip-path: inset(0 0 0 95%);
+        border: 3px solid gold;
     }
 }
 
