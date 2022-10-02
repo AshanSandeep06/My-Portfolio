@@ -2929,7 +2929,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 .svg-wrapper {
     position: absolute;
-    top: 69px;
+    top: 52px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -2937,10 +2937,10 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     width: 245px;
     height: 255px;
     transition: all 2s;
+    background: #00000080;
 }
 
-.shape1,
-.shape2 {
+.shape1, .shape2 {
     stroke-dasharray: 1120;
     stroke-width: 10px;
     fill: transparent;
@@ -2958,6 +2958,21 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     stroke-dashoffset: -1120;
 }
 
+#projects-container > div:hover .svg-wrapper {
+    transition: all .6s;
+    visibility: visible;
+}
+
+#projects-container > div:hover .projects_p {
+    transition: all .6s;
+    visibility: visible;
+}
+
+#projects-container > div:hover .projects_btn {
+    transition: all .6s;
+    visibility: visible;
+}
+
 #projects-container > div:hover .shape1,
 #projects-container > div:hover .shape2 {
     stroke-dashoffset: 0;
@@ -2973,6 +2988,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     /* margin: auto; */
     margin-left: 20px;
     margin-right: 20px;
+    color: white;
 }
 
 #projects-container > div > div > button {
@@ -3020,6 +3036,11 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     75% {
         clip-path: inset(0 0 0 95%);
     }
+}
+
+.svg-wrapper, .projects_p, .projects_btn {
+    visibility: hidden;
+    transition: visibility .6s;
 }
 
 /* Media Queries */
