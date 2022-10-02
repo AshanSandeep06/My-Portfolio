@@ -1838,7 +1838,7 @@ main > section#projects_section > section:nth-child(3) > section:nth-child(2) > 
 
 /*====================== Assignments Section ======================*/
 main > section#assignments_section {
-    background: #fafaff;
+    /*background: #fafaff;*/
     width: 100%;
     position: relative;
 }
@@ -2091,7 +2091,7 @@ main > section#services_section {
     width: 100%;
     position: relative;
     /*height: 950px;*/
-    /*background: #fafaff;*/
+    background: #fafaff;
 }
 
 main > section#services_section > section:first-child {
@@ -2481,7 +2481,7 @@ main > section#activities_section {
     width: 100%;
     position: relative;
     /*height: 380px;*/
-    background-color: #fafaff;
+    /*background-color: #fafaff;*/
 }
 
 main > section#activities_section > section:first-child {
@@ -2630,7 +2630,7 @@ main > section#activities_section > section:last-child > div:nth-child(5) > div 
 main > section#contact_section {
     position: relative;
     width: 100%;
-    /*background: #fafaff;*/
+    background: #fafaff;
 }
 
 main > section#contact_section > section:first-child {
