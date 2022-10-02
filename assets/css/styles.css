@@ -3010,7 +3010,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     border: 3px solid #7461E2;
 }
 
-#projects-container > div > div > button:hover{
+#projects-container > div > div > button:hover {
     background: #7461E2;
 }
 
