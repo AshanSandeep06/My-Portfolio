@@ -2934,8 +2934,8 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 233px;
-    height: 250px;
+    width: 245px;
+    height: 255px;
     transition: all 2s;
 }
 
@@ -2962,6 +2962,17 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 #projects-container > div:hover .shape2 {
     stroke-dashoffset: 0;
     stroke-dasharray: 1120;
+}
+
+#projects-container > div > div >p{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* margin: auto; */
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* Media Queries */
