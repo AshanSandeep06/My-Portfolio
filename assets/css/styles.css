@@ -2959,6 +2959,10 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     stroke-dashoffset: -1120;
 }
 
+.projects_p{
+    text-align: center;
+}
+
 .svg-wrapper, .projects_p, .projects_btn {
     visibility: hidden;
     transition: visibility .6s;
@@ -2987,7 +2991,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 #projects-container > div > div > p {
     position: absolute;
-    top: 24px;
+    top: 28px;
     right: 0;
     left: 0;
     bottom: 0;
