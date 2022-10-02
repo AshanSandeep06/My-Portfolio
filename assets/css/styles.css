@@ -2877,8 +2877,8 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     transform: scale(0.97);
     box-shadow: 1px 1px 54px 1px rgba(0, 0, 0, 0.22);
     cursor: pointer;
-    background: #7461e2;
-    color: white;
+    /*background: #7461e2;*/
+    /*color: white;*/
 }
 
 #projects-container > div {
@@ -2934,17 +2934,18 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 245px;
-    height: 255px;
+    width: 265px;
+    height: 275px;
     transition: all 2s;
     background: #00000080;
 }
 
 .shape1, .shape2 {
     stroke-dasharray: 1120;
-    stroke-width: 10px;
+    stroke-width: 13px;
     fill: transparent;
-    stroke: #19f6e8;
+    /*stroke: #19f6e8;*/
+    stroke: #7461e2;
     border-bottom: 5px solid black;
     transition-timing-function: linear;
     transition: stroke-dashoffset 2.5s, stroke-dasharray 2.5s;
@@ -2981,10 +2982,11 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 #projects-container > div > div > p {
     position: absolute;
-    top: 0;
+    top: 24px;
     right: 0;
     left: 0;
     bottom: 0;
+    height: max-content;
     /* margin: auto; */
     margin-left: 20px;
     margin-right: 20px;
