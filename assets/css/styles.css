@@ -3459,7 +3459,20 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 }
 
 @media all and (max-width: 932px) {
+    #projects-container > div {
+        width: 506px;
+        height: 410px;
+    }
 
+    #assignments-container > div {
+        width: 506px;
+        height: 410px;
+    }
+
+    .svg-wrapper {
+        width: 275px;
+        height: 290px;
+    }
 }
 
 @media all and (max-width: 1146px) {
