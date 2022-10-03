@@ -3448,7 +3448,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 }
 
 /* For assignments and projects Sections */
-@media all and (max-width: 956px){
+@media all and (max-width: 956px) {
     #projects_section > section:nth-child(2) > section#projects-container {
         gap: 38px;
     }
@@ -3456,6 +3456,10 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     #assignments_section > section:nth-child(2) > section#assignments-container {
         gap: 38px;
     }
+}
+
+@media all and (max-width: 932px) {
+
 }
 
 @media all and (max-width: 1146px) {
