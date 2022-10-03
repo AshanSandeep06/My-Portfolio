@@ -3389,8 +3389,14 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }*/
 }
 
-@media all and (max-width: 1396px){
+@media all and (max-width: 1396px) {
+    #projects_section > section:nth-child(2) {
+        margin: 30px 43px 0 43px;
+    }
 
+    #assignments_section > section:nth-child(2) {
+        margin: 30px 43px 0 43px;
+    }
 }
 
 @media all and (max-width: 1375px) {
