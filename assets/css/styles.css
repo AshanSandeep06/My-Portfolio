@@ -1437,6 +1437,7 @@ main > section#projects_section > section:first-child > h5 {
     margin: 30px 69px 0 69px;
     padding-bottom: 65px;
     transition: all 2s;
+    gap: 55px;
 }
 
 #projects_section > section:nth-child(2) > section#projects-container {
@@ -1919,6 +1920,7 @@ main > section#assignments_section > section:first-child > h5 {
     margin: 30px 69px 0 69px;
     padding-bottom: 65px;
     transition: all 2s;
+    gap: 55px;
 }
 
 #assignments_section > section:nth-child(2) > section#assignments-container {
