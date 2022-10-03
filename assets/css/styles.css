@@ -3413,6 +3413,17 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 }
 
+/* For assignments and projects Sections */
+@media all and (max-width: 1315px) {
+    #projects_section > section:nth-child(2) > section#projects-container {
+        gap: 46px;
+    }
+
+    #assignments_section > section:nth-child(2) > section#projects-container {
+        gap: 46px;
+    }
+}
+
 @media all and (max-width: 1375px) {
     main > #home_section > section:last-child > div {
         /*left: 30px;*/
