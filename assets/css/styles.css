@@ -3499,7 +3499,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 }
 
 /* For assignments and projects Sections */
-@media all and (max-width: 600px){
+@media all and (max-width: 600px) {
     #projects-container > div {
         height: 392px;
         width: 415px;
@@ -3512,7 +3512,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 }
 
 /* For assignments and projects Sections */
-@media all and (max-width: 546px){
+@media all and (max-width: 546px) {
     #projects-container > div {
         width: 86%;
     }
@@ -3532,6 +3532,11 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     main > section#assignments_section > section:first-child > h2 {
         font-size: 20px;
     }
+}
+
+/* For assignments and projects Sections */
+@media all and (max-width: 498px) {
+
 }
 
 @media all and (max-width: 1146px) {
