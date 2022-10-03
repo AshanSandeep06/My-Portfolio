@@ -3389,6 +3389,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }*/
 }
 
+/* For assignments and projects Sections */
 @media all and (max-width: 1396px) {
     #projects_section > section:nth-child(2) {
         margin: 30px 43px 0 43px;
@@ -3399,8 +3400,17 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 }
 
-@media all and (max-width: 1345px){
+/* For assignments and projects Sections */
+@media all and (max-width: 1345px) {
+    #projects-container > div {
+        width: 370px;
+        height: 395px;
+    }
 
+    #assignments-container > div {
+        width: 370px;
+        height: 395px;
+    }
 }
 
 @media all and (max-width: 1375px) {
