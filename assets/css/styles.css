@@ -3473,6 +3473,10 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         width: 275px;
         height: 290px;
     }
+
+    #assignments-container > div > img {
+        height: max-content;
+    }
 }
 
 @media all and (max-width: 1146px) {
