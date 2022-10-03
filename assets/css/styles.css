@@ -3482,7 +3482,20 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 /* For assignments and projects Sections */
 @media all and (max-width: 700px) {
+    #projects-container > div {
+        height: 390px;
+        width: 465px;
+    }
 
+    #assignments-container > div {
+        height: 390px;
+        width: 465px;
+    }
+
+    .svg-wrapper {
+        width: 265px;
+        height: 280px;
+    }
 }
 
 @media all and (max-width: 1146px) {
