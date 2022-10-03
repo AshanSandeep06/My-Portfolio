@@ -3426,6 +3426,32 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 }
 
+@media all and (max-width: 1146px) {
+    body > header > nav {
+        display: none;
+        transition: all .5s;
+    }
+
+    #btn-burger {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin-right: 58px;
+        background: none;
+        border: none;
+        transition: all .5s;
+        cursor: pointer;
+    }
+
+    #btn-burger > #burger {
+        font-size: 1.8em;
+        color: #7461e2;
+        transition: all .5s;
+    }
+}
+
 @media all and (max-width: 1375px) {
     main > #home_section > section:last-child > div {
         /*left: 30px;*/
