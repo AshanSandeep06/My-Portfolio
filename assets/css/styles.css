@@ -3520,6 +3520,18 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     #assignments-container > div {
         width: 86%;
     }
+
+    .svg-wrapper {
+        width: 67%;
+    }
+
+    main > section#projects_section > section:first-child > h2 {
+        font-size: 20px;
+    }
+
+    main > section#assignments_section > section:first-child > h2 {
+        font-size: 20px;
+    }
 }
 
 @media all and (max-width: 1146px) {
