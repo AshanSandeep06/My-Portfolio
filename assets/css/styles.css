@@ -3428,7 +3428,23 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 /* For assignments and projects Sections */
 @media all and (max-width: 1296px){
+    #projects_section > section:nth-child(2) > section#projects-container {
+        gap: 60px;
+    }
 
+    #assignments_section > section:nth-child(2) > section#assignments-container {
+        gap: 60px;
+    }
+
+    #projects-container > div {
+        width: 400px;
+        height: 400px;
+    }
+
+    #assignments-container > div {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @media all and (max-width: 1146px) {
