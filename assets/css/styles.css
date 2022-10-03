@@ -3399,6 +3399,10 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 }
 
+@media all and (max-width: 1345px){
+
+}
+
 @media all and (max-width: 1375px) {
     main > #home_section > section:last-child > div {
         /*left: 30px;*/
