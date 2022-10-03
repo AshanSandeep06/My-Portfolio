@@ -3427,7 +3427,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 }
 
 /* For assignments and projects Sections */
-@media all and (max-width: 1296px){
+@media all and (max-width: 1296px) {
     #projects_section > section:nth-child(2) > section#projects-container {
         gap: 60px;
     }
