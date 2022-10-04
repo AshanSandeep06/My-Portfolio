@@ -3574,7 +3574,13 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 /* For assignments and projects Sections */
 @media all and (max-width: 450px){
+    main > section#assignments_section > section:first-child > h2 {
+        width: 347px;
+    }
 
+    main > section#projects_section > section:first-child > h2 {
+        width: 335px;
+    }
 }
 
 /* For assignments and projects Sections */
