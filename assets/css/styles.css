@@ -3686,6 +3686,47 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     #assignments-container > div:nth-child(2) > img {
         height: 133px;
     }
+
+    main > section#projects_section > section:first-child > h2 {
+        width: 195px;
+    }
+
+    main > section#assignments_section > section:first-child > h2 {
+        width: 210px;
+    }
+
+    #projects-container > div {
+        width: 85%;
+        height: 350px;
+    }
+
+    #assignments-container > div {
+        width: 85%;
+        height: 350px;
+    }
+
+    .svg-wrapper{
+        top: 82px!important;
+        height: 240px!important;
+    }
+
+    #projects-container > div:nth-child(3) > div > p {
+        height: 109px;
+        overflow-y: hidden;
+    }
+
+    #firstSvgWrapper{
+        top: 38px!important;
+        height: 240px!important;
+    }
+
+    #assignments-container .svg-wrapper {
+        top: 40px!important;
+    }
+
+    #thirdSvgWrapper{
+        top: 70px!important;
+    }
 }
 
 @media all and (max-width: 1146px) {
