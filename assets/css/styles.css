@@ -3536,7 +3536,23 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 /* For assignments and projects Sections */
 @media all and (max-width: 485px) {
+    #projects_section > section:nth-child(2) {
+        margin: 33px 43px 0 43px;
+    }
 
+    #assignments_section > section:nth-child(2) {
+        margin: 33px 43px 0 43px;
+    }
+
+    main > section#assignments_section > section:first-child > h2 {
+        text-align: center;
+        width: 438px;
+    }
+
+    main > section#projects_section > section:first-child > h2 {
+        text-align: center;
+        width: 390px;
+    }
 }
 
 /* For assignments and projects Sections */
