@@ -3675,7 +3675,17 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
 /* For assignments and projects Sections */
 @media all and (max-width: 340px) {
+    #assignments-container > div:first-child > img {
+        height: 120px;
+    }
 
+    #assignments-container > div:nth-child(2) > img {
+        height: 120px;
+    }
+
+    #assignments-container > div:nth-child(2) > img {
+        height: 133px;
+    }
 }
 
 @media all and (max-width: 1146px) {
