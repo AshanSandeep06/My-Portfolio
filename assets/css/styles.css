@@ -3653,11 +3653,24 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         height: 49px;
         width: 129px;
     }
+
+    main > section#projects_section > section:first-child > h2 {
+        width: 297px;
+        font-size: 18px;
+    }
+
+    main > section#assignments_section > section:first-child > h2 {
+        width: 312px;
+        font-size: 18px;
+    }
 }
 
 /* For assignments and projects Sections */
-@media all and (max-width: 356px){
-
+@media all and (max-width: 356px) {
+    #assignments-container > div > h2 {
+        width: 272px;
+        text-align: center;
+    }
 }
 
 @media all and (max-width: 1146px) {
