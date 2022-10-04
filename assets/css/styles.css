@@ -3584,7 +3584,15 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 }
 
 @media all and (max-width: 433px) {
+    #projects-container > div:nth-child(3) > h2 {
+        width: 272px;
+        text-align: center;
+    }
 
+    #thirdSvgWrapper {
+        height: 260px;
+        top: 79px;
+    }
 }
 
 /* For assignments and projects Sections */
