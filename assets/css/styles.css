@@ -3593,6 +3593,32 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         height: 260px;
         top: 79px;
     }
+
+    #projects-container > div {
+        width: 95%;
+    }
+
+    #projects-container > div {
+        height: 372px;
+    }
+
+    #assignments-container > div {
+        width: 95%;
+    }
+
+    #assignments-container > div {
+        height: 372px;
+    }
+
+    #projects-container > div > h2 {
+        margin-top: 30px;
+        font-size: 21px;
+    }
+
+    #assignments-container > div > h2 {
+        margin-top: 30px;
+        font-size: 21px;
+    }
 }
 
 /* For assignments and projects Sections */
