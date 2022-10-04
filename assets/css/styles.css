@@ -3538,14 +3538,17 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 @media all and (max-width: 475px) {
     #projects-container > div:nth-child(2) > h2 {
         width: 300px;
+        text-align: center;
     }
 
-    #secondSvgWrapper{
+    #secondSvgWrapper {
         top: 92px;
         height: 259px;
     }
 
-
+    #projects-container > div:nth-child(2) > div > p {
+        top: 12px;
+    }
 }
 
 @media all and (max-width: 1146px) {
