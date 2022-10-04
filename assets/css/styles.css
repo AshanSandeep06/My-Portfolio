@@ -3644,6 +3644,10 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         width: 67%;
         height: 260px;
     }
+
+    #projects-container > div > div > p {
+        top: 15px;
+    }
 }
 
 @media all and (max-width: 1146px) {
