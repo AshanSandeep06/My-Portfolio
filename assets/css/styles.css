@@ -3573,7 +3573,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 }
 
 /* For assignments and projects Sections */
-@media all and (max-width: 450px){
+@media all and (max-width: 450px) {
     main > section#assignments_section > section:first-child > h2 {
         width: 347px;
     }
@@ -3583,8 +3583,12 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 }
 
+@media all and (max-width: 433px) {
+
+}
+
 /* For assignments and projects Sections */
-@media all and (max-width: 438px){
+@media all and (max-width: 438px) {
     #projects-container > div:nth-child(2) > div > p {
         overflow-y: hidden;
         height: 109px;
