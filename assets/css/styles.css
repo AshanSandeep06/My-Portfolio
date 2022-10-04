@@ -3535,6 +3535,11 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 }
 
 /* For assignments and projects Sections */
+@media all and (max-width: 485px) {
+
+}
+
+/* For assignments and projects Sections */
 @media all and (max-width: 475px) {
     #projects-container > div:nth-child(2) > h2 {
         width: 300px;
