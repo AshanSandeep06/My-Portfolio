@@ -3639,7 +3639,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 }
 
 /* For assignments and projects Sections */
-@media all and (max-width: 375px){
+@media all and (max-width: 375px) {
     .svg-wrapper {
         width: 67%;
         height: 260px;
@@ -3647,6 +3647,11 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 
     #projects-container > div > div > p {
         top: 15px;
+    }
+
+    #assignments-container > div > div > button {
+        height: 49px;
+        width: 129px;
     }
 }
 
