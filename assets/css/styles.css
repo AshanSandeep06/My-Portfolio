@@ -3625,7 +3625,7 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
 @media all and (max-width: 438px) {
     #projects-container > div:nth-child(2) > div > p {
         overflow-y: hidden;
-        height: 109px;
+        height: 112px;
         top: 28px;
     }
 }
@@ -3705,27 +3705,39 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
         height: 350px;
     }
 
-    .svg-wrapper{
-        top: 82px!important;
-        height: 240px!important;
+    .svg-wrapper {
+        top: 82px !important;
+        height: 240px !important;
     }
 
     #projects-container > div:nth-child(3) > div > p {
-        height: 109px;
+        height: 110px;
         overflow-y: hidden;
     }
 
-    #firstSvgWrapper{
-        top: 38px!important;
-        height: 240px!important;
+    #firstSvgWrapper {
+        top: 38px !important;
+        height: 240px !important;
     }
 
     #assignments-container .svg-wrapper {
-        top: 40px!important;
+        top: 40px !important;
     }
 
-    #thirdSvgWrapper{
-        top: 70px!important;
+    #thirdSvgWrapper {
+        top: 70px !important;
+    }
+}
+
+/* For assignments and projects Sections */
+@media all and (max-width: 285px){
+    #projects-container > div:nth-child(2) > h2 {
+        width: 220px;
+    }
+
+    #projects-container > div:first-child > div > p {
+        height: 110px;
+        overflow-y: hidden;
     }
 }
 
