@@ -3727,10 +3727,15 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     #thirdSvgWrapper {
         top: 70px !important;
     }
+
+    #assignments-container > div > div > button {
+        height: 49px;
+        width: 112px;
+    }
 }
 
 /* For assignments and projects Sections */
-@media all and (max-width: 285px){
+@media all and (max-width: 310px) {
     #projects-container > div:nth-child(2) > h2 {
         width: 220px;
     }
