@@ -3638,6 +3638,14 @@ main > section#services_section > section:nth-child(2) > section > div:hover {
     }
 }
 
+/* For assignments and projects Sections */
+@media all and (max-width: 375px){
+    .svg-wrapper {
+        width: 67%;
+        height: 260px;
+    }
+}
+
 @media all and (max-width: 1146px) {
     body > header > nav {
         display: none;
