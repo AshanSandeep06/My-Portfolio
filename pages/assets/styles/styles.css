@@ -149,6 +149,8 @@
 
 #projects-container > div > div > button {
     color: black;
+    position: relative;
+    top: 10px;
     text-align: center;
     font-weight: 500;
     border-radius: 0.5rem;
@@ -285,4 +287,15 @@
 
 .project-divs:hover > .hover-divs {
     opacity: 1;
+}
+
+.hover-divs > h4{
+    font-size: 21px;
+    color: #45505b;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+
+.hover-divs > p{
+    margin-bottom: 33px;
 }
