@@ -85,3 +85,23 @@
 #thirdSection{
     display: flex;
 }
+
+#thirdSection > div {
+    position: relative;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-direction: column;
+
+    background: #efeffc;
+    /*width: 250px;*/
+    /*height: 250px;*/
+    box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 25px;
+    transition: all 0.8s ease;
+}
+
+#thirdSection > div > img {
+    max-width: 100%;
+    height: auto;
+}
