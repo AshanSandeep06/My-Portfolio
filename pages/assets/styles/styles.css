@@ -84,6 +84,7 @@
 
 #thirdSection{
     display: flex;
+    margin-top: 50px;
 }
 
 #thirdSection > div {
