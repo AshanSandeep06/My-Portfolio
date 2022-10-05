@@ -81,3 +81,7 @@
     background: #007bff;
     transition: all 0.3s ease;
 }
+
+#thirdSection{
+    display: flex;
+}
