@@ -105,7 +105,6 @@
 }
 
 #projects-container {
-    width: 1320px;
     display: flex;
     flex-wrap: wrap;
     gap: 55px;
@@ -122,8 +121,7 @@
     align-items: center;
     flex-direction: column;
     z-index: 1;
-    width: 350px;
-    height: 300px;
+    width: 380px;
     background: #efeffc;
     box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
     border-radius: 25px;
@@ -133,4 +131,5 @@
 #projects-container > div > img {
     max-width: 100%;
     height: auto;
+    border-radius: 25px;
 }
