@@ -255,8 +255,8 @@
     position: absolute;
     top: 35px;
     left: 35px;
-    border-top: 3px solid #d7dce1;
-    border-left: 3px solid #d7dce1;
+    border-top: 3px solid #dee4e8;
+    border-left: 3px solid #dee4e8;
     transition: all 0.5s ease 0s;
     z-index: 9994;
 }
@@ -269,8 +269,8 @@
     position: absolute;
     bottom: 35px;
     right: 35px;
-    border-bottom: 3px solid #d7dce1;
-    border-right: 3px solid #d7dce1;
+    border-bottom: 3px solid #dee4e8;
+    border-right: 3px solid #dee4e8;
     transition: all 0.5s ease 0s;
     z-index: 9994;
 }
