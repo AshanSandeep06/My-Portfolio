@@ -658,24 +658,24 @@
                     <form action="details" method="post" id="contactForm">
                         <div>
                             <div class="contactForm_details">
-                                <label for class="contact_label">Your Name</label>
-                                <input type="text" id="clientName" required>
+                                <label for="clientName">Your Name</label>
+                                <input type="text" id="clientName" required autocomplete="name">
                             </div>
 
                             <div class="contactForm_details">
-                                <label for class="contact_label">Email</label>
-                                <input type="email" id="clientEmail" required>
+                                <label for="clientEmail">Email</label>
+                                <input type="email" id="clientEmail" autocomplete="email">
                             </div>
                         </div>
 
                         <div class="contactForm_details">
-                            <label for class="contact_label">Subject</label>
+                            <label for="clientSubject">Subject</label>
                             <input type="text" id="clientSubject" required>
                         </div>
 
                         <div class="contactForm_details">
-                            <label for class="contact_label">Message</label>
-                            <textarea name="message" required spellcheck="true"></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required spellcheck="true"></textarea>
                         </div>
 
                         <div>
