@@ -104,7 +104,17 @@
     gap: 55px;
 }
 
-#thirdSection > div {
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 2s;
+}
+
+#projects-container > div {
     position: relative;
     display: flex;
     gap: 24px;
@@ -119,7 +129,7 @@
     transition: all 0.8s ease;
 }
 
-#thirdSection > div > img {
+#projects-container > div > img {
     max-width: 100%;
     height: auto;
 }
