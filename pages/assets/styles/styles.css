@@ -142,97 +142,12 @@
     background: #7461E2;
 }
 
-#projects-container > div:hover .svg-wrapper {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 1;
-}
-
-.svg-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    background: rgba(255, 255, 255, 0.7);
-    transition: all ease-in-out 0.3s;
-    z-index: 2;
-    opacity: 0;
-}
-
-.shape1, .shape2 {
-    stroke-dasharray: 1120;
-    stroke-width: 13px;
-    fill: transparent;
-    /*stroke: #19f6e8;*/
-    /*stroke: #7461e2;*/
-    stroke: #edf1fa;
-    border-bottom: 5px solid black;
-    transition-timing-function: linear;
-    transition: stroke-dashoffset 2.5s, stroke-dasharray 2.5s;
-}
-
-.shape1 {
-    stroke-dashoffset: 1120;
-}
-
-.shape2 {
-    stroke-dashoffset: -1120;
-}
-
 .projects_p {
     text-align: center;
     font-weight: 400;
 }
 
-.svg-wrapper, .projects_p, .projects_btn {
-    visibility: hidden;
-    transition: visibility .6s;
-}
-
-#projects-container > div:hover .svg-wrapper {
-    visibility: visible;
-    transition: all ease-in-out 0.6s;
-}
-
-#projects-container > div:hover .projects_p {
-    visibility: visible;
-    transition: all .6s;
-}
-
-#projects-container > div:hover .projects_btn {
-    visibility: visible;
-    transition: all .6s;
-}
-
-#projects-container > div:hover .shape1,
-#projects-container > div:hover .shape2 {
-    stroke-dashoffset: 0;
-    stroke-dasharray: 1120;
-}
-
-#projects-container > div > div > p {
-    position: absolute;
-    top: 28px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: max-content;
-    /* margin: auto; */
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
 #projects-container > div > div > button {
-    position: absolute;
-    top: 110px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
     color: black;
     text-align: center;
     font-weight: 500;
