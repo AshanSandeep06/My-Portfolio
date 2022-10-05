@@ -92,9 +92,16 @@
     transition: all 0.3s ease;
 }
 
-#thirdSection{
+#thirdSection {
     display: flex;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 69px 0 69px;
+    padding-bottom: 65px;
+    transition: all 2s;
+    gap: 55px;
 }
 
 #thirdSection > div {
