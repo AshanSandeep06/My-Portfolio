@@ -655,27 +655,28 @@
 
                 <!--Send Message Form-->
                 <section>
-                    <form action="details" method="post" id="contactForm">
+                    <form action="details" method="post" id="contactForm" autocomplete="on">
                         <div>
                             <div class="contactForm_details">
-                                <label for="clientName">Your Name</label>
-                                <input type="text" id="clientName" required autocomplete="name">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name">
                             </div>
 
                             <div class="contactForm_details">
-                                <label for="clientEmail">Email</label>
-                                <input type="email" id="clientEmail" autocomplete="email">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+
                             </div>
                         </div>
 
                         <div class="contactForm_details">
-                            <label for="clientSubject">Subject</label>
-                            <input type="text" id="clientSubject" required>
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
                         </div>
 
                         <div class="contactForm_details">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" required spellcheck="true"></textarea>
+                            <textarea type="text" id="message" name="message" spellcheck="true"></textarea>
                         </div>
 
                         <div>
