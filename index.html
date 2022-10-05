@@ -655,32 +655,32 @@
 
                 <!--Send Message Form-->
                 <section>
-                    <form action="details" method="post" id="contactForm">
+                    <form action="#" method="post" id="contactForm">
                         <div>
                             <div class="contactForm_details">
                                 <label for="name">Your Name</label>
-                                <input type="text" id="name">
+                                <input type="text" id="name" required>
                             </div>
 
                             <div class="contactForm_details">
                                 <label for="email">Email</label>
-                                <input type="email" id="email">
+                                <input type="email" id="email" required>
 
                             </div>
                         </div>
 
                         <div class="contactForm_details">
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject">
+                            <input type="text" id="subject" required>
                         </div>
 
                         <div class="contactForm_details">
                             <label for="message">Message</label>
-                            <textarea type="text" id="message" name="message" spellcheck="true"></textarea>
+                            <textarea type="text" id="message" spellcheck="true" required></textarea>
                         </div>
 
                         <div>
-                            <button type="button" id="sendMessageBtn">
+                            <button type="submit" id="sendMessageBtn">
                                 Send Message
                                 <i class="fa-solid fa-arrow-up-from-bracket"></i>
                             </button>
