@@ -1,0 +1,83 @@
+#projects_page {
+    background: #fafaff;
+    width: 100%;
+    position: relative;
+}
+
+#firstSection {
+    position: relative;
+    height: 135px;
+}
+
+#secondSection {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    column-gap: 36px;
+    width: 100%;
+}
+
+#firstSection > h1 {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: max-content;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    padding-bottom: 17px;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+
+#firstSection > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 174px;
+    height: 1px;
+    background: #ddd;
+    bottom: 0;
+    left: calc(34% - 60px);
+}
+
+#firstSection > h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 62px;
+    height: 4px;
+    background: #7461E2;
+    bottom: -2px;
+    left: calc(43% - 20px);
+    border-radius: 16px;
+}
+
+#secondSection button {
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    position: relative;
+    padding: 7px 25px;
+    background-color: transparent;
+    font-size: 16px;
+    color: #007bff;
+    border-radius: 50px;
+    border: 2px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+#btnEducation {
+    color: #7461E2 !important;
+}
+
+#secondSection button:hover {
+    color: #fff;
+    background: #007bff;
+    transition: all 0.3s ease;
+}
