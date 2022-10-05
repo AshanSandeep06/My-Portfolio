@@ -289,13 +289,13 @@
     opacity: 1;
 }
 
-.hover-divs > h4{
+.hover-divs > h4 {
     font-size: 21px;
     color: #45505b;
     margin-bottom: 0;
     margin-top: 6px;
 }
 
-.hover-divs > p{
+.hover-divs > p {
     margin-bottom: 33px;
 }
