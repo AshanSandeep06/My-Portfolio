@@ -219,7 +219,7 @@
     border-radius: 25px;
 }
 
-.hover-divs{
+.hover-divs {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -236,7 +236,7 @@
     background-color: transparent;
 }
 
-.project-divs:hover::before{
+.project-divs:hover::before {
     top: 0;
     left: 0;
     right: 0;
@@ -283,6 +283,6 @@
     right: 15px;
 }
 
-.project-divs:hover >.hover-divs{
+.project-divs:hover > .hover-divs {
     opacity: 1;
 }
