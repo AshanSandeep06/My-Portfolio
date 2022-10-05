@@ -149,7 +149,7 @@
 
 #projects-container > div > div > button {
     color: black;
-    position: relative;
+    /*position: relative;*/
     top: 10px;
     text-align: center;
     font-weight: 500;
