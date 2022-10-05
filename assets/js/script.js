@@ -3,7 +3,7 @@
 /* ------------------------ Projects Section -------------------- */
 $("#btnProjectsViewMore").on("click", function () {
     $("#btnProjectsViewMore>a").attr("target", "_blank");
-    $("#btnProjectsViewMore>a").attr("href", "https://github.com/AshanSandeep06?tab=repositories");
+    $("#btnProjectsViewMore>a").attr("href", "pages/projects.html");
 });
 
 $('#btnPOSProject').on('click', function () {
@@ -25,7 +25,7 @@ $('#btnHotelReservationProject').on('click', function () {
 /* ------------------------ Assignments Section -------------------- */
 $("#btnAssignmentsViewMore").on("click", function () {
     $("#btnAssignmentsViewMore>a").attr("target", "_blank");
-    $("#btnAssignmentsViewMore>a").attr("href", "https://github.com/AshanSandeep06?tab=repositories");
+    $("#btnAssignmentsViewMore>a").attr("href", "pages/assignments.html");
 });
 
 $('#btnAssignment-01').on('click', function () {
