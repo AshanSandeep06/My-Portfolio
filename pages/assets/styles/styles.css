@@ -14,6 +14,12 @@
     position: relative;
 }
 
+#assignments_page {
+    background: #fafaff;
+    width: 100%;
+    position: relative;
+}
+
 #firstSection {
     position: relative;
     height: 135px;
@@ -105,10 +111,6 @@
     transition: all 0.3s ease;
 }
 
-#btnEducation {
-    color: #7461E2 !important;
-}
-
 #secondSection button:hover {
     color: #fff;
     background: #007bff;
@@ -137,7 +139,31 @@
     transition: all 2s;
 }
 
+#assignments-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 2s;
+}
+
 .project-divs {
+    position: relative;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    width: 380px;
+    background: #efeffc;
+    /*box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);*/
+    border-radius: 25px;
+    transition: all 0.8s ease;
+}
+
+.assignment-divs {
     position: relative;
     display: flex;
     gap: 24px;
@@ -165,6 +191,24 @@
 }
 
 .projects_p {
+    text-align: center;
+    font-weight: 400;
+}
+
+#assignments-container > div > img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.assignment-divs:hover {
+    transition: all 0.8s ease;
+    transform: scale(0.97);
+    /*box-shadow: 1px 1px 54px 1px rgba(0, 0, 0, 0.22);*/
+    cursor: pointer;
+}
+
+.assignments_p {
     text-align: center;
     font-weight: 400;
 }
@@ -229,6 +273,79 @@
 }
 
 .project-divs::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+    border-radius: 25px;
+}
+
+#assignments-container > div > div > button {
+    color: black;
+    margin-top: 13px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    background-color: gold;
+    height: 43px;
+    transition: all .6s;
+    cursor: pointer;
+    width: 120px;
+    border: 3px solid gold;
+    font-size: 15px;
+}
+
+#assignments-container > div > div > button:hover {
+    background-color: gold;
+}
+
+#assignments-container > div > div > button:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .5s;
+    animation: clippath .8s 1 linear;
+}
+
+@keyframes clippath {
+    0%, 100% {
+        clip-path: inset(0 0 95% 0);
+    }
+
+    25% {
+        clip-path: inset(0 95% 0 0);
+        border: 3px solid #6b57d7;
+    }
+    50% {
+        clip-path: inset(95% 0 0 0);
+        border: 3px solid #6b57d7;
+    }
+    75% {
+        clip-path: inset(0 0 0 95%);
+        border: 3px solid #6b57d7;
+    }
+}
+
+.assignments_btn > a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+.assignment-divs::before {
     content: "";
     background: rgba(255, 255, 255, 0.7);
     position: absolute;
