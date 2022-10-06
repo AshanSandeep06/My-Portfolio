@@ -14,7 +14,7 @@ body>section{
 }
 
 body>section>div{
-    background: url("../img/icons8-intellij-idea-100.png");
+    background: url("../img/code.gif");
     background-size: cover;
     background-position: center;
     box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
