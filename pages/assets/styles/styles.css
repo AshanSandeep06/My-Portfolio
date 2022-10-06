@@ -385,6 +385,15 @@
     transition: all ease-in-out 0.3s;
 }
 
+.assignment-divs:hover::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+}
+
 .hover-divs::before {
     display: block;
     content: "";
@@ -413,6 +422,8 @@
     z-index: 9994;
 }
 
+/*=============*/
+
 .project-divs:hover .hover-divs::before {
     top: 15px;
     left: 15px;
@@ -424,6 +435,20 @@
 }
 
 .project-divs:hover > .hover-divs {
+    opacity: 1;
+}
+
+.assignment-divs:hover .hover-divs::before {
+    top: 15px;
+    left: 15px;
+}
+
+.assignment-divs:hover .hover-divs::after {
+    bottom: 15px;
+    right: 15px;
+}
+
+.assignment-divs:hover > .hover-divs {
     opacity: 1;
 }
 
@@ -455,5 +480,17 @@
 }
 
 .project-divs:hover {
+    box-shadow: 1px 1px 54px 1px rgba(0, 0, 0, 0.22) !important;
+}
+
+.assignment-divs > img {
+    height: 215px !important;
+}
+
+.assignment-divs {
+    box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16) !important;
+}
+
+.assignment-divs:hover {
     box-shadow: 1px 1px 54px 1px rgba(0, 0, 0, 0.22) !important;
 }
