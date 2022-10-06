@@ -37,6 +37,20 @@ $('#btnAllProjects').on('click', function () {
 
     // $('.display_all_projects').css('display', 'flex');
     $('.display_all_projects').show();
+
+    $('#btnAllProjects').css({
+        "color": "#fff",
+        "background": "#007bff",
+        "transition": "all 0.3s ease"
+    });
+
+    $('#btnDesktop, #btnWeb').css({
+        "color": "#007bff",
+        "background": "transparent",
+        "transition": "all 0.3s ease",
+        "border-radius": "50px",
+        "border": "2px solid #007bff"
+    });
 });
 
 $('#btnDesktop').on('click', function () {
@@ -45,6 +59,20 @@ $('#btnDesktop').on('click', function () {
 
     // $('.display_desktop_projects').css('display', 'flex');
     $('.display_desktop_projects').show();
+
+    $('#btnDesktop').css({
+        "color": "#fff",
+        "background": "#007bff",
+        "transition": "all 0.3s ease"
+    });
+
+    $('#btnAllProjects, #btnWeb').css({
+        "color": "#007bff",
+        "background": "transparent",
+        "transition": "all 0.3s ease",
+        "border-radius": "50px",
+        "border": "2px solid #007bff"
+    });
 });
 
 $('#btnWeb').on('click', function () {
@@ -53,6 +81,20 @@ $('#btnWeb').on('click', function () {
 
     // $('.display_desktop_projects').css('display', 'none');
     $('.display_desktop_projects').hide();
+
+    $('#btnWeb').css({
+        "color": "#fff",
+        "background": "#007bff",
+        "transition": "all 0.3s ease"
+    });
+
+    $('#btnAllProjects, #btnDesktop').css({
+        "color": "#007bff",
+        "background": "transparent",
+        "transition": "all 0.3s ease",
+        "border-radius": "50px",
+        "border": "2px solid #007bff"
+    });
 });
 
 

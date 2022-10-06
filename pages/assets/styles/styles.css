@@ -107,7 +107,7 @@
     border-radius: 16px;
 }
 
-#secondSection button {
+.second_section_btn {
     font-weight: 500;
     cursor: pointer;
     align-items: center;
@@ -501,7 +501,7 @@
 }
 
 #btnAllProjects, #btnAllAssignments{
-    color: #fff !important;
-    background: #007bff !important;
-    transition: all 0.3s ease !important;
+    color: #fff;
+    background: #007bff;
+    transition: all 0.3s ease;
 }
