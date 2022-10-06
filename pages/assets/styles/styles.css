@@ -476,12 +476,6 @@
     margin-right: 20px;
 }
 
-#btnAll {
-    color: #fff !important;
-    background: #007bff !important;
-    transition: all 0.3s ease !important;
-}
-
 .project-divs > img {
     height: 215px !important;
 }
@@ -504,4 +498,10 @@
 
 .assignment-divs:hover {
     box-shadow: 1px 1px 54px 1px rgba(0, 0, 0, 0.22) !important;
+}
+
+#btnAllProjects, #btnAllAssignments{
+    color: #fff !important;
+    background: #007bff !important;
+    transition: all 0.3s ease !important;
 }
