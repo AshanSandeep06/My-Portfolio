@@ -213,3 +213,74 @@ for (let i = 1; i < 16; i++) {
         }
     });
 }
+
+$('#btnAllAssignments').on('click', function () {
+    // $('.display_desktop_projects').css('display', 'none');
+    $('.display_css_assignments').hide();
+    $('.display_js_assignments').hide();
+
+    // $('.display_all_projects').css('display', 'flex');
+    $('.display_all_assignments').show();
+
+    $('#btnAllAssignments').css({
+        "color": "#fff",
+        "background": "#007bff",
+        "transition": "all 0.3s ease"
+    });
+
+    $('#btnCSS, #btnJS').css({
+        "color": "#007bff",
+        "background": "transparent",
+        "transition": "all 0.3s ease",
+        "border-radius": "50px",
+        "border": "2px solid #007bff"
+    });
+});
+
+$('#btnCSS').on('click', function () {
+    // $('.display_all_projects').css('display', 'none');
+    $('.display_all_assignments').hide();
+    $('.display_js_assignments').hide();
+
+    // $('.display_desktop_projects').css('display', 'flex');
+    $('.display_css_assignments').show();
+
+    $('#btnCSS').css({
+        "color": "#fff",
+        "background": "#007bff",
+        "transition": "all 0.3s ease"
+    });
+
+    $('#btnAllAssignments, #btnJS').css({
+        "color": "#007bff",
+        "background": "transparent",
+        "transition": "all 0.3s ease",
+        "border-radius": "50px",
+        "border": "2px solid #007bff"
+    });
+});
+
+$('#btnJS').on('click', function () {
+    // $('.display_all_projects').css('display', 'none');
+    $('.display_all_assignments').hide();
+    $('.display_css_assignments').hide();
+
+    // $('.display_desktop_projects').css('display', 'none');
+    $('.display_js_assignments').show();
+
+    $('#btnJS').css({
+        "color": "#fff",
+        "background": "#007bff",
+        "transition": "all 0.3s ease"
+    });
+
+    $('#btnAllAssignments, #btnCSS').css({
+        "color": "#007bff",
+        "background": "transparent",
+        "transition": "all 0.3s ease",
+        "border-radius": "50px",
+        "border": "2px solid #007bff"
+    });
+
+    $('#assignments_page').css('height', '722px');
+});
