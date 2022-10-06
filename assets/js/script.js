@@ -21,7 +21,6 @@ $('#btnHotelReservationProject').on('click', function () {
     $("#btnHotelReservationProject>a").attr("href", "https://github.com/AshanSandeep06/Hotel_Reservation-System");
 });
 
-
 /* ------------------------ Assignments Section -------------------- */
 $("#btnAssignmentsViewMore").on("click", function () {
     $("#btnAssignmentsViewMore>a").attr("target", "_blank");
