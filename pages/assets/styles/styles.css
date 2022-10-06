@@ -4,6 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 /* Apply Poppins font family to all the html elements */
+::-webkit-scrollbar {
+    width: 8px;
+    /*background: #A8A8A8;*/
+    background: #2f2b2b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7461E2;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
 }
@@ -12,6 +22,7 @@
     background: #fafaff;
     width: 100%;
     position: relative;
+    height: 772px;
 }
 
 #assignments_page {

@@ -31,6 +31,31 @@ $('#btnProject6').on('click', function () {
     $("#btnProject6>a").attr("href", "https://github.com/AshanSandeep06/My_Chat_Application-INP_Coursework.git");
 });
 
+$('#btnAllProjects').on('click', function () {
+    // $('.display_desktop_projects').css('display', 'none');
+    $('.display_desktop_projects').hide();
+
+    // $('.display_all_projects').css('display', 'flex');
+    $('.display_all_projects').show();
+});
+
+$('#btnDesktop').on('click', function () {
+    // $('.display_all_projects').css('display', 'none');
+    $('.display_all_projects').hide();
+
+    // $('.display_desktop_projects').css('display', 'flex');
+    $('.display_desktop_projects').show();
+});
+
+$('#btnWeb').on('click', function () {
+    // $('.display_all_projects').css('display', 'none');
+    $('.display_all_projects').hide();
+
+    // $('.display_desktop_projects').css('display', 'none');
+    $('.display_desktop_projects').hide();
+});
+
+
 /* ------------------------ Assignments Page -------------------- */
 for (let i = 1; i < 16; i++) {
     $('#btnAssignment-' + i).on('click', function () {
