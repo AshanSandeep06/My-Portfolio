@@ -130,3 +130,15 @@ $("#btnClear").click(function () {
 $("#btnSearchCustomerClear").click(function () {
     $("#txtSearchCustomer").val('');
 });
+
+/* set customer data to the fields when hover table row */
+$('#tblCustomer > tbody > tr').on('click', function (event) {
+    var cusObject = {
+        "id": $(this).children(":eq(0)").text(),
+        "name": $(this).children(":eq(1)").text(),
+        "address": $(this).children(":eq(2)").text(),
+        "salary": $(this).children(":eq(3)").text()
+    };
+
+    setCustomerData(cusObject);
+});
