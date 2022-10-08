@@ -129,6 +129,11 @@ function clearCustomerFields() {
     $("#customerName").val('');
     $("#customerAddress").val('');
     $("#customerSalary").val('');
+
+    $("#txtCustomerID").val('');
+    $("#txtCustomerName").val('');
+    $("#txtAddress").val('');
+    $("#txtSalary").val('');
 }
 
 $("#btnClear").click(function () {
