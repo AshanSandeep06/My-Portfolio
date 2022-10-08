@@ -137,6 +137,8 @@ function clearModalFields() {
     $("#txtAddress").val('');
     $("#txtSalary").val('');
     $("#txtCustomerID").focus();
+    $('#txtCustomerID,#txtCustomerName,#txtAddress,#txtSalary').css("border", "1px solid #ced4da");
+    $('#txtCustomerID,#txtCustomerName,#txtAddress,#txtSalary').parent().children('span').text("");
 }
 
 $("#btnClear").click(function () {
