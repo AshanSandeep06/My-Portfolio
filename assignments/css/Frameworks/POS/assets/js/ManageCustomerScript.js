@@ -168,31 +168,6 @@ function bindRowDblClickEvents() {
     });
 }
 
-/* Focusing the textfields */
-$('#txtCustomerID').on('keydown', function (event) {
-    if (event.code === "Enter") {
-        $('#txtCustomerName').focus();
-    }
-});
-
-$('#txtCustomerName').on('keydown', function (event) {
-    if (event.code === "Enter") {
-        $('#txtAddress').focus();
-    }
-});
-
-$('#txtAddress').on('keydown', function (event) {
-    if (event.code === "Enter") {
-        $('#txtSalary').focus();
-    }
-});
-
-$('#txtSalary').on('keydown', function (event) {
-    if (event.code === "Enter") {
-        $('#btnSaveCustomer').focus();
-    }
-});
-
 /* Clear button in Modal */
 $('#btnClearFields').on('click', function () {
     clearModalFields();
@@ -217,7 +192,30 @@ customerValidations.push({regEx: namePattern, textField: $('#txtCustomerName'), 
 customerValidations.push({regEx: addressPattern, textField: $('#txtAddress'), errorMsg: 'Invalid Customer Address Pattern : A-z 0-9 ,/'});
 customerValidations.push({regEx: salaryPattern, textField: $('#txtSalary'), errorMsg: 'Invalid Customer Salary Pattern : 250 or 250.00'});
 
+/* Focusing the textfields */
+$('#txtCustomerID').on('keydown', function (event) {
+    if (event.code === "Enter") {
+        $('#txtCustomerName').focus();
+    }
+});
 
+$('#txtCustomerName').on('keydown', function (event) {
+    if (event.code === "Enter") {
+        $('#txtAddress').focus();
+    }
+});
+
+$('#txtAddress').on('keydown', function (event) {
+    if (event.code === "Enter") {
+        $('#txtSalary').focus();
+    }
+});
+
+$('#txtSalary').on('keydown', function (event) {
+    if (event.code === "Enter") {
+        $('#btnSaveCustomer').focus();
+    }
+});
 
 
 
