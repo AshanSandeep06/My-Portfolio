@@ -197,3 +197,10 @@ $('#txtSalary').on('keydown', function (event) {
 $('#btnClearFields').on('click', function () {
     clearModalFields();
 });
+
+/* Disable Tab Key focus */
+$('.prevent_tab_key_focus').on('keydown', function (event) {
+    if(event.code === "Tab"){
+        event.preventDefault();
+    }
+});
