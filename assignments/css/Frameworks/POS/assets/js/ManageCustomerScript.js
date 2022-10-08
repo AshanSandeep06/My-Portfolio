@@ -206,4 +206,7 @@ $('.prevent_tab_key_focus').on('keydown', function (event) {
 });
 
 /* Regex Patterns */
-
+const idPattern = /^(C00-)[0-9]{3}$/;
+const namePattern = /^[A-z ]{5,20}$/;
+const addressPattern = /^[0-9/A-z. ,]{7,}$/;
+const salaryPattern = /^[0-9]{1,}([.][0-9]{2})?$/;
