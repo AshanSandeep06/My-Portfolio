@@ -221,6 +221,16 @@ function check(regEx, textField){
     return regEx.test(textField.val());
 }
 
+function checkValidation(){
+    for (let validation of customerValidations) {
+        if(validation.regEx.test(validation.textField.val())){
+            removeError(validation.textField, "");
+        }else{
+            addError(validation.textField, validation.errorMsg);
+        }
+    }
+}
+
 
 
 
