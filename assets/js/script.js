@@ -2,7 +2,12 @@
 
 /* Window = DOM + CSSOM */
 $(window).on('load', function () {
+    $('#loader,#extra-div').fadeOut(1000);
+    $('body').children(':not(#loader,#extra-div)').fadeIn(3000);
+});
 
+$(document).ready(function (){
+    $('body').children(':not(#loader,#extra-div)').css('display','none');
 });
 
 /* ------------------------ Projects Section -------------------- */

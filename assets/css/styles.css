@@ -68,24 +68,19 @@ body > main {
     right: 0;
     top: 0;
     bottom: 0;
-    margin: auto;
     background: white;
     z-index: 1000;
 }
 
 #loader > div {
-    width: 500px;
-    height: 200px;
-    border: 2px solid white;
+    width: max-content;
+    height: max-content;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
-    background: url("https://loading.io/asset/605943");
-    background-size: cover;
-    background-position: center;
 }
 
 /* --------------------------------------------------------------------------- */
