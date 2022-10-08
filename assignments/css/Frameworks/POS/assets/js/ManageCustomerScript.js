@@ -186,11 +186,27 @@ const namePattern = /^[A-z ]{5,20}$/;
 const addressPattern = /^[0-9/A-z. ,]{7,}$/;
 const salaryPattern = /^[0-9]{1,}([.][0-9]{2})?$/;
 
-let customerValidations = [];
-customerValidations.push({regEx: idPattern, textField: $('#txtCustomerID'), errorMsg: 'Invalid Customer ID Pattern : C00-001'});
-customerValidations.push({regEx: namePattern, textField: $('#txtCustomerName'), errorMsg: 'Invalid Customer Name Pattern : A-z 5-20'});
-customerValidations.push({regEx: addressPattern, textField: $('#txtAddress'), errorMsg: 'Invalid Customer Address Pattern : A-z 0-9 ,/'});
-customerValidations.push({regEx: salaryPattern, textField: $('#txtSalary'), errorMsg: 'Invalid Customer Salary Pattern : 250 or 250.00'});
+let saveCustomerValidations = [];
+saveCustomerValidations.push({
+    regEx: idPattern,
+    textField: $('#txtCustomerID'),
+    errorMsg: 'Invalid Customer ID Pattern : C00-001'
+});
+saveCustomerValidations.push({
+    regEx: namePattern,
+    textField: $('#txtCustomerName'),
+    errorMsg: 'Invalid Customer Name Pattern : A-z 5-20'
+});
+saveCustomerValidations.push({
+    regEx: addressPattern,
+    textField: $('#txtAddress'),
+    errorMsg: 'Invalid Customer Address Pattern : A-z 0-9 ,/'
+});
+saveCustomerValidations.push({
+    regEx: salaryPattern,
+    textField: $('#txtSalary'),
+    errorMsg: 'Invalid Customer Salary Pattern : 250 or 250.00'
+});
 
 /* Focusing the textfields */
 $('#txtCustomerID').on('keydown', function (event) {
@@ -225,16 +241,16 @@ $("#txtCustomerID,#txtCustomerName,#txtAddress,#txtSalary").on('blur', function 
     checkValidation();
 });
 
-function check(regEx, textField){
+function check(regEx, textField) {
     return regEx.test(textField.val());
 }
 
-function checkValidation(){
+function checkValidation() {
     let errorCounts = 0;
-    for (let validation of customerValidations) {
-        if(validation.regEx.test(validation.textField.val())){
+    for (let validation of saveCustomerValidations) {
+        if (validation.regEx.test(validation.textField.val())) {
             removeError(validation.textField, "");
-        }else{
+        } else {
             addError(validation.textField, validation.errorMsg);
             errorCounts += 1;
         }
@@ -243,25 +259,25 @@ function checkValidation(){
 }
 
 /* arguments array stores the values which are send from parameters when calling the removeError() method */
-function removeError(){
-    arguments[0].css('border','2px solid green');
+function removeError() {
+    arguments[0].css('border', '2px solid green');
     arguments[0].parent().children('span').text(arguments[1]);
 }
 
-function addError(textField, errorMessage){
-    if(textField.val().length <= 0){
+function addError(textField, errorMessage) {
+    if (textField.val().length <= 0) {
         textField.css("border", "1px solid #ced4da");
         textField.parent().children('span').text("");
-    }else{
-        textField.css('border','2px solid red');
+    } else {
+        textField.css('border', '2px solid red');
         textField.parent().children('span').text(errorMessage);
     }
 }
 
-function enableOrDisableSaveCustomerBtn(errorCounts){
-    if(errorCounts > 0){
+function enableOrDisableSaveCustomerBtn(errorCounts) {
+    if (errorCounts > 0) {
         $('#btnSaveCustomer').attr('disabled', true);
-    }else{
+    } else {
         $('#btnSaveCustomer').attr('disabled', false);
     }
 }
