@@ -29,19 +29,16 @@ $("#btnSaveCustomer").click(function () {
         /* Newly added customer was stored in this array */
         customers.push(customerObject);
 
-        $("#tblCustomer>tbody").empty();
-
-        for (let i = 0; i < customers.length; i++) {
-            var tblRow = `<tr><td>${customers[i].id}</td><td>${customers[i].name}</td><td>${customers[i].address}</td><td>${customers[i].salary}</td></tr>`;
-            $("#tblCustomer>tbody").append(tblRow);
-        }
-
-        // Success alert
+        // Customer was saved alert
         Swal.fire(
             'Successfully saved!',
             'Customer has been saved successfully!',
             'success'
         )
+
+        loadAllCustomers();
+        bindRowClickEvents();
+        clearCustomerFields();
 
     } else {
         // Error alert
@@ -52,6 +49,16 @@ $("#btnSaveCustomer").click(function () {
         })
     }
 });
+
+//Load all customers function
+function loadAllCustomers() {
+    $("#tblCustomer>tbody").empty();
+
+    for (let i = 0; i < customers.length; i++) {
+        var tblRow = `<tr><td>${customers[i].id}</td><td>${customers[i].name}</td><td>${customers[i].address}</td><td>${customers[i].salary}</td></tr>`;
+        $("#tblCustomer>tbody").append(tblRow);
+    }
+}
 
 /* Search Customer function */
 $("#btnSearchCustomer").click(function () {
@@ -132,13 +139,15 @@ $("#btnSearchCustomerClear").click(function () {
 });
 
 /* set customer data to the fields when hover table row */
-$('#tblCustomer > tbody > tr').on('click', function (event) {
-    var cusObject = {
-        "id": $(this).children(":eq(0)").text(),
-        "name": $(this).children(":eq(1)").text(),
-        "address": $(this).children(":eq(2)").text(),
-        "salary": $(this).children(":eq(3)").text()
-    };
+function bindRowClickEvents() {
+    $('#tblCustomer > tbody > tr').on('click', function (event) {
+        var cusObject = {
+            "id": $(this).children(":eq(0)").text(),
+            "name": $(this).children(":eq(1)").text(),
+            "address": $(this).children(":eq(2)").text(),
+            "salary": $(this).children(":eq(3)").text()
+        };
 
-    setCustomerData(cusObject);
-});
+        setCustomerData(cusObject);
+    });
+}
