@@ -407,3 +407,6 @@ $("#customerID,#customerName,#customerAddress,#customerSalary").on('keyup', func
 $("#customerID,#customerName,#customerAddress,#customerSalary").on('blur', function () {
     checkValidation(updateAndDeleteCustomerValidations, $('#btnUpdateCustomer'));
 });
+
+$("#btnUpdateCustomer").attr('disabled', true);
+$("#btnDeleteCustomer").attr('disabled', true);
