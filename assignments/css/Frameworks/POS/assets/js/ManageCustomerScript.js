@@ -298,8 +298,6 @@ function enableOrDisableSaveCustomerBtn(errorCounts) {
     }
 }
 
-/* Update Customer function */
-
 
 
 
