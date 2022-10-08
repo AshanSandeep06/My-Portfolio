@@ -140,6 +140,7 @@ function clearTextFields() {
     $("#customerName").val('');
     $("#customerAddress").val('');
     $("#customerSalary").val('');
+    $('#customerID,#customerName,#customerAddress,#customerSalary').css("border", "1px solid #ced4da");
 }
 
 function clearModalFields() {
