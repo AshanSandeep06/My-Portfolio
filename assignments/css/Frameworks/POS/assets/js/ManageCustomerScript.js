@@ -180,6 +180,9 @@ $('.prevent_tab_key_focus').on('keydown', function (event) {
     }
 });
 
+$("#txtCustomerID").focus();
+$("#btnSaveCustomer").attr('disabled', true);
+
 /* Regex Patterns */
 const idPattern = /^(C00-)[0-9]{3}$/;
 const namePattern = /^[A-z ]{5,20}$/;
