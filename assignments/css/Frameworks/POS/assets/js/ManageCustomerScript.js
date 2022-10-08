@@ -186,7 +186,7 @@ const namePattern = /^[A-z ]{5,20}$/;
 const addressPattern = /^[0-9/A-z. ,]{7,}$/;
 const salaryPattern = /^[0-9]{1,}([.][0-9]{2})?$/;
 
-const customerValidations = [];
+let customerValidations = [];
 customerValidations.push({regEx: idPattern, textField: $('#txtCustomerID'), errorMsg: 'Invalid Customer ID Pattern : C00-001'});
 customerValidations.push({regEx: namePattern, textField: $('#txtCustomerName'), errorMsg: 'Invalid Customer Name Pattern : A-z 5-20'});
 customerValidations.push({regEx: addressPattern, textField: $('#txtAddress'), errorMsg: 'Invalid Customer Address Pattern : A-z 0-9 ,/'});
@@ -194,28 +194,32 @@ customerValidations.push({regEx: salaryPattern, textField: $('#txtSalary'), erro
 
 /* Focusing the textfields */
 $('#txtCustomerID').on('keydown', function (event) {
-    if (event.code === "Enter") {
+    if (event.code === "Enter" && check(idPattern, $('#txtCustomerID'))) {
         $('#txtCustomerName').focus();
     }
 });
 
 $('#txtCustomerName').on('keydown', function (event) {
-    if (event.code === "Enter") {
+    if (event.code === "Enter" && check(namePattern, $('#txtCustomerName'))) {
         $('#txtAddress').focus();
     }
 });
 
 $('#txtAddress').on('keydown', function (event) {
-    if (event.code === "Enter") {
+    if (event.code === "Enter" && check(addressPattern, $('#txtAddress'))) {
         $('#txtSalary').focus();
     }
 });
 
 $('#txtSalary').on('keydown', function (event) {
-    if (event.code === "Enter") {
+    if (event.code === "Enter" && check(salaryPattern, $('#txtSalary'))) {
         $('#btnSaveCustomer').focus();
     }
 });
+
+function check(regEx, textField){
+    return regEx.test(textField.val());
+}
 
 
 
