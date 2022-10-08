@@ -164,3 +164,28 @@ function bindRowDblClickEvents() {
         $(this).remove();
     });
 }
+
+/* Focusing the textfields */
+$('#txtCustomerID').on('keydown', function (event) {
+    if (event.code === "Enter") {
+        $('#txtCustomerName').focus();
+    }
+});
+
+$('#txtCustomerName').on('keydown', function (event) {
+    if (event.code === "Enter") {
+        $('#txtAddress').focus();
+    }
+});
+
+$('#txtAddress').on('keydown', function (event) {
+    if (event.code === "Enter") {
+        $('#txtSalary').focus();
+    }
+});
+
+$('#txtSalary').on('keydown', function (event) {
+    if (event.code === "Enter") {
+        $('#btnSaveCustomer').focus();
+    }
+});
