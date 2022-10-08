@@ -118,25 +118,26 @@
                                         <form>
                                             <div class="mb-3">
                                                 <label for="txtItemCode" class="col-form-label">Item Code:</label>
-                                                <input type="text" class="form-control" id="txtItemCode">
+                                                <input type="text" class="form-control prevent_tab_key_focus" id="txtItemCode">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="txtItemName" class="col-form-label">Item Name:</label>
-                                                <input type="text" class="form-control" id="txtItemName">
+                                                <input type="text" class="form-control prevent_tab_key_focus" id="txtItemName">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="txtUnitPrice" class="col-form-label">Item Price:</label>
-                                                <input type="text" class="form-control" id="txtUnitPrice">
+                                                <input type="text" class="form-control prevent_tab_key_focus" id="txtUnitPrice">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="txtQtyOnHand" class="col-form-label">Item Quantity:</label>
-                                                <input type="text" class="form-control" id="txtQtyOnHand">
+                                                <input type="text" class="form-control prevent_tab_key_focus" id="txtQtyOnHand">
                                             </div>
                                         </form>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
                                         </button>
+                                        <button id="btnClearFields" type="button" class="btn btn-warning">Clear</button>
                                         <button id="btnSaveItem" type="button" class="btn btn-primary">Save</button>
                                     </div>
                                 </div>
@@ -196,19 +197,19 @@
                     </div>
                     <div class="mb-3">
                         <label for="itemName" class="form-label">Item Name</label>
-                        <input type="text" class="form-control" id="itemName" aria-describedby="nameHelp"
+                        <input type="text" class="form-control prevent_tab_key_focus" id="itemName" aria-describedby="nameHelp"
                                placeholder="Soap">
                         <div id="nameHelp" class="form-text">At least, Name should be 3 characters long.</div>
                     </div>
                     <div class="mb-3">
                         <label for="unitPrice" class="form-label">Price (LKR)</label>
-                        <input type="text" class="form-control" id="unitPrice" aria-describedby="priceHelp"
+                        <input type="text" class="form-control prevent_tab_key_focus" id="unitPrice" aria-describedby="priceHelp"
                                placeholder="350.00">
                         <div id="priceHelp" class="form-text">Only numbers are allowed.</div>
                     </div>
                     <div class="mb-3">
                         <label for="qtyOnHand" class="form-label">Quantity</label>
-                        <input type="text" class="form-control" id="qtyOnHand" aria-describedby="qtyHelp"
+                        <input type="text" class="form-control prevent_tab_key_focus" id="qtyOnHand" aria-describedby="qtyHelp"
                                placeholder="1000">
                         <div id="qtyHelp" class="form-text">Only integer numbers are allowed.</div>
                     </div>
