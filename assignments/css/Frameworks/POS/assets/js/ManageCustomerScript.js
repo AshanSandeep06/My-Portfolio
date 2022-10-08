@@ -202,23 +202,24 @@ const namePattern = /^[A-z ]{5,20}$/;
 const addressPattern = /^[0-9/A-z. ,]{7,}$/;
 const salaryPattern = /^[0-9]{1,}([.][0-9]{2})?$/;
 
-let saveCustomerValidations = [];
-saveCustomerValidations.push({
+/* Validate save Customer textFields */
+let saveCustomerOptionValidations = [];
+saveCustomerOptionValidations.push({
     regEx: idPattern,
     textField: $('#txtCustomerID'),
     errorMsg: 'Invalid Customer ID Pattern : C00-001'
 });
-saveCustomerValidations.push({
+saveCustomerOptionValidations.push({
     regEx: namePattern,
     textField: $('#txtCustomerName'),
     errorMsg: 'Invalid Customer Name Pattern : A-z 5-20'
 });
-saveCustomerValidations.push({
+saveCustomerOptionValidations.push({
     regEx: addressPattern,
     textField: $('#txtAddress'),
     errorMsg: 'Invalid Customer Address Pattern : A-z 0-9 ,/'
 });
-saveCustomerValidations.push({
+saveCustomerOptionValidations.push({
     regEx: salaryPattern,
     textField: $('#txtSalary'),
     errorMsg: 'Invalid Customer Salary Pattern : 250 or 250.00'
@@ -263,7 +264,7 @@ function check(regEx, textField) {
 
 function checkValidation() {
     let errorCounts = 0;
-    for (let validation of saveCustomerValidations) {
+    for (let validation of saveCustomerOptionValidations) {
         if (validation.regEx.test(validation.textField.val())) {
             removeError(validation.textField, "");
         } else {
@@ -297,6 +298,29 @@ function enableOrDisableSaveCustomerBtn(errorCounts) {
         $('#btnSaveCustomer').attr('disabled', false);
     }
 }
+
+/* Validate Update and Delete Customer textFields */
+let updateAndDeleteCustomerValidations = [];
+updateAndDeleteCustomerValidations.push({
+    regEx: idPattern,
+    textField: $('#customerID'),
+    errorMsg: 'Invalid Customer ID Pattern : C00-001'
+});
+updateAndDeleteCustomerValidations.push({
+    regEx: namePattern,
+    textField: $('#customerName'),
+    errorMsg: 'Invalid Customer Name Pattern : A-z 5-20'
+});
+updateAndDeleteCustomerValidations.push({
+    regEx: addressPattern,
+    textField: $('#customerAddress'),
+    errorMsg: 'Invalid Customer Address Pattern : A-z 0-9 ,/'
+});
+updateAndDeleteCustomerValidations.push({
+    regEx: salaryPattern,
+    textField: $('#customerSalary'),
+    errorMsg: 'Invalid Customer Salary Pattern : 250 or 250.00'
+});
 
 
 
