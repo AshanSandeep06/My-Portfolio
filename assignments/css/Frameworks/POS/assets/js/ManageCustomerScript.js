@@ -217,17 +217,52 @@ $('#txtSalary').on('keydown', function (event) {
     }
 });
 
+$("#txtCustomerID,#txtCustomerName,#txtAddress,#txtSalary").on('keyup', function () {
+    checkValidation();
+});
+
+$("#txtCustomerID,#txtCustomerName,#txtAddress,#txtSalary").on('blur', function () {
+    checkValidation();
+});
+
 function check(regEx, textField){
     return regEx.test(textField.val());
 }
 
 function checkValidation(){
+    let errorCounts = 0;
     for (let validation of customerValidations) {
         if(validation.regEx.test(validation.textField.val())){
             removeError(validation.textField, "");
         }else{
             addError(validation.textField, validation.errorMsg);
+            errorCounts += 1;
         }
+    }
+    enableOrDisableSaveCustomerBtn(errorCounts);
+}
+
+/* arguments array stores the values which are send from parameters when calling the removeError() method */
+function removeError(){
+    arguments[0].css('border','2px solid green');
+    arguments[0].parent().children('span').text(arguments[1]);
+}
+
+function addError(textField, errorMessage){
+    if(textField.val().length <= 0){
+        textField.css("border", "1px solid #ced4da");
+        textField.parent().children('span').text("");
+    }else{
+        textField.css('border','2px solid red');
+        textField.parent().children('span').text(errorMessage);
+    }
+}
+
+function enableOrDisableSaveCustomerBtn(errorCounts){
+    if(errorCounts > 0){
+        $('#btnSaveCustomer').attr('disabled', true);
+    }else{
+        $('#btnSaveCustomer').attr('disabled', false);
     }
 }
 
