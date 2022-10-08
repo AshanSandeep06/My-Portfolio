@@ -200,7 +200,10 @@ $('#btnClearFields').on('click', function () {
 
 /* Disable Tab Key focus */
 $('.prevent_tab_key_focus').on('keydown', function (event) {
-    if(event.code === "Tab"){
+    if (event.code === "Tab") {
         event.preventDefault();
     }
 });
+
+/* Regex Patterns */
+
