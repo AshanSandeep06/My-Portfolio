@@ -250,6 +250,8 @@ $('#txtSalary').on('keydown', function (event) {
     }
 });
 
+/*================================================================================================*/
+
 $("#txtCustomerID,#txtCustomerName,#txtAddress,#txtSalary").on('keyup', function () {
     checkValidation();
 });
@@ -320,6 +322,31 @@ updateAndDeleteCustomerValidations.push({
     regEx: salaryPattern,
     textField: $('#customerSalary'),
     errorMsg: 'Invalid Customer Salary Pattern : 250 or 250.00'
+});
+
+/* Focusing the textfields */
+$('#customerID').on('keydown', function (event) {
+    if (event.code === "Enter" && check(idPattern, $('#customerID'))) {
+        $('#customerName').focus();
+    }
+});
+
+$('#customerName').on('keydown', function (event) {
+    if (event.code === "Enter" && check(namePattern, $('#customerName'))) {
+        $('#customerAddress').focus();
+    }
+});
+
+$('#customerAddress').on('keydown', function (event) {
+    if (event.code === "Enter" && check(addressPattern, $('#customerAddress'))) {
+        $('#customerSalary').focus();
+    }
+});
+
+$('#customerSalary').on('keydown', function (event) {
+    if (event.code === "Enter" && check(salaryPattern, $('#customerSalary'))) {
+        $('#btnUpdateCustomer').focus();
+    }
 });
 
 
