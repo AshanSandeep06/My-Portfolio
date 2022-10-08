@@ -17,29 +17,36 @@ $("#btnSaveCustomer").click(function () {
 
     /* Check if the customer fields have typed values */
     if (customerID.length !== 0 && customerName.length !== 0 && cusAddress.length !== 0 && cusSalary.length !== 0) {
+        if (searchCustomer($('#txtCustomerID').val()) == null) {
+            /* Customer Object */
+            var customerObject = {
+                id: customerID,
+                name: customerName,
+                address: cusAddress,
+                salary: cusSalary
+            }
 
-        /* Customer Object */
-        var customerObject = {
-            id: customerID,
-            name: customerName,
-            address: cusAddress,
-            salary: cusSalary
+            /* Newly added customer was stored in this array */
+            customers.push(customerObject);
+
+            // Customer was saved alert
+            Swal.fire(
+                'Successfully saved!',
+                'Customer has been saved successfully!',
+                'success'
+            )
+
+            loadAllCustomers();
+            bindRowClickEvents();
+            clearModalFields();
+            bindRowDblClickEvents();
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error...',
+                text: 'Customer was already exists!',
+            })
         }
-
-        /* Newly added customer was stored in this array */
-        customers.push(customerObject);
-
-        // Customer was saved alert
-        Swal.fire(
-            'Successfully saved!',
-            'Customer has been saved successfully!',
-            'success'
-        )
-
-        loadAllCustomers();
-        bindRowClickEvents();
-        clearModalFields();
-        bindRowDblClickEvents();
 
     } else {
         // Error alert
@@ -61,7 +68,7 @@ function loadAllCustomers() {
     }
 }
 
-function searchCustomer(customerID){
+function searchCustomer(customerID) {
     for (let c1 of customers) {
         if (c1.id === customerID) {
             return c1;
