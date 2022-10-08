@@ -61,6 +61,15 @@ function loadAllCustomers() {
     }
 }
 
+function searchCustomer(customerID){
+    for (let c1 of customers) {
+        if (c1.id === customerID) {
+            return c1;
+        }
+    }
+    return null;
+}
+
 /* Search Customer function */
 $("#btnSearchCustomer").click(function () {
     if ($("#txtSearchCustomer").val().length !== 0) {
@@ -68,12 +77,7 @@ $("#btnSearchCustomer").click(function () {
             var typedId = $("#txtSearchCustomer").val();
             var customer = null;
 
-            for (let i of customers) {
-                if (i.id === typedId) {
-                    customer = i;
-                    break;
-                }
-            }
+            customer = searchCustomer(typedId);
 
             if (customer !== null) {
                 setCustomerData(customer);
@@ -286,6 +290,8 @@ function enableOrDisableSaveCustomerBtn(errorCounts) {
         $('#btnSaveCustomer').attr('disabled', false);
     }
 }
+
+/* Update Customer function */
 
 
 
