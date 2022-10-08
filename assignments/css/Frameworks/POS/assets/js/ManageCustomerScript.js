@@ -250,23 +250,21 @@ $('#txtSalary').on('keydown', function (event) {
     }
 });
 
-/*================================================================================================*/
-
 $("#txtCustomerID,#txtCustomerName,#txtAddress,#txtSalary").on('keyup', function () {
-    checkValidation();
+    checkValidation(saveCustomerOptionValidations);
 });
 
 $("#txtCustomerID,#txtCustomerName,#txtAddress,#txtSalary").on('blur', function () {
-    checkValidation();
+    checkValidation(saveCustomerOptionValidations);
 });
 
 function check(regEx, textField) {
     return regEx.test(textField.val());
 }
 
-function checkValidation() {
+function checkValidation(validationArray) {
     let errorCounts = 0;
-    for (let validation of saveCustomerOptionValidations) {
+    for (let validation of validationArray) {
         if (validation.regEx.test(validation.textField.val())) {
             removeError(validation.textField, "");
         } else {
@@ -349,6 +347,10 @@ $('#customerSalary').on('keydown', function (event) {
     }
 });
 
+$("#customerID,#customerName,#customerAddress,#customerSalary").on('keyup', function () {
+    checkValidation(updateAndDeleteCustomerValidations);
+});
 
-
-
+$("#customerID,#customerName,#customerAddress,#customerSalary").on('blur', function () {
+    checkValidation(updateAndDeleteCustomerValidations);
+});
