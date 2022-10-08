@@ -196,6 +196,7 @@ function clearTextFields() {
     $("#customerAddress").val('');
     $("#customerSalary").val('');
     $('#customerID,#customerName,#customerAddress,#customerSalary').css("border", "1px solid #ced4da");
+    $('#btnUpdateCustomer').attr('disabled',true);
 }
 
 function clearModalFields() {
@@ -206,6 +207,7 @@ function clearModalFields() {
     $("#txtCustomerID").focus();
     $('#txtCustomerID,#txtCustomerName,#txtAddress,#txtSalary').css("border", "1px solid #ced4da");
     $('#txtCustomerID,#txtCustomerName,#txtAddress,#txtSalary').parent().children('span').text("");
+    $('#btnSaveCustomer').attr('disabled',true);
 }
 
 $("#btnClear").click(function () {
