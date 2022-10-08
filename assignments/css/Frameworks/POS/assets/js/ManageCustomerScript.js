@@ -210,3 +210,15 @@ const idPattern = /^(C00-)[0-9]{3}$/;
 const namePattern = /^[A-z ]{5,20}$/;
 const addressPattern = /^[0-9/A-z. ,]{7,}$/;
 const salaryPattern = /^[0-9]{1,}([.][0-9]{2})?$/;
+
+const customerValidations = [];
+customerValidations.push({regEx: idPattern, textField: $('#txtCustomerID'), errorMsg: 'Invalid Customer ID Pattern : C00-001'});
+customerValidations.push({regEx: namePattern, textField: $('#txtCustomerName'), errorMsg: 'Invalid Customer Name Pattern : A-z 5-20'});
+customerValidations.push({regEx: addressPattern, textField: $('#txtAddress'), errorMsg: 'Invalid Customer Address Pattern : A-z 0-9 ,/'});
+customerValidations.push({regEx: salaryPattern, textField: $('#txtSalary'), errorMsg: 'Invalid Customer Salary Pattern : 250 or 250.00'});
+
+
+
+
+
+
