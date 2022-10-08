@@ -128,6 +128,58 @@ $("#btnSearchCustomer").click(function () {
     }
 });
 
+$('#txtSearchCustomer').on('keyup',function (event){
+    if(event.key === "Enter"){
+        if ($("#txtSearchCustomer").val().length !== 0) {
+            if ($("#disabledSelect").val() === "ID") {
+                var typedId = $("#txtSearchCustomer").val();
+                var customer = null;
+
+                customer = searchCustomer(typedId);
+
+                if (customer !== null) {
+                    setCustomerData(customer);
+                } else {
+                    clearTextFields();
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Oops...',
+                        text: 'This customer doesn\'t exist..!',
+                    })
+                }
+
+            } else {
+                var typedName = $("#txtSearchCustomer").val();
+                customer = null;
+
+                for (let i of customers) {
+                    if (i.name === typedName) {
+                        customer = i;
+                        break;
+                    }
+                }
+
+                if (customer !== null) {
+                    setCustomerData(customer);
+                } else {
+                    clearTextFields();
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Oops...',
+                        text: 'This customer doesn\'t exist..!',
+                    })
+                }
+            }
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Empty field..',
+                text: 'Please input customer ID or name',
+            })
+        }
+    }
+});
+
 function setCustomerData(c1) {
     $("#customerID").val(c1.id);
     $("#customerName").val(c1.name);
@@ -226,7 +278,7 @@ saveCustomerOptionValidations.push({
     errorMsg: 'Invalid Customer Salary Pattern : 250 or 250.00'
 });
 
-/* Focusing the textfields */
+/* Focusing the textFields */
 $('#txtCustomerID').on('keydown', function (event) {
     if (event.code === "Enter" && check(idPattern, $('#txtCustomerID'))) {
         $('#txtCustomerName').focus();
@@ -252,18 +304,18 @@ $('#txtSalary').on('keydown', function (event) {
 });
 
 $("#txtCustomerID,#txtCustomerName,#txtAddress,#txtSalary").on('keyup', function () {
-    checkValidation(saveCustomerOptionValidations);
+    checkValidation(saveCustomerOptionValidations, $('#btnSaveCustomer'));
 });
 
 $("#txtCustomerID,#txtCustomerName,#txtAddress,#txtSalary").on('blur', function () {
-    checkValidation(saveCustomerOptionValidations);
+    checkValidation(saveCustomerOptionValidations, $('#btnSaveCustomer'));
 });
 
 function check(regEx, textField) {
     return regEx.test(textField.val());
 }
 
-function checkValidation(validationArray) {
+function checkValidation(validationArray, button) {
     let errorCounts = 0;
     for (let validation of validationArray) {
         if (validation.regEx.test(validation.textField.val())) {
@@ -273,7 +325,7 @@ function checkValidation(validationArray) {
             errorCounts += 1;
         }
     }
-    enableOrDisableSaveCustomerBtn(errorCounts);
+    enableOrDisableBtn(button, errorCounts);
 }
 
 /* arguments array stores the values which are send from parameters when calling the removeError() method */
@@ -292,11 +344,11 @@ function addError(textField, errorMessage) {
     }
 }
 
-function enableOrDisableSaveCustomerBtn(errorCounts) {
+function enableOrDisableBtn(button, errorCounts) {
     if (errorCounts > 0) {
-        $('#btnSaveCustomer').attr('disabled', true);
+        button.attr('disabled', true);
     } else {
-        $('#btnSaveCustomer').attr('disabled', false);
+        button.attr('disabled', false);
     }
 }
 
@@ -323,7 +375,7 @@ updateAndDeleteCustomerValidations.push({
     errorMsg: 'Invalid Customer Salary Pattern : 250 or 250.00'
 });
 
-/* Focusing the textfields */
+/* Focusing the textFields */
 $('#customerID').on('keydown', function (event) {
     if (event.code === "Enter" && check(idPattern, $('#customerID'))) {
         $('#customerName').focus();
@@ -349,9 +401,9 @@ $('#customerSalary').on('keydown', function (event) {
 });
 
 $("#customerID,#customerName,#customerAddress,#customerSalary").on('keyup', function () {
-    checkValidation(updateAndDeleteCustomerValidations);
+    checkValidation(updateAndDeleteCustomerValidations, $('#btnUpdateCustomer'));
 });
 
 $("#customerID,#customerName,#customerAddress,#customerSalary").on('blur', function () {
-    checkValidation(updateAndDeleteCustomerValidations);
+    checkValidation(updateAndDeleteCustomerValidations, $('#btnUpdateCustomer'));
 });
