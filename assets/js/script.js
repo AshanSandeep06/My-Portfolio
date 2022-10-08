@@ -1,5 +1,10 @@
 /* ------------------------------------ My Portfolio js file ------------------------------------------------ */
 
+/* Window = DOM + CSSOM */
+$(window).on('load', function () {
+
+});
+
 /* ------------------------ Projects Section -------------------- */
 $("#btnProjectsViewMore").on("click", function () {
     $("#btnProjectsViewMore>a").attr("target", "_blank");
