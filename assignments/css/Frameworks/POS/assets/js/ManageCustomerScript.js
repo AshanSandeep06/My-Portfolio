@@ -128,8 +128,8 @@ $("#btnSearchCustomer").click(function () {
     }
 });
 
-$('#txtSearchCustomer').on('keyup',function (event){
-    if(event.key === "Enter"){
+$('#txtSearchCustomer').on('keyup', function (event) {
+    if (event.key === "Enter") {
         if ($("#txtSearchCustomer").val().length !== 0) {
             if ($("#disabledSelect").val() === "ID") {
                 var typedId = $("#txtSearchCustomer").val();
@@ -185,6 +185,9 @@ function setCustomerData(c1) {
     $("#customerName").val(c1.name);
     $("#customerAddress").val(c1.address);
     $("#customerSalary").val(c1.salary);
+
+    checkValidation(saveCustomerOptionValidations, $('#btnSaveCustomer'));
+    checkValidation(updateAndDeleteCustomerValidations, $('#btnUpdateCustomer'));
 }
 
 function clearTextFields() {
@@ -410,3 +413,29 @@ $("#customerID,#customerName,#customerAddress,#customerSalary").on('blur', funct
 
 $("#btnUpdateCustomer").attr('disabled', true);
 $("#btnDeleteCustomer").attr('disabled', true);
+
+/* Update Customer Function */
+$('#btnUpdateCustomer').click(function (event) {
+    let customer = searchCustomer($('#customerID').val());
+    if (customer !== null) {
+        customer.id = $('#customerID').val();
+        customer.name = $('#customerName').val();
+        customer.address = $('#customerAddress').val();
+        customer.salary = $('#customerSalary').val();
+        Swal.fire(
+            'Successfully Updated!',
+            'Customer has been Updated successfully!',
+            'success'
+        )
+        loadAllCustomers();
+        bindRowClickEvents();
+        bindRowDblClickEvents();
+        clearTextFields();
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error...',
+            text: 'Customer Update was failed..!',
+        })
+    }
+});
