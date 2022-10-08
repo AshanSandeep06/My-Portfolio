@@ -39,6 +39,7 @@ $("#btnSaveCustomer").click(function () {
         loadAllCustomers();
         bindRowClickEvents();
         clearCustomerFields();
+        bindRowDblClickEvents();
 
     } else {
         // Error alert
@@ -153,6 +154,8 @@ function bindRowClickEvents() {
 }
 
 /* Deleted the clicked table row if the row is double clicked function */
-$("#tblCustomer > tbody > tr").on('dblclick', function () {
-
-});
+function bindRowDblClickEvents() {
+    $("#tblCustomer > tbody > tr").on('dblclick', function () {
+        $(this).remove();
+    });
+}
