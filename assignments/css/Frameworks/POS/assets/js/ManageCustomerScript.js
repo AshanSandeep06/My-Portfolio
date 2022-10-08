@@ -151,3 +151,8 @@ function bindRowClickEvents() {
         setCustomerData(cusObject);
     });
 }
+
+/* Deleted the clicked table row if the row is double clicked function */
+$("#tblCustomer > tbody > tr").on('dblclick', function () {
+
+});
