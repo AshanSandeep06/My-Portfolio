@@ -38,7 +38,7 @@ $("#btnSaveCustomer").click(function () {
 
         loadAllCustomers();
         bindRowClickEvents();
-        clearCustomerFields();
+        clearModalFields();
         bindRowDblClickEvents();
 
     } else {
@@ -78,7 +78,7 @@ $("#btnSearchCustomer").click(function () {
             if (customer !== null) {
                 setCustomerData(customer);
             } else {
-                clearCustomerFields();
+                clearTextFields();
                 Swal.fire({
                     icon: 'warning',
                     title: 'Oops...',
@@ -100,7 +100,7 @@ $("#btnSearchCustomer").click(function () {
             if (customer !== null) {
                 setCustomerData(customer);
             } else {
-                clearCustomerFields();
+                clearTextFields();
                 Swal.fire({
                     icon: 'warning',
                     title: 'Oops...',
@@ -124,20 +124,23 @@ function setCustomerData(c1) {
     $("#customerSalary").val(c1.salary);
 }
 
-function clearCustomerFields() {
+function clearTextFields() {
     $("#customerID").val('');
     $("#customerName").val('');
     $("#customerAddress").val('');
     $("#customerSalary").val('');
+}
 
+function clearModalFields(){
     $("#txtCustomerID").val('');
     $("#txtCustomerName").val('');
     $("#txtAddress").val('');
     $("#txtSalary").val('');
+    $("#txtCustomerID").focus();
 }
 
 $("#btnClear").click(function () {
-    clearCustomerFields();
+    clearTextFields();
 });
 
 $("#btnSearchCustomerClear").click(function () {
