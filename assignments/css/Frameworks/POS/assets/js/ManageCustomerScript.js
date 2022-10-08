@@ -131,7 +131,7 @@ function clearTextFields() {
     $("#customerSalary").val('');
 }
 
-function clearModalFields(){
+function clearModalFields() {
     $("#txtCustomerID").val('');
     $("#txtCustomerName").val('');
     $("#txtAddress").val('');
@@ -191,4 +191,9 @@ $('#txtSalary').on('keydown', function (event) {
     if (event.code === "Enter") {
         $('#btnSaveCustomer').focus();
     }
+});
+
+/* Clear button in Modal */
+$('#btnClearFields').on('click', function () {
+    clearModalFields();
 });
