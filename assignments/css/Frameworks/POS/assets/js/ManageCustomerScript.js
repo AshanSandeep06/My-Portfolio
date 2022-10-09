@@ -442,10 +442,23 @@ $('#btnUpdateCustomer').click(function (event) {
     }
 });
 
-/* Delete Customer Function */
-$('#btnDeleteCustomer').click(function (event){
-    let customer = searchCustomer($('#txtSearchCustomer').val());
-    if (customer !== null) {
-
+$('#txtSearchCustomer').on('keyup', function () {
+    if ($("#disabledSelect").val() === "ID") {
+        if ($("#txtSearchCustomer").val().length !== 0) {
+            if (idPattern.test($('#txtSearchCustomer').val())) {
+                $('#btnDeleteCustomer').attr('disabled', false);
+            } else {
+                $('#btnDeleteCustomer').attr('disabled', true);
+            }
+        } else {
+            $('#btnDeleteCustomer').attr('disabled', true);
+        }
+    } else {
+        $('#btnDeleteCustomer').attr('disabled', true);
     }
+});
+
+/* Delete Customer Function */
+$('#btnDeleteCustomer').click(function (event) {
+
 });
