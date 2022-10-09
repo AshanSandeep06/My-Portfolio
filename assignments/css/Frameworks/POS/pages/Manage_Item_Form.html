@@ -146,7 +146,7 @@
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
                                         </button>
                                         <button id="btnClearFields" type="button" class="btn btn-warning">Clear</button>
-                                        <button id="btnSaveItem" type="button" class="btn btn-primary">Save</button>
+                                        <button id="btnSaveItem" type="button" class="btn btn-success">Save</button>
                                     </div>
                                 </div>
                             </div>
@@ -168,7 +168,7 @@
                     </tr>
                     </thead>
                     <tbdoy>
-                        <tr>
+                     <!--   <tr>
                             <td>I-001</td>
                             <td>Rice</td>
                             <td>400.00</td>
@@ -187,7 +187,7 @@
                             <td>Soap</td>
                             <td>350.00</td>
                             <td>1000</td>
-                        </tr>
+                        </tr>-->
                     </tbdoy>
                 </table>
             </section>
@@ -199,29 +199,25 @@
                 <form id="item-form">
                     <div class="mb-3">
                         <label for="itemCode" class="form-label">Item Code</label>
-                        <input type="text" class="form-control" id="itemCode" aria-describedby="codeHelp"
-                               placeholder="I-001">
+                        <input type="text" class="form-control" id="itemCode" aria-describedby="codeHelp">
                         <div id="codeHelp" class="form-text">Eg :- I-001</div>
                     </div>
                     <div class="mb-3">
                         <label for="itemName" class="form-label">Item Name</label>
                         <input type="text" class="form-control prevent_tab_key_focus" id="itemName"
-                               aria-describedby="nameHelp"
-                               placeholder="Soap">
+                               aria-describedby="nameHelp">
                         <div id="nameHelp" class="form-text">At least, Name should be 3 characters long.</div>
                     </div>
                     <div class="mb-3">
                         <label for="unitPrice" class="form-label">Price (LKR)</label>
                         <input type="text" class="form-control prevent_tab_key_focus" id="unitPrice"
-                               aria-describedby="priceHelp"
-                               placeholder="350.00">
+                               aria-describedby="priceHelp">
                         <div id="priceHelp" class="form-text">Only numbers are allowed.</div>
                     </div>
                     <div class="mb-3">
                         <label for="qtyOnHand" class="form-label">Quantity</label>
                         <input type="text" class="form-control prevent_tab_key_focus" id="qtyOnHand"
-                               aria-describedby="qtyHelp"
-                               placeholder="1000">
+                               aria-describedby="qtyHelp">
                         <div id="qtyHelp" class="form-text">Only integer numbers are allowed.</div>
                     </div>
                     <div style="display: inline-block" class="me-2">

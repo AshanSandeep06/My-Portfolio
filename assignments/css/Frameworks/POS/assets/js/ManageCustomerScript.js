@@ -39,9 +39,9 @@ $("#btnSaveCustomer").click(function () {
             })
 
             loadAllCustomers();
-            bindRowClickEvents();
-            clearModalFields();
-            bindRowDblClickEvents();
+            bindRowClickEvents($('#tblCustomer > tbody > tr'));
+            clearCustomerModalFields();
+            bindRowDblClickEvents($("#tblCustomer > tbody > tr"));
         } else {
             Swal.fire({
                 icon: 'error',
@@ -91,7 +91,7 @@ $("#btnSearchCustomer").click(function () {
             if (customer !== null) {
                 setCustomerData(customer);
             } else {
-                clearTextFields();
+                clearCustomerTextFields();
                 Swal.fire({
                     icon: 'warning',
                     title: 'Oops...',
@@ -113,7 +113,7 @@ $("#btnSearchCustomer").click(function () {
             if (customer !== null) {
                 setCustomerData(customer);
             } else {
-                clearTextFields();
+                clearCustomerTextFields();
                 Swal.fire({
                     icon: 'warning',
                     title: 'Oops...',
@@ -142,7 +142,7 @@ $('#txtSearchCustomer').on('keyup', function (event) {
                 if (customer !== null) {
                     setCustomerData(customer);
                 } else {
-                    clearTextFields();
+                    clearCustomerTextFields();
                     Swal.fire({
                         icon: 'warning',
                         title: 'Oops...',
@@ -164,7 +164,7 @@ $('#txtSearchCustomer').on('keyup', function (event) {
                 if (customer !== null) {
                     setCustomerData(customer);
                 } else {
-                    clearTextFields();
+                    clearCustomerTextFields();
                     Swal.fire({
                         icon: 'warning',
                         title: 'Oops...',
@@ -182,6 +182,8 @@ $('#txtSearchCustomer').on('keyup', function (event) {
     }
 });
 
+/*---------------------------------*/
+
 function setCustomerData(c1) {
     $("#customerID").val(c1.id);
     $("#customerName").val(c1.name);
@@ -192,7 +194,7 @@ function setCustomerData(c1) {
     checkValidation(updateAndDeleteCustomerValidations, $('#btnUpdateCustomer'));
 }
 
-function clearTextFields() {
+function clearCustomerTextFields() {
     $("#customerID").val('');
     $("#customerName").val('');
     $("#customerAddress").val('');
@@ -201,7 +203,7 @@ function clearTextFields() {
     $('#btnUpdateCustomer').attr('disabled', true);
 }
 
-function clearModalFields() {
+function clearCustomerModalFields() {
     $("#txtCustomerID").val('');
     $("#txtCustomerName").val('');
     $("#txtAddress").val('');
@@ -213,7 +215,7 @@ function clearModalFields() {
 }
 
 $("#btnClear").click(function () {
-    clearTextFields();
+    clearCustomerTextFields();
 });
 
 $("#btnSearchCustomerClear").click(function () {
@@ -221,29 +223,32 @@ $("#btnSearchCustomerClear").click(function () {
 });
 
 /* set customer data to the fields when hover table row */
-function bindRowClickEvents() {
-    $('#tblCustomer > tbody > tr').on('click', function (event) {
-        var cusObject = {
-            "id": $(this).children(":eq(0)").text(),
-            "name": $(this).children(":eq(1)").text(),
-            "address": $(this).children(":eq(2)").text(),
-            "salary": $(this).children(":eq(3)").text()
-        };
+function bindRowClickEvents(tblRow) {
+    tblRow.on('click', function (event) {
+        if ($('tbody').parent().attr('id') === "tblCustomer") {
+            var cusObject = {
+                "id": $(this).children(":eq(0)").text(),
+                "name": $(this).children(":eq(1)").text(),
+                "address": $(this).children(":eq(2)").text(),
+                "salary": $(this).children(":eq(3)").text()
+            };
+            setCustomerData(cusObject);
+        } else {
 
-        setCustomerData(cusObject);
+        }
     });
 }
 
 /* Deleted the clicked table row if the row is double clicked function */
-function bindRowDblClickEvents() {
-    $("#tblCustomer > tbody > tr").on('dblclick', function () {
+function bindRowDblClickEvents(tblRow) {
+    tblRow.on('dblclick', function () {
         $(this).remove();
     });
 }
 
 /* Clear button in Modal */
 $('#btnClearFields').on('click', function () {
-    clearModalFields();
+    clearCustomerModalFields();
 });
 
 /* Disable Tab Key focus */
@@ -432,9 +437,9 @@ $('#btnUpdateCustomer').click(function (event) {
             'success'
         )
         loadAllCustomers();
-        bindRowClickEvents();
-        bindRowDblClickEvents();
-        clearTextFields();
+        bindRowClickEvents($('#tblCustomer > tbody > tr'));
+        bindRowDblClickEvents($("#tblCustomer > tbody > tr"));
+        clearCustomerTextFields();
     } else {
         Swal.fire({
             icon: 'error',
@@ -464,8 +469,6 @@ $('#txtSearchCustomer').on('keyup', function () {
 $('#btnDeleteCustomer').click(function (event) {
     let c1 = searchCustomer($('#txtSearchCustomer').val());
     if (c1 != null) {
-
-
         Swal.fire({
             title: 'Are you sure?',
             text: "Do you want to delete this customer!",
@@ -510,9 +513,9 @@ function deleteCustomer(customerID) {
             index = i;
             customers.splice(index, 1);
             loadAllCustomers();
-            bindRowClickEvents();
-            bindRowDblClickEvents();
-            clearTextFields();
+            bindRowClickEvents($('#tblCustomer > tbody > tr'));
+            bindRowDblClickEvents($("#tblCustomer > tbody > tr"));
+            clearCustomerTextFields();
             return true;
         }
     }
