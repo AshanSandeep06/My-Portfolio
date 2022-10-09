@@ -40,8 +40,8 @@ $("#btnSaveItem").click(function () {
 
             loadAllItems();
             bindRowClickEvents($('#tblItem > tbody > tr'));
-            clearItemModalFields();
             bindRowDblClickEvents($('#tblItem > tbody > tr'));
+            clearItemModalFields();
         } else {
             Swal.fire({
                 icon: 'error',

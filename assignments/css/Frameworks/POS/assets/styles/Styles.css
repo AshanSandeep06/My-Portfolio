@@ -107,3 +107,7 @@ header > nav {
 #tblCustomer > tbody > tr {
     cursor: pointer;
 }
+
+#tblItem > tbody > tr {
+    cursor: pointer;
+}
