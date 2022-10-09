@@ -30,11 +30,13 @@ $("#btnSaveCustomer").click(function () {
             customers.push(customerObject);
 
             // Customer was saved alert
-            Swal.fire(
-                'Successfully saved!',
-                'Customer has been saved successfully!',
-                'success'
-            )
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Customer has been saved successfully..!',
+                showConfirmButton: false,
+                timer: 1500
+            })
 
             loadAllCustomers();
             bindRowClickEvents();
@@ -462,19 +464,35 @@ $('#txtSearchCustomer').on('keyup', function () {
 $('#btnDeleteCustomer').click(function (event) {
     let c1 = searchCustomer($('#txtSearchCustomer').val());
     if (c1 != null) {
-        if (deleteCustomer(c1.id)) {
-            Swal.fire(
-                'Successfully Deleted!',
-                'Customer has been Deleted successfully!',
-                'success'
-            )
-        } else {
-            Swal.fire({
-                icon: 'error',
-                title: 'Error...',
-                text: 'Customer Deletion was failed..!',
-            })
-        }
+
+
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "Do you want to delete this customer!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                if (deleteCustomer(c1.id)) {
+                    Swal.fire(
+                        'Successfully Deleted!',
+                        'Customer has been Deleted successfully!',
+                        'success'
+                    )
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error...',
+                        text: 'Customer Deletion was failed..!',
+                    })
+                }
+            } else {
+
+            }
+        })
     } else {
         Swal.fire({
             icon: 'warning',
@@ -482,7 +500,7 @@ $('#btnDeleteCustomer').click(function (event) {
             text: 'Any Customer doesn\'t exist for this Customer ID..!',
         })
     }
-    $('#btnDeleteCustomer').attr('disabled',true);
+    $('#btnDeleteCustomer').attr('disabled', true);
 });
 
 function deleteCustomer(customerID) {
