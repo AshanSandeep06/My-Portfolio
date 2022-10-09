@@ -44,7 +44,7 @@ $("#btnSaveCustomer").click(function () {
             Swal.fire({
                 icon: 'error',
                 title: 'Error...',
-                text: 'Customer was already exists!',
+                text: 'This Customer was already exists by this Customer ID!',
             })
         }
 
@@ -460,5 +460,43 @@ $('#txtSearchCustomer').on('keyup', function () {
 
 /* Delete Customer Function */
 $('#btnDeleteCustomer').click(function (event) {
-
+    let c1 = searchCustomer($('#txtSearchCustomer').val());
+    if (c1 != null) {
+        if (deleteCustomer(c1.id)) {
+            Swal.fire(
+                'Successfully Deleted!',
+                'Customer has been Deleted successfully!',
+                'success'
+            )
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error...',
+                text: 'Customer Deletion was failed..!',
+            })
+        }
+    } else {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Oops...',
+            text: 'Any Customer doesn\'t exist for this Customer ID..!',
+        })
+    }
+    $('#btnDeleteCustomer').attr('disabled',true);
 });
+
+function deleteCustomer(customerID) {
+    let index = -1;
+    for (let i = 0; i < customers.length; i++) {
+        if (customers[i].id === customerID) {
+            index = i;
+            customers.splice(index, 1);
+            loadAllCustomers();
+            bindRowClickEvents();
+            bindRowDblClickEvents();
+            clearTextFields();
+            return true;
+        }
+    }
+    return false;
+}
