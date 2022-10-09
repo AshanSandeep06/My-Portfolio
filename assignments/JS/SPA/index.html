@@ -77,28 +77,32 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active" style="height: 652px">
-                <img src="assets/img/Carousel_img-01.jpg" class="d-block w-100" alt="..." style="height: 100%; object-fit: cover">
+                <img src="assets/img/Carousel_img-01.jpg" class="d-block w-100" alt="..."
+                     style="height: 100%; object-fit: cover">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item" style="height: 652px">
-                <img src="assets/img/Carousel_img-05.jpg" class="d-block w-100" alt="..." style="height: 100%; object-fit: cover">
+                <img src="assets/img/Carousel_img-05.jpg" class="d-block w-100" alt="..."
+                     style="height: 100%; object-fit: cover">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Some representative placeholder content for the second slide.</p>
                 </div>
             </div>
             <div class="carousel-item" style="height: 652px">
-                <img src="assets/img/Carousel_img-02.jpg" class="d-block w-100" alt="..." style="height: 100%; object-fit: cover">
+                <img src="assets/img/Carousel_img-02.jpg" class="d-block w-100" alt="..."
+                     style="height: 100%; object-fit: cover">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
                 </div>
             </div>
             <div class="carousel-item" style="height: 652px">
-                <img src="assets/img/Carousel_img-06.jpg" class="d-block w-100" alt="..." style="height: 100%; object-fit: cover">
+                <img src="assets/img/Carousel_img-06.jpg" class="d-block w-100" alt="..."
+                     style="height: 100%; object-fit: cover">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Fourth slide label</h5>
                     <p>Some representative placeholder content for the fourth slide.</p>
@@ -135,23 +139,23 @@
             <section class="col-12 mt-4 mb-5">
                 <form class="row g-3">
                     <div class="col-2">
-                        <select id="disabledSelect1" class="form-select">
+                        <select id="cmbSearchCustomer" class="form-select">
                             <option>ID</option>
                             <option>Name</option>
                         </select>
                     </div>
 
                     <div class="col">
-                        <input type="search" class="form-control" id="exampleFormControlInput1"
+                        <input type="search" class="form-control" id="txtSearchCustomer"
                                placeholder="Search Customer">
                     </div>
 
                     <div class="col-1" style="width: max-content">
-                        <button type="button" class="btn btn-outline-primary">Search</button>
+                        <button id="btnSearchCustomer" type="button" class="btn btn-outline-primary">Search</button>
                     </div>
 
                     <div class="col-1" style="width: max-content">
-                        <button type="button" class="btn btn-outline-warning">Clear</button>
+                        <button id="btnSearchCustomerClear" type="button" class="btn btn-outline-warning">Clear</button>
                     </div>
 
                     <div class="col-3">
@@ -160,7 +164,8 @@
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                        <div class="modal fade" id="addNewCustomerModal" tabindex="-1"
+                             aria-labelledby="exampleModalLabel2"
                              aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
@@ -172,27 +177,39 @@
                                     <div class="modal-body">
                                         <form>
                                             <div class="mb-3">
-                                                <label for="customer-id" class="col-form-label">Customer ID:</label>
-                                                <input type="text" class="form-control" id="customer-id">
+                                                <label for="txtCustomerID" class="col-form-label">Customer ID:</label>
+                                                <input type="text" class="form-control" id="txtCustomerID"
+                                                       style="margin-bottom: 3px;">
+                                                <span style="color: red; font-size: 14px;" id="idSpan"></span>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="customer-name" class="col-form-label">Customer Name:</label>
-                                                <input type="text" class="form-control" id="customer-name">
+                                                <label for="txtCustomerName" class="col-form-label">Customer
+                                                    Name:</label>
+                                                <input type="text" class="form-control" id="txtCustomerName"
+                                                       style="margin-bottom: 3px;">
+                                                <span style="color: red; font-size: 14px;" id="nameSpan"></span>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="address" class="col-form-label">Address:</label>
-                                                <input type="text" class="form-control" id="address">
+                                                <label for="txtAddress" class="col-form-label">Address:</label>
+                                                <input type="text" class="form-control" id="txtAddress"
+                                                       style="margin-bottom: 3px;">
+                                                <span style="color: red; font-size: 14px;" id="addressSpan"></span>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="salary" class="col-form-label">Salary:</label>
-                                                <input type="text" class="form-control" id="salary">
+                                                <label for="txtSalary" class="col-form-label">Salary:</label>
+                                                <input type="text" class="form-control" id="txtSalary"
+                                                       style="margin-bottom: 3px;">
+                                                <span style="color: red; font-size: 14px;" id="salarySpan"></span>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
                                         </button>
-                                        <button type="button" class="btn btn-primary">Save</button>
+                                        <button id="btnClearCustomerFields" type="button" class="btn btn-warning">
+                                            Clear
+                                        </button>
+                                        <button id="btnSaveCustomer" type="button" class="btn btn-success">Save</button>
                                     </div>
                                 </div>
                             </div>
@@ -204,7 +221,7 @@
 
             <section class="col-12">
                 <!--Customer Table-->
-                <table class="table table-hover table-striped mt-2">
+                <table id="tblCustomer" class="table table-hover table-striped mt-2">
                     <thead class="text-white" style="background: #17377f;">
                     <tr>
                         <th>Customer ID</th>
@@ -213,42 +230,42 @@
                         <th>Salary</th>
                     </tr>
                     </thead>
-                    <tbdoy>
-                        <tr>
-                            <td>C001</td>
-                            <td>Ashan Sandeep</td>
-                            <td>Galle</td>
-                            <td>150000</td>
-                        </tr>
+                    <tbody>
+                    <tr>
+                        <td>C001</td>
+                        <td>Ashan Sandeep</td>
+                        <td>Galle</td>
+                        <td>150000</td>
+                    </tr>
 
-                        <tr>
-                            <td>C002</td>
-                            <td>Kamal Perera</td>
-                            <td>Galle</td>
-                            <td>100000</td>
-                        </tr>
+                    <tr>
+                        <td>C002</td>
+                        <td>Kamal Perera</td>
+                        <td>Galle</td>
+                        <td>100000</td>
+                    </tr>
 
-                        <tr>
-                            <td>C003</td>
-                            <td>Nimal Bandara</td>
-                            <td>Colombo</td>
-                            <td>25000</td>
-                        </tr>
+                    <tr>
+                        <td>C003</td>
+                        <td>Nimal Bandara</td>
+                        <td>Colombo</td>
+                        <td>25000</td>
+                    </tr>
 
-                        <tr>
-                            <td>C004</td>
-                            <td>Imali Gunawardena</td>
-                            <td>Panadura</td>
-                            <td>50000</td>
-                        </tr>
+                    <tr>
+                        <td>C004</td>
+                        <td>Imali Gunawardena</td>
+                        <td>Panadura</td>
+                        <td>50000</td>
+                    </tr>
 
-                        <tr>
-                            <td>C005</td>
-                            <td>Kasun Perera</td>
-                            <td>Kandy</td>
-                            <td>15000</td>
-                        </tr>
-                    </tbdoy>
+                    <tr>
+                        <td>C005</td>
+                        <td>Kasun Perera</td>
+                        <td>Kandy</td>
+                        <td>15000</td>
+                    </tr>
+                    </tbody>
                 </table>
             </section>
         </section>
@@ -258,36 +275,47 @@
             <section class="col-8 border rounded shadow">
                 <form id="customer-form">
                     <div class="mb-3">
-                        <label for="CId" class="form-label">Customer ID</label>
-                        <input type="text" class="form-control" id="CId" aria-describedby="idHelp" placeholder="C001">
+                        <label for="customerID" class="form-label">Customer ID</label>
+                        <input type="text" class="form-control prevent_tab_key_focus" id="customerID"
+                               aria-describedby="idHelp"
+                               placeholder="C001">
                         <div id="idHelp" class="form-text">Eg :- C001</div>
                     </div>
                     <div class="mb-3">
-                        <label for="CName" class="form-label">Customer Name</label>
-                        <input type="text" class="form-control" id="CName" aria-describedby="nameHelp1"
+                        <label for="customerName" class="form-label">Customer Name</label>
+                        <input type="text" class="form-control prevent_tab_key_focus" id="customerName"
+                               aria-describedby="nameHelp1"
                                placeholder="Nimal Perera">
                         <div id="nameHelp1" class="form-text">At least, Name should be 3 characters long.</div>
                     </div>
                     <div class="mb-3">
-                        <label for="CAddress" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="CAddress" aria-describedby="addressHelp"
+                        <label for="customerAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control prevent_tab_key_focus" id="customerAddress"
+                               aria-describedby="addressHelp"
                                placeholder="Galle">
                         <div id="addressHelp" class="form-text">Both numbers and characters are allowed.</div>
                     </div>
                     <div class="mb-3">
-                        <label for="CSalary" class="form-label">Salary</label>
-                        <input type="text" class="form-control" id="CSalary" aria-describedby="salaryHelp"
+                        <label for="customerSalary" class="form-label">Salary</label>
+                        <input type="text" class="form-control prevent_tab_key_focus" id="customerSalary"
+                               aria-describedby="salaryHelp"
                                placeholder="35000">
                         <div id="salaryHelp" class="form-text">Only numbers are allowed.</div>
                     </div>
                     <div style="display: inline-block" class="me-2">
-                        <button id="updated-btn1" type="submit" class="btn btn-primary">Update</button>
+                        <button style="margin-bottom: 8px;" id="btnUpdateCustomer" type="button"
+                                class="btn btn-primary">Update
+                        </button>
                     </div>
                     <div style="display: inline-block" class="me-2">
-                        <button id="delete-btn1" type="button" class="btn btn-danger">Delete</button>
+                        <button style="margin-bottom: 8px;" id="btnDeleteCustomer" type="button" class="btn btn-danger">
+                            Delete
+                        </button>
                     </div>
                     <div style="display: inline-block">
-                        <button id="clear-btn1" type="button" class="btn btn-warning">Clear</button>
+                        <button style="margin-bottom: 8px;" id="btnClearCustomer" type="button" class="btn btn-warning">
+                            Clear
+                        </button>
                     </div>
                 </form>
             </section>
@@ -312,23 +340,23 @@
             <section class="col-12 mt-4 mb-5">
                 <form class="row g-3">
                     <div class="col-3">
-                        <select id="disabledSelect2" class="form-select">
+                        <select id="cmbSearchItem" class="form-select">
                             <option>Item Code</option>
                             <option>Item Name</option>
                         </select>
                     </div>
 
                     <div class="col">
-                        <input type="search" class="form-control" id="exampleFormControlInput2"
+                        <input type="search" class="form-control" id="txtSearchItem"
                                placeholder="Search Item">
                     </div>
 
                     <div class="col-1" style="width: max-content">
-                        <button type="button" class="btn btn-outline-primary">Search</button>
+                        <button id="btnSearchItem" type="button" class="btn btn-outline-primary">Search</button>
                     </div>
 
                     <div class="col-1" style="width: max-content">
-                        <button type="button" class="btn btn-outline-warning">Clear</button>
+                        <button id="btnSearchItemClear" type="button" class="btn btn-outline-warning">Clear</button>
                     </div>
 
                     <div class="col-2">
@@ -337,7 +365,7 @@
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        <div class="modal fade" id="addNewItemModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                              aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
@@ -349,27 +377,41 @@
                                     <div class="modal-body">
                                         <form>
                                             <div class="mb-3">
-                                                <label for="item-code" class="col-form-label">Item Code:</label>
-                                                <input type="text" class="form-control" id="item-code">
+                                                <label for="txtItemCode" class="col-form-label">Item Code:</label>
+                                                <input type="text" class="form-control prevent_tab_key_focus"
+                                                       id="txtItemCode"
+                                                       style="margin-bottom: 3px;">
+                                                <span style="color: red; font-size: 14px;"></span>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="item-name" class="col-form-label">Item Name:</label>
-                                                <input type="text" class="form-control" id="item-name">
+                                                <label for="txtItemName" class="col-form-label">Item Name:</label>
+                                                <input type="text" class="form-control prevent_tab_key_focus"
+                                                       id="txtItemName"
+                                                       style="margin-bottom: 3px;">
+                                                <span style="color: red; font-size: 14px;"></span>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="item-price" class="col-form-label">Item Price:</label>
-                                                <input type="text" class="form-control" id="item-price">
+                                                <label for="txtUnitPrice" class="col-form-label">Item Price:</label>
+                                                <input type="text" class="form-control prevent_tab_key_focus"
+                                                       id="txtUnitPrice"
+                                                       style="margin-bottom: 3px;">
+                                                <span style="color: red; font-size: 14px;"></span>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="item-qty" class="col-form-label">Item Quantity:</label>
-                                                <input type="text" class="form-control" id="item-qty">
+                                                <label for="txtQtyOnHand" class="col-form-label">Item Quantity:</label>
+                                                <input type="text" class="form-control prevent_tab_key_focus"
+                                                       id="txtQtyOnHand"
+                                                       style="margin-bottom: 3px;">
+                                                <span style="color: red; font-size: 14px;"></span>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
                                         </button>
-                                        <button type="button" class="btn btn-primary">Save</button>
+                                        <button id="btnClearItemFields" type="button" class="btn btn-warning">Clear
+                                        </button>
+                                        <button id="btnSaveItem" type="button" class="btn btn-success">Save</button>
                                     </div>
                                 </div>
                             </div>
@@ -381,7 +423,7 @@
 
             <section class="col-12">
                 <!--Item Table-->
-                <table class="table table-hover table-striped mt-2">
+                <table id="tblItem" class="table table-hover table-striped mt-2">
                     <thead class="text-white" style="background: #17377f;">
                     <tr>
                         <th>Item Code</th>
@@ -390,75 +432,85 @@
                         <th>Qty On Hand</th>
                     </tr>
                     </thead>
-                    <tbdoy>
-                        <tr>
-                            <td>I-001</td>
-                            <td>Rice</td>
-                            <td>400.00</td>
-                            <td>300</td>
-                        </tr>
+                    <tbody>
+                    <tr>
+                        <td>I-001</td>
+                        <td>Rice</td>
+                        <td>400.00</td>
+                        <td>300</td>
+                    </tr>
 
-                        <tr>
-                            <td>I-002</td>
-                            <td>Dhaal</td>
-                            <td>250.00</td>
-                            <td>500</td>
-                        </tr>
+                    <tr>
+                        <td>I-002</td>
+                        <td>Dhaal</td>
+                        <td>250.00</td>
+                        <td>500</td>
+                    </tr>
 
-                        <tr>
-                            <td>I-003</td>
-                            <td>Soap</td>
-                            <td>350.00</td>
-                            <td>1000</td>
-                        </tr>
+                    <tr>
+                        <td>I-003</td>
+                        <td>Soap</td>
+                        <td>350.00</td>
+                        <td>1000</td>
+                    </tr>
 
-                        <tr>
-                            <td>I-004</td>
-                            <td>Biscuits</td>
-                            <td>120.00</td>
-                            <td>600</td>
-                        </tr>
-                    </tbdoy>
+                    <tr>
+                        <td>I-004</td>
+                        <td>Biscuits</td>
+                        <td>120.00</td>
+                        <td>600</td>
+                    </tr>
+                    </tbody>
                 </table>
             </section>
         </section>
 
-        <!--Customer Manage Form-->
+        <!--Item Manage Form-->
         <section class="col-5 row justify-content-end">
             <section class="col-8 border rounded shadow">
                 <form id="item-form">
                     <div class="mb-3">
-                        <label for="iCode" class="form-label">Item Code</label>
-                        <input type="text" class="form-control" id="iCode" aria-describedby="codeHelp"
+                        <label for="itemCode" class="form-label">Item Code</label>
+                        <input type="text" class="form-control prevent_tab_key_focus" id="itemCode"
+                               aria-describedby="codeHelp"
                                placeholder="I-001">
                         <div id="codeHelp" class="form-text">Eg :- I-001</div>
                     </div>
                     <div class="mb-3">
-                        <label for="iName" class="form-label">Item Name</label>
-                        <input type="text" class="form-control" id="iName" aria-describedby="nameHelp"
+                        <label for="itemName" class="form-label">Item Name</label>
+                        <input type="text" class="form-control prevent_tab_key_focus" id="itemName"
+                               aria-describedby="nameHelp"
                                placeholder="Soap">
                         <div id="nameHelp" class="form-text">At least, Name should be 3 characters long.</div>
                     </div>
                     <div class="mb-3">
-                        <label for="iPrice" class="form-label">Price (LKR)</label>
-                        <input type="text" class="form-control" id="iPrice" aria-describedby="priceHelp"
+                        <label for="unitPrice" class="form-label">Price (LKR)</label>
+                        <input type="text" class="form-control prevent_tab_key_focus" id="unitPrice"
+                               aria-describedby="priceHelp"
                                placeholder="350.00">
                         <div id="priceHelp" class="form-text">Only numbers are allowed.</div>
                     </div>
                     <div class="mb-3">
-                        <label for="iQty" class="form-label">Quantity</label>
-                        <input type="text" class="form-control" id="iQty" aria-describedby="qtyHelp"
+                        <label for="qtyOnHand" class="form-label">Quantity</label>
+                        <input type="text" class="form-control prevent_tab_key_focus" id="qtyOnHand"
+                               aria-describedby="qtyHelp"
                                placeholder="1000">
                         <div id="qtyHelp" class="form-text">Only integer numbers are allowed.</div>
                     </div>
                     <div style="display: inline-block" class="me-2">
-                        <button id="updated-btn2" type="submit" class="btn btn-primary">Update</button>
+                        <button id="btnUpdateItem" style="margin-bottom: 8px;" type="submit" class="btn btn-primary">
+                            Update
+                        </button>
                     </div>
                     <div style="display: inline-block" class="me-2">
-                        <button id="delete-btn2" type="button" class="btn btn-danger">Delete</button>
+                        <button id="btnDeleteItem" style="margin-bottom: 8px;" type="button" class="btn btn-danger">
+                            Delete
+                        </button>
                     </div>
                     <div style="display: inline-block">
-                        <button id="clear-btn2" type="button" class="btn btn-warning">Clear</button>
+                        <button id="btnClearItem" style="margin-bottom: 8px;" type="button" class="btn btn-warning">
+                            Clear
+                        </button>
                     </div>
                 </form>
             </section>
@@ -485,8 +537,8 @@
             </div>
             <div class="row mt-2">
                 <div class="col-12 col-md-6 col-lg-6">
-                    <label for="customerId" class="form-label">Customer ID :</label>
-                    <select aria-label="Default select example" class="form-select" id="customerId">
+                    <label for="cId" class="form-label">Customer ID :</label>
+                    <select aria-label="Default select example" class="form-select" id="cId">
                         <option selected disabled>Select Customer</option>
                         <option value="1">C001</option>
                         <option value="2">C002</option>
@@ -495,18 +547,18 @@
                     </select>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
-                    <label for="customerName" class="form-label">Name :</label>
-                    <input class="form-control" disabled id="customerName" type="text">
+                    <label for="cName" class="form-label">Name :</label>
+                    <input class="form-control" disabled id="cName" type="text">
                 </div>
             </div>
             <div class="row mt-2 mb-2">
                 <div class="col-12 col-md-6 col-lg-6">
-                    <label for="customerAddress" class="form-label">Address :</label>
-                    <input class="form-control" disabled id="customerAddress" type="text">
+                    <label for="cAddress" class="form-label">Address :</label>
+                    <input class="form-control" disabled id="cAddress" type="text">
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
-                    <label for="customerSalary" class="form-label">Salary :</label>
-                    <input class="form-control" disabled id="customerSalary" type="text">
+                    <label for="cSalary" class="form-label">Salary :</label>
+                    <input class="form-control" disabled id="cSalary" type="text">
                 </div>
             </div>
         </section>
@@ -516,8 +568,8 @@
             <h3 class="text-center bg-primary p-2 text-light rounded-3 fs-4">Select Items</h3>
             <div class="row mt-1">
                 <div class="col-12 col-md-6 col-lg-6">
-                    <label for="itemCode" class="form-label">Item Code :</label>
-                    <select aria-label="Default select example" class="form-select" id="itemCode">
+                    <label for="iCode" class="form-label">Item Code :</label>
+                    <select aria-label="Default select example" class="form-select" id="iCode">
                         <option selected disabled>Select Item</option>
                         <option value="1">I-001</option>
                         <option value="2">I-002</option>
@@ -526,18 +578,18 @@
                     </select>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
-                    <label for="itemName" class="form-label">Item Name :</label>
-                    <input class="form-control" disabled id="itemName" type="text">
+                    <label for="iName" class="form-label">Item Name :</label>
+                    <input class="form-control" disabled id="iName" type="text">
                 </div>
             </div>
             <div class="row mt-2">
                 <div class="col-12 col-md-6 col-lg-6">
-                    <label for="itemPrice" class="form-label">Unit Price :</label>
-                    <input class="form-control" disabled id="itemPrice" type="text">
+                    <label for="iPrice" class="form-label">Unit Price :</label>
+                    <input class="form-control" disabled id="iPrice" type="text">
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
-                    <label for="qtyOnHand" class="form-label">Qty On Hand :</label>
-                    <input class="form-control" disabled id="qtyOnHand" type="text">
+                    <label for="qty" class="form-label">Qty On Hand :</label>
+                    <input class="form-control" disabled id="qty" type="text">
                 </div>
             </div>
             <div class="row mt-2 mb-4">
