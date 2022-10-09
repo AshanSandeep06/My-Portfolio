@@ -409,11 +409,11 @@ $('#qtyOnHand').on('keydown', function (event) {
     }
 });
 
-$("#txtItemCode,#txtItemName,#txtUnitPrice,#txtQtyOnHand").on('keyup', function () {
+$("#itemCode,#itemName,#unitPrice,#qtyOnHand").on('keyup', function () {
     checkValidation(updateAndDeleteItemValidations, $('#updated-btn'));
 });
 
-$("#txtItemCode,#txtItemName,#txtUnitPrice,#txtQtyOnHand").on('blur', function () {
+$("#itemCode,#itemName,#unitPrice,#qtyOnHand").on('blur', function () {
     checkValidation(updateAndDeleteItemValidations, $('#updated-btn'));
 });
 
