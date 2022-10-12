@@ -686,50 +686,18 @@
 
 <!--Bootstrap for js-->
 <script src="assets/js/bootstrap.min.js"></script>
+
 <!--jQuery for javaScript-->
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 
-<script>
-    /*This will only run once, When the DOM is ready for JavaScript code to execute.*/
-    $(function () {
-        $('#dashBoardSection').css("display", "block");
-        $('#customerSection').css("display", "none");
-        $('#itemSection').css("display", "none");
-        $('#placeOrderSection').css("display", "none");
-    });
+<!--DashBoard JS-->
+<script src="controller/DashboardController.js"></script>
 
-    /*When the Home button clicked*/
-    $('#homeBtn').click(function () {
-        $('#dashBoardSection').css("display", "block");
-        $('#customerSection').css("display", "none");
-        $('#itemSection').css("display", "none");
-        $('#placeOrderSection').css("display", "none");
-    });
+<!--Customer JS-->
+<script src="controller/CustomerController.js"></script>
 
-    /*When the Customer button clicked*/
-    $('#customerBtn').click(function () {
-        $('#dashBoardSection').css("display", "none");
-        $('#customerSection').css("display", "block");
-        $('#itemSection').css("display", "none");
-        $('#placeOrderSection').css("display", "none");
-    });
-
-    /*When the Item button clicked*/
-    $('#itemBtn').click(function () {
-        $('#dashBoardSection').css("display", "none");
-        $('#customerSection').css("display", "none");
-        $('#itemSection').css("display", "block");
-        $('#placeOrderSection').css("display", "none");
-    });
-
-    /*When the Place Order button clicked*/
-    $('#placeOrderBtn').click(function () {
-        $('#dashBoardSection').css("display", "none");
-        $('#customerSection').css("display", "none");
-        $('#itemSection').css("display", "none");
-        $('#placeOrderSection').css("display", "block");
-    });
-</script>
+<!--Item JS-->
+<script src="controller/ItemController.js"></script>
 
 </body>
 </html>
