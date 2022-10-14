@@ -10,6 +10,10 @@ $(document).ready(function (){
     $('body').children(':not(#loader,#extra-div)').css('display','none');
 });
 
+/*$(function (){
+
+});*/
+
 /* ------------------------ Projects Section -------------------- */
 $("#btnProjectsViewMore").on("click", function () {
     $("#btnProjectsViewMore>a").attr("target", "_blank");

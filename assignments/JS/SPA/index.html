@@ -160,7 +160,7 @@
 
                     <div class="col-3">
                         <button type="button" class="btn btn-success align-self-end" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal2">+ Add Customer
+                                data-bs-target="#addNewCustomerModal">+ Add Customer
                         </button>
 
                         <!-- Modal -->
@@ -178,26 +178,26 @@
                                         <form>
                                             <div class="mb-3">
                                                 <label for="txtCustomerID" class="col-form-label">Customer ID:</label>
-                                                <input type="text" class="form-control" id="txtCustomerID"
+                                                <input type="text" class="form-control prevent_tab_key_focus" id="txtCustomerID"
                                                        style="margin-bottom: 3px;">
                                                 <span style="color: red; font-size: 14px;" id="idSpan"></span>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="txtCustomerName" class="col-form-label">Customer
                                                     Name:</label>
-                                                <input type="text" class="form-control" id="txtCustomerName"
+                                                <input type="text" class="form-control prevent_tab_key_focus" id="txtCustomerName"
                                                        style="margin-bottom: 3px;">
                                                 <span style="color: red; font-size: 14px;" id="nameSpan"></span>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="txtAddress" class="col-form-label">Address:</label>
-                                                <input type="text" class="form-control" id="txtAddress"
+                                                <input type="text" class="form-control prevent_tab_key_focus" id="txtAddress"
                                                        style="margin-bottom: 3px;">
                                                 <span style="color: red; font-size: 14px;" id="addressSpan"></span>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="txtSalary" class="col-form-label">Salary:</label>
-                                                <input type="text" class="form-control" id="txtSalary"
+                                                <input type="text" class="form-control prevent_tab_key_focus" id="txtSalary"
                                                        style="margin-bottom: 3px;">
                                                 <span style="color: red; font-size: 14px;" id="salarySpan"></span>
                                             </div>
@@ -689,6 +689,12 @@
 
 <!--jQuery for javaScript-->
 <script src="assets/js/jquery-3.6.1.min.js"></script>
+
+<!-- Swal CDN link -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!--Db JS-->
+<script src="db/DB.js"></script>
 
 <!--DashBoard JS-->
 <script src="controller/DashboardController.js"></script>
