@@ -16,13 +16,14 @@ $("#btnSaveCustomer").click(function () {
     if (customerID.length !== 0 && customerName.length !== 0 && cusAddress.length !== 0 && cusSalary.length !== 0) {
         if (searchCustomer($('#txtCustomerID').val()) == null) {
             /* Customer Object */
-            customerObject['id'] = customerID;
-            customerObject["name"] = customerName;
-            customerObject['address'] = cusAddress;
-            customerObject['salary'] = cusSalary;
+            var cusObj = Object.assign({}, customerObject);
+            cusObj['id'] = customerID;
+            cusObj["name"] = customerName;
+            cusObj['address'] = cusAddress;
+            cusObj['salary'] = cusSalary;
 
             /* Newly added customer was stored in this array */
-            customers.push(customerObject);
+            customers.push(cusObj);
 
             // Customer was saved alert
             Swal.fire({
@@ -34,8 +35,8 @@ $("#btnSaveCustomer").click(function () {
             })
 
             loadAllCustomers();
-            bindRowClickEvents($('#tblCustomer > tbody > tr'));
             clearCustomerModalFields();
+            bindRowClickEvents($("#tblCustomer > tbody > tr"));
             bindRowDblClickEvents($("#tblCustomer > tbody > tr"));
         } else {
             Swal.fire({
@@ -209,7 +210,7 @@ function clearCustomerModalFields() {
     $('#btnSaveCustomer').attr('disabled', true);
 }
 
-$("#btnClear").click(function () {
+$("#btnClearCustomer").click(function () {
     clearCustomerTextFields();
 });
 
@@ -219,14 +220,20 @@ $("#btnSearchCustomerClear").click(function () {
 
 /* set customer data to the fields when hover table row */
 function bindRowClickEvents(tblRow) {
+
+
+    console.log("HHH");
+
     tblRow.on('click', function (event) {
         if ($('tbody').parent().attr('id') === "tblCustomer") {
-            var cusObject = {
-                "id": $(this).children(":eq(0)").text(),
-                "name": $(this).children(":eq(1)").text(),
-                "address": $(this).children(":eq(2)").text(),
-                "salary": $(this).children(":eq(3)").text()
-            };
+            var cusObject = Object.assign({}, customerObject);
+            cusObject['id'] = $(this).children(":eq(0)").text();
+            cusObject["name"] = $(this).children(":eq(1)").text();
+            cusObject['address'] = $(this).children(":eq(2)").text();
+            cusObject['salary'] = $(this).children(":eq(3)").text();
+
+            console.log(cusObject.id + " " + cusObject.name);
+
             setCustomerData(cusObject);
         } else {
 
@@ -236,13 +243,14 @@ function bindRowClickEvents(tblRow) {
 
 /* Deleted the clicked table row if the row is double clicked function */
 function bindRowDblClickEvents(tblRow) {
+    console.log("this is dblClick");
     tblRow.on('dblclick', function () {
         $(this).remove();
     });
 }
 
 /* Clear button in Modal */
-$('#btnClearFields').on('click', function () {
+$('#btnClearCustomerFields').on('click', function () {
     clearCustomerModalFields();
 });
 

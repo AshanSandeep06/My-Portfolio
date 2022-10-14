@@ -235,40 +235,40 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>C001</td>
-                        <td>Ashan Sandeep</td>
-                        <td>Galle</td>
-                        <td>150000</td>
-                    </tr>
+                    <!-- <tr>
+                         <td>C001</td>
+                         <td>Ashan Sandeep</td>
+                         <td>Galle</td>
+                         <td>150000</td>
+                     </tr>
 
-                    <tr>
-                        <td>C002</td>
-                        <td>Kamal Perera</td>
-                        <td>Galle</td>
-                        <td>100000</td>
-                    </tr>
+                     <tr>
+                         <td>C002</td>
+                         <td>Kamal Perera</td>
+                         <td>Galle</td>
+                         <td>100000</td>
+                     </tr>
 
-                    <tr>
-                        <td>C003</td>
-                        <td>Nimal Bandara</td>
-                        <td>Colombo</td>
-                        <td>25000</td>
-                    </tr>
+                     <tr>
+                         <td>C003</td>
+                         <td>Nimal Bandara</td>
+                         <td>Colombo</td>
+                         <td>25000</td>
+                     </tr>
 
-                    <tr>
-                        <td>C004</td>
-                        <td>Imali Gunawardena</td>
-                        <td>Panadura</td>
-                        <td>50000</td>
-                    </tr>
+                     <tr>
+                         <td>C004</td>
+                         <td>Imali Gunawardena</td>
+                         <td>Panadura</td>
+                         <td>50000</td>
+                     </tr>
 
-                    <tr>
-                        <td>C005</td>
-                        <td>Kasun Perera</td>
-                        <td>Kandy</td>
-                        <td>15000</td>
-                    </tr>
+                     <tr>
+                         <td>C005</td>
+                         <td>Kasun Perera</td>
+                         <td>Kandy</td>
+                         <td>15000</td>
+                     </tr>-->
                     </tbody>
                 </table>
             </section>
@@ -281,29 +281,25 @@
                     <div class="mb-3">
                         <label for="customerID" class="form-label">Customer ID</label>
                         <input type="text" class="form-control prevent_tab_key_focus" id="customerID"
-                               aria-describedby="idHelp"
-                               placeholder="C001">
+                               aria-describedby="idHelp">
                         <div id="idHelp" class="form-text">Eg :- C001</div>
                     </div>
                     <div class="mb-3">
                         <label for="customerName" class="form-label">Customer Name</label>
                         <input type="text" class="form-control prevent_tab_key_focus" id="customerName"
-                               aria-describedby="nameHelp1"
-                               placeholder="Nimal Perera">
+                               aria-describedby="nameHelp1">
                         <div id="nameHelp1" class="form-text">At least, Name should be 3 characters long.</div>
                     </div>
                     <div class="mb-3">
                         <label for="customerAddress" class="form-label">Address</label>
                         <input type="text" class="form-control prevent_tab_key_focus" id="customerAddress"
-                               aria-describedby="addressHelp"
-                               placeholder="Galle">
+                               aria-describedby="addressHelp">
                         <div id="addressHelp" class="form-text">Both numbers and characters are allowed.</div>
                     </div>
                     <div class="mb-3">
                         <label for="customerSalary" class="form-label">Salary</label>
                         <input type="text" class="form-control prevent_tab_key_focus" id="customerSalary"
-                               aria-describedby="salaryHelp"
-                               placeholder="35000">
+                               aria-describedby="salaryHelp">
                         <div id="salaryHelp" class="form-text">Only numbers are allowed.</div>
                     </div>
                     <div style="display: inline-block" class="me-2">
@@ -365,7 +361,7 @@
 
                     <div class="col-2">
                         <button type="button" class="btn btn-success align-self-end" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">+ Add Item
+                                data-bs-target="#addNewItemModal">+ Add Item
                         </button>
 
                         <!-- Modal -->
@@ -703,17 +699,17 @@
 <!--DashBoard JS-->
 <script src="controller/DashboardController.js"></script>
 
-<!--Customer JS-->
-<script src="controller/CustomerController.js"></script>
-
 <!--Customer Model JS-->
 <script src="model/Customer.js"></script>
 
-<!--Item JS-->
-<script src="controller/ItemController.js"></script>
+<!--Customer JS-->
+<script src="controller/CustomerController.js"></script>
 
 <!--Item Model JS-->
 <script src="model/Item.js"></script>
+
+<!--Item JS-->
+<script src="controller/ItemController.js"></script>
 
 </body>
 </html>

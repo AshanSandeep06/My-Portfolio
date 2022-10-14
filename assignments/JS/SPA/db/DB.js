@@ -1,3 +1,3 @@
-/* Customer Object Array */
+/* Customer Objects Array */
 var customers = [];
 

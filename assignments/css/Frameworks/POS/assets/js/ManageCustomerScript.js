@@ -39,7 +39,7 @@ $("#btnSaveCustomer").click(function () {
             })
 
             loadAllCustomers();
-            bindRowClickEvents($('#tblCustomer > tbody > tr'));
+            bindRowClickEvents($("#tblCustomer > tbody > tr"));
             clearCustomerModalFields();
             bindRowDblClickEvents($("#tblCustomer > tbody > tr"));
         } else {
