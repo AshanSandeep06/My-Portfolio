@@ -219,20 +219,18 @@ $("#btnSearchCustomerClear").click(function () {
 });
 
 /* set customer data to the fields when hover table row */
-function bindRowClickEvents(tblRow) {
+function bindRowClickEvents(tableRow) {
 
 
     console.log("HHH");
 
-    tblRow.on('click', function (event) {
+    tableRow.on('click', function (event) {
         if ($('tbody').parent().attr('id') === "tblCustomer") {
             var cusObject = Object.assign({}, customerObject);
             cusObject['id'] = $(this).children(":eq(0)").text();
             cusObject["name"] = $(this).children(":eq(1)").text();
             cusObject['address'] = $(this).children(":eq(2)").text();
             cusObject['salary'] = $(this).children(":eq(3)").text();
-
-            console.log(cusObject.id + " " + cusObject.name);
 
             setCustomerData(cusObject);
         } else {

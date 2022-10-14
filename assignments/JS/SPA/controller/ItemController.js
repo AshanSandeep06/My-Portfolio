@@ -1,8 +1,5 @@
 /* -------------------------------- Manage Item Form ------------------------------------*/
 
-/* Item Object Array */
-var items = [];
-
 /* Save Item function */
 $("#btnSaveItem").click(function () {
     let itemCode = "";
@@ -19,15 +16,14 @@ $("#btnSaveItem").click(function () {
     if (itemCode.length !== 0 && itemName.length !== 0 && unitPrice.length !== 0 && qtyOnHand.length !== 0) {
         if (searchItem($('#txtItemCode').val()) == null) {
             /* Item Object */
-            var itemObject = {
-                itemCode: itemCode,
-                itemName: itemName,
-                unitPrice: unitPrice,
-                qtyOnHand: qtyOnHand
-            }
+            var newItem = Object.assign({}, itemObject);
+            newItem['itemCode'] = itemCode;
+            newItem["itemName"] = itemName;
+            newItem['unitPrice'] = unitPrice;
+            newItem['qtyOnHand'] = qtyOnHand;
 
             /* Newly added item was stored in this array */
-            items.push(itemObject);
+            items.push(newItem);
 
             // Item was saved alert
             Swal.fire({
@@ -188,7 +184,7 @@ function setItemData(i1) {
     $("#qtyOnHand").val(i1.qtyOnHand);
 
     checkValidation(saveItemOptionValidations, $('#btnSaveItem'));
-    checkValidation(updateAndDeleteItemValidations, $('#updated-btn'));
+    checkValidation(updateAndDeleteItemValidations, $('#btnUpdateItem'));
 }
 
 function clearItemTextFields() {
@@ -197,7 +193,7 @@ function clearItemTextFields() {
     $("#unitPrice").val('');
     $("#qtyOnHand").val('');
     $('#itemCode,#itemName,#unitPrice,#qtyOnHand').css("border", "1px solid #ced4da");
-    $('#updated-btn').attr('disabled', true);
+    $('#btnUpdateItem').attr('disabled', true);
 }
 
 function clearItemModalFields() {
@@ -211,7 +207,7 @@ function clearItemModalFields() {
     $('#btnSaveItem').attr('disabled', true);
 }
 
-$("#btnClear").click(function () {
+$("#btnClearItem").click(function () {
     clearItemTextFields();
 });
 
@@ -223,13 +219,13 @@ $("#btnSearchItemClear").click(function () {
 function bindRowClickEvents(tblRow) {
     tblRow.on('click', function (event) {
         if ($('tbody').parent().attr('id') === "tblItem") {
-            var itemObject = {
+            var itemObj = {
                 "itemCode": $(this).children(":eq(0)").text(),
                 "itemName": $(this).children(":eq(1)").text(),
                 "unitPrice": $(this).children(":eq(2)").text(),
                 "qtyOnHand": $(this).children(":eq(3)").text()
             };
-            setItemData(itemObject);
+            setItemData(itemObj);
         } else {
 
         }
@@ -410,15 +406,15 @@ $('#qtyOnHand').on('keydown', function (event) {
 });
 
 $("#itemCode,#itemName,#unitPrice,#qtyOnHand").on('keyup', function () {
-    checkValidation(updateAndDeleteItemValidations, $('#updated-btn'));
+    checkValidation(updateAndDeleteItemValidations, $('#btnUpdateItem'));
 });
 
 $("#itemCode,#itemName,#unitPrice,#qtyOnHand").on('blur', function () {
-    checkValidation(updateAndDeleteItemValidations, $('#updated-btn'));
+    checkValidation(updateAndDeleteItemValidations, $('#btnUpdateItem'));
 });
 
-$("#updated-btn").attr('disabled', true);
-$("#delete-btn").attr('disabled', true);
+$("#btnUpdateItem").attr('disabled', true);
+$("#btnDeleteItem").attr('disabled', true);
 
 /* Update Item Function */
 $('#btnUpdateItem').click(function (event) {
