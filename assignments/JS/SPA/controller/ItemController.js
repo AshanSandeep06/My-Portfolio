@@ -215,30 +215,6 @@ $("#btnSearchItemClear").click(function () {
     $("#txtSearchItem").val('');
 });
 
-/* set item data to the fields when hover table row */
-function bindRowClickEvents(tblRow) {
-    tblRow.on('click', function (event) {
-        if ($('tbody').parent().attr('id') === "tblItem") {
-            var itemObj = {
-                "itemCode": $(this).children(":eq(0)").text(),
-                "itemName": $(this).children(":eq(1)").text(),
-                "unitPrice": $(this).children(":eq(2)").text(),
-                "qtyOnHand": $(this).children(":eq(3)").text()
-            };
-            setItemData(itemObj);
-        } else {
-
-        }
-    });
-}
-
-/* Deleted the clicked table row if the row is double clicked */
-function bindRowDblClickEvents(tblRow) {
-    tblRow.on('dblclick', function () {
-        $(this).remove();
-    });
-}
-
 /* Clear button in Modal */
 $('#btnClearFields').on('click', function () {
     clearItemModalFields();

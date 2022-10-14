@@ -220,28 +220,27 @@ $("#btnSearchCustomerClear").click(function () {
 
 /* set customer data to the fields when hover table row */
 function bindRowClickEvents(tableRow) {
-
-
-    console.log("HHH");
-
     tableRow.on('click', function (event) {
-        if ($('tbody').parent().attr('id') === "tblCustomer") {
+        if (tableRow.parent().parent().attr('id') === "tblCustomer") {
             var cusObject = Object.assign({}, customerObject);
             cusObject['id'] = $(this).children(":eq(0)").text();
             cusObject["name"] = $(this).children(":eq(1)").text();
             cusObject['address'] = $(this).children(":eq(2)").text();
             cusObject['salary'] = $(this).children(":eq(3)").text();
-
             setCustomerData(cusObject);
         } else {
-
+            var itemObj = Object.assign({}, itemObject);
+            itemObj['itemCode'] = $(this).children(":eq(0)").text();
+            itemObj["itemName"] = $(this).children(":eq(1)").text();
+            itemObj['unitPrice'] = $(this).children(":eq(2)").text();
+            itemObj['qtyOnHand'] = $(this).children(":eq(3)").text();
+            setItemData(itemObj);
         }
     });
 }
 
 /* Deleted the clicked table row if the row is double clicked function */
 function bindRowDblClickEvents(tblRow) {
-    console.log("this is dblClick");
     tblRow.on('dblclick', function () {
         $(this).remove();
     });
