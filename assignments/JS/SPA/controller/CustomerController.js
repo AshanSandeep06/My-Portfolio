@@ -16,12 +16,10 @@ $("#btnSaveCustomer").click(function () {
     if (customerID.length !== 0 && customerName.length !== 0 && cusAddress.length !== 0 && cusSalary.length !== 0) {
         if (searchCustomer($('#txtCustomerID').val()) == null) {
             /* Customer Object */
-            var customerObject = {
-                id: customerID,
-                name: customerName,
-                address: cusAddress,
-                salary: cusSalary
-            }
+            customerObject['id'] = customerID;
+            customerObject["name"] = customerName;
+            customerObject['address'] = cusAddress;
+            customerObject['salary'] = cusSalary;
 
             /* Newly added customer was stored in this array */
             customers.push(customerObject);
