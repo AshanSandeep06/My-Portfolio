@@ -13,6 +13,14 @@ My Personal Website
 * Mock-up URL : <a href="https://www.figma.com/file/DrdxbKV9803yk52JxFcD2l/Portfolio-Mock-up?node-id=0%3A1" target="_blank">https://www.figma.com/file/DrdxbKV9803yk52JxFcD2l/Portfolio-Mock-up?node-id=0%3A1</a>
 # 
 
+# SPA-POS System
+
+This is the SPA-POS Assignment
+# 
+
+* GitHub Page : <a href="https://ashansandeep06.github.io/My-Portfolio/assignments/JS/SPA" target="_blank">https://ashansandeep06.github.io/My-Portfolio/assignments/JS/SPA</a>
+
+# 
 
 
 # Web POS System
@@ -36,6 +44,14 @@ This is the Calculator Assignment
 * GitHub Page : <a href="https://ashansandeep06.github.io/My-Portfolio/assignments/css/Frameworks/POS" target="_blank">https://ashansandeep06.github.io/My-Portfolio/assignments/JS/Calculator</a>
 
 # 
+
+*Technologies*
+* Html
+* CSS
+* JavaScript
+* Bootstrap
+* jQuery
+
 
 #### Clone this repository ✅
 ```md
