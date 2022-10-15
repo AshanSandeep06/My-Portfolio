@@ -1,5 +1,14 @@
 /* ----------------------- js file for Projects and Assignments Page ----------------------- */
 
+$(window).on('load', function () {
+    $('#loader,#extra-div').fadeOut(1000);
+    $('body').children(':not(#loader,#extra-div)').fadeIn(3000);
+});
+
+$(document).ready(function (){
+    $('body').children(':not(#loader,#extra-div)').css('display','none');
+});
+
 /* ------------------------ Projects Page -------------------- */
 $('#btnProject1').on('click', function () {
     $("#btnProject1>a").attr("target", "_blank");
