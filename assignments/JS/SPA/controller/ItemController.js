@@ -422,15 +422,15 @@ $('#txtSearchItem').on('keyup', function () {
     if ($("#cmbSearchItem").val() === "Item Code") {
         if ($("#txtSearchItem").val().length !== 0) {
             if (itemCodePattern.test($('#txtSearchItem').val())) {
-                $('#delete-btn').attr('disabled', false);
+                $('#btnDeleteItem').attr('disabled', false);
             } else {
-                $('#delete-btn').attr('disabled', true);
+                $('#btnDeleteItem').attr('disabled', true);
             }
         } else {
-            $('#delete-btn').attr('disabled', true);
+            $('#btnDeleteItem').attr('disabled', true);
         }
     } else {
-        $('#delete-btn').attr('disabled', true);
+        $('#btnDeleteItem').attr('disabled', true);
     }
 });
 
