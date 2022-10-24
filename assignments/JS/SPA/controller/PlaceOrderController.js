@@ -83,6 +83,8 @@ $('#cmbItemCode').on('click', function () {
     }
 });
 
+// ------------------------------------------------------------------------------------------------------------------
+
 // Checked whether the passed itemCode already exist in the Cart Table
 function isExists(itemCode) {
     for (let tm in cartDetails) {
@@ -106,8 +108,18 @@ function loadAllCartDetails() {
 // Items were added to the Cart Table
 $('#btnAddToCart').click(function () {
     var quantityValidation = /^[1-9][0-9]{0,4}$/;
+
     if (!quantityValidation.test($('#txtQuantity').val()) || parseInt($('#txtQuantity').val()) <= 0 ||
         parseInt($('#txtQuantity').val()) > parseInt($('#QuantityOnHand').val())) {
+        // new Alert(Alert.AlertType.ERROR, "Invalid qty").show();
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'You has entered a Invalid Quantity.!',
+            footer: 'Why do I have this issue?'
+        })
+
         $('#txtQuantity').focus();
         return;
     }
@@ -145,17 +157,33 @@ $('#btnAddToCart').click(function () {
                         loadAllCartDetails();
                     }
                 } else {
-
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Invalid Quantity...',
+                        text: 'Please enter a valid quantity..!'
+                    })
                 }
             } else {
-
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Failed to adding items..',
+                    text: 'Please select an item & input item Quantity..!'
+                })
             }
         } else {
-
+            Swal.fire({
+                icon: 'error',
+                title: 'Out Of Stock..',
+                text: 'This item has zero quantity, Therefore Choose another item..!'
+            })
         }
 
     } catch (e) {
-        console.log(e.message);
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
     }
 
     $('#btnAddToCart').attr('disabled', true);
