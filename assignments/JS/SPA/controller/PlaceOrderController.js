@@ -1,5 +1,16 @@
 /* ----------------------------------- Place Order Form ------------------------------------ */
 
+// Global variables
+let itemCode;
+let itemName;
+let unitPrice;
+let qtyOnHand;
+let orderedQuantity;
+
+let subTotal;
+let discount;
+let totalCost;
+
 // Disabled the AddToCart and PlaceOrder buttons
 $('#btnAddToCart').attr('disabled', true);
 $('#btnPlaceOrder').attr('disabled', true);
@@ -71,3 +82,23 @@ $('#cmbItemCode').on('click', function () {
         }
     }
 });
+
+// ------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
