@@ -3,5 +3,5 @@ var cartTMObject = {
     itemName: '',
     unitPrice: 0.00,
     quantity: 0,
-    totalCost: 0.00
+    total: 0.00
 }

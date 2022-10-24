@@ -100,7 +100,7 @@ function loadAllCartDetails() {
     $("#tblCart>tbody").empty();
 
     for (let i = 0; i < cartDetails.length; i++) {
-        var tblRow = `<tr><td>${cartDetails[i].itemCode}</td><td>${cartDetails[i].itemName}</td><td>${cartDetails[i].unitPrice}</td><td>${cartDetails[i].quantity}</td><td>${cartDetails[i].totalCost}</td></tr>`;
+        var tblRow = `<tr><td>${cartDetails[i].itemCode}</td><td>${cartDetails[i].itemName}</td><td>${cartDetails[i].unitPrice}</td><td>${cartDetails[i].quantity}</td><td>${cartDetails[i].total}</td></tr>`;
         $("#tblCart>tbody").append(tblRow);
     }
 }
@@ -128,6 +128,7 @@ $('#btnAddToCart').click(function () {
         if (parseInt($('#QuantityOnHand').val()) > 0) {
             if ($('#cmbItemCode').val() !== "Select Item" && $('#txtQuantity').val() !== '') {
                 if (quantityValidation.test($('#txtQuantity').val())) {
+                    var total = 0;
                     itemCode = $('#cmbItemCode').val();
                     itemName = $('#iName').val();
                     unitPrice = parseFloat($('#iPrice').val()).toFixed(2);
@@ -135,22 +136,21 @@ $('#btnAddToCart').click(function () {
                     orderedQuantity = parseInt($('#txtQuantity').val());
 
                     discount = parseFloat($('#txtDiscount').val());
-                    subTotal = unitPrice * orderedQuantity;
-                    totalCost = parseFloat(subTotal).toFixed(2);
+                    total = (unitPrice * orderedQuantity).toFixed(2);
 
                     var tmIsExist = isExists($('#cmbItemCode').val());
 
                     if (tmIsExist != null) {
                         tmIsExist.quantity = tmIsExist.quantity + orderedQuantity;
-                        totalCost = tmIsExist.quantity * unitPrice;    /* SURE Na */
-                        tmIsExist.totalCost = totalCost;
+                        total = (tmIsExist.quantity * unitPrice).toFixed(2);
+                        tmIsExist.total = total;
                     } else {
                         var cartTm = Object.assign({}, cartTMObject);
                         cartTm.itemCode = itemCode;
                         cartTm.itemName = itemName;
                         cartTm.unitPrice = unitPrice;
                         cartTm.quantity = orderedQuantity;
-                        cartTm.totalCost = totalCost;
+                        cartTm.total = total;
 
                         cartDetails.push(cartTm);
 
@@ -187,21 +187,9 @@ $('#btnAddToCart').click(function () {
     }
 
     $('#btnAddToCart').attr('disabled', true);
+    calculateTotalCost();
+    // $('#tblCart').refresh();
     $('#cmbItemCode').focus();
+    // clearItemFields();
+    // enableOrDisablePlaceOrderButton();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
