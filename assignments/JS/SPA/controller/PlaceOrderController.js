@@ -105,6 +105,19 @@ function loadAllCartDetails() {
     }
 }
 
+// Calculates totalCost of the Ordered items
+function calculateTotalCost() {
+    for (let tm in cartDetails) {
+        subTotal += tm.total;
+    }
+    $('#lblSubTotal').val(subTotal);
+    // discount = parseFloat($('#txtDiscount').val()).toFixed(2);
+    // totalCost = (subTotal - discount).toFixed(2);
+
+    // $('#txtDiscount').val(discount);
+    // $('#txtTotalCost').val(totalCost);
+}
+
 // Items were added to the Cart Table
 $('#btnAddToCart').click(function () {
     var quantityValidation = /^[1-9][0-9]{0,4}$/;
