@@ -60,7 +60,7 @@ function loadAllItemCodes() {
     }
 }
 
-// Set customer data
+// Set Item data
 $('#cmbItemCode').on('click', function () {
     for (let item of items) {
         if (item.itemCode === $('#cmbItemCode').val()) {
