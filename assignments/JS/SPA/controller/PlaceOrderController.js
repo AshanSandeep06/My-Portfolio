@@ -27,6 +27,7 @@ function generateOrderID() {
     }
 }
 
+// load all added customers' ids
 function loadAllCustomerIDs() {
     $('#cmbCusId').empty();
     $('#cmbCusId').append(`<option selected disabled>Select Customer</option>`);
@@ -34,3 +35,25 @@ function loadAllCustomerIDs() {
         $('#cmbCusId').append(`<option>${customer.id}</option>`);
     }
 }
+
+// Set customer data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
