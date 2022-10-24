@@ -4,6 +4,9 @@
 $('#btnAddToCart').attr('disabled', true);
 $('#btnPlaceOrder').attr('disabled', true);
 
+// Set the OrderID when application runs in the initial point
+$('#orderId').val(generateOrderID());
+
 // Generates OrderID (Order id's convention ---> OI-001)
 function generateOrderID() {
     if (orders.length === 0) {
@@ -21,5 +24,13 @@ function generateOrderID() {
         } else {
             return "OI-" + i;
         }
+    }
+}
+
+function loadAllCustomerIDs() {
+    $('#cmbCusId').empty();
+    $('#cmbCusId').append(`<option selected disabled>Select Customer</option>`);
+    for (let customer of customers) {
+        $('#cmbCusId').append(`<option>${customer.id}</option>`);
     }
 }
