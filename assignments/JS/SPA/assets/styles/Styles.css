@@ -100,9 +100,9 @@ header > nav {
     margin-right: 2px;
 }
 
-#dashBoardHeader {
+/*#dashBoardHeader {
     height: 69px;
-}
+}*/
 
 #tblCustomer > tbody > tr {
     cursor: pointer;
