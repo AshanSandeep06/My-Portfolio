@@ -574,25 +574,30 @@
         <section class="col-10 col-md-10 col-lg-3 p-3 mt-4 bg-white shadow-lg" style="height: fit-content;">
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-12">
-                    <h3 class="text-start p-2 text-danger rounded-5">Total : <span id="lblTotalCost"
+                    <h3 class="text-start p-2 text-danger rounded-5">Sub Total : <span id="lblSubTotal"
                                                                                    class="text-center text-dark p-2"> 3500 LKR </span>
                     </h3>
                 </div>
             </div>
             <div class="row mt-1">
                 <div class="col-12 col-md-6 col-lg-6">
-                    <label for="txtCash" class="form-label">Cash (LKR)</label>
-                    <input class="form-control" id="txtCash" type="text">
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
                     <label for="txtDiscount" class="form-label">Discount</label>
                     <input class="form-control" id="txtDiscount" type="number" role="spinbutton">
                 </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <label for="txtTotalCost" class="form-label">Total Cost (LKR)</label>
+                    <input class="form-control" disabled id="txtTotalCost" type="text">
+                </div>
             </div>
             <div class="row mt-3 mb-4">
-                <div class="col-12 col-md-12 col-lg-12 h-25">
-                    <label for="lblBalance" class="form-label">Balance (LKR)</label>
-                    <input class="form-control" disabled id="lblBalance" type="text">
+                <div class="col-12 col-md-10 col-lg-10 h-25">
+                    <label for="txtCash" class="form-label">Cash (LKR)</label>
+                    <input class="form-control" id="txtCash" type="text">
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 h-25 mt-3">
+                    <label for="txtBalance" class="form-label">Balance (LKR)</label>
+                    <input class="form-control" disabled id="txtBalance" type="text">
                 </div>
             </div>
             <div class="container-fluid justify-content-end d-flex" style="padding: 0;">
@@ -616,7 +621,7 @@
                         <th>Item Name</th>
                         <th>Unit Price (LKR)</th>
                         <th>Quantity</th>
-                        <th>Total Cost (LKR)</th>
+                        <th>Total (LKR)</th>
                     </tr>
                     </thead>
                     <tbody>
