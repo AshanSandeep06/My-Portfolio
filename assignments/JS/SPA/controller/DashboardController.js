@@ -36,4 +36,5 @@ $('#placeOrderBtn').click(function () {
     $('#customerSection').css("display", "none");
     $('#itemSection').css("display", "none");
     $('#placeOrderSection').css("display", "block");
+    loadAllCustomerIDs();
 });

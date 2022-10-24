@@ -7,6 +7,8 @@ $('#btnPlaceOrder').attr('disabled', true);
 // Set the OrderID when application runs in the initial point
 $('#orderId').val(generateOrderID());
 
+loadAllCustomerIDs();
+
 // Generates OrderID (Order id's convention ---> OI-001)
 function generateOrderID() {
     if (orders.length === 0) {
@@ -37,23 +39,13 @@ function loadAllCustomerIDs() {
 }
 
 // Set customer data
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$('#cmbCusId').on('click', function () {
+    for (let c1 of customers) {
+        if (c1.id === $('#cmbCusId').val()) {
+            $('#cusName').val(c1.name);
+            $('#cusAddress').val(c1.address);
+            $('#cusSalary').val(c1.salary);
+            break;
+        }
+    }
+});
