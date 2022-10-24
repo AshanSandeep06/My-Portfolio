@@ -106,7 +106,7 @@ function loadAllCartDetails() {
 }
 
 // Calculates totalCost of the Ordered items
-function calculateTotalCost() {
+function calculateSubTotal() {
     for (let tm in cartDetails) {
         subTotal += tm.total;
     }
@@ -200,7 +200,7 @@ $('#btnAddToCart').click(function () {
     }
 
     $('#btnAddToCart').attr('disabled', true);
-    calculateTotalCost();
+    calculateSubTotal();
     // $('#tblCart').refresh();
     $('#cmbItemCode').focus();
     // clearItemFields();
