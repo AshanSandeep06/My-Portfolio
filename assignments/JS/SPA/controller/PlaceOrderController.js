@@ -12,7 +12,7 @@ let discount;
 let totalCost;
 
 // Disabled the AddToCart and PlaceOrder buttons
-$('#btnAddToCart').attr('disabled', true);
+// $('#btnAddToCart').attr('disabled', true);
 $('#btnPlaceOrder').attr('disabled', true);
 
 // Set the OrderID when application runs in the initial point
@@ -83,9 +83,84 @@ $('#cmbItemCode').on('click', function () {
     }
 });
 
-// ------------------------------------------------------------------------------------------------------------------
+// Checked whether the passed itemCode already exist in the Cart Table
+function isExists(itemCode) {
+    for (let tm in cartDetails) {
+        if (tm.itemCode === itemCode) {
+            return tm;
+        }
+    }
+    return null;
+}
 
+// Load all cart details
+function loadAllCartDetails() {
+    $("#tblCart>tbody").empty();
 
+    for (let i = 0; i < cartDetails.length; i++) {
+        var tblRow = `<tr><td>${cartDetails[i].itemCode}</td><td>${cartDetails[i].itemName}</td><td>${cartDetails[i].unitPrice}</td><td>${cartDetails[i].quantity}</td><td>${cartDetails[i].totalCost}</td></tr>`;
+        $("#tblCart>tbody").append(tblRow);
+    }
+}
+
+// Items were added to the Cart Table
+$('#btnAddToCart').click(function () {
+    var quantityValidation = /^[1-9][0-9]{0,4}$/;
+    if (!quantityValidation.test($('#txtQuantity').val()) || parseInt($('#txtQuantity').val()) <= 0 ||
+        parseInt($('#txtQuantity').val()) > parseInt($('#QuantityOnHand').val())) {
+        $('#txtQuantity').focus();
+        return;
+    }
+
+    try {
+        if (parseInt($('#QuantityOnHand').val()) > 0) {
+            if ($('#cmbItemCode').val() !== "Select Item" && $('#txtQuantity').val() !== '') {
+                if (quantityValidation.test($('#txtQuantity').val())) {
+                    itemCode = $('#cmbItemCode').val();
+                    itemName = $('#iName').val();
+                    unitPrice = parseFloat($('#iPrice').val()).toFixed(2);
+                    qtyOnHand = parseInt($('#QuantityOnHand').val());
+                    orderedQuantity = parseInt($('#txtQuantity').val());
+
+                    discount = parseFloat($('#txtDiscount').val());
+                    subTotal = unitPrice * orderedQuantity;
+                    totalCost = parseFloat(subTotal).toFixed(2);
+
+                    var tmIsExist = isExists($('#cmbItemCode').val());
+
+                    if (tmIsExist != null) {
+                        tmIsExist.quantity = tmIsExist.quantity + orderedQuantity;
+                        totalCost = tmIsExist.quantity * unitPrice;    /* SURE Na */
+                        tmIsExist.totalCost = totalCost;
+                    } else {
+                        var cartTm = Object.assign({}, cartTMObject);
+                        cartTm.itemCode = itemCode;
+                        cartTm.itemName = itemName;
+                        cartTm.unitPrice = unitPrice;
+                        cartTm.quantity = orderedQuantity;
+                        cartTm.totalCost = totalCost;
+
+                        cartDetails.push(cartTm);
+
+                        loadAllCartDetails();
+                    }
+                } else {
+
+                }
+            } else {
+
+            }
+        } else {
+
+        }
+
+    } catch (e) {
+        console.log(e.message);
+    }
+
+    $('#btnAddToCart').attr('disabled', true);
+    $('#cmbItemCode').focus();
+});
 
 
 

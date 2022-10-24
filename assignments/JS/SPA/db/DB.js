@@ -5,3 +5,5 @@ var items = [];
 
 var orders = [];
 
+var cartDetails = [];
+
