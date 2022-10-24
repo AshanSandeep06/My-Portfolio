@@ -8,6 +8,7 @@ $('#btnPlaceOrder').attr('disabled', true);
 $('#orderId').val(generateOrderID());
 
 loadAllCustomerIDs();
+loadAllItemCodes();
 
 // Generates OrderID (Order id's convention ---> OI-001)
 function generateOrderID() {
@@ -45,6 +46,27 @@ $('#cmbCusId').on('click', function () {
             $('#cusName').val(c1.name);
             $('#cusAddress').val(c1.address);
             $('#cusSalary').val(c1.salary);
+            break;
+        }
+    }
+});
+
+// load all added items' codes
+function loadAllItemCodes() {
+    $('#cmbItemCode').empty();
+    $('#cmbItemCode').append(`<option selected disabled>Select Item</option>`);
+    for (let item of items) {
+        $('#cmbItemCode').append(`<option>${item.itemCode}</option>`);
+    }
+}
+
+// Set customer data
+$('#cmbItemCode').on('click', function () {
+    for (let item of items) {
+        if (item.itemCode === $('#cmbItemCode').val()) {
+            $('#iName').val(item.itemName);
+            $('#iPrice').val(item.unitPrice);
+            $('#QuantityOnHand').val(item.qtyOnHand);
             break;
         }
     }
