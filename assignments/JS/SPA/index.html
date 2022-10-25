@@ -518,7 +518,7 @@
                     <input class="form-control" disabled id="cusName" type="text">
                 </div>
             </div>
-            <div class="row mt-2 mb-2">
+            <div class="row mt-2 mb-4">
                 <div class="col-12 col-md-6 col-lg-6">
                     <label for="cusAddress" class="form-label">Address :</label>
                     <input class="form-control" disabled id="cusAddress" type="text">
@@ -527,6 +527,14 @@
                     <label for="cusSalary" class="form-label">Salary :</label>
                     <input class="form-control" disabled id="cusSalary" type="text">
                 </div>
+            </div>
+
+            <div class="container-fluid justify-content-end d-flex" style="padding: 0;">
+                <button id="btnClearCusData"
+                        style="width: max-content; height: max-content; font-weight: bold; padding-right: 28px; padding-left: 28px;"
+                        class="btn btn-secondary"
+                        type="button">Clear
+                </button>
             </div>
         </section>
 
@@ -564,12 +572,22 @@
                     </span>
                 </div>
             </div>
-            <div class="container-fluid justify-content-end d-flex" style="padding: 0;">
-                <button id="btnAddToCart" style="width: max-content; height: max-content; font-weight: bold;"
-                        class="btn btn-warning text-white"
-                        type="button">Add To Cart
-                    <i style="padding-left: 4px;" class="fa-solid fa-cart-arrow-down"></i>
-                </button>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-8 justify-content-end d-flex">
+                    <button id="btnClearItemData"
+                            style="width: max-content; height: max-content; font-weight: bold; padding-right: 28px; padding-left: 28px;"
+                            class="btn btn-secondary"
+                            type="button">Clear
+                    </button>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4 justify-content-end d-flex">
+                    <button id="btnAddToCart" style="width: max-content; height: max-content; font-weight: bold;"
+                            class="btn btn-warning text-white"
+                            type="button">Add To Cart
+                        <i style="padding-left: 4px;" class="fa-solid fa-cart-arrow-down"></i>
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -603,12 +621,22 @@
                     <input class="form-control" disabled id="txtBalance" type="text">
                 </div>
             </div>
-            <div class="container-fluid justify-content-end d-flex" style="padding: 0;">
-                <button id="btnPlaceOrder" style="font-weight: bold; padding-top: 9px; padding-bottom: 9px;"
-                        class="btn btn-success" type="submit">
-                    Place Order
-                    <i style="padding-left: 5px;" class="fa-solid fa-sack-dollar"></i>
-                </button>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-6 justify-content-center d-flex">
+                    <button id="btnCancelOrder"
+                            style="width: max-content; height: max-content; font-weight: bold; padding: 7px 18px 7px 18px;"
+                            class="btn btn-outline-danger"
+                            type="button">Cancel Order
+                    </button>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-6 justify-content-center d-flex">
+                    <button id="btnPlaceOrder" style="width: max-content; height: max-content; font-weight: bold;"
+                            class="btn btn-success text-white"
+                            type="button">Add To Cart
+                        <i style="padding-left: 5px;" class="fa-solid fa-sack-dollar"></i>
+                    </button>
+                </div>
             </div>
         </section>
 

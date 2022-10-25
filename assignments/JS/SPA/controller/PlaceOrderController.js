@@ -115,7 +115,7 @@ function loadAllCartDetails() {
     }
 }
 
-// Calculates totalCost of the Ordered items
+// Calculates sub total of the Ordered items
 function calculateSubTotal() {
     subTotal = 0;
     for (let i of cartDetails) {
@@ -124,6 +124,7 @@ function calculateSubTotal() {
     $('#lblSubTotal').text(subTotal.toFixed(2) + " LKR");
 }
 
+// Calculates total cost of the Ordered items
 function calculateTotalCost() {
     totalCost = 0;
     discount = 0;
@@ -140,8 +141,6 @@ $('#btnAddToCart').click(function () {
 
     if (!quantityValidation.test($('#txtQuantity').val()) || parseInt($('#txtQuantity').val()) <= 0 ||
         parseInt($('#txtQuantity').val()) > parseInt($('#QuantityOnHand').val())) {
-        // new Alert(Alert.AlertType.ERROR, "Invalid qty").show();
-
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
@@ -223,7 +222,7 @@ $('#btnAddToCart').click(function () {
     clearFields();
 
     // enableOrDisablePlaceOrderButton();
-    // let date = new Date().toLocaleDateString();
+
 });
 
 function clearFields() {
