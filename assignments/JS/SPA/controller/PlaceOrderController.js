@@ -99,6 +99,7 @@ function setItemDetails() {
 // Set Item data
 $('#cmbItemCode').on('click', function () {
     setItemDetails();
+    reduceQuantity();
 });
 
 // ------------------------------------------------------------------------------------------------------------------
@@ -306,3 +307,12 @@ $("#btnClearCusData").on('click', function (event) {
 $("#btnClearItemData").on('click', function (event) {
     clearItemData();
 });
+
+function reduceQuantity() {
+    for (let tm of cartDetails) {
+        if (tm.itemCode === $('#cmbItemCode').val()) {
+            var changedQty = $('#QuantityOnHand').val() - tm.quantity;
+            $('#QuantityOnHand').val(parseInt(changedQty));
+        }
+    }
+}
