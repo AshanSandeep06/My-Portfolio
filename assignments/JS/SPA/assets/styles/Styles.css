@@ -111,3 +111,7 @@ header > nav {
 #tblItem > tbody > tr {
     cursor: pointer;
 }
+
+#btnUpdateCart:hover {
+    background-color: #1a71ef!important;
+}
