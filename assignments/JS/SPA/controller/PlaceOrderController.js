@@ -15,6 +15,9 @@ let totalCost;
 $('#btnAddToCart').attr('disabled', true);
 $('#btnPlaceOrder').attr('disabled', true);
 
+// displays initial value of discount
+$('#txtDiscount').val(0.00);
+
 // Set the OrderID when application runs in the initial point
 $('#orderId').val(generateOrderID());
 
@@ -114,16 +117,21 @@ function loadAllCartDetails() {
 
 // Calculates totalCost of the Ordered items
 function calculateSubTotal() {
+    subTotal = 0;
     for (let i of cartDetails) {
         subTotal += parseFloat(i.total);
     }
-    $('#lblSubTotal').text(parseFloat(subTotal).toFixed(2));
-    subTotal = 0;
-    // discount = parseFloat($('#txtDiscount').val()).toFixed(2);
-    // totalCost = (subTotal - discount).toFixed(2);
+    $('#lblSubTotal').text(subTotal.toFixed(2) + " LKR");
+}
 
-    // $('#txtDiscount').val(discount);
-    // $('#txtTotalCost').val(totalCost);
+function calculateTotalCost() {
+    totalCost = 0;
+    discount = 0;
+    discount = parseFloat($('#txtDiscount').val());
+    totalCost = parseFloat(`${subTotal} - ${discount}`);
+
+    $('#txtDiscount').val(discount.toFixed(2));
+    $('#txtTotalCost').val(totalCost.toFixed(2));
 }
 
 // Items were added to the Cart Table
@@ -209,6 +217,7 @@ $('#btnAddToCart').click(function () {
 
     $('#btnAddToCart').attr('disabled', true);
     calculateSubTotal();
+    calculateTotalCost();
     loadAllCartDetails();
     $('#cmbItemCode').focus();
     clearFields();
