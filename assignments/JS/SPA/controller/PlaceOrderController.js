@@ -114,7 +114,7 @@ function loadAllCartDetails() {
 
 // Calculates totalCost of the Ordered items
 function calculateSubTotal() {
-    for (let tm in cartDetails) {
+    for (let tm of cartDetails) {
         subTotal += tm.total;
     }
     $('#lblSubTotal').text(subTotal);
@@ -208,7 +208,7 @@ $('#btnAddToCart').click(function () {
 
     $('#btnAddToCart').attr('disabled', true);
     calculateSubTotal();
-    refreshTable();
+    loadAllCartDetails();
     $('#cmbItemCode').focus();
     clearFields();
 
@@ -227,10 +227,6 @@ function clearFields() {
     $('#iPrice').val('');
     $('#QuantityOnHand').val('');
     $('#txtQuantity').val('');
-}
-
-function refreshTable() {
-    $("#tblCart").load("index.html #tblCart");
 }
 
 // This function is used for Events
