@@ -21,6 +21,10 @@ $('#orderId').val(generateOrderID());
 // InvalidQtySpan will display: hidden, until OrderedQuantity textField's value is invalid
 $('#invalidQtySpan').css('display', "none");
 
+// Set the current date
+var date = new Date();
+$('#orderDate').val(`${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`);
+
 loadAllCustomerIDs();
 loadAllItemCodes();
 
@@ -204,13 +208,31 @@ $('#btnAddToCart').click(function () {
 
     $('#btnAddToCart').attr('disabled', true);
     calculateSubTotal();
-    // $('#tblCart').refresh();
+    refreshTable();
     $('#cmbItemCode').focus();
-    // clearItemFields();
-    // enableOrDisablePlaceOrderButton();
+    clearFields();
 
+    // enableOrDisablePlaceOrderButton();
     // let date = new Date().toLocaleDateString();
 });
+
+function clearFields() {
+    $('#orderId').val('');
+    $('#orderDate').val('');
+    $('#cmbCusId').val('Select Customer');
+    $('#cmbItemCode').val('Select Item');
+    $('#cusName').val('');
+    $('#cusAddress').val('');
+    $('#cusSalary').val('');
+    $('#iName').val('');
+    $('#iPrice').val('');
+    $('#QuantityOnHand').val('');
+    $('#txtQuantity').val('');
+}
+
+function refreshTable() {
+    $("#tblCart").load("index.html #tblCart");
+}
 
 // This function is used for Events
 function enableOrDisableAddToCartButton() {
