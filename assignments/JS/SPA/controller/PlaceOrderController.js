@@ -12,7 +12,7 @@ let discount;
 let totalCost;
 
 // Disabled the AddToCart and PlaceOrder buttons
-// $('#btnAddToCart').attr('disabled', true);
+$('#btnAddToCart').attr('disabled', true);
 $('#btnPlaceOrder').attr('disabled', true);
 
 // Set the OrderID when application runs in the initial point
@@ -139,7 +139,7 @@ $('#btnAddToCart').click(function () {
 
     try {
         if (parseInt($('#QuantityOnHand').val()) > 0) {
-            if ($('#cmbItemCode').val() !== "Select Item" && $('#txtQuantity').val() !== '') {
+            if ($('#cmbItemCode').val() !== null && $('#txtQuantity').val() !== '') {
                 if (quantityValidation.test($('#txtQuantity').val())) {
                     var total = 0;
                     itemCode = $('#cmbItemCode').val();
@@ -205,4 +205,28 @@ $('#btnAddToCart').click(function () {
     $('#cmbItemCode').focus();
     // clearItemFields();
     // enableOrDisablePlaceOrderButton();
+
+    // let date = new Date().toLocaleDateString();
+});
+
+// This function is used for Events
+function enableOrDisableAddToCartButton() {
+    if ($('#txtQuantity').val().trim().length !== 0 && $('#cmbCusId').val() !== null && $('#cmbItemCode').val() !== null && $('#orderDate').val().trim().length !== 0) {
+        if ((/^[1-9][0-9]{0,4}$/).test($('#txtQuantity').val())) {
+            $('#btnAddToCart').attr('disabled', false);
+        } else {
+            $('#btnAddToCart').attr('disabled', true);
+        }
+    } else {
+        $('#btnAddToCart').attr('disabled', true);
+    }
+}
+
+// Set events for enable AddToCart button
+$('#orderDate, #cmbCusId, #cmbItemCode').click(function () {
+    enableOrDisableAddToCartButton();
+});
+
+$("#txtQuantity").on('keydown', function () {
+    enableOrDisableAddToCartButton();
 });
