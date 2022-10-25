@@ -231,6 +231,7 @@ $('#btnAddToCart').click(function () {
     $('#cmbItemCode').focus();
     clearFields();
     bindTblRowClickEvents();
+    bindTblRowDblClickEvents();
 
     // enableOrDisablePlaceOrderButton();
 
@@ -326,5 +327,33 @@ function bindTblRowClickEvents() {
         } else {
             $('#btnUpdateCart').attr('disabled', true);
         }
+    });
+}
+
+function bindTblRowDblClickEvents() {
+    $('#tblCart>tbody>tr').on('dblclick', function () {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "Do you want to Delete this item ?!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Deleted!',
+                    'Selected item has been deleted.',
+                    'success'
+                )
+            }else {
+                Swal.fire(
+                    'Cancelled',
+                    'Selected item are not Deleted\n :)',
+                    'error'
+                )
+            }
+        })
     });
 }
