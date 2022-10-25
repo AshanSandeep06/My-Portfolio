@@ -226,7 +226,8 @@ $('#btnAddToCart').click(function () {
 });
 
 function clearFields() {
-    $('#orderDate').val('');
+    $('#orderId').val(generateOrderID());
+    $('#orderDate').val(`${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`);
     $('#cmbCusId').val('Select Customer');
     $('#cmbItemCode').val('Select Item');
     $('#cusName').val('');
@@ -257,9 +258,8 @@ $('#orderDate, #cmbCusId, #cmbItemCode').click(function () {
     enableOrDisableAddToCartButton();
 });
 
-$("#txtQuantity").on('keyup', function (event) {
-    enableOrDisableAddToCartButton();
-
+// validate Quantity textField
+function checkQuantity() {
     if ($('#txtQuantity').val().trim().length !== 0) {
         var qtyValidation = /^[1-9][0-9]{0,4}$/;
         if (qtyValidation.test($('#txtQuantity').val())) {
@@ -273,4 +273,29 @@ $("#txtQuantity").on('keyup', function (event) {
         $('#invalidQtySpan').css('display', 'none');
         $('#txtQuantity').css("border", "1px solid rgb(206, 212, 218)");
     }
+}
+
+$("#txtQuantity").on('keyup', function (event) {
+    enableOrDisableAddToCartButton();
+    checkQuantity();
+});
+
+// Clear customer textFields' data
+$("#btnClearCusData").on('click', function (event) {
+    $('#orderId').val(generateOrderID());
+    $('#orderDate').val(`${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`);
+    $('#cmbCusId').val('Select Customer');
+    $('#cusName').val('');
+    $('#cusAddress').val('');
+    $('#cusSalary').val('');
+});
+
+// Clear item textFields' data
+$("#btnClearItemData").on('click', function (event) {
+    $('#cmbItemCode').val('Select Item');
+    $('#iName').val('');
+    $('#iPrice').val('');
+    $('#QuantityOnHand').val('');
+    $('#txtQuantity').val('');
+    checkQuantity();
 });
