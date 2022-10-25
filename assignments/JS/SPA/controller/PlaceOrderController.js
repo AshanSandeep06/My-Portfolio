@@ -14,6 +14,7 @@ let totalCost;
 // Disabled the AddToCart and PlaceOrder buttons
 $('#btnAddToCart').attr('disabled', true);
 $('#btnPlaceOrder').attr('disabled', true);
+$('#btnUpdateCart').attr('disabled', true);
 
 // displays initial value of discount
 $('#txtDiscount').val(0.00);
@@ -229,6 +230,7 @@ $('#btnAddToCart').click(function () {
     loadAllCartDetails();
     $('#cmbItemCode').focus();
     clearFields();
+    bindTblRowClickEvents();
 
     // enableOrDisablePlaceOrderButton();
 
@@ -315,4 +317,14 @@ function reduceQuantity() {
             $('#QuantityOnHand').val(parseInt(changedQty));
         }
     }
+}
+
+function bindTblRowClickEvents() {
+    $('#tblCart>tbody>tr').click(function () {
+        if ($('#tblCart>tbody>tr').length !== 0) {
+            $('#btnUpdateCart').attr('disabled', false);
+        } else {
+            $('#btnUpdateCart').attr('disabled', true);
+        }
+    });
 }
