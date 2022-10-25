@@ -347,7 +347,18 @@ function bindTblRowDblClickEvents() {
                     'Selected item has been deleted.',
                     'success'
                 )
-            }else {
+                for (let tm of cartDetails) {
+                    if ($(this).children(':eq(0)').text() === tm.itemCode) {
+                        cartDetails.splice(cartDetails.indexOf(tm), 1);
+                        $(this).remove();
+                        break;
+                    }
+                }
+
+                calculateSubTotal();
+                calculateTotalCost();
+
+            } else {
                 Swal.fire(
                     'Cancelled',
                     'Selected item are not Deleted\n :)',
