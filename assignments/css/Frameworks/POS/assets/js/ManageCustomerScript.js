@@ -347,7 +347,7 @@ function removeError() {
 }
 
 function addError(textField, errorMessage) {
-    if (textField.val().length <= 0) {
+    if (textField.val().trim().length <= 0) {
         textField.css("border", "1px solid #ced4da");
         textField.parent().children('span').text("");
     } else {

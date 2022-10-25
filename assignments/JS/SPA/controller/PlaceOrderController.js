@@ -18,6 +18,9 @@ $('#btnPlaceOrder').attr('disabled', true);
 // Set the OrderID when application runs in the initial point
 $('#orderId').val(generateOrderID());
 
+// InvalidQtySpan will display: hidden, until OrderedQuantity textField's value is invalid
+$('#invalidQtySpan').css('display', "none");
+
 loadAllCustomerIDs();
 loadAllItemCodes();
 
@@ -212,7 +215,8 @@ $('#btnAddToCart').click(function () {
 // This function is used for Events
 function enableOrDisableAddToCartButton() {
     if ($('#txtQuantity').val().trim().length !== 0 && $('#cmbCusId').val() !== null && $('#cmbItemCode').val() !== null && $('#orderDate').val().trim().length !== 0) {
-        if ((/^[1-9][0-9]{0,4}$/).test($('#txtQuantity').val())) {
+        var qtyValidation = /^[1-9][0-9]{0,4}$/;
+        if (qtyValidation.test($('#txtQuantity').val())) {
             $('#btnAddToCart').attr('disabled', false);
         } else {
             $('#btnAddToCart').attr('disabled', true);
@@ -227,6 +231,20 @@ $('#orderDate, #cmbCusId, #cmbItemCode').click(function () {
     enableOrDisableAddToCartButton();
 });
 
-$("#txtQuantity").on('keydown', function () {
+$("#txtQuantity").on('keyup', function (event) {
     enableOrDisableAddToCartButton();
+
+    if ($('#txtQuantity').val().trim().length !== 0) {
+        var qtyValidation = /^[1-9][0-9]{0,4}$/;
+        if (qtyValidation.test($('#txtQuantity').val())) {
+            $('#invalidQtySpan').css('display', 'none');
+            $('#txtQuantity').css("border", "1px solid rgb(206, 212, 218)");
+        } else {
+            $('#invalidQtySpan').css('display', 'block');
+            $('#txtQuantity').css("border", "2px solid red");
+        }
+    } else {
+        $('#invalidQtySpan').css('display', 'none');
+        $('#txtQuantity').css("border", "1px solid rgb(206, 212, 218)");
+    }
 });
