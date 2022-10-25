@@ -60,8 +60,7 @@ function loadAllCustomerIDs() {
     }
 }
 
-// Set customer data
-$('#cmbCusId').on('click', function () {
+function setCustomerDetails() {
     for (let c1 of customers) {
         if (c1.id === $('#cmbCusId').val()) {
             $('#cusName').val(c1.name);
@@ -70,6 +69,11 @@ $('#cmbCusId').on('click', function () {
             break;
         }
     }
+}
+
+// Set customer data
+$('#cmbCusId').on('click', function () {
+    setCustomerDetails();
 });
 
 // load all added items' codes
@@ -81,8 +85,7 @@ function loadAllItemCodes() {
     }
 }
 
-// Set Item data
-$('#cmbItemCode').on('click', function () {
+function setItemDetails() {
     for (let item of items) {
         if (item.itemCode === $('#cmbItemCode').val()) {
             $('#iName').val(item.itemName);
@@ -91,6 +94,11 @@ $('#cmbItemCode').on('click', function () {
             break;
         }
     }
+}
+
+// Set Item data
+$('#cmbItemCode').on('click', function () {
+    setItemDetails();
 });
 
 // ------------------------------------------------------------------------------------------------------------------
@@ -271,7 +279,7 @@ $("#txtQuantity").on('keyup', function (event) {
     checkQuantity();
 });
 
-function clearCustomerData(){
+function clearCustomerData() {
     $('#orderId').val(generateOrderID());
     $('#orderDate').val(`${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`);
     $('#cmbCusId').val('Select Customer');
@@ -280,7 +288,7 @@ function clearCustomerData(){
     $('#cusSalary').val('');
 }
 
-function clearItemData(){
+function clearItemData() {
     $('#cmbItemCode').val('Select Item');
     $('#iName').val('');
     $('#iPrice').val('');
