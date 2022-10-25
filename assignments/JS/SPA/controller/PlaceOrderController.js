@@ -382,6 +382,7 @@ function bindTblRowDblClickEvents() {
     });
 }
 
+// Update added items of Cart Table
 $('#btnUpdateCart').click(function () {
 
 });
