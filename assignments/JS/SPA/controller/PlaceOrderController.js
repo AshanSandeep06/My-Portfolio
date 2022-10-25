@@ -238,7 +238,7 @@ $('#btnAddToCart').click(function () {
 });
 
 function clearFields() {
-    clearCustomerData();
+    // clearCustomerData();
     clearItemData();
 }
 
@@ -368,3 +368,7 @@ function bindTblRowDblClickEvents() {
         })
     });
 }
+
+$('#btnUpdateCart').click(function(){
+
+});
