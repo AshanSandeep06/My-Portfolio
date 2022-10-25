@@ -114,10 +114,11 @@ function loadAllCartDetails() {
 
 // Calculates totalCost of the Ordered items
 function calculateSubTotal() {
-    for (let tm of cartDetails) {
-        subTotal += tm.total;
+    for (let i of cartDetails) {
+        subTotal += parseFloat(i.total);
     }
     $('#lblSubTotal').text(parseFloat(subTotal).toFixed(2));
+    subTotal = 0;
     // discount = parseFloat($('#txtDiscount').val()).toFixed(2);
     // totalCost = (subTotal - discount).toFixed(2);
 
