@@ -94,7 +94,7 @@ $('#cmbItemCode').on('click', function () {
 
 // Checked whether the passed itemCode already exist in the Cart Table
 function isExists(itemCode) {
-    for (let tm in cartDetails) {
+    for (let tm of cartDetails) {
         if (tm.itemCode === itemCode) {
             return tm;
         }
