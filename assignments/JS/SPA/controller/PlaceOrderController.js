@@ -226,17 +226,8 @@ $('#btnAddToCart').click(function () {
 });
 
 function clearFields() {
-    $('#orderId').val(generateOrderID());
-    $('#orderDate').val(`${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`);
-    $('#cmbCusId').val('Select Customer');
-    $('#cmbItemCode').val('Select Item');
-    $('#cusName').val('');
-    $('#cusAddress').val('');
-    $('#cusSalary').val('');
-    $('#iName').val('');
-    $('#iPrice').val('');
-    $('#QuantityOnHand').val('');
-    $('#txtQuantity').val('');
+    clearCustomerData();
+    clearItemData();
 }
 
 // This function is used for Events
@@ -280,22 +271,30 @@ $("#txtQuantity").on('keyup', function (event) {
     checkQuantity();
 });
 
-// Clear customer textFields' data
-$("#btnClearCusData").on('click', function (event) {
+function clearCustomerData(){
     $('#orderId').val(generateOrderID());
     $('#orderDate').val(`${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`);
     $('#cmbCusId').val('Select Customer');
     $('#cusName').val('');
     $('#cusAddress').val('');
     $('#cusSalary').val('');
-});
+}
 
-// Clear item textFields' data
-$("#btnClearItemData").on('click', function (event) {
+function clearItemData(){
     $('#cmbItemCode').val('Select Item');
     $('#iName').val('');
     $('#iPrice').val('');
     $('#QuantityOnHand').val('');
     $('#txtQuantity').val('');
     checkQuantity();
+}
+
+// Clear customer textFields' data
+$("#btnClearCusData").on('click', function (event) {
+    clearCustomerData();
+});
+
+// Clear item textFields' data
+$("#btnClearItemData").on('click', function (event) {
+    clearItemData();
 });
