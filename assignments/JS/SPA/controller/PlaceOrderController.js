@@ -117,7 +117,7 @@ function calculateSubTotal() {
     for (let tm in cartDetails) {
         subTotal += tm.total;
     }
-    $('#lblSubTotal').val(subTotal);
+    $('#lblSubTotal').text(subTotal);
     // discount = parseFloat($('#txtDiscount').val()).toFixed(2);
     // totalCost = (subTotal - discount).toFixed(2);
 
@@ -217,7 +217,6 @@ $('#btnAddToCart').click(function () {
 });
 
 function clearFields() {
-    $('#orderId').val('');
     $('#orderDate').val('');
     $('#cmbCusId').val('Select Customer');
     $('#cmbItemCode').val('Select Item');
