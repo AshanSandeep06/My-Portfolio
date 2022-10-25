@@ -324,6 +324,19 @@ function bindTblRowClickEvents() {
     $('#tblCart>tbody>tr').click(function () {
         if ($('#tblCart>tbody>tr').length !== 0) {
             $('#btnUpdateCart').attr('disabled', false);
+
+            $('#cmbItemCode').val($(this).children().eq(0).text());
+            $('#iName').val($(this).children().eq(1).text());
+            $('#iPrice').val($(this).children().eq(2).text());
+            $('#txtQuantity').val($(this).children().eq(3).text());
+
+            for (let tm of items) {
+                if (tm.itemCode === $(this).children().eq(0).text()) {
+                    $('#QuantityOnHand').val(parseInt(tm.qtyOnHand - $(this).children().eq(3).text()));
+                    break;
+                }
+            }
+
         } else {
             $('#btnUpdateCart').attr('disabled', true);
         }
@@ -369,6 +382,6 @@ function bindTblRowDblClickEvents() {
     });
 }
 
-$('#btnUpdateCart').click(function(){
+$('#btnUpdateCart').click(function () {
 
 });
