@@ -7,7 +7,7 @@ let unitPrice;
 let qtyOnHand;
 let orderedQuantity;
 
-let subTotal;
+let subTotal = 0.00;
 let discount;
 let totalCost;
 
@@ -117,7 +117,7 @@ function calculateSubTotal() {
     for (let tm of cartDetails) {
         subTotal += tm.total;
     }
-    $('#lblSubTotal').text(subTotal);
+    $('#lblSubTotal').text(parseFloat(subTotal).toFixed(2));
     // discount = parseFloat($('#txtDiscount').val()).toFixed(2);
     // totalCost = (subTotal - discount).toFixed(2);
 
