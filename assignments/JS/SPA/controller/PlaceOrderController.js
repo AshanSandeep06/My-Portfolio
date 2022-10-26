@@ -534,6 +534,7 @@ function checkCash() {
     }
 }
 
+// Validate Cash TextField
 $('#txtCash').on('keyup', function () {
     if (checkCash()) {
         if ($('#lblSubTotal').text().length !== 0 && $('#txtDiscount').val().length !== 0 && $('#txtTotalCost').val().length !== 0) {
@@ -544,5 +545,9 @@ $('#txtCash').on('keyup', function () {
     }else {
         if($('#txtBalance').val(0));
     }
+});
+
+$('#btnCancelOrder').click(function(){
+
 });
 
