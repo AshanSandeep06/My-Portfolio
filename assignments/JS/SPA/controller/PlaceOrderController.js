@@ -510,3 +510,7 @@ $('#txtDiscount').on('keyup', function () {
     checkDiscount();
 });
 
+$('#txtCash').on('keyup', function () {
+
+});
+
