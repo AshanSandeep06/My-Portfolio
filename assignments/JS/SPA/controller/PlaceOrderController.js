@@ -165,9 +165,13 @@ function calculateTotalCost() {
     totalCost = 0;
     discount = 0;
     discount = parseFloat($('#txtDiscount').val());
-    totalCost = parseFloat(`${subTotal} - ${discount}`);
+    totalCost = parseFloat(subTotal) - parseFloat(discount);
 
-    $('#txtDiscount').val(discount.toFixed(2));
+    console.log("Sub total : " + subTotal)
+    console.log("Discount : " + discount)
+    console.log("Total Cost : " + totalCost)
+
+    // $('#txtDiscount').val(discount.toFixed(2));
     $('#txtTotalCost').val(totalCost.toFixed(2));
 }
 
@@ -481,20 +485,24 @@ $('#btnUpdateCart').click(function () {
     }
 });
 
-// validate Quantity textField
+// validate Discount textField
 function checkDiscount() {
     if ($('#txtDiscount').val().trim().length !== 0) {
-        var discountValidation = /^[1-9]{1}[0-9]{0,5}(.[0-9]{2})?$/;
+        var discountValidation = /^[0-9]{0,5}(.[0-9]{2})?$/;
         if (discountValidation.test($('#txtDiscount').val())) {
             $('#invalidDiscountSpan').css('display', 'none');
             $('#txtDiscount').css("border", "1px solid rgb(206, 212, 218)");
+            calculateSubTotal();
+            calculateTotalCost();
         } else {
             $('#invalidDiscountSpan').css('display', 'block');
             $('#txtDiscount').css("border", "2px solid red");
+            $('#txtTotalCost').val($('#lblSubTotal').text().split(' ')[0]);
         }
     } else {
         $('#invalidDiscountSpan').css('display', 'none');
         $('#txtDiscount').css("border", "1px solid rgb(206, 212, 218)");
+        $('#txtTotalCost').val($('#lblSubTotal').text().split(' ')[0]);
     }
 }
 
