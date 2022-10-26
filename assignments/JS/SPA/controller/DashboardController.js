@@ -6,7 +6,7 @@ $(function () {
     $('#placeOrderSection').css("display", "none");
 });
 
-/*When the Home button clicked*/
+/*When the Home button is clicked*/
 $('#homeBtn').click(function () {
     $('#dashBoardSection').css("display", "block");
     $('#customerSection').css("display", "none");
@@ -14,7 +14,7 @@ $('#homeBtn').click(function () {
     $('#placeOrderSection').css("display", "none");
 });
 
-/*When the Customer button clicked*/
+/*When the Customer button is clicked*/
 $('#customerBtn').click(function () {
     $('#dashBoardSection').css("display", "none");
     $('#customerSection').css("display", "block");
@@ -22,7 +22,7 @@ $('#customerBtn').click(function () {
     $('#placeOrderSection').css("display", "none");
 });
 
-/*When the Item button clicked*/
+/*When the Item button is clicked*/
 $('#itemBtn').click(function () {
     $('#dashBoardSection').css("display", "none");
     $('#customerSection').css("display", "none");
@@ -30,7 +30,7 @@ $('#itemBtn').click(function () {
     $('#placeOrderSection').css("display", "none");
 });
 
-/*When the Place Order button clicked*/
+/*When the Place Order button is clicked*/
 $('#placeOrderBtn').click(function () {
     $('#dashBoardSection').css("display", "none");
     $('#customerSection').css("display", "none");
@@ -40,4 +40,12 @@ $('#placeOrderBtn').click(function () {
     loadAllCustomerIDs();
     loadAllItemCodes();
     $('#orderId').val(generateOrderID());
+});
+
+/*When the Order Details button is clicked*/
+$('#orderDetailsBtn').on('click', function () {
+    $('#dashBoardSection').css("display", "none");
+    $('#customerSection').css("display", "none");
+    $('#itemSection').css("display", "none");
+    $('#placeOrderSection').css("display", "block");
 });
