@@ -509,7 +509,17 @@ $('#txtDiscount').on('keyup', function () {
     checkDiscount();
 });
 
-$('#txtCash').on('keyup', function () {
+function calculateBalance(totalCost, cash) {
+    return cash - totalCost;
+}
 
+$('#txtCash').on('keyup', function () {
+    if ($('#txtDiscount').val().length === 0) {
+        $('#txtDiscount').val(0);
+    }
+
+    if ($('#lblSubTotal').text().length !== 0 && $('#txtDiscount').val().length !== 0 && $('#txtTotalCost').val().length !== 0) {
+        $('#txtBalance').val(calculateBalance(parseFloat($('#txtTotalCost').val()), parseFloat($('#txtCash').val())));
+    }
 });
 
