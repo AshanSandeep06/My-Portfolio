@@ -562,3 +562,8 @@ $('#btnCancelOrder').click(function () {
     $('#txtBalance').val('');
 });
 
+//Purchase Order
+$('#btnPlaceOrder').on('click', function () {
+
+});
+
