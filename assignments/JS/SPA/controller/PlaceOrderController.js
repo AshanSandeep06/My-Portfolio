@@ -579,8 +579,12 @@ function enableOrDisablePlaceOrderButton() {
         /^[0-9]{1,}(.[0-9]{2})?$/.test($('#txtBalance').val())));
 }
 
-//Purchase Order
-$('#btnPlaceOrder').on('click', function () {
+function purchaseOrder(){
 
+}
+
+//Purchase Order click event
+$('#btnPlaceOrder').on('click', function () {
+    purchaseOrder();
 });
 
