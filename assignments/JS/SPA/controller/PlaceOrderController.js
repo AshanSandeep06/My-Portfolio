@@ -581,7 +581,12 @@ function enableOrDisablePlaceOrderButton() {
 
 //Check from OrderID whether that Order is exist ?
 function existOrder(orderID){
-
+    for (let order of orders) {
+        if(order.orderId === $('#orderId').val()){
+            return true;
+        }
+    }
+    return false;
 }
 
 // This is for Place a Order
