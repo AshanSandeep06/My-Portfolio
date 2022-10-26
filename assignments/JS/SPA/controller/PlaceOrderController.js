@@ -402,16 +402,26 @@ $('#txtQuantity').on('keyup', function () {
     }
 });
 
-function updateCartItems(){
-
+function updateCartItems() {
+    for (let tm of cartDetails) {
+        if (tm.itemCode === $('#cmbItemCode').val()) {
+            tm.quantity = parseInt($('#txtQuantity').val());
+            loadAllCartDetails();
+            break;
+        }
+    }
 }
 
 // Update added items of Cart Table
 $('#btnUpdateCart').click(function () {
-    // $('#btnUpdateCart').attr('disabled', true);
-    if ($('#txtQuantity').val().trim().length !== 0 && $('#cmbCusId').val() !== null && $('#cmbItemCode').val() !== null){
+    if ($('#txtQuantity').val().trim().length !== 0 && $('#cmbCusId').val() !== null && $('#cmbItemCode').val() !== null) {
         updateCartItems();
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!'
+        })
+        $('#btnUpdateCart').attr('disabled', true);
     }
-
-
 });
