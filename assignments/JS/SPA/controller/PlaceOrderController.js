@@ -542,6 +542,13 @@ $('#txtCash').on('keyup', function () {
     if (checkCash()) {
         if ($('#lblSubTotal').text().length !== 0 && $('#txtDiscount').val().length !== 0 && $('#txtTotalCost').val().length !== 0) {
             $('#txtBalance').val(calculateBalance(parseFloat($('#txtTotalCost').val()), parseFloat($('#txtCash').val())));
+            if (parseFloat($('#txtBalance').val()) < 0) {
+                $('#invalidBalanceSpan').css('display', 'block');
+                $('#txtBalance').css("border", "2px solid red");
+            } else {
+                $('#invalidBalanceSpan').css('display', 'none');
+                $('#txtBalance').css("border", "1px solid rgb(206, 212, 218)");
+            }
         } else {
             $('#txtBalance').val(0);
         }
