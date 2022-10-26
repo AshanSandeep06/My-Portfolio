@@ -558,7 +558,7 @@ $('#txtCash').on('keyup', function () {
     enableOrDisablePlaceOrderButton();
 });
 
-$('#btnCancelOrder').click(function () {
+function clearAll() {
     clearCustomerData();
     clearItemData();
     $('#btnUpdateCart').attr('disabled', true);
@@ -571,6 +571,10 @@ $('#btnCancelOrder').click(function () {
     $('#txtTotalCost').val('');
     $('#txtCash').val('');
     $('#txtBalance').val('');
+}
+
+$('#btnCancelOrder').click(function () {
+    clearAll();
 });
 
 function enableOrDisablePlaceOrderButton() {
@@ -580,9 +584,9 @@ function enableOrDisablePlaceOrderButton() {
 }
 
 //Check from OrderID whether that Order is exist ?
-function existOrder(orderID){
+function existOrder(orderID) {
     for (let order of orders) {
-        if(order.orderId === orderID){
+        if (order.orderId === orderID) {
             return true;
         }
     }
@@ -590,8 +594,60 @@ function existOrder(orderID){
 }
 
 // This is for Place a Order
-function purchaseOrder(){
+function purchaseOrder() {
+    try {
+        if (!existOrder($('#orderId').val())) {
+            if ($('#tblCart>tbody>tr').length !== 0 && $('#cmbCusId').val() !== null) {
+                for (let tm of cartDetails) {
+                    var orderDetail = Object.assign({}, orderDetailObject);
+                    orderDetail.orderId = $('#orderId').val();
+                    orderDetail.cusId = $('#cmbCusId').val();
+                    orderDetail.itemCode = tm.itemCode;
+                    orderDetail.quantity = parseInt(tm.quantity);
+                    orderDetail.total = parseFloat(tm.total);
+                    orderDetails.push(orderDetail);
 
+                    // Updating Quantity
+                    var item = searchItem(orderDetail.itemCode);
+                    if (item !== null) {
+                        item.qtyOnHand = item.qtyOnHand - orderDetail.quantity;
+                    }
+                }
+
+                var order = Object.assign({}, orderObject);
+                order.orderId = $('#orderId').val();
+                order.cusId = $('#cmbCusId').val();
+                order.orderDate = $('#orderDate').val();
+                order.discount = $('#txtDiscount').val();
+                order.totalCost = $('#txtTotalCost').val();
+                orders.push(order);
+
+                Swal.fire(
+                    'Order Placement successful!',
+                    'Order has been placed successfully..!',
+                    'success'
+                )
+
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Failed...',
+                    text: 'Something went wrong!'
+                })
+            }
+        } else {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Oops...',
+                text: 'This Order is already exists..!'
+            })
+        }
+
+    } catch (e) {
+        console.log(e);
+    }
+    clearAll();
+    enableOrDisablePlaceOrderButton();
 }
 
 //Purchase Order click event
