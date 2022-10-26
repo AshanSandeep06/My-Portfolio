@@ -26,6 +26,7 @@ $('#orderId').val(generateOrderID());
 $('#invalidQtySpan').css('display', "none");
 $('#invalidDiscountSpan').css('display', "none");
 $('#invalidCashSpan').css('display', "none");
+$('#invalidBalanceSpan').css('display', "none");
 
 // Set the current date
 var date = new Date();
