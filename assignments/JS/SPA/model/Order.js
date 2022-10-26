@@ -1,5 +1,5 @@
 var orderObject = {
-    orderId:'',
+    orderId: '',
     cusId: '',
     orderDate: '',
     discount: 0.00,
