@@ -191,9 +191,18 @@ $('#btnAddToCart').click(function () {
                         cartTm.total = total;
 
                         cartDetails.push(cartTm);
-
                         loadAllCartDetails();
                     }
+
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        text: 'Your Ordered item has been added to the Cart',
+                        showConfirmButton: true,
+                        timer: 1500
+                    })
+
+
                 } else {
                     Swal.fire({
                         icon: 'error',
@@ -406,26 +415,45 @@ function updateCartItems() {
     for (let tm of cartDetails) {
         if (tm.itemCode === $('#cmbItemCode').val()) {
             tm.quantity = parseInt($('#txtQuantity').val());
+            tm.total = parseFloat(tm.quantity * tm.unitPrice).toFixed(2);
             loadAllCartDetails();
-            break;
+            calculateSubTotal();
+            calculateTotalCost();
+            bindTblRowClickEvents();
+            bindTblRowDblClickEvents();
+            return 0;
         }
     }
+    return -1;
 }
 
 // Update added items of Cart Table
 $('#btnUpdateCart').click(function () {
     if ($('#txtQuantity').val().trim().length !== 0 && $('#cmbCusId').val() !== null && $('#cmbItemCode').val() !== null) {
-        updateCartItems();
+        if (updateCartItems() !== -1) {
+            Swal.fire(
+                'Successfully Updated!',
+                'Selected Cart item has been Updated!',
+                'success'
+            )
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'This item hasn\'t been exist in the Cart, Therefore, Can\'t Updated!'
+            })
+        }
     } else {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Something went wrong!'
+            text: 'Something went wrong, Please try again.!'
         })
         $('#btnUpdateCart').attr('disabled', true);
     }
 });
 
+// --------------------------------------------------------------
 var c1 = Object.assign({}, customerObject);
 c1.id = "C00-001";
 c1.name = "Nimal Perera";
@@ -448,3 +476,5 @@ i2.qtyOnHand = 1000;
 
 items.push(i1);
 items.push(i2);
+// --------------------------------------------------------------
+
