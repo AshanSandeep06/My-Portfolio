@@ -633,9 +633,12 @@
                     </span>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-6 h-25 mt-3">
+                <div class="col-12 col-md-6 col-lg-10 h-25 mt-3">
                     <label for="txtBalance" class="form-label">Balance (LKR)</label>
-                    <input class="form-control" disabled id="txtBalance" type="text">
+                    <input class="form-control mb-2" disabled id="txtBalance" type="text">
+                    <span id="invalidBalanceSpan" style="color: red; font-size: 12.5px; font-weight: 600;">
+                        Invalid Balance, Balance shouldn't be like minus values : 0 Or Balance > 0
+                    </span>
                 </div>
             </div>
             <div class="row">
