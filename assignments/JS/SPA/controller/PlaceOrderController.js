@@ -32,6 +32,31 @@ $('#orderDate').val(`${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate
 loadAllCustomerIDs();
 loadAllItemCodes();
 
+// --------------------------------------------------------------
+var c1 = Object.assign({}, customerObject);
+c1.id = "C00-001";
+c1.name = "Nimal Perera";
+c1.address = "Galle 28/C";
+c1.salary = 45000;
+
+customers.push(c1);
+
+var i1 = Object.assign({}, itemObject);
+i1.itemCode = "I-001";
+i1.itemName = "Soap";
+i1.unitPrice = 200.00;
+i1.qtyOnHand = 4000;
+
+var i2 = Object.assign({}, itemObject);
+i2.itemCode = "I-002";
+i2.itemName = "Biscuits";
+i2.unitPrice = 150.00;
+i2.qtyOnHand = 1000;
+
+items.push(i1);
+items.push(i2);
+// --------------------------------------------------------------
+
 // Generates OrderID (Order id's convention ---> OI-001)
 function generateOrderID() {
     if (orders.length === 0) {
@@ -454,31 +479,6 @@ $('#btnUpdateCart').click(function () {
         $('#btnUpdateCart').attr('disabled', true);
     }
 });
-
-// --------------------------------------------------------------
-var c1 = Object.assign({}, customerObject);
-c1.id = "C00-001";
-c1.name = "Nimal Perera";
-c1.address = "Galle 28/C";
-c1.salary = 45000;
-
-customers.push(c1);
-
-var i1 = Object.assign({}, itemObject);
-i1.itemCode = "I-001";
-i1.itemName = "Soap";
-i1.unitPrice = 200.00;
-i1.qtyOnHand = 4000;
-
-var i2 = Object.assign({}, itemObject);
-i2.itemCode = "I-002";
-i2.itemName = "Biscuits";
-i2.unitPrice = 150.00;
-i2.qtyOnHand = 1000;
-
-items.push(i1);
-items.push(i2);
-// --------------------------------------------------------------
 
 $('#txtDiscount').on('keyup', function () {
 
