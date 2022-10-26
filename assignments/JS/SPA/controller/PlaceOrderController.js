@@ -385,7 +385,6 @@ function bindTblRowDblClickEvents() {
 
 $('#txtQuantity').on('keyup', function () {
     if ($('#tblCart>tbody>tr').length !== 0) {
-        if(true){
             if ($('#txtQuantity').val().trim().length !== 0) {
                 var qtyValidation = /^[1-9][0-9]{0,4}$/;
                 if (qtyValidation.test($('#txtQuantity').val())) {
@@ -396,7 +395,6 @@ $('#txtQuantity').on('keyup', function () {
             } else {
                 $('#btnUpdateCart').attr('disabled', true);
             }
-        }
     } else {
         $('#btnUpdateCart').attr('disabled', true);
     }
