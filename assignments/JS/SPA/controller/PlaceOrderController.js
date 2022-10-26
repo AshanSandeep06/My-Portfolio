@@ -22,8 +22,9 @@ $('#txtDiscount').val(0.00);
 // Set the OrderID when application runs in the initial point
 $('#orderId').val(generateOrderID());
 
-// InvalidQtySpan will display: hidden, until OrderedQuantity textField's value is invalid
+// InvalidQtySpan, invalidDiscountSpan will display: hidden, until OrderedQuantity textField's value is invalid
 $('#invalidQtySpan').css('display', "none");
+$('#invalidDiscountSpan').css('display', "none");
 
 // Set the current date
 var date = new Date();
@@ -480,7 +481,24 @@ $('#btnUpdateCart').click(function () {
     }
 });
 
-$('#txtDiscount').on('keyup', function () {
+// validate Quantity textField
+function checkDiscount() {
+    if ($('#txtDiscount').val().trim().length !== 0) {
+        var discountValidation = /^[0-9]{1,6}$/;
+        if (discountValidation.test($('#txtDiscount').val())) {
+            $('#invalidDiscountSpan').css('display', 'none');
+            $('#txtDiscount').css("border", "1px solid rgb(206, 212, 218)");
+        } else {
+            $('#invalidDiscountSpan').css('display', 'block');
+            $('#txtDiscount').css("border", "2px solid red");
+        }
+    } else {
+        $('#invalidDiscountSpan').css('display', 'none');
+        $('#txtDiscount').css("border", "1px solid rgb(206, 212, 218)");
+    }
+}
 
+$('#txtDiscount').on('keyup', function () {
+    checkDiscount();
 });
 
