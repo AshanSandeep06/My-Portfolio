@@ -579,6 +579,12 @@ function enableOrDisablePlaceOrderButton() {
         /^[0-9]{1,}(.[0-9]{2})?$/.test($('#txtBalance').val())));
 }
 
+//Check from OrderID whether that Order is exist ?
+function existOrder(orderID){
+
+}
+
+// This is for Place a Order
 function purchaseOrder(){
 
 }
