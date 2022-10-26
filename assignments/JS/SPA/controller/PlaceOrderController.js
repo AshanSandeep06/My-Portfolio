@@ -484,7 +484,7 @@ $('#btnUpdateCart').click(function () {
 // validate Quantity textField
 function checkDiscount() {
     if ($('#txtDiscount').val().trim().length !== 0) {
-        var discountValidation = /^[0-9]{1,6}(.[0-9]{2})?$/;
+        var discountValidation = /^[1-9]{1}[0-9]{0,5}(.[0-9]{2})?$/;
         if (discountValidation.test($('#txtDiscount').val())) {
             $('#invalidDiscountSpan').css('display', 'none');
             $('#txtDiscount').css("border", "1px solid rgb(206, 212, 218)");
