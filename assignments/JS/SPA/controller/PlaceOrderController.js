@@ -547,6 +547,7 @@ $('#txtCash').on('keyup', function () {
     } else {
         $('#txtBalance').val(0);
     }
+    enableOrDisablePlaceOrderButton();
 });
 
 $('#btnCancelOrder').click(function () {
@@ -565,7 +566,9 @@ $('#btnCancelOrder').click(function () {
 });
 
 function enableOrDisablePlaceOrderButton() {
-    $('#btnPlaceOrder').attr('disabled', !($('#cmbCusId').val() !== null && $('#tblCart>tbody>tr').length !== 0));
+    $('#btnPlaceOrder').attr('disabled', !($('#cmbCusId').val() !== null && $('#tblCart>tbody>tr').length !== 0 &&
+        $('#txtCash').val().length !== 0 && /^[0-9]{1,}(.[0-9]{2})?$/.test($('#txtCash').val()) && $('#txtBalance').val().length !== 0 &&
+        /^[0-9]{1,}(.[0-9]{2})?$/.test($('#txtBalance').val())));
 }
 
 //Purchase Order
