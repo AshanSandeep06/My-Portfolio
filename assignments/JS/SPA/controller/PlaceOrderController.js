@@ -376,6 +376,7 @@ function bindTblRowDblClickEvents() {
                     if ($(this).children(':eq(0)').text() === tm.itemCode) {
                         cartDetails.splice(cartDetails.indexOf(tm), 1);
                         $(this).remove();
+                        clearItemData();
                         break;
                     }
                 }
@@ -436,6 +437,7 @@ $('#btnUpdateCart').click(function () {
                 'Selected Cart item has been Updated!',
                 'success'
             )
+            clearItemData();
         } else {
             Swal.fire({
                 icon: 'error',
