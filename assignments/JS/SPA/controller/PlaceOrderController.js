@@ -22,9 +22,10 @@ $('#txtDiscount').val(0.00);
 // Set the OrderID when application runs in the initial point
 $('#orderId').val(generateOrderID());
 
-// InvalidQtySpan, invalidDiscountSpan will display: hidden, until OrderedQuantity textField's value is invalid
+// Spans for validations will display: hidden, until that related textField's values are invalid
 $('#invalidQtySpan').css('display', "none");
 $('#invalidDiscountSpan').css('display', "none");
+$('#invalidCashSpan').css('display', "none");
 
 // Set the current date
 var date = new Date();
@@ -513,13 +514,35 @@ function calculateBalance(totalCost, cash) {
     return cash - totalCost;
 }
 
-$('#txtCash').on('keyup', function () {
-    if ($('#txtDiscount').val().length === 0) {
-        $('#txtDiscount').val(0);
+// validate Cash textField
+function checkCash() {
+    if ($('#txtCash').val().trim().length !== 0) {
+        var cashValidation = /^[0-9]{1,}(.[0-9]{2})?$/;
+        if (cashValidation.test($('#txtCash').val())) {
+            $('#invalidCashSpan').css('display', 'none');
+            $('#txtCash').css("border", "1px solid rgb(206, 212, 218)");
+            return true;
+        } else {
+            $('#invalidCashSpan').css('display', 'block');
+            $('#txtCash').css("border", "2px solid red");
+            return false;
+        }
+    } else {
+        $('#invalidCashSpan').css('display', 'none');
+        $('#txtCash').css("border", "1px solid rgb(206, 212, 218)");
+        return false;
     }
+}
 
-    if ($('#lblSubTotal').text().length !== 0 && $('#txtDiscount').val().length !== 0 && $('#txtTotalCost').val().length !== 0) {
-        $('#txtBalance').val(calculateBalance(parseFloat($('#txtTotalCost').val()), parseFloat($('#txtCash').val())));
+$('#txtCash').on('keyup', function () {
+    if (checkCash()) {
+        if ($('#lblSubTotal').text().length !== 0 && $('#txtDiscount').val().length !== 0 && $('#txtTotalCost').val().length !== 0) {
+            $('#txtBalance').val(calculateBalance(parseFloat($('#txtTotalCost').val()), parseFloat($('#txtCash').val())));
+        }else {
+            if($('#txtBalance').val(0));
+        }
+    }else {
+        if($('#txtBalance').val(0));
     }
 });
 
