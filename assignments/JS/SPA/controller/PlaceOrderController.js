@@ -540,10 +540,10 @@ $('#txtCash').on('keyup', function () {
         if ($('#lblSubTotal').text().length !== 0 && $('#txtDiscount').val().length !== 0 && $('#txtTotalCost').val().length !== 0) {
             $('#txtBalance').val(calculateBalance(parseFloat($('#txtTotalCost').val()), parseFloat($('#txtCash').val())));
         } else {
-            if ($('#txtBalance').val(0)) ;
+            $('#txtBalance').val(0);
         }
     } else {
-        if ($('#txtBalance').val(0)) ;
+        $('#txtBalance').val(0);
     }
 });
 
@@ -553,11 +553,9 @@ $('#btnCancelOrder').click(function () {
     $('#btnUpdateCart').attr('disabled', true);
     $('#btnAddToCart').attr('disabled', true);
     $('#btnPlaceOrder').attr('disabled', true);
-
     cartDetails = [];
     loadAllCartDetails();
-
-    $('#lblSubTotal').text(0+" LKR");
+    $('#lblSubTotal').text(0 + " LKR");
     $('#txtDiscount').val(0);
     $('#txtTotalCost').val('');
     $('#txtCash').val('');
