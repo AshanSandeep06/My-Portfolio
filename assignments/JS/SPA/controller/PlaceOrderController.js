@@ -102,6 +102,7 @@ function setCustomerDetails() {
 // Set customer data
 $('#cmbCusId').on('click', function () {
     setCustomerDetails();
+    enableOrDisablePlaceOrderButton();
 });
 
 // load all added items' codes
@@ -268,9 +269,7 @@ $('#btnAddToCart').click(function () {
     clearFields();
     bindTblRowClickEvents();
     bindTblRowDblClickEvents();
-
-    // enableOrDisablePlaceOrderButton();
-
+    enableOrDisablePlaceOrderButton();
 });
 
 function clearFields() {
@@ -326,6 +325,7 @@ function clearCustomerData() {
     $('#cusName').val('');
     $('#cusAddress').val('');
     $('#cusSalary').val('');
+    enableOrDisablePlaceOrderButton();
 }
 
 function clearItemData() {
@@ -419,6 +419,7 @@ function bindTblRowDblClickEvents() {
                 )
             }
         })
+        enableOrDisablePlaceOrderButton();
     });
 }
 
@@ -480,6 +481,7 @@ $('#btnUpdateCart').click(function () {
         })
         $('#btnUpdateCart').attr('disabled', true);
     }
+    enableOrDisablePlaceOrderButton();
 });
 
 // validate Discount textField
@@ -561,6 +563,10 @@ $('#btnCancelOrder').click(function () {
     $('#txtCash').val('');
     $('#txtBalance').val('');
 });
+
+function enableOrDisablePlaceOrderButton() {
+    $('#btnPlaceOrder').attr('disabled', !($('#cmbCusId').val() !== null && $('#tblCart>tbody>tr').length !== 0));
+}
 
 //Purchase Order
 $('#btnPlaceOrder').on('click', function () {
