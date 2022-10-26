@@ -310,6 +310,7 @@ $("#btnClearCusData").on('click', function (event) {
 $("#btnClearItemData").on('click', function (event) {
     clearItemData();
     $('#btnUpdateCart').attr('disabled', true);
+    $('#btnAddToCart').attr('disabled', true);
 });
 
 function reduceQuantity() {
@@ -325,6 +326,7 @@ function bindTblRowClickEvents() {
     $('#tblCart>tbody>tr').click(function () {
         if ($('#tblCart>tbody>tr').length !== 0) {
             $('#btnUpdateCart').attr('disabled', false);
+            $('#btnAddToCart').attr('disabled', true);
 
             $('#cmbItemCode').val($(this).children().eq(0).text());
             $('#iName').val($(this).children().eq(1).text());
@@ -385,22 +387,31 @@ function bindTblRowDblClickEvents() {
 
 $('#txtQuantity').on('keyup', function () {
     if ($('#tblCart>tbody>tr').length !== 0) {
-            if ($('#txtQuantity').val().trim().length !== 0) {
-                var qtyValidation = /^[1-9][0-9]{0,4}$/;
-                if (qtyValidation.test($('#txtQuantity').val())) {
-                    $('#btnUpdateCart').attr('disabled', false);
-                } else {
-                    $('#btnUpdateCart').attr('disabled', true);
-                }
+        if ($('#txtQuantity').val().trim().length !== 0) {
+            var qtyValidation = /^[1-9][0-9]{0,4}$/;
+            if (qtyValidation.test($('#txtQuantity').val())) {
+                $('#btnUpdateCart').attr('disabled', false);
             } else {
                 $('#btnUpdateCart').attr('disabled', true);
             }
+        } else {
+            $('#btnUpdateCart').attr('disabled', true);
+        }
     } else {
         $('#btnUpdateCart').attr('disabled', true);
     }
 });
 
+function updateCartItems(){
+
+}
+
 // Update added items of Cart Table
 $('#btnUpdateCart').click(function () {
+    // $('#btnUpdateCart').attr('disabled', true);
+    if ($('#txtQuantity').val().trim().length !== 0 && $('#cmbCusId').val() !== null && $('#cmbItemCode').val() !== null){
+        updateCartItems();
+    }
+
 
 });
