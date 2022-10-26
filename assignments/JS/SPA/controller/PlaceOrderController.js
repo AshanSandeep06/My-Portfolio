@@ -571,6 +571,14 @@ function clearAll() {
     $('#txtTotalCost').val('');
     $('#txtCash').val('');
     $('#txtBalance').val('');
+
+    $('#invalidDiscountSpan').css('display', "none");
+    $('#invalidCashSpan').css('display', "none");
+    $('#invalidBalanceSpan').css('display', "none");
+
+    $('#txtBalance').css("border", "1px solid rgb(206, 212, 218)");
+    $('#txtCash').css("border", "1px solid rgb(206, 212, 218)");
+    $('#txtDiscount').css("border", "1px solid rgb(206, 212, 218)");
 }
 
 $('#btnCancelOrder').click(function () {
