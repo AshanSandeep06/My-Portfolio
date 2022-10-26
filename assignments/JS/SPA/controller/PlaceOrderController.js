@@ -167,10 +167,6 @@ function calculateTotalCost() {
     discount = parseFloat($('#txtDiscount').val());
     totalCost = parseFloat(subTotal) - parseFloat(discount);
 
-    console.log("Sub total : " + subTotal)
-    console.log("Discount : " + discount)
-    console.log("Total Cost : " + totalCost)
-
     // $('#txtDiscount').val(discount.toFixed(2));
     $('#txtTotalCost').val(totalCost.toFixed(2));
 }
@@ -494,15 +490,18 @@ function checkDiscount() {
             $('#txtDiscount').css("border", "1px solid rgb(206, 212, 218)");
             calculateSubTotal();
             calculateTotalCost();
+            $('#txtCash').attr('disabled', false);
         } else {
             $('#invalidDiscountSpan').css('display', 'block');
             $('#txtDiscount').css("border", "2px solid red");
             $('#txtTotalCost').val($('#lblSubTotal').text().split(' ')[0]);
+            $('#txtCash').attr('disabled', true);
         }
     } else {
         $('#invalidDiscountSpan').css('display', 'none');
         $('#txtDiscount').css("border", "1px solid rgb(206, 212, 218)");
         $('#txtTotalCost').val($('#lblSubTotal').text().split(' ')[0]);
+        $('#txtCash').attr('disabled', true);
     }
 }
 
