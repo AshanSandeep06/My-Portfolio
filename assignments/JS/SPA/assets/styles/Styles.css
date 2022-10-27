@@ -67,11 +67,11 @@ header > nav {
     margin-bottom: 8px;
 }
 
-#clear-btn1, #clear-btn2{
+#clear-btn1, #clear-btn2 {
     margin-bottom: 8px;
 }
 
-#delete-btn1, #delete-btn2{
+#delete-btn1, #delete-btn2 {
     margin-bottom: 8px;
 }
 
@@ -113,5 +113,23 @@ header > nav {
 }
 
 #btnUpdateCart:hover {
-    background-color: #1a71ef!important;
+    background-color: #1a71ef !important;
+}
+
+@media (max-width: 1024px) {
+    #orderDetailsSection > section > section > div:nth-child(2) {
+        left: 33px;
+    }
+}
+
+@media (max-width: 740px) {
+    #orderDetailsSection > section > section > div:nth-child(2) {
+        left: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    #orderDetailsSection > section > section > div:nth-child(2) > button {
+        width: max-content !important;
+    }
 }
