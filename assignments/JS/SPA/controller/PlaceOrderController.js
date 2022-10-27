@@ -283,7 +283,11 @@ function enableOrDisableAddToCartButton() {
     if ($('#txtQuantity').val().trim().length !== 0 && $('#cmbCusId').val() !== null && $('#cmbItemCode').val() !== null && $('#orderDate').val().trim().length !== 0) {
         var qtyValidation = /^[1-9][0-9]{0,4}$/;
         if (qtyValidation.test($('#txtQuantity').val())) {
-            $('#btnAddToCart').attr('disabled', false);
+            if (parseInt($('#txtQuantity').val()) <= parseInt($('#QuantityOnHand').val())) {
+                $('#btnAddToCart').attr('disabled', false);
+            } else {
+                $('#btnAddToCart').attr('disabled', true);
+            }
         } else {
             $('#btnAddToCart').attr('disabled', true);
         }
@@ -299,13 +303,21 @@ $('#orderDate, #cmbCusId, #cmbItemCode').click(function () {
 
 // validate Quantity textField
 function checkQuantity() {
+    var text = "Invalid Quantity Pattern : 15 (Only a Number)";
     if ($('#txtQuantity').val().trim().length !== 0) {
         var qtyValidation = /^[1-9][0-9]{0,4}$/;
         if (qtyValidation.test($('#txtQuantity').val())) {
-            $('#invalidQtySpan').css('display', 'none');
-            $('#txtQuantity').css("border", "1px solid rgb(206, 212, 218)");
+            if (parseInt($('#txtQuantity').val()) <= parseInt($('#QuantityOnHand').val())) {
+                $('#invalidQtySpan').css('display', 'none');
+                $('#txtQuantity').css("border", "1px solid rgb(206, 212, 218)");
+            } else {
+                $('#invalidQtySpan').text("Please Enter a Amount lower than : " + $('#QuantityOnHand').val());
+                $('#invalidQtySpan').css('display', 'block');
+                $('#txtQuantity').css("border", "2px solid red");
+            }
         } else {
             $('#invalidQtySpan').css('display', 'block');
+            $('#invalidQtySpan').text(text);
             $('#txtQuantity').css("border", "2px solid red");
         }
     } else {
