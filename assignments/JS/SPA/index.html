@@ -668,7 +668,7 @@
         <!--Cart Details Table-->
         <section class="d-flex flex-column h-50 col-10 col-xl-11 bg-white shadow-lg align-items-center
         pt-3 mt-4 table-bordered table-hover table-responsive">
-            <h3 class="text-center bg-primary p-2 text-light rounded-3 col-12 fs-4">Order Details</h3>
+            <h3 class="text-center bg-primary p-2 text-light rounded-3 col-12 fs-4">Cart Details</h3>
             <div style="height: 120px;"
                  class="row overflow-auto h-60 col-12 col-lg-12 rounded-2 justify-content-around table-responsive">
                 <table id="tblCart" class="table table-striped table-hover rounded-5 mb-4" style="height: 20px;">
@@ -731,7 +731,7 @@
             </div>
         </section>
 
-        <section class="row justify-content-center mt-5">
+        <section class="row justify-content-center mt-4">
             <div class="col-12 col-md-4 col-lg-3 col-xl-2">
                 <label for="od_txtOrderID" class="form-label">Order ID :</label>
                 <input class="form-control" disabled id="od_txtOrderID" type="text">
@@ -757,60 +757,32 @@
                 <input class="form-control" disabled id="od_txtDiscount" type="text">
             </div>
         </section>
+
+        <section class="row justify-content-center mt-5">
+            <!--Order Details-->
+            <section style="height: 374px!important;" class="d-flex flex-column h-100 col-10 col-xl-11 bg-white shadow-lg rounded-4 align-items-center pt-3">
+                <h3 class="text-center bg-primary p-2 text-light rounded-3 col-12 fs-4">Order Details</h3>
+                <div class="row overflow-auto h-60 col-9 col-lg-9 rounded-2 justify-content-around">
+                    <table class="table table-striped table-hover rounded-5 mt-1">
+                        <thead class="text-white green-hd sticky-top" style="background: #17377f;">
+                        <tr>
+                            <th scope="col">Order ID</th>
+                            <th scope="col">Customer ID</th>
+                            <th scope="col">Item Code</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tblOrderDetails">
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+
     </section>
 </main>
-
-
-<!--<main id="orderDetailsSection" class="row justify-content-center">
-    <div class="row justify-content-evenly h-50">
-
-        &lt;!&ndash; Table Order &ndash;&gt;
-        <section
-                class="d-flex flex-column h-100 col-10 col-xl-11 bg-white shadow-lg rounded-5 align-items-center pt-3 mt-4 mb-4 ubFt">
-            <h3 class="text-center bg-success p-2 text-light rounded-5 col-12 ubFt">Orders</h3>
-            <div class="row overflow-auto h-60 col-9 col-lg-9 rounded-2 justify-content-around">
-                <table class="table table-striped table-hover ubFt">
-                    <thead class="green-hd text-white sticky-top">
-                    <tr>
-                        <th scope="col">Order ID</th>
-                        <th scope="col">Customer ID</th>
-                        <th scope="col">Order Date</th>
-                        <th scope="col">Sub Total</th>
-                        <th scope="col">Discount</th>
-                    </tr>
-                    </thead>
-                    <tbody id="tblOrder">
-
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        &lt;!&ndash; Table Order Details&ndash;&gt;
-        <section
-                class="d-flex flex-column h-100 col-10 col-xl-11 bg-white shadow-lg rounded-5 align-items-center pt-3 ubFt">
-            <h3 class="text-center bg-success p-2 text-light rounded-5 col-12">Orders Details</h3>
-            <div class="row overflow-auto h-60 col-9 col-lg-9 rounded-2 justify-content-around">
-                <table class="table table-striped table-hover ubFt">
-                    <thead class="green-hd text-white sticky-top">
-                    <tr>
-                        <th scope="col">Order ID</th>
-                        <th scope="col">Customer ID</th>
-                        <th scope="col">Item Code</th>
-                        <th scope="col">Qty</th>
-                        <th scope="col">Total</th>
-                    </tr>
-                    </thead>
-                    <tbody id="tblOrderDetails">
-
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-    </div>
-</main>-->
-
 
 <!--Bootstrap for js-->
 <script src="assets/js/bootstrap.min.js"></script>
