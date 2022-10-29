@@ -21,12 +21,14 @@ $('#txtSearchOrder').on('keyup', function () {
             $('#searchOrderSpan').css('display', 'block');
             $('#txtSearchOrder').css("border", "2px solid red");
             clearOrderData();
+            clearOrderDetailsData();
         }
     } else {
         $('#btnSearchOrder').attr('disabled', true);
         $('#searchOrderSpan').css('display', 'none');
         $('#txtSearchOrder').css("border", "1px solid rgb(206, 212, 218)");
         clearOrderData();
+        clearOrderDetailsData();
     }
 });
 
@@ -50,27 +52,43 @@ function searchOrder() {
     for (let order of orders) {
         if ($('#txtSearchOrder').val() === order.orderId) {
             setOrderData(order);
+            searchOrderDetails();
             return true;
         } else {
             clearOrderData();
+            clearOrderDetailsData();
         }
     }
     return false;
 }
 
-function searchOrderDetails(){
-
+function searchOrderDetails() {
+    var orderDetailsArray = [];
+    for (let orderDetail of orderDetails) {
+        if ($('#txtSearchOrder').val() === orderDetail.orderId) {
+            orderDetailsArray.push(orderDetail);
+        }
+    }
+    loadAllOrderDetails(orderDetailsArray);
 }
 
-function setOrderDetailsData(order) {
+function loadAllOrderDetails(orderDetailsArray) {
+    clearOrderDetailsData();
 
+    for (let i = 0; i < orderDetailsArray.length; i++) {
+        var tblRow = `<tr><td>${orderDetailsArray[i].orderId}</td><td>${orderDetailsArray[i].cusId}</td>
+        <td>${orderDetailsArray[i].itemCode}</td><td>${orderDetailsArray[i].quantity}</td>
+        <td>${orderDetailsArray[i].total}</td></tr>`;
+
+        $("#tblOrderDetails>tbody").append(tblRow);
+    }
 }
 
 function clearOrderDetailsData() {
-
+    $('#tblOrderDetails>tbody').empty();
 }
 
-function errorAlert() {
+function checkOrder() {
     if (searchOrder() === false) {
         Swal.fire({
             icon: 'error',
@@ -81,7 +99,7 @@ function errorAlert() {
 }
 
 $('#btnSearchOrder').click(function () {
-    errorAlert();
+    checkOrder();
 });
 
 $('#txtSearchOrder').on('keydown', function (event) {
