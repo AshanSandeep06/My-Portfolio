@@ -63,19 +63,19 @@ items.push(i2);
 // Generates OrderID (Order id's convention ---> OI-001)
 function generateOrderID() {
     if (orders.length === 0) {
-        return "OI-001";
+        return "OID-001";
     } else {
         var i = parseInt(orders[orders.length - 1].orderId.split("-")[1]);
         i++;
 
         if (i < 10) {
-            return "OI-00" + i;
+            return "OID-00" + i;
         } else if (i < 100) {
-            return "OI-0" + i;
+            return "OID-0" + i;
         } else if (i < 1000) {
-            return "OI-" + i;
+            return "OID-" + i;
         } else {
-            return "OI-" + i;
+            return "OID-" + i;
         }
     }
 }
