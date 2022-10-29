@@ -77,3 +77,8 @@ $('#txtSearchOrder').on('keydown', function (event) {
         $('#btnSearchOrder').get(0).focus();
     }
 });
+
+$('#btnSearchOrderClear').on('click', function () {
+    $('#txtSearchOrder').val('');
+    clearOrderData();
+});
