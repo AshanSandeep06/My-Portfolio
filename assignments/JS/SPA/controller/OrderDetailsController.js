@@ -62,7 +62,6 @@ $('#btnSearchOrder').click(function () {
 
 $('#txtSearchOrder').on('keydown', function (event) {
     if (event.key === "Enter") {
-        console.log("Inside")
         $('#btnSearchOrder').get(0).focus();
     }
 });
