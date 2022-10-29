@@ -93,7 +93,7 @@ function checkOrder() {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'There is no Order exists for this Order ID!'
+            text: 'There is no Orders exists for this Order ID!'
         })
     }
 }
@@ -109,6 +109,8 @@ $('#txtSearchOrder').on('keydown', function (event) {
 });
 
 $('#btnSearchOrderClear').on('click', function () {
+    $('#txtSearchOrder').css("border", "1px solid rgb(206, 212, 218)");
+    $('#searchOrderSpan').css('display', "none");
     $('#txtSearchOrder').val('');
     clearOrderData();
 });
