@@ -20,11 +20,13 @@ $('#txtSearchOrder').on('keyup', function () {
             $('#btnSearchOrder').attr('disabled', true);
             $('#searchOrderSpan').css('display', 'block');
             $('#txtSearchOrder').css("border", "2px solid red");
+            clearOrderData();
         }
     } else {
         $('#btnSearchOrder').attr('disabled', true);
         $('#searchOrderSpan').css('display', 'none');
         $('#txtSearchOrder').css("border", "1px solid rgb(206, 212, 218)");
+        clearOrderData();
     }
 });
 
@@ -36,11 +38,21 @@ function setOrderData(order) {
     $('#od_txtDiscount').val(order.discount);
 }
 
+function clearOrderData() {
+    $('#od_txtOrderID').val('');
+    $('#od_txtOrderDate').val('');
+    $('#od_txtCustomerID').val('');
+    $('#od_txtTotalCost').val('');
+    $('#od_txtDiscount').val('');
+}
+
 function searchOrder() {
     for (let order of orders) {
         if ($('#txtSearchOrder').val() === order.orderId) {
             setOrderData(order);
             return true;
+        } else {
+            clearOrderData();
         }
     }
     return false;
