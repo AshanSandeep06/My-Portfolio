@@ -10,7 +10,7 @@ $('#btnSearchOrder').attr('disabled', true);
 $('#searchOrderSpan').css('display', "none");
 
 // Validate txtSearchOrder textField
-$('#txtSearchOrder').on('keyup', function (event) {
+$('#txtSearchOrder').on('keyup', function () {
     if ($('#txtSearchOrder').val().length !== 0) {
         if (orderIdPattern.test($('#txtSearchOrder').val())) {
             $('#btnSearchOrder').attr('disabled', false);
@@ -26,4 +26,12 @@ $('#txtSearchOrder').on('keyup', function (event) {
         $('#searchOrderSpan').css('display', 'none');
         $('#txtSearchOrder').css("border", "1px solid rgb(206, 212, 218)");
     }
+});
+
+$('#btnSearchOrder').click(function () {
+
+});
+
+$('#txtSearchOrder').on('click', function () {
+
 });
