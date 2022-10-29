@@ -113,4 +113,5 @@ $('#btnSearchOrderClear').on('click', function () {
     $('#searchOrderSpan').css('display', "none");
     $('#txtSearchOrder').val('');
     clearOrderData();
+    clearOrderDetailsData();
 });
