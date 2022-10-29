@@ -58,6 +58,18 @@ function searchOrder() {
     return false;
 }
 
+function searchOrderDetails(){
+
+}
+
+function setOrderDetailsData(order) {
+
+}
+
+function clearOrderDetailsData() {
+
+}
+
 function errorAlert() {
     if (searchOrder() === false) {
         Swal.fire({
