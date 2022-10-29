@@ -30,8 +30,8 @@ $('#txtSearchOrder').on('keyup', function () {
 
 function setOrderData(order) {
     $('#od_txtOrderID').val(order.orderId);
-    $('#od_txtOrderDate').val(order.cusId);
-    $('#od_txtCustomerID').val(order.orderDate);
+    $('#od_txtOrderDate').val(order.orderDate);
+    $('#od_txtCustomerID').val(order.cusId);
     $('#od_txtTotalCost').val(order.totalCost);
     $('#od_txtDiscount').val(order.discount);
 }
@@ -60,6 +60,9 @@ $('#btnSearchOrder').click(function () {
     errorAlert();
 });
 
-$('#txtSearchOrder').on('click', function () {
-    errorAlert();
+$('#txtSearchOrder').on('keydown', function (event) {
+    if (event.key === "Enter") {
+        console.log("Inside")
+        $('#btnSearchOrder').get(0).focus();
+    }
 });
