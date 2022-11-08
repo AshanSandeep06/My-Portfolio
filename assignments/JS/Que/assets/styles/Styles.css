@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #074564;
+}
+
+#txtColor {
+    height: 33px;
+}
+
+#imgShop {
+    background: url("../img/cashier.png");
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+#secondSection {
+    align-items: center;
+}
+
+#container {
+    position: relative;
+    top: 26px;
+}
+
+#secondSection > section:first-child {
+    border-bottom: 3px solid black;
+    gap: 18px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 140px;
+    padding-bottom: 10px;
+}
+
+#secondSection > section:first-child > div {
+    width: 120px;
+    height: 55px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#secondSection > section:first-child > div > h1 {
+    font-size: 20px;
+    width: max-content;
+    height: max-content;
+    margin: 0;
+}
+
+#btnStart, #btnStop {
+    padding: 6px 25px 6px 25px;
+    font-size: 18px;
+}
