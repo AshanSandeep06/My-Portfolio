@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-Queue</title>
+</head>
+
+<body>
+<main class="container-fluid">
+    <section class="row">
+        <section class="row mt-4">
+            <div class="col-12">
+                <h1 class="text-center">JavaScript Queue</h1>
+            </div>
+        </section>
+
+        <section class="row col-4 mt-3 mx-2">
+            <div class="mb-3">
+                <label for="txtName" class="form-label">Enter a Name :</label>
+                <input type="text" class="form-control" id="txtName">
+            </div>
+
+            <div class="mb-3">
+                <label for="txtColor" class="form-label">Choose a Color</label>
+                <input type="color" class="form-control" id="txtColor"
+                       title="Choose your color">
+            </div>
+
+            <div style="width: max-content;" class="mb-3 mt-4">
+                <button id="btnAddToQueue" type="button" class="btn btn-primary">Add To Queue</button>
+            </div>
+
+            <div class="mb-3 mt-4 col-3">
+                <button id="btnClearFields" type="button" class="btn btn-warning">Clear</button>
+            </div>
+        </section>
+    </section>
+    <section id="secondSection" class="row">
+        <section id="container" class="col-9 d-flex mx-4">
+
+        </section>
+
+        <div id="imgShop" class="col-3"></div>
+    </section>
+
+    <section class="row justify-content-center mt-4">
+        <div class="d-flex col-4 justify-content-center gap-5">
+            <button class="btn btn-success" id="btnStart">Start</button>
+            <button class="btn btn-danger" id="btnStop">Stop</button>
+        </div>
+    </section>
+</main>
+</body>
+</html>
