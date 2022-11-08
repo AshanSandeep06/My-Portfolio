@@ -31,7 +31,7 @@ body {
 }
 
 #secondSection > section:first-child {
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid whitesmoke;
     gap: 18px;
     align-items: flex-end;
     justify-content: flex-end;
