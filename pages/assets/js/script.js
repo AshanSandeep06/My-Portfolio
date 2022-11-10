@@ -5,8 +5,8 @@ $(window).on('load', function () {
     $('body').children(':not(#loader,#extra-div)').fadeIn(3000);
 });
 
-$(document).ready(function (){
-    $('body').children(':not(#loader,#extra-div)').css('display','none');
+$(document).ready(function () {
+    $('body').children(':not(#loader,#extra-div)').css('display', 'none');
 });
 
 /* ------------------------ Projects Page -------------------- */
@@ -108,7 +108,7 @@ $('#btnWeb').on('click', function () {
 
 
 /* ------------------------ Assignments Page -------------------- */
-for (let i = 1; i < 16; i++) {
+for (let i = 1; i < 18; i++) {
     $('#btnAssignment-' + i).on('click', function () {
         let pressedBtnID = this.id;
         switch (pressedBtnID) {
@@ -212,6 +212,20 @@ for (let i = 1; i < 16; i++) {
 
             case "btnAssignment-15":
                 $("#btnAssignment-15>a").attr({
+                    "target": "_blank",
+                    "href": "../assignments/JS/SPA/index.html"
+                });
+                break;
+
+            case "btnAssignment-16":
+                $("#btnAssignment-16>a").attr({
+                    "target": "_blank",
+                    "href": "../assignments/JS/SPA/index.html"
+                });
+                break;
+
+            case "btnAssignment-17":
+                $("#btnAssignment-17>a").attr({
                     "target": "_blank",
                     "href": "../assignments/JS/SPA/index.html"
                 });
