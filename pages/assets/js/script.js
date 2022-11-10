@@ -220,14 +220,14 @@ for (let i = 1; i < 18; i++) {
             case "btnAssignment-16":
                 $("#btnAssignment-16>a").attr({
                     "target": "_blank",
-                    "href": "../assignments/JS/SPA/index.html"
+                    "href": "../assignments/JS/Que/index.html"
                 });
                 break;
 
             case "btnAssignment-17":
                 $("#btnAssignment-17>a").attr({
                     "target": "_blank",
-                    "href": "../assignments/JS/SPA/index.html"
+                    "href": "../assignments/JS/Knight/index.html"
                 });
                 break;
 
