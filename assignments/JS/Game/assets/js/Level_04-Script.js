@@ -151,6 +151,9 @@ function moveZombies_level_04() {
 
                     $('#gameLostModal-level_04').modal('show');
                     $('#gameLostModal-level_04').show();
+
+                    laugh.loop = true;
+                    laugh.play();
                 }
             }
 
@@ -203,6 +206,7 @@ $('#btnPlayAgain-level_04').on('click', function () {
     if ($('#level_4_section').css('display') !== 'none' && $('#level_1_section').css('display') === 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
         $('#gameWinModal-level_04').modal('hide');
         modalNeeds_level_04();
+        laugh.pause();
     }
 });
 
@@ -210,6 +214,7 @@ $('#gameLostBtnTryAgain-level_04').on('click', function () {
     if ($('#level_4_section').css('display') !== 'none' && $('#level_1_section').css('display') === 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
         $('#gameLostModal-level_04').modal('hide');
         modalNeeds_level_04();
+        laugh.pause();
     }
 });
 
@@ -217,6 +222,7 @@ $('#btnNext-level_04').on('click', function () {
     if ($('#level_4_section').css('display') !== 'none' && $('#level_1_section').css('display') === 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
         $('#level_4_section').css('display', 'none');
         $('#homePageSection').fadeIn(1000);
+        laugh.pause();
 
         $('#gameWinModal-level_04').modal('hide');
         $('#gameLostModal-level_04').modal('hide');
