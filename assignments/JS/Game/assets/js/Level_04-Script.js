@@ -35,6 +35,10 @@ $('#btnStartPlay-level_04').on('click', function () {
         $('.hs-level_04').fadeIn(1000);
 
         movZomIntervalID_level_04 = window.setInterval(moveZombies_level_04, 600);
+
+        clearInterval(audioIntervalId);
+        pauseAudios();
+        audioIntervalId = setInterval(playAudios, 4500);
     }
 });
 
@@ -154,6 +158,9 @@ function moveZombies_level_04() {
 
                     // game_over.loop = true;
                     game_over.play();
+
+                    clearInterval(audioIntervalId);
+                    pauseAudios();
                 }
             }
 
@@ -176,8 +183,10 @@ function moveZombies_level_04() {
                 $('#your_score-level_04').text("Your Score : " + $('#txtScore-level_04').val());
 
                 $('#gameWinModal-level_04').modal('show');
-                $('#gameWinModal-level_04').show()
-                4
+                $('#gameWinModal-level_04').show();
+
+                clearInterval(audioIntervalId);
+                pauseAudios();
             }
         }
     }
@@ -207,6 +216,10 @@ $('#btnPlayAgain-level_04').on('click', function () {
         $('#gameWinModal-level_04').modal('hide');
         modalNeeds_level_04();
         game_over.pause();
+
+        clearInterval(audioIntervalId);
+        pauseAudios();
+        audioIntervalId = setInterval(playAudios, 3000);
     }
 });
 
@@ -215,6 +228,10 @@ $('#gameLostBtnTryAgain-level_04').on('click', function () {
         $('#gameLostModal-level_04').modal('hide');
         modalNeeds_level_04();
         game_over.pause();
+
+        clearInterval(audioIntervalId);
+        pauseAudios();
+        audioIntervalId = setInterval(playAudios, 3000);
     }
 });
 

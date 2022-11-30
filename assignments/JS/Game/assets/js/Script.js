@@ -5,6 +5,7 @@ let time = $('#lblTime');
 let intervalID = -1;
 $("#txtScore").val(0);
 let movZomIntervalID = -1;
+let audioIntervalId = -1;
 
 const laugh = new Audio('assets/audio/laugh.mp3');
 const game_over = new Audio('assets/audio/GameOverSound.mp3');
@@ -18,6 +19,7 @@ audioArray.push(new Audio('assets/audio/Sound-06.mp3'));
 audioArray.push(new Audio('assets/audio/Sound-07.mp3'));
 
 var index = 0;
+
 function playAudios() {
     audioArray[index].pause();
     index = Math.floor(Math.random() * 6);
@@ -93,6 +95,10 @@ $('#btnStartPlay').on('click', function () {
         $('.hs').fadeIn(1000);
 
         movZomIntervalID = window.setInterval(moveZombies, 950);
+
+        clearInterval(audioIntervalId);
+        pauseAudios();
+        audioIntervalId = setInterval(playAudios, 4500);
     }
 });
 
@@ -227,6 +233,9 @@ function moveZombies() {
 
                     // game_over.loop = true;
                     game_over.play();
+
+                    clearInterval(audioIntervalId);
+                    pauseAudios();
                 }
             }
 
@@ -250,6 +259,9 @@ function moveZombies() {
 
                 $('#gameWinModal').modal('show');
                 $('#gameWinModal').show();
+
+                clearInterval(audioIntervalId);
+                pauseAudios();
             }
         }
     }
@@ -279,6 +291,10 @@ $('#btnPlayAgain').on('click', function () {
         $('#gameWinModal').modal('hide');
         modalNeeds();
         game_over.pause();
+
+        clearInterval(audioIntervalId);
+        pauseAudios();
+        audioIntervalId = setInterval(playAudios, 3000);
     }
 });
 
@@ -287,6 +303,10 @@ $('#gameLostBtnTryAgain').on('click', function () {
         $('#gameLostModal').modal('hide');
         modalNeeds();
         game_over.pause();
+
+        clearInterval(audioIntervalId);
+        pauseAudios();
+        audioIntervalId = setInterval(playAudios, 3000);
     }
 });
 
