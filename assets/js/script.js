@@ -43,7 +43,7 @@ $("#btnAssignmentsViewMore").on("click", function () {
 
 $('#btnAssignment-01').on('click', function () {
     $("#btnAssignment-01>a").attr("target", "_blank");
-    $("#btnAssignment-01>a").attr("href", "assignments/css/Basics/case_01/index.html");
+    $("#btnAssignment-01>a").attr("href", "assignments/JS/Calculator/index.html");
 });
 
 $('#btnAssignment-02').on('click', function () {
