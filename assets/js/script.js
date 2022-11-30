@@ -48,10 +48,10 @@ $('#btnAssignment-01').on('click', function () {
 
 $('#btnAssignment-02').on('click', function () {
     $("#btnAssignment-02>a").attr("target", "_blank");
-    $("#btnAssignment-02>a").attr("href", "assignments/css/Animations/case_04/index.html");
+    $("#btnAssignment-02>a").attr("href", "assignments/JS/Game/index.html");
 });
 
 $('#btnAssignment-03').on('click', function () {
     $("#btnAssignment-03>a").attr("target", "_blank");
-    $("#btnAssignment-03>a").attr("href", "assignments/css/Basics/case_06/index.html");
+    $("#btnAssignment-03>a").attr("href", "assignments/css/Animations/case_04/index.html");
 });
