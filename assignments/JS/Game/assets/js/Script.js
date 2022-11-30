@@ -9,6 +9,27 @@ let movZomIntervalID = -1;
 const laugh = new Audio('assets/audio/laugh.mp3');
 const game_over = new Audio('assets/audio/GameOverSound.mp3');
 
+const audioArray = [];
+audioArray.push(new Audio('assets/audio/laugh.mp3'));
+audioArray.push(new Audio('assets/audio/Sound-01.mp3'));
+audioArray.push(new Audio('assets/audio/Sound-03.wav'));
+audioArray.push(new Audio('assets/audio/Sound-05.wav'));
+audioArray.push(new Audio('assets/audio/Sound-06.mp3'));
+audioArray.push(new Audio('assets/audio/Sound-07.mp3'));
+
+var index = 0;
+function playAudios() {
+    audioArray[index].pause();
+    index = Math.floor(Math.random() * 6);
+    audioArray[index].play();
+}
+
+function pauseAudios() {
+    for (let audio of audioArray) {
+        audio.pause();
+    }
+}
+
 $(function () {
     $('#level_1_section').css('display', 'none');
     $('#level_2_section').css('display', 'none');
