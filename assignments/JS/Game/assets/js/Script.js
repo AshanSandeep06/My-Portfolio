@@ -131,7 +131,7 @@ function fireBullets(rocketPosition) {
     }
 }
 
-$(document).on('keypress', function (event) {
+$(document).on('keydown', function (event) {
     if ($('#level_1_section').css('display') !== 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none' && $('#level_4_section').css('display') === 'none') {
         if ($('.hs').css('display') === 'block') {
             if (event.keyCode === 38 || event.keyCode === 32) {

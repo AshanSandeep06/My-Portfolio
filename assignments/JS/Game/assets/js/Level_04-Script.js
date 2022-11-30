@@ -96,7 +96,7 @@ function fireBullets_level_04(rocketPosition_level_04) {
     }
 }
 
-$(document).on('keypress', function (event) {
+$(document).on('keydown', function (event) {
     if ($('#level_4_section').css('display') !== 'none' && $('#level_1_section').css('display') === 'none' && $('#level_2_section').css('display') === 'none' && $('#level_3_section').css('display') === 'none') {
         if ($('.hs-level_04').css('display') === 'block') {
             if (event.keyCode === 38 || event.keyCode === 32) {
