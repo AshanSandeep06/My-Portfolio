@@ -108,7 +108,7 @@ $('#btnWeb').on('click', function () {
 
 
 /* ------------------------ Assignments Page -------------------- */
-for (let i = 1; i < 18; i++) {
+for (let i = 1; i < 19; i++) {
     $('#btnAssignment-' + i).on('click', function () {
         let pressedBtnID = this.id;
         switch (pressedBtnID) {
@@ -228,6 +228,13 @@ for (let i = 1; i < 18; i++) {
                 $("#btnAssignment-17>a").attr({
                     "target": "_blank",
                     "href": "../assignments/JS/Knight/index.html"
+                });
+                break;
+
+            case "btnAssignment-18":
+                $("#btnAssignment-18>a").attr({
+                    "target": "_blank",
+                    "href": "../assignments/JS/Game/index.html"
                 });
                 break;
 
