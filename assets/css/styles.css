@@ -440,16 +440,14 @@ main > section:first-child > section:first-child > #home_description > button:ho
 main > #home_section > section:last-child > div {
     background: url(../images/Img-2.jpeg);
     background-size: cover;
-    background-position: center;
-    width: 294px;
-    height: 396px;
+    /* background-position: center; */
+    width: 345px;
+    background-position-x: right;
+    background-position-y: center;
+    height: 412px;
     display: inline-block;
     border-radius: 100%;
     position: relative;
-    /*top: 88px;*/
-
-    /*Changed*/
-    /*left: 5px;*/
 }
 
 /* --------------------------------------------------------------------------- */
