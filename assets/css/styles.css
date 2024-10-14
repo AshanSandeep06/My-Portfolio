@@ -438,7 +438,7 @@ main > section:first-child > section:first-child > #home_description > button:ho
 }
 
 main > #home_section > section:last-child > div {
-    background: url(../images/My_Image.png);
+    background: url(../images/Img-2.jpeg);
     background-size: cover;
     background-position: center;
     width: 294px;
@@ -519,7 +519,7 @@ main > section:nth-child(2)#about_section > section:nth-child(2) {
 }
 
 main > section:nth-child(2)#about_section > section:nth-child(2) > article > div {
-    background: url(../images/My_image_02.png);
+    background: url(../images/Img-1.jpeg);
     background-size: cover;
     background-position: center;
     width: 300px;
